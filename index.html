@@ -609,7 +609,7 @@
                     const div = document.createElement('div');
                     div.style.padding = '10px';
                     div.style.borderBottom = '1px solid #333';
-                    div.innerHTML = `<label>${match.item}</label><small>${match.map} (${match.diff})</small>`;
+                    div.innerHTML = `<label>${match.item}</label><small>${match.map}</small>`;
                     div.onclick = () => {
                         applySelection(match.map, match.diff, match.item);
                         resultsDiv.innerHTML = '';
