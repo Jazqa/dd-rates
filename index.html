@@ -73,6 +73,7 @@
         #searchResults div small {
             display: block;
             font-size: 0.75rem;
+            cursor: pointer;
             color: #aaa;
         }
 
@@ -103,6 +104,64 @@
             font-size: 0.85em;
             text-transform: uppercase;
             opacity: 0.8;
+        }
+
+        .rates-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .rates-grid {
+            margin: 25px auto;
+            column-count: 4;
+            column-gap: 0px;
+            column-rule: 1px solid #333;
+            max-width: 1600px;
+        }
+
+        .rate-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            break-inside: avoid;
+            border-bottom: 1px solid #333;
+            margin-bottom: 2px;
+            font-size: 1.0rem;
+        }
+
+        @media (max-width: 1200px) {
+            .rates-grid {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .rates-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .rates-grid {
+                column-count: 1;
+            }
+        }
+
+        .rate-item:hover {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .rate-label {
+            color: #888;
+        }
+
+        .rate-value {
+            color: var(--accent);
+            text-align: right;
         }
     </style>
 </head>
@@ -138,6 +197,10 @@
             <h2>H2</h2>
             <label>Label</label>
             <canvas id="chart"></canvas>
+
+        </div>
+        <div id="rates-container">
+            <div id="ratesList" class="rates-grid"></div>
         </div>
     </div>
 
@@ -426,7 +489,46 @@
                         }
                     },
                 }
+
             });
+
+            updateRatesList(labels, data);
+
+        }
+        function updateRatesList(labels, data) {
+            const listDiv = document.getElementById('ratesList');
+            if (!listDiv) return;
+
+            listDiv.innerHTML = '';
+            const statKey = document.getElementById('statSelect').value;
+
+            labels.forEach((label, index) => {
+                const rate = data[index];
+                if (rate <= 0) return;
+
+                const chance = (2147483647 / rate);
+
+                if (statKey !== "quality" && statKey !== "multiproj") {
+                    if (chance < 100) return;
+                }
+
+                let formattedChance = chance < 10 ?
+                    chance.toFixed(2) :
+                    Math.round(chance).toLocaleString("fr-FR");
+
+                const row = document.createElement('div');
+                row.className = 'rate-item';
+
+                row.innerHTML = `
+                    <span class="rate-label">${label}</span>
+                    <span class="rate-value">1 / ${formattedChance}</span>
+                `;
+
+                listDiv.appendChild(row);
+            });
+
+            // Hide container if no rates met the criteria
+            listDiv.style.display = listDiv.childElementCount > 0 ? 'block' : 'none';
         }
 
         function setupGlobalSearch() {
