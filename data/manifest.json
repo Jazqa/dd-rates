@@ -373,6 +373,12 @@
       "Fairy"
     ]
   },
+  "Scorched Arabia": {
+    "Ruthless": [
+      "Fenix",
+      "Lavabringer"
+    ]
+  },
   "Servant's Quarters": {
     "Ruthless": [
       "Hamster"
@@ -514,6 +520,11 @@
       "Mini Snowman",
       "Turkey on a Treadmill",
       "Winter's Flame"
+    ]
+  },
+  "Workshop Assault": {
+    "Ruthless": [
+      "Bloodletting Blade"
     ]
   }
 }
