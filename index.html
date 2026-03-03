@@ -45,7 +45,6 @@
             outline: none;
             transition: all 0.2s;
             appearance: none;
-            /* Removes default arrow */
         }
 
         select {
@@ -61,21 +60,14 @@
         }
 
         #searchResults {
-            position: absolute;
-            top: 47px;
             left: 0;
             right: 0;
-            background: #121212;
-            max-height: 800px;
-            overflow-y: auto;
-            z-index: 1000;
-            border-top: none;
+
         }
 
         #searchResults:not(:empty) {
-            border: 1px solid var(--border);
             border-top: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px;
         }
 
         #searchResults div small {
