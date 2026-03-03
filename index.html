@@ -115,6 +115,7 @@
             "app_totals": "App Totals",
             "hermit_totals": "Hermit Totals",
             "guardian_totals": "Guardian Totals",
+            "support_caps": "Support Caps",
             "scale": "Size",
             "multiproj": "Multiple projectiles"
         };
@@ -231,7 +232,7 @@
                     case "quality":
                         labelElement.textContent = "";
                         labels = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
-                        data = json.rates.quality;
+                        data = [...json.rates.quality.slice(0, 13).reverse(), ...json.rates.quality.slice(13)];
                         renderChart(labels, data);
                         break;
                     case "level":
@@ -269,6 +270,12 @@
                         data = [json.total_seeds, json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
                         renderChart(labels, data);
                         break;
+                    case "support_caps":
+                        labelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
+                        labels = ["Cast Rate", "Ability 1", "Ability 2"]
+                        data = [json.rates[statKey].buckets["4"], json.rates[statKey].buckets["5"], json.rates[statKey].buckets["6"]];
+                        renderChart(labels, data);
+                        break;
                     case "scale":
                         labelElement.textContent = "";
                         bucketCount = Object.keys(json.rates.scale.buckets).length;
@@ -280,7 +287,7 @@
                     case "multiproj":
                         labelElement.textContent = "";
                         labels = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
-                        data = json.rates.multiproj;
+                        data = [...json.rates.multiproj.slice(0, 13).reverse(), ...json.rates.multiproj.slice(13)];
                         renderChart(labels, data);
                         break;
                     default:
