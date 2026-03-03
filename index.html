@@ -126,6 +126,14 @@
             border-bottom: 1px solid var(--border);
         }
 
+        .rate-item.highlight,
+        .rate-item:hover {
+            background-color: var(--hov);
+        }
+
+
+
+
         .rate-label {
             color: var(--fg2);
             text-transform: uppercase;
@@ -187,6 +195,9 @@
     </div>
 
     <script>
+        Chart.defaults.font.family = "monospace";
+        Chart.defaults.color = '#888';
+
         const TOTAL_SEEDS = 2147483647;
 
         const STAT_LABELS = {
@@ -513,6 +524,10 @@
                 },
                 options: {
                     responsive: true,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -521,9 +536,39 @@
                         },
                         x: { grid: { color: 'transparent' } }
                     },
+                    onHover: (event, activeElements) => {
+                        document.querySelectorAll('.rate-item').forEach(el => el.classList.remove('highlight'));
+
+                        if (activeElements.length > 0) {
+                            const index = activeElements[0].index;
+                            const items = document.querySelectorAll('.rate-item');
+
+                            const labelText = currentChart.data.labels[index];
+                            const target = Array.from(items).find(item =>
+                                item.querySelector('label').textContent === labelText
+                            );
+
+                            if (target) {
+                                target.classList.add('highlight');
+                                target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                        }
+                    },
                     plugins: {
                         legend: { display: false },
                         tooltip: {
+                            backgroundColor: '#121212',
+                            titleColor: '#aaa',
+                            bodyColor: '#0091ff',
+                            borderColor: '#444',
+                            borderWidth: 1,
+                            padding: 10,
+                            displayColors: false,
+                            cornerRadius: 0,
+                            titleColor: '#fff',
+                            titleFont: {
+                                family: 'sans-serif',
+                            },
                             callbacks: {
                                 label: (context) => {
                                     const rate = context.raw;
@@ -535,8 +580,14 @@
                         }
                     },
                 }
-
             });
+
+            const canvas = document.getElementById('chart');
+
+            canvas.onmouseleave = () => {
+                // Remove highlight from all grid items when mouse leaves the chart area
+                document.querySelectorAll('.rate-item').forEach(el => el.classList.remove('highlight'));
+            };
 
             updateRatesList(labels, data);
 
@@ -571,15 +622,43 @@
 
                 const row = document.createElement('div');
                 row.className = 'rate-item';
+                row.dataset.index = index; // Store the index for easy lookup
+
+                // MOUSE ENTER: Trigger Chart Tooltip
+                row.onmouseenter = () => {
+                    if (!currentChart) return;
+
+                    // Find the metadata for the point at this index
+                    const meta = currentChart.getDatasetMeta(0);
+                    const point = meta.data[index];
+
+                    if (point) {
+                        // Manually set the active elements in the chart
+                        currentChart.setActiveElements([{ datasetIndex: 0, index: index }]);
+                        // Manually trigger the tooltip
+                        currentChart.tooltip.setActiveElements([{ datasetIndex: 0, index: index }], {
+                            x: point.x,
+                            y: point.y,
+                        });
+                        currentChart.update();
+                    }
+                };
+
+                // MOUSE LEAVE: Reset Chart
+                row.onmouseleave = () => {
+                    if (!currentChart) return;
+                    currentChart.setActiveElements([]);
+                    currentChart.tooltip.setActiveElements([], { x: 0, y: 0 });
+                    currentChart.update();
+                };
 
                 row.innerHTML = `
-                  <label>${label}</label>
-                  <span class="rate-value">1 / ${formattedChance}</span>
+                    <label>${label}</label>
+                    <span class="rate-value">1 / ${formattedChance}</span>
                 `;
 
                 listDiv.appendChild(row);
             });
-
             listDiv.style.display = listDiv.childElementCount > 0 ? 'grid' : 'none';
         }
 
