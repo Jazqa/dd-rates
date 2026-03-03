@@ -227,7 +227,7 @@
                 const activeOptionText = statSelect.options[statSelect.selectedIndex].textContent;
                 titleElement.textContent = `${item}: ${activeOptionText}`;
 
-                let labels, data, binSize, bucketCount, result;
+                let labels, data, binSize, buckets, bucketCount, result, highest;
                 switch (statKey) {
                     case "quality":
                         labelElement.textContent = "";
@@ -243,15 +243,19 @@
                         break;
                     case "damage":
                         labelElement.textContent = "Upgrades: " + json.rates.damage.info;
-                        bucketCount = Object.keys(json.rates.damage.buckets).length;
-                        binSize = bucketCount > 150 ? 5000 : 1000;
+                        buckets = Object.keys(json.rates.damage.buckets)
+                        bucketCount = buckets.length;
+                        highest = buckets[bucketCount - 1]
+                        binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
                         result = getCumulativeData(json.rates.damage.buckets, binSize);
                         renderChart(result.labels, result.values);
                         break;
                     case "damage_2":
                         labelElement.textContent = "Upgrades: " + json.rates.damage_2.info;
+                        buckets = Object.keys(json.rates.damage.buckets)
                         bucketCount = Object.keys(json.rates.damage_2.buckets).length;
-                        binSize = bucketCount > 150 ? 5000 : 1000;
+                        highest = buckets[bucketCount - 1]
+                        binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
                         result = getCumulativeData(json.rates.damage_2.buckets, binSize);
                         renderChart(result.labels, result.values);
                         break;
