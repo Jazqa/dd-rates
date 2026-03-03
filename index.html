@@ -7,9 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
-            --accent: #00d4ff;
+            --accent: #0091ff;
             --bg: #121212;
             --panel: #1e1e1e;
+            --input-bg: #121212;
+            --border: #444;
         }
 
         body {
@@ -21,7 +23,6 @@
             height: 100vh;
         }
 
-        /* Sidebar Navigation */
         #sidebar {
             width: 300px;
             background: var(--panel);
@@ -30,74 +31,57 @@
             overflow-y: auto;
         }
 
-        select,
-        button {
+        #globalSearch,
+        select {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 15px;
-            background: #333;
+            background: var(--input-bg);
             color: white;
-            border: 1px solid #444;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        /* Main Content */
-        #content {
-            flex-grow: 1;
-            padding: 40px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .chart-container {
-            flex-grow: 1;
-        }
-
-        /* Typography */
-        h2 {
-            margin-top: 0;
-            color: var(--accent);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        #globalSearch {
-            width: 100%;
-            padding: 8px;
-            background: #333;
-            color: white;
-            border: 1px solid #444;
-            border-radius: 4px;
-            box-sizing: border-box;
+            border: 2px solid var(--border);
+            border-radius: 6px;
             font-size: 1rem;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            box-sizing: border-box;
             outline: none;
+            transition: all 0.2s;
+            appearance: none;
+            /* Removes default arrow */
         }
 
-        #globalSearch:focus {
+        select {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+        }
+
+        #globalSearch:focus,
+        select:focus {
             border-color: var(--accent);
             box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
         }
 
         #searchResults {
-            background: #333;
-            border-top: none;
+            position: absolute;
+            top: 47px;
+            left: 0;
+            right: 0;
+            background: #121212;
+            max-height: 800px;
             overflow-y: auto;
-            cursor: pointer;
-            margin-top: 2px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-            border-radius: 4px;
+            z-index: 1000;
+            border-top: none;
         }
 
-        #searchResults div {
-            padding: 10px;
-            border-bottom: 1px solid #444;
-            transition: background 0.2s;
+        #searchResults:not(:empty) {
+            border: 1px solid var(--border);
+            border-top: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        #searchResults div small {
+            display: block;
+            font-size: 0.75rem;
+            color: #aaa;
         }
 
         #searchResults div:last-child {
@@ -105,23 +89,28 @@
         }
 
         #searchResults div:hover {
-            background: #2a2a2a;
+            background-color: #0060c0;
+            color: white !important;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        h2 {
+            margin-top: 0;
             color: var(--accent);
         }
 
-        #searchResults::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        #searchResults::-webkit-scrollbar-track {
-            background: #121212;
-            border-radius: 0 0 6px 0;
-        }
-
-        #searchResults::-webkit-scrollbar-thumb {
-            background: #444;
-            border-radius: 10px;
-            border: 2px solid #121212;
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -130,18 +119,16 @@
 
     <div id="sidebar">
         <label>Search</label>
-        <input type="text" id="globalSearch" autocomplete="off">
-        <div id="searchResults"
-            style="background: #222; max-height: 200px; overflow-y: auto; cursor: pointer; font-size: 0.9em; border-radius: 4px; margin-bottom: 15px;">
+        <div style="position: relative;"> <input type="text" id="globalSearch" autocomplete="off"
+                placeholder="Type to search...">
+            <div id="searchResults"></div>
         </div>
 
         <label>Map</label>
-        <select id="mapSelect">
-        </select>
+        <select id="mapSelect"></select>
 
         <label>Difficulty</label>
-        <select id="diffSelect">
-        </select>
+        <select id="diffSelect"></select>
 
         <label>Item</label>
         <select id="itemSelect"></select>
@@ -198,14 +185,25 @@
                     mapSelect.appendChild(opt);
                 });
 
-                mapSelect.onchange = updateDifficulties;
-                document.getElementById('diffSelect').onchange = updateItems;
+                mapSelect.onchange = () => {
+                    updateDifficulties();
+                    updateItems();
+                    loadData(true);
+                };
+
+                document.getElementById('diffSelect').onchange = () => {
+                    updateItems();
+                    loadData(true);
+                };
+
                 document.getElementById('itemSelect').onchange = () => loadData(true);
                 document.getElementById('statSelect').onchange = () => loadData(false);
 
                 setupGlobalSearch();
 
                 updateDifficulties();
+                updateItems();
+                loadData(true);
             } catch (err) {
                 console.error("Error: Failed to load manifest:", err);
             }
@@ -224,7 +222,6 @@
                     diffSelect.appendChild(opt);
                 });
             }
-            updateItems();
         }
 
         function updateItems() {
@@ -243,8 +240,6 @@
                     itemSelect.appendChild(opt);
                 });
             }
-
-            loadData(true);
         }
 
         async function loadData(rebuildStats = false) {
@@ -406,8 +401,8 @@
                     labels,
                     datasets: [{
                         data,
-                        borderColor: '#00d4ff',
-                        backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                        borderColor: '#0091ff',
+                        backgroundColor: '#0091ff22',
                         fill: true,
                         tension: 0.3,
                         pointRadius: 6,
@@ -464,7 +459,6 @@
                     }
                 }
 
-                // Display top 10 matches
                 matches.slice(0, 10).forEach(match => {
                     const div = document.createElement('div');
                     div.style.padding = '8px';
@@ -478,21 +472,24 @@
                     };
                     resultsDiv.appendChild(div);
                 });
+
+                input.addEventListener('blur', () => {
+                    setTimeout(() => {
+                        resultsDiv.innerHTML = '';
+                    }, 200);
+                });
             });
         }
 
         function applySelection(map, diff, item) {
-            // 1. Set Map and trigger its change logic
             const mapSelect = document.getElementById('mapSelect');
             mapSelect.value = map;
-            updateDifficulties(); // Rebuilds difficulty list
+            updateDifficulties();
 
-            // 2. Set Difficulty and trigger its change logic
             const diffSelect = document.getElementById('diffSelect');
             diffSelect.value = diff;
-            updateItems(); // Rebuilds item list
+            updateItems();
 
-            // 3. Set Item and load the data
             const itemSelect = document.getElementById('itemSelect');
             itemSelect.value = item;
             loadData(true);
