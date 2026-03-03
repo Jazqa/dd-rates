@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dungeon Defenders Item Rates</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --accent: #00d4ff;
+            --bg: #121212;
+            --panel: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: white;
+            display: flex;
+            margin: 0;
+            height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        #sidebar {
+            width: 300px;
+            background: var(--panel);
+            padding: 20px;
+            border-right: 1px solid #333;
+            overflow-y: auto;
+        }
+
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        #content {
+            flex-grow: 1;
+            padding: 40px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-container {
+            flex-grow: 1;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        /* Typography */
+        h2 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <label>Map</label>
+        <select id="mapSelect">
+        </select>
+
+        <label>Difficulty</label>
+        <select id="diffSelect">
+        </select>
+
+        <label>Item</label>
+        <select id="itemSelect"></select>
+
+        <label>Statistic</label>
+        <select id="statSelect">
+            <option value="quality">Quality</option>
+            <option value="level">Level</option>
+            <option value="damage">Damage</option>
+        </select>
+    </div>
+
+    <div id="content">
+        <div class="chart-container">
+            <h2>H2</h2>
+            <label>Label</label>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        let currentChart = null;
+        let manifestData = null;
+
+        const statLabels = {
+            "quality": "Quality",
+            "level": "Level",
+            "damage": "Damage",
+            "damage_2": "Damage",
+            "tower_caps": "Tower Caps",
+            "tower_totals": "Tower Totals",
+            "app_totals": "App Totals",
+            "hermit_totals": "Hermit Totals",
+            "guardian_totals": "Guardian Totals",
+            "scale": "Size",
+            "multiproj": "Multiple projectiles"
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            await initializeManifest();
+        });
+
+        async function initializeManifest() {
+            try {
+                const response = await fetch('./data/manifest.json');
+                manifestData = await response.json();
+
+                const mapSelect = document.getElementById('mapSelect');
+                Object.keys(manifestData).forEach(mapName => {
+                    let opt = document.createElement('option');
+                    opt.value = mapName;
+                    opt.textContent = mapName;
+                    mapSelect.appendChild(opt);
+                });
+
+                mapSelect.onchange = updateDifficulties;
+                document.getElementById('diffSelect').onchange = updateItems;
+                document.getElementById('itemSelect').onchange = () => loadData(true);
+                document.getElementById('statSelect').onchange = () => loadData(false);
+
+                updateDifficulties();
+            } catch (err) {
+                console.error("Error: Failed to load manifest:", err);
+            }
+        }
+
+        function updateDifficulties() {
+            const map = document.getElementById('mapSelect').value;
+            const diffSelect = document.getElementById('diffSelect');
+            diffSelect.innerHTML = '';
+
+            if (manifestData[map]) {
+                Object.keys(manifestData[map]).forEach(diff => {
+                    let opt = document.createElement('option');
+                    opt.value = diff;
+                    opt.textContent = diff;
+                    diffSelect.appendChild(opt);
+                });
+            }
+            updateItems();
+        }
+
+        function updateItems() {
+            const map = document.getElementById('mapSelect').value;
+            const diff = document.getElementById('diffSelect').value;
+            const itemSelect = document.getElementById('itemSelect');
+            itemSelect.innerHTML = '';
+
+            const items = manifestData[map]?.[diff];
+
+            if (items) {
+                items.forEach(itemName => {
+                    let opt = document.createElement('option');
+                    opt.value = itemName;
+                    opt.textContent = itemName;
+                    itemSelect.appendChild(opt);
+                });
+            }
+
+            loadData(true);
+        }
+
+        async function loadData(rebuildStats = false) {
+            const map = document.getElementById('mapSelect').value;
+            const diff = document.getElementById('diffSelect').value;
+            const item = document.getElementById('itemSelect').value;
+            const statSelect = document.getElementById('statSelect');
+
+            if (!item) return;
+
+            try {
+                const url = `./data/${map}/${diff}/${item}.json`;
+                const response = await fetch(url);
+                const json = await response.json();
+
+                if (rebuildStats) {
+                    const availableStats = Object.keys(json.rates);
+                    const currentVal = statSelect.value;
+
+                    statSelect.innerHTML = '';
+                    availableStats.forEach(key => {
+                        let opt = document.createElement('option');
+                        opt.value = key;
+                        opt.textContent = statLabels[key] || key;
+
+                        if (key.includes("damage")) {
+                            opt.textContent = json.rates[key].label + " " + statLabels[key];
+                        }
+
+                        statSelect.appendChild(opt);
+                    });
+
+                    if (availableStats.includes(currentVal)) {
+                        statSelect.value = currentVal;
+                    } else {
+                        statSelect.value = availableStats[0];
+                    }
+                }
+
+                const statKey = statSelect.value;
+                const titleElement = document.querySelector('.chart-container h2');
+                const labelElement = document.querySelector('.chart-container label');
+                const activeOptionText = statSelect.options[statSelect.selectedIndex].textContent;
+                titleElement.textContent = `${item}: ${activeOptionText}`;
+
+                let labels, data, binSize, bucketCount, result;
+                switch (statKey) {
+                    case "quality":
+                        labelElement.textContent = "";
+                        labels = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
+                        data = json.rates.quality;
+                        renderChart(labels, data);
+                        break;
+                    case "level":
+                        labelElement.textContent = "";
+                        binSize = 10;
+                        result = getCumulativeData(json.rates.level.buckets, binSize);
+                        renderChart(result.labels, result.values);
+                        break;
+                    case "damage":
+                        labelElement.textContent = "Upgrades: " + json.rates.damage.info;
+                        bucketCount = Object.keys(json.rates.damage.buckets).length;
+                        binSize = bucketCount > 150 ? 5000 : 1000;
+                        result = getCumulativeData(json.rates.damage.buckets, binSize);
+                        renderChart(result.labels, result.values);
+                        break;
+                    case "damage_2":
+                        labelElement.textContent = "Upgrades: " + json.rates.damage_2.info;
+                        bucketCount = Object.keys(json.rates.damage_2.buckets).length;
+                        binSize = bucketCount > 150 ? 5000 : 1000;
+                        result = getCumulativeData(json.rates.damage_2.buckets, binSize);
+                        renderChart(result.labels, result.values);
+                        break;
+                    case "tower_totals":
+                    case "app_totals":
+                    case "hermit_totals":
+                    case "guardian_totals":
+                        labelElement.textContent = "";
+                        binSize = 50;
+                        result = getCumulativeData(json.rates[statKey].buckets, binSize);
+                        renderChart(result.labels, result.values);
+                        break;
+                    case "tower_caps":
+                        labelElement.textContent = "";
+                        labels = ["None", "Single", "Double", "Triple", "Quad"]
+                        data = [json.total_seeds, json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
+                        renderChart(labels, data);
+                        break;
+                    case "scale":
+                        labelElement.textContent = "";
+                        bucketCount = Object.keys(json.rates.scale.buckets).length;
+                        binSize = bucketCount > 20 ? 5 : 1;
+                        result = getCumulativeData(json.rates.scale.buckets, binSize);
+                        labels = result.rawKeys.map(k => `${(k / 10).toFixed(1)}+`);
+                        renderChart(labels, result.values);
+                        break;
+                    case "multiproj":
+                        labelElement.textContent = "";
+                        labels = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
+                        data = json.rates.multiproj;
+                        renderChart(labels, data);
+                        break;
+                    default:
+                        break;
+                }
+            } catch (err) {
+                console.error("Error: Failed to load item data:", err);
+            }
+        }
+
+        function getCumulativeData(buckets, size) {
+            const binned = {};
+
+            Object.entries(buckets).forEach(([key, value]) => {
+                const numKey = Number(key);
+
+                if (numKey < 0) return;
+
+                const bin = Math.floor(numKey / size) * size;
+                binned[bin] = (binned[bin] || 0) + value;
+            });
+
+            const sortedKeys = Object.keys(binned).map(Number).sort((a, b) => b - a);
+
+            let runningTotal = 0;
+            const cumulativeMap = {};
+
+            sortedKeys.forEach(key => {
+                runningTotal += binned[key];
+                cumulativeMap[key] = runningTotal;
+            });
+
+            const finalKeys = Object.keys(cumulativeMap).map(Number).sort((a, b) => a - b);
+
+            return {
+                rawKeys: finalKeys,
+                labels: finalKeys.map(k => `${Number(k).toLocaleString("fr-FR")}+`),
+                values: finalKeys.map(k => cumulativeMap[k])
+            };
+        }
+
+        function renderChart(labels, data) {
+            const ctx = document.getElementById('chart').getContext('2d');
+            if (currentChart) currentChart.destroy();
+
+            currentChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [{
+                        data,
+                        borderColor: '#00d4ff',
+                        backgroundColor: 'rgba(0, 212, 255, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 6,
+                        pointHoverRadius: 10,
+                        pointBorderWidth: 2,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'transparent' },
+                            ticks: { callback: () => "" }
+                        },
+                        x: { grid: { color: 'transparent' } }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => {
+                                    const rate = context.raw;
+                                    let chance = (2147483647 / rate);
+                                    let formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
+                                    return `1 / ${formatted}`;
+                                }
+                            }
+                        }
+                    },
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
