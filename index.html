@@ -501,20 +501,24 @@
 
             listDiv.innerHTML = '';
             const statKey = document.getElementById('statSelect').value;
-            const TOTAL_SEEDS = 2147483647; // Your constant for calculation
+            const TOTAL_SEEDS = 2147483647;
 
             labels.forEach((label, index) => {
                 const rate = data[index];
 
-                // Fix: Check if rate is valid, greater than zero, and not null
                 if (!rate || rate <= 0 || isNaN(rate)) return;
 
                 const chance = (TOTAL_SEEDS / rate);
 
-                // Filters for specific stats to keep the list clean
-                if (statKey !== "quality" && statKey !== "multiproj") {
+                if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals")) {
                     if (chance < 100) return;
                 }
+
+
+                if (statKey === "tower_caps" && index === 0) {
+                    if (chance === 1.0) return;
+                }
+
 
                 let formattedChance = chance < 10 ?
                     chance.toFixed(2) :
