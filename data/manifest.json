@@ -1,0 +1,502 @@
+{
+  "Akatiti Jungle": {
+    "Ruthless": [
+      "Cowboy Monkey",
+      "Obsidian Clava",
+      "Obsidian Gladius",
+      "Obsidian Sparus",
+      "Tiki Protector",
+      "Turtle Shell Launcher"
+    ]
+  },
+  "Alchemical Laboratory": {
+    "Ruthless": [
+      "Baby Demon Lord",
+      "Everlasting Flame",
+      "Laser Robot",
+      "Malificar's Rapier",
+      "Soul Focuser",
+      "Spinal Column"
+    ]
+  },
+  "Aquanos": {
+    "Ruthless": [
+      "Arronax",
+      "Lemurian Halberd",
+      "Sea Turtle",
+      "Seahorse",
+      "The Depth Charge",
+      "Triton's War Glaive"
+    ]
+  },
+  "Arcane Library": {
+    "Ruthless": [
+      "Owl",
+      "Skeleton on a Treadmill"
+    ]
+  },
+  "Assault Challenge Pack 1": {
+    "Ruthless": [
+      "Backstabber",
+      "Big Stick",
+      "Rainbow Unicorn",
+      "Retribution"
+    ]
+  },
+  "Boss Rush": {
+    "Ruthless": [
+      "Classic's Eagle Crested Standard",
+      "Monk Punk Glaive"
+    ]
+  },
+  "Buccaneer Bay": {
+    "Ruthless": [
+      "Moby's Mobile Launcher",
+      "Parrot",
+      "Roger's Revenge"
+    ]
+  },
+  "Castle Armory": {
+    "Ruthless": [
+      "Tiger"
+    ]
+  },
+  "Challenge Assault": {
+    "Ruthless": [
+      "Blasticus"
+    ]
+  },
+  "Challenge Chicken": {
+    "Ruthless": [
+      "Chanticleer's Chandelier"
+    ]
+  },
+  "Challenge Death From Above": {
+    "Ruthless": [
+      "The Pinioner"
+    ]
+  },
+  "Challenge Forest Ogre Crush": {
+    "Ruthless": [
+      "Madness Boulder Thrower"
+    ]
+  },
+  "Challenge Monster Fest": {
+    "Ruthless": [
+      "Magina's Last Glaive"
+    ]
+  },
+  "Challenge Moving Core": {
+    "Ruthless": [
+      "Quiescence"
+    ]
+  },
+  "Challenge No Towers Allowed": {
+    "Ruthless": [
+      "Mobile Moxie"
+    ]
+  },
+  "Challenge Ogre Crush": {
+    "Ruthless": [
+      "Ogre Party Hat"
+    ]
+  },
+  "Challenge Raining Goblins": {
+    "Ruthless": [
+      "Goblin Overlord's Staff"
+    ]
+  },
+  "Challenge Treasure Hunt": {
+    "Ruthless": [
+      "Shambhala Ley Staff"
+    ]
+  },
+  "Challenge Unlikely Allies": {
+    "Ruthless": [
+      "Ogre's Childhood Toy"
+    ]
+  },
+  "Challenge War of the Djinn": {
+    "Ruthless": [
+      "Genie King's Shardstaff",
+      "Shai Hulud"
+    ]
+  },
+  "Challenge Warping Core": {
+    "Ruthless": [
+      "Crystal Tracker"
+    ]
+  },
+  "Challenge Wizardry": {
+    "Ruthless": [
+      "The Heretic"
+    ]
+  },
+  "Challenge Zippy Terror": {
+    "Ruthless": [
+      "Kobold Douser"
+    ]
+  },
+  "City in the Cliffs": {
+    "Ruthless": [
+      "Djinnlet"
+    ]
+  },
+  "Coastal Bazaar": {
+    "Ruthless": [
+      "Flying Carpet Beater",
+      "Genie",
+      "Mini Genie King",
+      "Sorcerer's Lamp"
+    ]
+  },
+  "Crystal Cave": {
+    "Ruthless": [
+      "Crystal Cane",
+      "Crystal Cannon",
+      "Crystal Mace",
+      "Crystal Spear",
+      "Etherian Ancient"
+    ]
+  },
+  "Crystal Escort Spring Valley": {
+    "Ruthless": [
+      "Chicken Baller",
+      "Egganator 2000"
+    ]
+  },
+  "Deeper Well": {
+    "Ruthless": [
+      "Griffin"
+    ]
+  },
+  "Embermount Volcano": {
+    "Ruthless": [
+      "Animorphic Ember",
+      "Ember Crescent",
+      "Ember Flame",
+      "Ember Pony",
+      "Ember Sceptre",
+      "Fenix",
+      "Sword of Embers"
+    ]
+  },
+  "Emerald City": {
+    "Ruthless": [
+      "Desert Goblin",
+      "Emerald Halberd",
+      "Emerald Staff",
+      "Emerald Sword",
+      "Emerald Thrower",
+      "Imp"
+    ]
+  },
+  "Endless Spires": {
+    "Ruthless": [
+      "Imp"
+    ]
+  },
+  "Foundries and Forges": {
+    "Ruthless": [
+      "Steam Robot"
+    ]
+  },
+  "Frostdale Wonderland": {
+    "Ruthless": [
+      "Frost Rifle",
+      "Ice Cube",
+      "Nut Cracker",
+      "Pack Rat",
+      "Staff of Frost"
+    ]
+  },
+  "Hall of Court": {
+    "Ruthless": [
+      "Genie"
+    ]
+  },
+  "Halloween Invasion": {
+    "Ruthless": [
+      "Eye on a Treadmill",
+      "Moon Staff",
+      "Witch's Broom"
+    ]
+  },
+  "Infested Ruins": {
+    "Ruthless": [
+      "Honey Gun",
+      "Honey Spear",
+      "Honey Staff",
+      "Honey Sword",
+      "Mini Wasp Queen",
+      "Serpent",
+      "Wasp"
+    ]
+  },
+  "Jester's Spooktacular": {
+    "Ruthless": [
+      "Corrupted Axe",
+      "Dragon Halberd",
+      "Flying Pumpkin"
+    ]
+  },
+  "King's Game": {
+    "Ruthless": [
+      "Dice",
+      "Enchanted Bishop",
+      "Gambler's Polearm",
+      "Pawn Shot",
+      "The Dark Knight",
+      "The Light Knight",
+      "Tormented Bishop"
+    ]
+  },
+  "Lifestream Hollow": {
+    "Ruthless": [
+      "Hermit's Swallow",
+      "Mushroom Launcher",
+      "Nature's Griffin",
+      "Navi Fairy",
+      "The Forest's Experience",
+      "Woodland Sword"
+    ]
+  },
+  "Love Machine": {
+    "Ruthless": [
+      "Cane of Doomed Relationships",
+      "Love Blaster",
+      "Lover Snake",
+      "Minigun"
+    ]
+  },
+  "Lover's Paradise": {
+    "Ruthless": [
+      "Bow of Hearts",
+      "Fluffy Dragon",
+      "Hamster",
+      "Lover's Cupid",
+      "Spear of Hearts"
+    ]
+  },
+  "Magus Citadel": {
+    "Ruthless": [
+      "Ace of Spades",
+      "Arch Mage's Blade Staff",
+      "Deadly Striker",
+      "Harpoon",
+      "Jewel Encrusted Sword"
+    ]
+  },
+  "Magus Quarters": {
+    "Ruthless": [
+      "Serpent"
+    ]
+  },
+  "Mistymire Forest": {
+    "Ruthless": [
+      "Black Death",
+      "Hand of the Queen",
+      "Leg of the Queen",
+      "Shroomite",
+      "Webbign Untangler"
+    ]
+  },
+  "Moonbase": {
+    "Ruthless": [
+      "Dynast",
+      "Fish in a Bowl",
+      "Fusion Rift",
+      "Hyper Rifle",
+      "Laser Robot",
+      "Moon",
+      "Quietus",
+      "Treadmill on a Treadmill"
+    ]
+  },
+  "Moraggo Desert Town": {
+    "Ruthless": [
+      "Crysknife of the Efreet",
+      "Donkey",
+      "Junbao's Sun-kissed Saber",
+      "Oculus of the Genie King",
+      "Shaitan of a Thousand Winds"
+    ]
+  },
+  "Omenak": {
+    "Ruthless": [
+      "Battle Droid",
+      "Goblin Wrench",
+      "Mini Mech",
+      "Soul Dissolver",
+      "Steam Robot"
+    ]
+  },
+  "Return to Aquanos": {
+    "Ruthless": [
+      "Sea Snail",
+      "Xiphos Blade"
+    ]
+  },
+  "Return to Crystalline Dimension": {
+    "Ruthless": [
+      "Baby Old One",
+      "Constellation Blunderbuss",
+      "Constellation Dagger",
+      "Constellation Staff",
+      "Constellation Sword"
+    ]
+  },
+  "Return to Mistymire": {
+    "Ruthless": [
+      "Altered Spider Queen",
+      "Forest Mage Staff"
+    ]
+  },
+  "Return to Moraggo": {
+    "Ruthless": [
+      "Genie's Blunderbuss"
+    ]
+  },
+  "Return to Sky City": {
+    "Ruthless": [
+      "Gem Dagger"
+    ]
+  },
+  "Royal Gardens": {
+    "Ruthless": [
+      "Fairy"
+    ]
+  },
+  "Servant's Quarters": {
+    "Ruthless": [
+      "Hamster"
+    ]
+  },
+  "Spooktacular Bay": {
+    "Ruthless": [
+      "Demon Sword",
+      "Devil's Spine",
+      "Eye",
+      "Little Wizard",
+      "Pumpkin Pirate on a Treadmill"
+    ]
+  },
+  "Striking Tree": {
+    "Ruthless": [
+      "Jade Island"
+    ]
+  },
+  "Talay Mining Complex": {
+    "Ruthless": [
+      "Pet Rock",
+      "Steam Robot"
+    ]
+  },
+  "Tavern Defense": {
+    "Ruthless": [
+      "Genie",
+      "Kobold on a Treadmill"
+    ]
+  },
+  "Tavern Incursion": {
+    "Ruthless": [
+      "Calamity Blade",
+      "Jewelled Bident"
+    ]
+  },
+  "Temple of Polybius": {
+    "Ruthless": [
+      "Kraken Kannon",
+      "Mischief Maker"
+    ]
+  },
+  "Temple of Water": {
+    "Ruthless": [
+      "Elder Staff",
+      "Fairy",
+      "Sea Turtle on a Treadmill",
+      "Seahorse",
+      "Undertow"
+    ]
+  },
+  "The Ramparts": {
+    "Ruthless": [
+      "Hawk"
+    ]
+  },
+  "The Summit": {
+    "Ruthless": [
+      "Baby Ancient Dragon",
+      "Dragon"
+    ]
+  },
+  "Throne Room": {
+    "Ruthless": [
+      "Alternative Energy Core",
+      "Baby Mech",
+      "Einhorn's Furnace Poker",
+      "Laser Robot",
+      "M-32",
+      "Prototype Armblade"
+    ]
+  },
+  "Tinkerer's Lab": {
+    "Ruthless": [
+      "Blaster Rifle",
+      "Laser Robot",
+      "Mega Chicken",
+      "The High Tinkerer's Proto-Staff",
+      "Tinkerer's Perfection",
+      "Tinkerer's Pride"
+    ]
+  },
+  "Tinkerer's Workshop": {
+    "Ruthless": [
+      "Airplane",
+      "Firestarter Staff",
+      "Luminescence Hologram Crystallizer",
+      "Mushroom Spear",
+      "Nessie Launcher I",
+      "Robo Chicken"
+    ]
+  },
+  "Tomb of Etheria": {
+    "Ruthless": [
+      "Mummy",
+      "Scarab Bow",
+      "Serpent Staff",
+      "Spear of the New Kingdom"
+    ]
+  },
+  "Tropics of Etheria": {
+    "Ruthless": [
+      "Disaster Rapier",
+      "Dragon Staff",
+      "Ink Splatter",
+      "Owl",
+      "Parrot",
+      "Phantom Destroyer"
+    ]
+  },
+  "Valentine's Citadel": {
+    "Ruthless": [
+      "Bachelor Seahorse",
+      "Bouncing Heart Staff",
+      "Fish"
+    ]
+  },
+  "Warping Core Challenge Pack 2": {
+    "Ruthless": [
+      "Zamira's Mount"
+    ]
+  },
+  "Winter Mire": {
+    "Ruthless": [
+      "Ban Hammer",
+      "Candy Cane",
+      "Mini Snowman",
+      "Turkey on a Treadmill",
+      "Winter's Flame"
+    ]
+  }
+}
