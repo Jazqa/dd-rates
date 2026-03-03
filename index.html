@@ -193,8 +193,8 @@
 
     <div id="content">
         <div class="chart-container">
-            <h2>H2</h2>
-            <label>Label</label>
+            <h2></h2>
+            <label></label>
             <canvas id="chart"></canvas>
 
         </div>
@@ -204,6 +204,8 @@
     </div>
 
     <script>
+        const TOTAL_SEEDS = 2147483647;
+
         let currentChart = null;
         let manifestData = null;
 
@@ -224,6 +226,20 @@
 
         document.addEventListener('DOMContentLoaded', async () => {
             await initializeManifest();
+
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('map')) {
+                const map = params.get('map');
+                const diff = params.get('diff');
+                const item = params.get('item');
+
+                applySelection(map, diff, item);
+
+                if (params.has('stat')) {
+                    document.getElementById('statSelect').value = params.get('stat');
+                    loadData(false);
+                }
+            }
         });
 
         async function initializeManifest() {
@@ -243,15 +259,24 @@
                     updateDifficulties();
                     updateItems();
                     loadData(true);
+                    updateURL();
                 };
 
                 document.getElementById('diffSelect').onchange = () => {
                     updateItems();
                     loadData(true);
+                    updateURL();
                 };
 
-                document.getElementById('itemSelect').onchange = () => loadData(true);
-                document.getElementById('statSelect').onchange = () => loadData(false);
+                document.getElementById('itemSelect').onchange = () => {
+                    loadData(true);
+                    updateURL();
+                };
+
+                document.getElementById('statSelect').onchange = () => {
+                    loadData(false);
+                    updateURL();
+                };
 
                 setupGlobalSearch();
 
@@ -260,6 +285,34 @@
                 loadData(true);
             } catch (err) {
                 console.error("Error: Failed to load manifest:", err);
+            }
+        }
+        // Updates the URL query string based on current selections
+        function updateURL() {
+            const params = new URLSearchParams({
+                map: document.getElementById('mapSelect').value,
+                diff: document.getElementById('diffSelect').value,
+                item: document.getElementById('itemSelect').value,
+                stat: document.getElementById('statSelect').value
+            });
+            const newRelativePathQuery = window.location.pathname + '?' + params.toString();
+            history.replaceState(null, '', newRelativePathQuery);
+        }
+
+        function setSelectorsFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('map')) document.getElementById('mapSelect').value = params.get('map');
+
+            if (params.has('diff')) {
+                updateDifficulties();
+                document.getElementById('diffSelect').value = params.get('diff');
+            }
+            if (params.has('item')) {
+                updateItems();
+                document.getElementById('itemSelect').value = params.get('item');
+            }
+            if (params.has('stat')) {
+                document.getElementById('statSelect').value = params.get('stat');
             }
         }
 
@@ -354,21 +407,13 @@
                         renderChart(result.labels, result.values);
                         break;
                     case "damage":
-                        labelElement.textContent = "Upgrades: " + json.rates.damage.info;
-                        buckets = Object.keys(json.rates.damage.buckets)
+                    case "damage_2":
+                        labelElement.textContent = "Upgrades: " + json.rates[statKey].info;
+                        buckets = Object.keys(json.rates[statKey].buckets)
                         bucketCount = buckets.length;
                         highest = buckets[bucketCount - 1]
                         binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
-                        result = getCumulativeData(json.rates.damage.buckets, binSize);
-                        renderChart(result.labels, result.values);
-                        break;
-                    case "damage_2":
-                        labelElement.textContent = "Upgrades: " + json.rates.damage_2.info;
-                        buckets = Object.keys(json.rates.damage.buckets)
-                        bucketCount = Object.keys(json.rates.damage_2.buckets).length;
-                        highest = buckets[bucketCount - 1]
-                        binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
-                        result = getCumulativeData(json.rates.damage_2.buckets, binSize);
+                        result = getCumulativeData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
                         break;
                     case "tower_totals":
@@ -457,10 +502,12 @@
                         data,
                         borderColor: '#0091ff',
                         backgroundColor: '#0091ff22',
+                        pointBackgroundColor: '#0060c0',
                         fill: true,
-                        tension: 0.3,
-                        pointRadius: 6,
-                        pointHoverRadius: 10,
+                        tension: 0.25,
+                        pointRadius: 4,
+                        pointHoverRadius: 8,
+                        pointHoverBorderWidth: 4,
                         pointBorderWidth: 2,
                     }]
                 },
@@ -480,7 +527,7 @@
                             callbacks: {
                                 label: (context) => {
                                     const rate = context.raw;
-                                    let chance = (2147483647 / rate);
+                                    let chance = (TOTAL_SEEDS / rate);
                                     let formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
                                     return `1 / ${formatted}`;
                                 }
@@ -501,7 +548,6 @@
 
             listDiv.innerHTML = '';
             const statKey = document.getElementById('statSelect').value;
-            const TOTAL_SEEDS = 2147483647;
 
             labels.forEach((label, index) => {
                 const rate = data[index];
@@ -535,9 +581,10 @@
                 listDiv.appendChild(row);
             });
 
-            // Hide container if no rates met the criteria
             listDiv.style.display = listDiv.childElementCount > 0 ? 'block' : 'none';
         }
+
+
         function setupGlobalSearch() {
             const input = document.getElementById('globalSearch');
             const resultsDiv = document.getElementById('searchResults');
@@ -562,9 +609,9 @@
 
                 matches.slice(0, 10).forEach(match => {
                     const div = document.createElement('div');
-                    div.style.padding = '8px';
+                    div.style.padding = '10px';
                     div.style.borderBottom = '1px solid #333';
-                    div.innerHTML = `<strong>${match.item}</strong><br><small>${match.map} (${match.diff})</small>`;
+                    div.innerHTML = `<strong>${match.item}</strong><br><small>${match.map}</small>`;
 
                     div.onclick = () => {
                         applySelection(match.map, match.diff, match.item);
@@ -581,15 +628,17 @@
         function applySelection(map, diff, item) {
             const mapSelect = document.getElementById('mapSelect');
             mapSelect.value = map;
-            updateDifficulties();
 
+            updateDifficulties();
             const diffSelect = document.getElementById('diffSelect');
             diffSelect.value = diff;
-            updateItems();
 
+            updateItems();
             const itemSelect = document.getElementById('itemSelect');
             itemSelect.value = item;
+
             loadData(true);
+            updateURL();
         }
     </script>
 
