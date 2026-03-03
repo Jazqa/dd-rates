@@ -8,72 +8,73 @@
     <style>
         :root {
             --accent: #0091ff;
+            --accent2: #0060c0;
             --bg: #121212;
-            --panel: #1e1e1e;
-            --input-bg: #121212;
+            --bg2: #1e1e1e;
             --border: #444;
+            --fg: white;
+            --fg2: #aaa;
+            --hov: #ffffff11;
+        }
+
+
+        h2 {
+            margin-top: 0;
+            color: var(--fg);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 0.75em;
+            text-transform: uppercase;
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: sans-serif;
             background: var(--bg);
-            color: white;
+            color: var(--fg);
             display: flex;
-            margin: 0;
             height: 100vh;
+            margin: 0;
         }
 
         #sidebar {
             width: 250px;
-            background: var(--panel);
+            background: var(--bg2);
             padding: 20px;
-            border-right: 1px solid #333;
+            border-right: 1px solid var(--border);
             overflow-y: auto;
         }
 
         #globalSearch,
         select {
             width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            background: var(--input-bg);
-            color: white;
-            border: 2px solid var(--border);
-            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: var(--bg);
+            color: var(--fg);
+            border: 1px solid var(--border);
             box-sizing: border-box;
-            outline: none;
-            transition: all 0.2s;
-            appearance: none;
-        }
-
-        select {
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 12px center;
         }
 
         #globalSearch:focus,
-        select:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
-        }
+        select:focus {}
 
-        #searchResults {
-            left: 0;
-            right: 0;
-
-        }
+        #searchResults {}
 
         #searchResults:not(:empty) {
+            margin-top: -20px;
+            margin-bottom: 10px;
             border-top: none;
-            margin-bottom: 15px;
+            background-color: var(--bg);
+            border: 1px solid var(--border);
         }
 
         #searchResults div small {
-            display: block;
-            font-size: 1.0rem;
             cursor: pointer;
-            color: #aaa;
+            color: var(--fg2);
         }
 
         #searchResults div:last-child {
@@ -82,7 +83,6 @@
 
         #searchResults div:hover {
             background-color: #0060c0;
-            color: white !important;
         }
 
         #content {
@@ -91,76 +91,66 @@
             overflow-y: auto;
         }
 
-        h2 {
-            margin-top: 0;
-            color: var(--accent);
+
+        .chart-container {
+            flex-grow: 1;
+            background-color: var(--bg2);
+            border: 1px solid var(--border);
+            padding: 10px;
         }
 
-        label {
+        .chart-container label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: 0.85em;
+            margin-top: 10px;
+            color: var(--fg2);
+            font-family: monospace;
             text-transform: uppercase;
-            opacity: 0.8;
+            letter-spacing: 1px;
+            text-align: center;
         }
 
         .rates-container {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-
-        .rates-grid {
-            margin: 25px auto;
-            column-count: 4;
-            column-gap: 0px;
-            column-rule: 1px solid #333;
-            max-width: 1600px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            background-color: var(--bg2);
+            border-top: 1px solid var(--border);
+            border-left: 1px solid var(--border);
+            margin-top: 20px;
         }
 
         .rate-item {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 10px;
-            break-inside: avoid;
-            border-bottom: 1px solid #333;
-            margin-bottom: 2px;
-            font-size: 1.0rem;
-        }
-
-        @media (max-width: 1200px) {
-            .rates-grid {
-                column-count: 3;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            .rates-grid {
-                column-count: 2;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .rates-grid {
-                column-count: 1;
-            }
-        }
-
-        .rate-item:hover {
-            background-color: rgba(255, 255, 255, 0.03);
+            flex-direction: column;
+            padding: 10px;
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
 
         .rate-label {
-            color: #888;
+            color: var(--fg2);
+            text-transform: uppercase;
         }
 
         .rate-value {
             color: var(--accent);
-            text-align: right;
+            font-family: monospace;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--fg2);
+
+        }
+
+        .tab-btn.active {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        #statSelect {
+            display: none;
         }
     </style>
 </head>
@@ -183,37 +173,27 @@
         <label>Item</label>
         <select id="itemSelect"></select>
 
-        <label>Statistic</label>
-        <select id="statSelect">
-            <option value="quality">Quality</option>
-            <option value="level">Level</option>
-            <option value="damage">Damage</option>
-        </select>
+        <select id="statSelect"></select>
     </div>
 
     <div id="content">
+        <h2 id="itemTitle"></h2>
         <div class="chart-container">
-            <h2></h2>
+            <div id="statTabs" class="tabs-container"></div>
             <label></label>
             <canvas id="chart"></canvas>
-
         </div>
-        <div id="rates-container">
-            <div id="ratesList" class="rates-grid"></div>
-        </div>
+        <div id="ratesList" class="rates-container"></div>
     </div>
 
     <script>
         const TOTAL_SEEDS = 2147483647;
 
-        let currentChart = null;
-        let manifestData = null;
-
-        const statLabels = {
+        const STAT_LABELS = {
             "quality": "Quality",
             "level": "Level",
             "damage": "Damage",
-            "damage_2": "Damage",
+            "damage_2": "Ranged Damage",
             "tower_caps": "Tower Caps",
             "tower_totals": "Tower Totals",
             "app_totals": "Apprentice Totals",
@@ -221,8 +201,13 @@
             "guardian_totals": "Guardian Totals",
             "support_caps": "Support Caps",
             "scale": "Size",
-            "multiproj": "Multiple projectiles"
+            "multiproj": "Multiple Projectiles"
         };
+
+        let currentChart = null;
+        let manifestData = null;
+
+
 
         document.addEventListener('DOMContentLoaded', async () => {
             await initializeManifest();
@@ -232,13 +217,16 @@
                 const map = params.get('map');
                 const diff = params.get('diff');
                 const item = params.get('item');
+                const stat = params.get('stat');
 
-                applySelection(map, diff, item);
+                document.getElementById('mapSelect').value = map;
+                updateDifficulties();
+                document.getElementById('diffSelect').value = diff;
+                updateItems();
+                document.getElementById('itemSelect').value = item;
 
-                if (params.has('stat')) {
-                    document.getElementById('statSelect').value = params.get('stat');
-                    loadData(false);
-                }
+                if (stat) document.getElementById('statSelect').value = stat;
+                loadData(true);
             }
         });
 
@@ -287,7 +275,7 @@
                 console.error("Error: Failed to load manifest:", err);
             }
         }
-        // Updates the URL query string based on current selections
+
         function updateURL() {
             const params = new URLSearchParams({
                 map: document.getElementById('mapSelect').value,
@@ -365,33 +353,45 @@
                 if (rebuildStats) {
                     const availableStats = Object.keys(json.rates);
                     const currentVal = statSelect.value;
+                    const tabContainer = document.getElementById('statTabs');
 
                     statSelect.innerHTML = '';
+                    tabContainer.innerHTML = '';
+
                     availableStats.forEach(key => {
                         let opt = document.createElement('option');
                         opt.value = key;
-                        opt.textContent = statLabels[key] || key;
-
-                        if (key.includes("damage")) {
-                            opt.textContent = json.rates[key].label + " " + statLabels[key];
-                        }
-
+                        let label = STAT_LABELS[key] || key;
+                        opt.textContent = label;
                         statSelect.appendChild(opt);
+
+                        const btn = document.createElement('button');
+                        btn.className = 'tab-btn';
+                        btn.textContent = label;
+                        btn.dataset.key = key;
+
+                        btn.onclick = () => {
+                            statSelect.value = key;
+                            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                            btn.classList.add('active');
+                            loadData(false);
+                            updateURL();
+                        };
+                        tabContainer.appendChild(btn);
                     });
 
-                    if (availableStats.includes(currentVal)) {
-                        statSelect.value = currentVal;
-                    } else {
-                        statSelect.value = availableStats[0];
-                    }
+                    const activeKey = availableStats.includes(currentVal) ? currentVal : availableStats[0];
+                    statSelect.value = activeKey;
+
+                    const activeTab = Array.from(tabContainer.children).find(t => t.dataset.key === activeKey);
+                    if (activeTab) activeTab.classList.add('active');
                 }
 
                 const statKey = statSelect.value;
-                const titleElement = document.querySelector('.chart-container h2');
+                const titleElement = document.getElementById('itemTitle');
                 const labelElement = document.querySelector('.chart-container label');
-                const activeOptionText = statSelect.options[statSelect.selectedIndex].textContent;
-                titleElement.textContent = `${item}: ${activeOptionText}`;
 
+                titleElement.textContent = `${item}`;
                 let labels, data, binSize, buckets, bucketCount, result, highest;
                 switch (statKey) {
                     case "quality":
@@ -557,14 +557,13 @@
                 const chance = (TOTAL_SEEDS / rate);
 
                 if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals")) {
-                    if (chance < 100) return;
+                    if (chance < 30) return;
                 }
 
 
                 if (statKey === "tower_caps" && index === 0) {
                     if (chance === 1.0) return;
                 }
-
 
                 let formattedChance = chance < 10 ?
                     chance.toFixed(2) :
@@ -574,14 +573,14 @@
                 row.className = 'rate-item';
 
                 row.innerHTML = `
-            <span class="rate-label">${label}</span>
-            <span class="rate-value">1 / ${formattedChance}</span>
-        `;
+                  <label>${label}</label>
+                  <span class="rate-value">1 / ${formattedChance}</span>
+                `;
 
                 listDiv.appendChild(row);
             });
 
-            listDiv.style.display = listDiv.childElementCount > 0 ? 'block' : 'none';
+            listDiv.style.display = listDiv.childElementCount > 0 ? 'grid' : 'none';
         }
 
 
@@ -591,12 +590,11 @@
 
             input.addEventListener('input', () => {
                 const query = input.value.toLowerCase();
-                resultsDiv.innerHTML = ''; // Clear old results
+                resultsDiv.innerHTML = '';
                 if (query.length < 2) return;
 
                 let matches = [];
 
-                // Traverse manifest: Map -> Difficulty -> Item
                 for (const [map, diffs] of Object.entries(manifestData)) {
                     for (const [diff, items] of Object.entries(diffs)) {
                         items.forEach(item => {
@@ -611,8 +609,7 @@
                     const div = document.createElement('div');
                     div.style.padding = '10px';
                     div.style.borderBottom = '1px solid #333';
-                    div.innerHTML = `<strong>${match.item}</strong><br><small>${match.map}</small>`;
-
+                    div.innerHTML = `<label>${match.item}</label><small>${match.map} (${match.diff})</small>`;
                     div.onclick = () => {
                         applySelection(match.map, match.diff, match.item);
                         resultsDiv.innerHTML = '';
