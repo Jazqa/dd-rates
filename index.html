@@ -217,7 +217,7 @@
         };
 
         const RARITY_LABELS = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
-        const RARITY_LABELS_SHORT = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polish", "Shiny", "Powrful", "Amazing", "Epic", "Leg", "Godly", "Myth", "Trans", "Sup", "Ult", "Ult 93", "Ult+", "Ult++"];
+        const RARITY_LABELS_SHORT = ["CRSD", "TORN", "WORN", "STKY", "SLD", "STRDY", "PLSH", "SHNY", "PWR", "AMZ", "EPIC", "LEG", "GODLY", "MYTH", "TRANS", "SUP", "ULT", "U93", "ULT+", "ULT++"];
 
         let currentChart = null;
         let manifestData = null;
@@ -411,12 +411,14 @@
                         labelElement.textContent = "";
                         data = [...json.rates.quality.slice(0, 13).reverse(), ...json.rates.quality.slice(13)];
                         renderChart(RARITY_LABELS_SHORT, data);
+                        updateRatesList(RARITY_LABELS, data);
                         break;
                     case "level":
                         labelElement.textContent = "";
                         binSize = 10;
                         result = getCumulativeData(json.rates.level.buckets, binSize);
                         renderChart(result.labels, result.values);
+                        updateRatesList(result.labels, result.data);
                         break;
                     case "damage":
                     case "damage_2":
@@ -427,6 +429,8 @@
                         binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
                         result = getCumulativeData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
+                        updateRatesList(result.labels, result.values);
+
                         break;
                     case "tower_totals":
                     case "app_totals":
@@ -436,18 +440,21 @@
                         binSize = 50;
                         result = getCumulativeData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
+                        updateRatesList(result.labels, result.values);
                         break;
                     case "tower_caps":
                         labelElement.textContent = "";
                         labels = ["None", "Single", "Double", "Triple", "Quad"]
                         data = [json.total_seeds, json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
                         renderChart(labels, data);
+                        updateRatesList(labels, data);
                         break;
                     case "support_caps":
                         labelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
                         data = [json.rates[statKey].buckets["4"], json.rates[statKey].buckets["5"], json.rates[statKey].buckets["6"]];
                         renderChart(labels, data);
+                        updateRatesList(labels, data);
                         break;
                     case "scale":
                         labelElement.textContent = "";
@@ -456,11 +463,13 @@
                         result = getCumulativeData(json.rates.scale.buckets, binSize);
                         labels = result.rawKeys.map(k => `${(k / 10).toFixed(1)}+`);
                         renderChart(labels, result.values);
+                        updateRatesList(labels, result.values);
                         break;
                     case "multiproj":
                         labelElement.textContent = "";
                         data = [...json.rates.multiproj.slice(0, 13).reverse(), ...json.rates.multiproj.slice(13)];
                         renderChart(RARITY_LABELS_SHORT, data);
+                        updateRatesList(RARITY_LABELS, data);
                         break;
                     default:
                         break;
@@ -537,6 +546,20 @@
                         x: {
                             grid: {
                                 color: '#333',
+                            },
+                            ticks: {
+                                autoSkip: true,
+                                maxTicksLimit: 20,
+                                callback: function (value, index, values) {
+                                    const label = this.getLabelForValue(value);
+                                    // Check if the label is a number (like "150000+")
+                                    const numericValue = parseInt(label.replace(/[^0-9]/g, ''));
+
+                                    if (!isNaN(numericValue) && numericValue >= 1000) {
+                                        return (numericValue / 1000) + 'k+';
+                                    }
+                                    return label; // Returns "Leg", "Myth", etc. for non-numeric stats
+                                }
                             }
                         }
                     },
@@ -590,9 +613,6 @@
             canvas.onmouseleave = () => {
                 document.querySelectorAll('.rate-item').forEach(el => el.classList.remove('highlight'));
             };
-
-            updateRatesList(labels, data);
-
         }
 
         function updateRatesList(labels, data) {
