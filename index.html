@@ -112,8 +112,6 @@
         .rates-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            background-color: var(--bg2);
-            border-top: 1px solid var(--border);
             border-left: 1px solid var(--border);
             margin-top: 20px;
         }
@@ -121,7 +119,10 @@
         .rate-item {
             display: flex;
             flex-direction: column;
+            background-color: var(--bg2);
             padding: 10px;
+            margin-top: -1px;
+            border-top: 1px solid var(--border);
             border-right: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
         }
@@ -552,13 +553,13 @@
                                 maxTicksLimit: 20,
                                 callback: function (value, index, values) {
                                     const label = this.getLabelForValue(value);
-                                    // Check if the label is a number (like "150000+")
                                     const numericValue = parseInt(label.replace(/[^0-9]/g, ''));
 
                                     if (!isNaN(numericValue) && numericValue >= 1000) {
                                         return (numericValue / 1000) + 'k+';
                                     }
-                                    return label; // Returns "Leg", "Myth", etc. for non-numeric stats
+
+                                    return label;
                                 }
                             }
                         }
