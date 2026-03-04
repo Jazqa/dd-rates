@@ -231,7 +231,12 @@
         document.addEventListener('DOMContentLoaded', async () => {
             await initializeManifest();
 
+            document.getElementById('yAxisType').onchange = () => {
+                loadData(false);
+            };
+
             const params = new URLSearchParams(window.location.search);
+
             if (params.has('map')) {
                 const map = params.get('map');
                 const diff = params.get('diff');
@@ -243,10 +248,6 @@
                 document.getElementById('diffSelect').value = diff;
                 updateItems();
                 document.getElementById('itemSelect').value = item;
-
-                document.getElementById('yAxisType').onchange = () => {
-                    loadData(false);
-                };
 
                 if (stat) document.getElementById('statSelect').value = stat;
                 loadData(true);
