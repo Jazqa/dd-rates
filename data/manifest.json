@@ -184,9 +184,9 @@
   },
   "Crystalline Resurgence Part 2": {
     "Ruthless": [
-      "Crystal Core",
       "Donkey",
       "Ebon Falchion",
+      "Jade Spear",
       "Samiel the Flayer",
       "Shimmerblade Scimitar",
       "Undying Rod"
@@ -226,6 +226,11 @@
   "Foundries and Forges": {
     "Ruthless": [
       "Steam Robot"
+    ]
+  },
+  "Frostdale Royal Court": {
+    "Ruthless": [
+      "Reindeer"
     ]
   },
   "Frostdale Wonderland": {
