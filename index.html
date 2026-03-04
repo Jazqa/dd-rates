@@ -229,15 +229,19 @@
                 left: 0;
             }
 
-            #sidebar.open::after {
-                content: '';
+            #sidebarOverlay {
+                display: none;
                 position: fixed;
+                z-index: 998;
                 top: 0;
-                right: -250px;
+                left: 0;
                 width: 100vw;
                 height: 100vh;
-                z-index: -1;
                 background: rgba(0, 0, 0, 0.5);
+            }
+
+            #sidebarOverlay.show {
+                display: block;
             }
 
             #content {
@@ -264,6 +268,7 @@
 </head>
 
 <body>
+    <div id="sidebarOverlay"></div>
     <div id="sidebar">
         <div style="flex-grow: 1;">
             <label>Search</label>
@@ -371,14 +376,18 @@
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
             sidebar.classList.toggle('open');
+            overlay.classList.toggle('show');
         }
 
         document.addEventListener('click', (event) => {
             const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
             if (sidebar.classList.contains('open') && window.innerWidth <= 768) {
-                if (event.clientX > 250) {
+                if (event.clientX > 250 || event.target === overlay) {
                     sidebar.classList.remove('open');
+                    overlay.classList.remove('show');
                 }
             }
         });
