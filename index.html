@@ -112,7 +112,7 @@
         .rates-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            margin-top: 20px;
+            margin-top: 21px;
             margin-left: 1px;
         }
 
@@ -418,7 +418,7 @@
                         binSize = 10;
                         result = getCumulativeData(json.rates.level.buckets, binSize);
                         renderChart(result.labels, result.values);
-                        updateRatesList(result.labels, result.data);
+                        updateRatesList(result.labels, result.values);
                         break;
                     case "damage":
                     case "damage_2":
