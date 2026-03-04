@@ -40,6 +40,7 @@
             margin: 0;
         }
 
+        /* Sidebar */
         #sidebar {
             width: 250px;
             background: var(--bg2);
@@ -52,6 +53,7 @@
             box-sizing: border-box;
         }
 
+        /* Search and Dropdowns */
         #globalSearch,
         select {
             width: 100%;
@@ -89,6 +91,7 @@
             background-color: #0060c0;
         }
 
+        /* Content Area */
         #content {
             flex-grow: 1;
             padding: 20px;
@@ -97,6 +100,7 @@
             margin: 0 auto;
         }
 
+        /* Chart */
         .chart-container {
             flex-grow: 1;
             background-color: var(--bg2);
@@ -114,6 +118,7 @@
             text-align: center;
         }
 
+        /* Rates Grid */
         .rates-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -146,6 +151,7 @@
             font-family: monospace;
         }
 
+        /* Chart Tabs */
         .tab-btn {
             background: none;
             border: none;
@@ -160,37 +166,64 @@
             text-decoration: none;
         }
 
-        #statSelect {
-            display: none;
-        }
 
-
+        /* Desktop Menu */
         #menuToggle {
             display: none;
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 1000;
-            background: transparent;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 1.5em;
         }
 
+        /* Mobile */
         @media (max-width: 768px) {
-            #menuToggle {
-                display: block;
+
+            /* Mobile Header */
+            #header-container {
+                position: sticky;
+                z-index: 100;
+                background: var(--bg2);
+                border-bottom: 1px solid var(--border);
+                padding: 5px;
+                padding-top: calc(env(safe-area-inset-top) + 10px);
+                margin: 0px -20px 20px -20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                z-index: 1001;
             }
 
+            h2 {
+                margin-top: 5px;
+                margin-bottom: 0px;
+            }
+
+            #itemTitle {
+                font-size: 1.2em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+
+            /* Mobile Menu */
+            #menuToggle {
+                display: block !important;
+                position: static !important;
+                background: transparent;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 1.75em;
+            }
+
+            /* Mobile Sidebar */
             #sidebar {
-                width: 333px;
+                width: 250px;
                 position: fixed;
-                left: -333px;
+                left: -250px;
                 z-index: 999;
                 height: 100vh;
-                padding-top: 60px;
+                padding-top: 80px;
+                z-index: 1000;
             }
 
             #sidebar.open {
@@ -201,23 +234,37 @@
                 content: '';
                 position: fixed;
                 top: 0;
-                right: -333px;
+                right: -250px;
                 width: 100vw;
                 height: 100vh;
                 z-index: -1;
                 background: rgba(0, 0, 0, 0.5);
-
             }
 
             #content {
-                padding-top: 60px;
+                padding-top: 0;
             }
+
+
+            /* Mobile Input */
+            #globalSearch,
+            select {
+                font-size: 16px !important;
+            }
+
+            #sidebar label {
+                font-size: 12px;
+            }
+        }
+
+        /* Deprecated */
+        #statSelect {
+            display: none;
         }
     </style>
 </head>
 
 <body>
-    <button id="menuToggle" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
     <div id="sidebar">
         <div style="flex-grow: 1;">
             <label>Search</label>
@@ -253,7 +300,10 @@
     </div>
 
     <div id="content">
-        <h2 id="itemTitle"></h2>
+        <div id="header-container">
+            <button id="menuToggle" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
+            <h2 id="itemTitle"></h2>
+        </div>
         <div class="chart-container">
             <div id="statTabs" class="tabs-container"></div>
             <label></label>
@@ -328,7 +378,7 @@
         document.addEventListener('click', (event) => {
             const sidebar = document.getElementById('sidebar');
             if (sidebar.classList.contains('open') && window.innerWidth <= 768) {
-                if (event.clientX > 333) {
+                if (event.clientX > 250) {
                     sidebar.classList.remove('open');
                 }
             }
