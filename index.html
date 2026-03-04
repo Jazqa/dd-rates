@@ -41,7 +41,7 @@
         }
 
         #sidebar {
-            width: 225px;
+            width: 250px;
             background: var(--bg2);
             padding: 20px;
             border-right: 1px solid var(--border);
@@ -49,6 +49,7 @@
             display: flex;
             flex-direction: column;
             flex-shrink: 0;
+            box-sizing: border-box;
         }
 
         #globalSearch,
@@ -92,6 +93,8 @@
             flex-grow: 1;
             padding: 20px;
             overflow-y: auto;
+            max-width: 1080px;
+            margin: 0 auto;
         }
 
         .chart-container {
@@ -133,9 +136,6 @@
             background-color: var(--hov);
         }
 
-
-
-
         .rate-label {
             color: var(--fg2);
             text-transform: uppercase;
@@ -163,11 +163,61 @@
         #statSelect {
             display: none;
         }
+
+
+        #menuToggle {
+            display: none;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 768px) {
+            #menuToggle {
+                display: block;
+            }
+
+            #sidebar {
+                width: 333px;
+                position: fixed;
+                left: -333px;
+                z-index: 999;
+                height: 100vh;
+                padding-top: 60px;
+            }
+
+            #sidebar.open {
+                left: 0;
+            }
+
+            #sidebar.open::after {
+                content: '';
+                position: fixed;
+                top: 0;
+                right: -333px;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+                background: rgba(0, 0, 0, 0.5);
+
+            }
+
+            #content {
+                padding-top: 60px;
+            }
+        }
     </style>
 </head>
 
 <body>
-
+    <button id="menuToggle" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
     <div id="sidebar">
         <div style="flex-grow: 1;">
             <label>Search</label>
@@ -266,6 +316,21 @@
 
                 if (stat) document.getElementById('statSelect').value = stat;
                 loadData(true);
+            }
+        });
+
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        document.addEventListener('click', (event) => {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('open') && window.innerWidth <= 768) {
+                if (event.clientX > 333) {
+                    sidebar.classList.remove('open');
+                }
             }
         });
 
@@ -594,6 +659,7 @@
                 },
                 options: {
                     responsive: true,
+                    animation: false,
                     interaction: {
                         mode: 'index',
                         intersect: false,
@@ -691,9 +757,11 @@
 
                 const chance = (TOTAL_SEEDS / rate);
 
-                if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals")) {
+
+                if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals") || statKey === "scale") {
                     if (chance < 30) return;
                 }
+
 
 
                 if (statKey === "tower_caps" && index === 0) {
@@ -781,6 +849,10 @@
         }
 
         function applySelection(map, diff, item) {
+            if (window.innerWidth <= 768) {
+                toggleSidebar();
+            }
+
             const mapSelect = document.getElementById('mapSelect');
             mapSelect.value = map;
 
