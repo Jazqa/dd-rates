@@ -544,7 +544,14 @@
                         tabContainer.appendChild(btn);
                     });
 
-                    const activeKey = availableStats.includes(currentVal) ? currentVal : availableStats[0];
+                    let activeKey = currentVal;
+
+                    if (!availableStats.includes(activeKey)) {
+                        const params = new URLSearchParams(window.location.search);
+                        const urlStat = params.get('stat');
+                        activeKey = (urlStat && availableStats.includes(urlStat)) ? urlStat : availableStats[0];
+                    }
+
                     statSelect.value = activeKey;
 
                     const activeTab = Array.from(tabContainer.children).find(t => t.dataset.key === activeKey);
