@@ -41,11 +41,14 @@
         }
 
         #sidebar {
-            width: 250px;
+            width: 225px;
             background: var(--bg2);
             padding: 20px;
             border-right: 1px solid var(--border);
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
         }
 
         #globalSearch,
@@ -90,7 +93,6 @@
             padding: 20px;
             overflow-y: auto;
         }
-
 
         .chart-container {
             flex-grow: 1;
@@ -166,7 +168,7 @@
 
 <body>
 
-    <div id="sidebar" style="display: flex; flex-direction: column;">
+    <div id="sidebar">
         <div style="flex-grow: 1;">
             <label>Search</label>
             <div style="position: relative;"> <input type="text" id="globalSearch" autocomplete="off"
@@ -379,6 +381,8 @@
             const diff = document.getElementById('diffSelect').value;
             const item = document.getElementById('itemSelect').value;
             const statSelect = document.getElementById('statSelect');
+            const bucketType = document.getElementById('bucketType').value;
+
 
             if (!item) return;
 
@@ -454,7 +458,6 @@
                         result = getBinnedData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
                         updateRatesList(result.labels, result.values);
-
                         break;
                     case "tower_totals":
                     case "app_totals":
@@ -468,8 +471,15 @@
                         break;
                     case "tower_caps":
                         labelElement.textContent = "";
-                        labels = ["Single", "Double", "Triple", "Quad"]
-                        data = [json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
+                        labels = ["Single", "Double", "Triple", "Quad"];
+                        data = [json.rates[statKey].buckets["101"] || 0, json.rates[statKey].buckets["102"] || 0, json.rates[statKey].buckets["103"] || 0, json.rates[statKey].buckets["104"] || 0];
+
+                        if (bucketType === "cumulative") {
+                            for (let i = data.length - 2; i >= 0; i--) {
+                                data[i] += data[i + 1];
+                            }
+                        }
+
                         renderChart(labels, data, "bar");
                         updateRatesList(labels, data);
                         break;
