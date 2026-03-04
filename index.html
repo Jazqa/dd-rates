@@ -183,6 +183,12 @@
         <select id="itemSelect"></select>
 
         <select id="statSelect"></select>
+
+        <label>Y-Axis Scale</label>
+        <select id="yAxisType">
+            <option value="linear">Linear</option>
+            <option value="logarithmic">Logarithmic</option>
+        </select>
     </div>
 
     <div id="content">
@@ -237,6 +243,10 @@
                 document.getElementById('diffSelect').value = diff;
                 updateItems();
                 document.getElementById('itemSelect').value = item;
+
+                document.getElementById('yAxisType').onchange = () => {
+                    loadData(false);
+                };
 
                 if (stat) document.getElementById('statSelect').value = stat;
                 loadData(true);
@@ -444,16 +454,16 @@
                         break;
                     case "tower_caps":
                         labelElement.textContent = "";
-                        labels = ["None", "Single", "Double", "Triple", "Quad"]
-                        data = [json.total_seeds, json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
-                        renderChart(labels, data);
+                        labels = ["Single", "Double", "Triple", "Quad"]
+                        data = [json.rates[statKey].buckets["101"], json.rates[statKey].buckets["102"], json.rates[statKey].buckets["103"], json.rates[statKey].buckets["104"]];
+                        renderChart(labels, data, "bar");
                         updateRatesList(labels, data);
                         break;
                     case "support_caps":
                         labelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
                         data = [json.rates[statKey].buckets["4"], json.rates[statKey].buckets["5"], json.rates[statKey].buckets["6"]];
-                        renderChart(labels, data);
+                        renderChart(labels, data, "bar");
                         updateRatesList(labels, data);
                         break;
                     case "scale":
@@ -510,12 +520,14 @@
             };
         }
 
-        function renderChart(labels, data) {
+        function renderChart(labels, data, chartType = "line") {
             const ctx = document.getElementById('chart').getContext('2d');
+            const yAxisType = document.getElementById('yAxisType').value;
+
             if (currentChart) currentChart.destroy();
 
             currentChart = new Chart(ctx, {
-                type: 'line',
+                type: chartType,
                 data: {
                     labels,
                     datasets: [{
@@ -539,7 +551,7 @@
                     },
                     scales: {
                         y: {
-                            beginAtZero: true,
+                            type: yAxisType,
                             grid: { color: 'transparent' },
                             ticks: { callback: () => "" }
                         },
