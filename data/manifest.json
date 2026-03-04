@@ -171,6 +171,17 @@
       "Egganator 2000"
     ]
   },
+  "Crystalline Resurgence Part 1": {
+    "Ruthless": [
+      "Crystal Gun",
+      "Hastat's Recurve",
+      "Mini Spider Queen",
+      "Preying Prayer",
+      "Shroomite",
+      "Spiderling Cleaver",
+      "The Forest's Sorrow"
+    ]
+  },
   "Crystalline Resurgence Part 2": {
     "Ruthless": [
       "Crystal Core",
@@ -356,6 +367,7 @@
   "Return to Crystalline Dimension": {
     "Ruthless": [
       "Baby Old One",
+      "Baby Old One on a Treadmill",
       "Constellation Blunderbuss",
       "Constellation Dagger",
       "Constellation Staff",
@@ -398,6 +410,14 @@
   "Servant's Quarters": {
     "Ruthless": [
       "Hamster"
+    ]
+  },
+  "Sky City": {
+    "Ruthless": [
+      "Krytykal Stryke",
+      "Monk Wrench",
+      "Staffaphone",
+      "Steam Saw"
     ]
   },
   "Sky Spooktacular": {

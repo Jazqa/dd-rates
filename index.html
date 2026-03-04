@@ -166,28 +166,37 @@
 
 <body>
 
-    <div id="sidebar">
-        <label>Search</label>
-        <div style="position: relative;"> <input type="text" id="globalSearch" autocomplete="off"
-                placeholder="Type to search...">
-            <div id="searchResults"></div>
+    <div id="sidebar" style="display: flex; flex-direction: column;">
+        <div style="flex-grow: 1;">
+            <label>Search</label>
+            <div style="position: relative;"> <input type="text" id="globalSearch" autocomplete="off"
+                    placeholder="Type to search...">
+                <div id="searchResults"></div>
+            </div>
+
+            <label>Map</label>
+            <select id="mapSelect"></select>
+
+            <label>Difficulty</label>
+            <select id="diffSelect"></select>
+
+            <label>Item</label>
+            <select id="itemSelect"></select>
+
+            <select id="statSelect"></select>
         </div>
 
-        <label>Map</label>
-        <select id="mapSelect"></select>
-
-        <label>Difficulty</label>
-        <select id="diffSelect"></select>
-
-        <label>Item</label>
-        <select id="itemSelect"></select>
-
-        <select id="statSelect"></select>
 
         <label>Y-Axis Scale</label>
         <select id="yAxisType">
             <option value="linear">Linear</option>
             <option value="logarithmic">Logarithmic</option>
+        </select>
+
+        <label>Buckets</label>
+        <select id="bucketType">
+            <option value="cumulative">Cumulative</option>
+            <option value="unique">Unique</option>
         </select>
     </div>
 
@@ -232,6 +241,10 @@
             await initializeManifest();
 
             document.getElementById('yAxisType').onchange = () => {
+                loadData(false);
+            };
+
+            document.getElementById('bucketType').onchange = () => {
                 loadData(false);
             };
 
@@ -427,7 +440,7 @@
                     case "level":
                         labelElement.textContent = "";
                         binSize = 10;
-                        result = getCumulativeData(json.rates.level.buckets, binSize);
+                        result = getBinnedData(json.rates.level.buckets, binSize);
                         renderChart(result.labels, result.values);
                         updateRatesList(result.labels, result.values);
                         break;
@@ -438,7 +451,7 @@
                         bucketCount = buckets.length;
                         highest = buckets[bucketCount - 1]
                         binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
-                        result = getCumulativeData(json.rates[statKey].buckets, binSize);
+                        result = getBinnedData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
                         updateRatesList(result.labels, result.values);
 
@@ -449,7 +462,7 @@
                     case "guardian_totals":
                         labelElement.textContent = "";
                         binSize = 50;
-                        result = getCumulativeData(json.rates[statKey].buckets, binSize);
+                        result = getBinnedData(json.rates[statKey].buckets, binSize);
                         renderChart(result.labels, result.values);
                         updateRatesList(result.labels, result.values);
                         break;
@@ -471,10 +484,9 @@
                         labelElement.textContent = "";
                         bucketCount = Object.keys(json.rates.scale.buckets).length;
                         binSize = bucketCount > 20 ? 5 : 1;
-                        result = getCumulativeData(json.rates.scale.buckets, binSize);
-                        labels = result.rawKeys.map(k => `${(k / 10).toFixed(1)}+`);
-                        renderChart(labels, result.values);
-                        updateRatesList(labels, result.values);
+                        result = getBinnedData(json.rates.scale.buckets, binSize);
+                        renderChart(result.labels, result.values);
+                        updateRatesList(result.labels, result.values);
                         break;
                     case "multiproj":
                         labelElement.textContent = "";
@@ -490,34 +502,60 @@
             }
         }
 
-        function getCumulativeData(buckets, size) {
+        function getBinnedData(buckets, size) {
             const binned = {};
+            const mode = document.getElementById('bucketType').value;
+            const isScale = document.getElementById('statSelect').value === 'scale';
 
+            // 1. Group data into bins
             Object.entries(buckets).forEach(([key, value]) => {
                 const numKey = Number(key);
-
                 if (numKey < 0) return;
-
                 const bin = Math.floor(numKey / size) * size;
                 binned[bin] = (binned[bin] || 0) + value;
             });
 
-            const sortedKeys = Object.keys(binned).map(Number).sort((a, b) => b - a);
+            const sortedKeys = Object.keys(binned).map(Number).sort((a, b) => a - b);
+            const finalValues = [];
+            const finalLabels = [];
 
-            let runningTotal = 0;
-            const cumulativeMap = {};
+            if (mode === 'cumulative') {
+                let runningTotal = 0;
+                for (let i = sortedKeys.length - 1; i >= 0; i--) {
+                    runningTotal += binned[sortedKeys[i]];
+                    finalValues[i] = runningTotal;
+                    const val = isScale ? (sortedKeys[i] / 10).toFixed(1) : sortedKeys[i].toLocaleString("fr-FR");
+                    finalLabels[i] = `${val}+`;
+                }
+            } else {
+                sortedKeys.forEach((key, i) => {
+                    finalValues.push(binned[key]);
+                    const nextBin = sortedKeys[i + 1];
 
-            sortedKeys.forEach(key => {
-                runningTotal += binned[key];
-                cumulativeMap[key] = runningTotal;
-            });
-
-            const finalKeys = Object.keys(cumulativeMap).map(Number).sort((a, b) => a - b);
+                    if (isScale) {
+                        const start = (key / 10).toFixed(1);
+                        if (nextBin) {
+                            const end = (nextBin / 10).toFixed(1);
+                            finalLabels.push(`${start} - ${end}`);
+                        } else {
+                            finalLabels.push(`${start}+`);
+                        }
+                    } else {
+                        const startStr = key.toLocaleString("fr-FR");
+                        if (nextBin) {
+                            const endStr = (nextBin - 1).toLocaleString("fr-FR");
+                            finalLabels.push(`${startStr} - ${endStr}`);
+                        } else {
+                            finalLabels.push(`${startStr}+`);
+                        }
+                    }
+                });
+            }
 
             return {
-                rawKeys: finalKeys,
-                labels: finalKeys.map(k => `${Number(k).toLocaleString("fr-FR")}+`),
-                values: finalKeys.map(k => cumulativeMap[k])
+                rawKeys: sortedKeys,
+                labels: finalLabels,
+                values: finalValues
             };
         }
 
@@ -565,12 +603,6 @@
                                 maxTicksLimit: 20,
                                 callback: function (value, index, values) {
                                     const label = this.getLabelForValue(value);
-                                    const numericValue = parseInt(label.replace(/[^0-9]/g, ''));
-
-                                    if (!isNaN(numericValue) && numericValue >= 1000) {
-                                        return (numericValue / 1000) + 'k+';
-                                    }
-
                                     return label;
                                 }
                             }
@@ -611,8 +643,15 @@
                             callbacks: {
                                 label: (context) => {
                                     const rate = context.raw;
-                                    let chance = (TOTAL_SEEDS / rate);
-                                    let formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
+
+                                    let formatted
+                                    if (!rate) {
+                                        formatted = "∞";
+                                    } else {
+                                        let chance = (TOTAL_SEEDS / rate);
+                                        formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
+                                    }
+
                                     return `1 / ${formatted}`;
                                 }
                             }
