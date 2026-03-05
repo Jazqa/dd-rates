@@ -339,6 +339,7 @@
 
         const RARITY_LABELS = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
         const RARITY_LABELS_SHORT = ["CRSD", "TORN", "WORN", "STKY", "SLD", "STRDY", "PLSH", "SHNY", "PWR", "AMZ", "EPIC", "LEG", "GODLY", "MYTH", "TRANS", "SUP", "ULT", "U93", "ULT+", "ULT++"];
+        const DIFF_NAMES_SHORT = { "Ruthless": "RL", "Nightmare": "NM" }
 
         let currentChart = null;
         let manifestData = null;
@@ -873,6 +874,8 @@
 
                 for (const [map, diffs] of Object.entries(manifestData)) {
                     for (const [diff, items] of Object.entries(diffs)) {
+                        if (!diff.toLowerCase().includes('ruthless')) continue; // TODO: Enable search for lower difficulties
+
                         items.forEach(item => {
                             if (item.toLowerCase().includes(query) || map.toLowerCase().includes(query)) {
                                 matches.push({ map, diff, item });
