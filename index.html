@@ -346,6 +346,28 @@
         document.addEventListener('DOMContentLoaded', async () => {
             await initializeManifest();
 
+            const params = new URLSearchParams(window.location.search);
+
+            if (params.has('map')) {
+                document.getElementById('mapSelect').value = params.get('map');
+            }
+
+            updateDifficulties();
+
+            if (params.has('diff')) {
+                document.getElementById('diffSelect').value = params.get('diff');
+            }
+
+            updateItems();
+
+            if (params.has('item')) {
+                document.getElementById('itemSelect').value = params.get('item');
+            }
+
+            if (params.has('stat')) {
+                document.getElementById('statSelect').value = params.get('stat');
+            }
+
             document.getElementById('yAxisType').onchange = () => {
                 loadData(false);
             };
@@ -354,23 +376,7 @@
                 loadData(false);
             };
 
-            const params = new URLSearchParams(window.location.search);
-
-            if (params.has('map')) {
-                const map = params.get('map');
-                const diff = params.get('diff');
-                const item = params.get('item');
-                const stat = params.get('stat');
-
-                document.getElementById('mapSelect').value = map;
-                updateDifficulties();
-                document.getElementById('diffSelect').value = diff;
-                updateItems();
-                document.getElementById('itemSelect').value = item;
-
-                if (stat) document.getElementById('statSelect').value = stat;
-                loadData(true);
-            }
+            loadData(true);
         });
 
 
@@ -429,10 +435,6 @@
                 };
 
                 setupGlobalSearch();
-
-                updateDifficulties();
-                updateItems();
-                loadData(true);
             } catch (err) {
                 console.error("Error: Failed to load manifest:", err);
             }
@@ -447,23 +449,6 @@
             });
             const newRelativePathQuery = window.location.pathname + '?' + params.toString();
             history.replaceState(null, '', newRelativePathQuery);
-        }
-
-        function setSelectorsFromURL() {
-            const params = new URLSearchParams(window.location.search);
-            if (params.has('map')) document.getElementById('mapSelect').value = params.get('map');
-
-            if (params.has('diff')) {
-                updateDifficulties();
-                document.getElementById('diffSelect').value = params.get('diff');
-            }
-            if (params.has('item')) {
-                updateItems();
-                document.getElementById('itemSelect').value = params.get('item');
-            }
-            if (params.has('stat')) {
-                document.getElementById('statSelect').value = params.get('stat');
-            }
         }
 
         function updateDifficulties() {
