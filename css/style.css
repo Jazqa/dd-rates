@@ -35,8 +35,8 @@ label {
 
 /* Sidebar */
 #sidebar {
-    max-width: 300px;
-    width: 30vw;
+    max-width: 333px;
+    width: 33vw;
     background: var(--bg2);
     padding: 20px;
     border-right: 1px solid var(--border);
