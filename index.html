@@ -305,7 +305,7 @@
 
                     case "damage":
                     case "damage_2":
-                        chartLabelElement.textContent = "Upgrades: " + json.rates[stat].info;
+                        chartLabelElement.textContent = "Upgrades: " + getReadableUpgrades(data.info);
 
                         buckets = Object.keys(data.buckets);
                         highest = buckets[buckets.length - 1];

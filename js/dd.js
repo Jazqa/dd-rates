@@ -72,7 +72,7 @@ function getReadableDamageType(label) {
 
     case "Base":
     case "Base + Additional":
-      return "Base Damage";
+      return "Damage";
 
     case "Additional":
     case "Additional + Base":
@@ -84,6 +84,12 @@ function getReadableDamageType(label) {
     default:
       return "";
   }
+}
+
+function getReadableUpgrades(info) {
+  return info
+    .replace("Additional Damage", "Elemental Damage")
+    .replace("Alt", "Ranged");
 }
 
 function orderQualityArray(arr) {
