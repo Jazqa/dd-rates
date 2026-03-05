@@ -50,6 +50,9 @@
     ]
   },
   "Boss Rush 2": {
+    "Nightmare": [
+      "Soup Baby"
+    ],
     "Ruthless": [
       "Soup Baby",
       "Vampire Halberd"
@@ -190,6 +193,14 @@
       "Samiel the Flayer",
       "Shimmerblade Scimitar",
       "Undying Rod"
+    ]
+  },
+  "Crystalline Resurgence Part 3": {
+    "Ruthless": [
+      "Aquian Cog-Maul",
+      "Kelp Harvester",
+      "Pressurized Energy Core",
+      "Xilent's Rhythm Staff"
     ]
   },
   "Deeper Well": {
