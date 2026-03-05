@@ -1,0 +1,262 @@
+:root {
+    --accent: #0091ff;
+    --accent2: #0060c0;
+    --bg: #121212;
+    --bg2: #1e1e1e;
+    --border: #444;
+    --fg: white;
+    --fg2: #aaa;
+    --hov: #ffffff11;
+}
+
+
+body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Text */
+h2 {
+    margin-top: 0;
+    color: var(--fg);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+/* Sidebar */
+#sidebar {
+    max-width: 300px;
+    width: 30vw;
+    background: var(--bg2);
+    padding: 20px;
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#sidebarSearch,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: var(--bg);
+    color: var(--fg);
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+}
+
+#sidebarSearchResults:not(:empty) {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    border-top: none;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+}
+
+#sidebarSearchResults div small {
+    cursor: pointer;
+    color: var(--fg2);
+}
+
+#sidebarSearchResults div:last-child {
+    border-bottom: none !important;
+}
+
+#sidebarSearchResults div:hover {
+    background-color: #0060c0;
+}
+
+/* Content Area */
+#content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Chart */
+.chart-container {
+    flex-grow: 1;
+    background-color: var(--bg2);
+    border: 1px solid var(--border);
+    padding: 10px;
+}
+
+.chart-container label {
+    display: block;
+    margin-top: 10px;
+    color: var(--fg2);
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Chart Tabs */
+.chart-tab-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--fg2);
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.chart-tab-button.active {
+    color: var(--accent);
+}
+
+/* Rates Grid */
+.rates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-top: 21px;
+    margin-left: 1px;
+}
+
+.rate-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg2);
+    padding: 10px;
+    margin-top: -1px;
+    margin-left: -1px;
+    border: 1px solid var(--border);
+}
+
+.rate-item.highlight,
+.rate-item:hover {
+    background-color: var(--hov);
+}
+
+.rate-label {
+    color: var(--fg2);
+    text-transform: uppercase;
+}
+
+.rate-value {
+    color: var(--accent);
+    font-family: monospace;
+}
+
+
+/* Data */
+#dataSmall {
+    margin-top: 20px;
+    display: block;
+}
+
+
+
+
+/* Desktop Menu */
+#headerButton {
+    display: none;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* Mobile Header */
+    #header-container {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: var(--bg2);
+        border-bottom: 1px solid var(--border);
+        padding: 10px 20px;
+        padding-top: calc(env(safe-area-inset-top) + 10px);
+        margin: 0px -20px 20px -20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        z-index: 1001;
+    }
+
+    #headerButton {
+        margin-top: -5px;
+        display: block !important;
+        position: static !important;
+        background: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 2.0em;
+    }
+
+    #headerH2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* Mobile Sidebar */
+    #sidebar {
+        width: 66vw;
+        left: -66vw;
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        padding-top: 80px;
+        z-index: 1000;
+        max-width: 100vw;
+    }
+
+    #sidebar.open {
+        left: 0;
+    }
+
+    #sidebarOverlay {
+        display: none;
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #sidebarOverlay.show {
+        display: block;
+    }
+
+    #content {
+        padding-top: 0;
+    }
+
+
+    /* Mobile Input */
+    #sidebarSearch,
+    select {
+        font-size: 16px !important;
+    }
+
+    #sidebar label {
+        font-size: 12px;
+    }
+}
+
+/* Deprecated */
+#statSelect {
+    display: none;
+}

@@ -1,0 +1,91 @@
+const STAT_LABELS = {
+  quality: "Quality",
+  level: "Level",
+  damage: "Damage",
+  damage_2: "Damage",
+  tower_caps: "Tower Caps",
+  tower_totals: "Tower Totals",
+  app_totals: "App Totals",
+  hermit_totals: "Hermit Totals",
+  guardian_totals: "Guardian Totals",
+  support_caps: "Support Caps",
+  scale: "Size",
+  multiproj: "Multiple Projectiles",
+};
+
+const RARITY_LABELS = [
+  "Cursed",
+  "Torn",
+  "Worn",
+  "Stocky",
+  "Solid",
+  "Sturdy",
+  "Polished",
+  "Shining",
+  "Powerful",
+  "Amazing",
+  "Epic",
+  "Legendary",
+  "Godly",
+  "Mythical",
+  "Transcendent",
+  "Supreme",
+  "Ultimate",
+  "Ultimate 93",
+  "Ultimate +",
+  "Ultimate ++",
+];
+
+const RARITY_LABELS_SHORT = [
+  "CRSD",
+  "TORN",
+  "WORN",
+  "STKY",
+  "SLD",
+  "STRDY",
+  "PLSH",
+  "SHNY",
+  "PWR",
+  "AMZ",
+  "EPIC",
+  "LEG",
+  "GODLY",
+  "MYTH",
+  "TRANS",
+  "SUP",
+  "ULT",
+  "U93",
+  "ULT+",
+  "ULT++",
+];
+
+const DIFF_NAMES_SHORT = { Ruthless: "RL", Nightmare: "NM" };
+
+function getTabName(key, rates) {
+  return getReadableDamageType(rates[key].label) || STAT_LABELS[key] || key;
+}
+
+function getReadableDamageType(label) {
+  switch (label) {
+    case "Alt":
+      return "Ranged Damage";
+
+    case "Base":
+    case "Base + Additional":
+      return "Base Damage";
+
+    case "Additional":
+    case "Additional + Base":
+      return "Elemental Damage";
+
+    case "50/50":
+      return "Hybrid Damage";
+
+    default:
+      return "";
+  }
+}
+
+function orderQualityArray(arr) {
+  return [...arr.slice(0, 13).reverse(), ...arr.slice(13)];
+}

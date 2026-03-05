@@ -5,273 +5,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Dungeon Defenders Item Rates</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        :root {
-            --accent: #0091ff;
-            --accent2: #0060c0;
-            --bg: #121212;
-            --bg2: #1e1e1e;
-            --border: #444;
-            --fg: white;
-            --fg2: #aaa;
-            --hov: #ffffff11;
-        }
-
-
-        h2 {
-            margin-top: 0;
-            color: var(--fg);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-            font-size: 0.75em;
-            text-transform: uppercase;
-        }
-
-        body {
-            font-family: sans-serif;
-            background: var(--bg);
-            color: var(--fg);
-            display: flex;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Sidebar */
-        #sidebar {
-            width: 250px;
-            background: var(--bg2);
-            padding: 20px;
-            border-right: 1px solid var(--border);
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-
-        /* Search and Dropdowns */
-        #globalSearch,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            background: var(--bg);
-            color: var(--fg);
-            border: 1px solid var(--border);
-            box-sizing: border-box;
-        }
-
-        #globalSearch:focus,
-        select:focus {}
-
-        #searchResults {}
-
-        #searchResults:not(:empty) {
-            margin-top: -20px;
-            margin-bottom: 10px;
-            border-top: none;
-            background-color: var(--bg);
-            border: 1px solid var(--border);
-        }
-
-        #searchResults div small {
-            cursor: pointer;
-            color: var(--fg2);
-        }
-
-        #searchResults div:last-child {
-            border-bottom: none !important;
-        }
-
-        #searchResults div:hover {
-            background-color: #0060c0;
-        }
-
-        /* Content Area */
-        #content {
-            flex-grow: 1;
-            padding: 20px;
-            overflow-y: auto;
-            max-width: 1080px;
-            margin: 0 auto;
-        }
-
-        /* Chart */
-        .chart-container {
-            flex-grow: 1;
-            background-color: var(--bg2);
-            border: 1px solid var(--border);
-            padding: 10px;
-        }
-
-        .chart-container label {
-            display: block;
-            margin-top: 10px;
-            color: var(--fg2);
-            font-family: monospace;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-align: center;
-        }
-
-        /* Rates Grid */
-        .rates-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            margin-top: 21px;
-            margin-left: 1px;
-        }
-
-        .rate-item {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--bg2);
-            padding: 10px;
-            margin-top: -1px;
-            margin-left: -1px;
-            border: 1px solid var(--border);
-        }
-
-        .rate-item.highlight,
-        .rate-item:hover {
-            background-color: var(--hov);
-        }
-
-        .rate-label {
-            color: var(--fg2);
-            text-transform: uppercase;
-        }
-
-        .rate-value {
-            color: var(--accent);
-            font-family: monospace;
-        }
-
-
-        /* Data Disclaimer */
-        #dataDisclaimer {
-            margin-top: 20px;
-            display: block;
-        }
-
-        /* Chart Tabs */
-        .tab-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--fg2);
-            margin-bottom: 10px;
-
-        }
-
-        .tab-btn.active {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-
-        /* Desktop Menu */
-        #menuToggle {
-            display: none;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-
-            /* Mobile Header */
-            #header-container {
-                position: -webkit-sticky;
-                position: sticky;
-                top: 0;
-                z-index: 100;
-                background: var(--bg2);
-                border-bottom: 1px solid var(--border);
-                padding: 10px 20px;
-                padding-top: calc(env(safe-area-inset-top) + 10px);
-                margin: 0px -20px 20px -20px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 15px;
-                z-index: 1001;
-            }
-
-            #itemTitle {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-top: 0px;
-                margin-bottom: 0px;
-            }
-
-
-            /* Mobile Menu */
-            #menuToggle {
-                margin-top: -5px;
-                display: block !important;
-                position: static !important;
-                background: transparent;
-                color: white;
-                border: none;
-                cursor: pointer;
-                font-size: 2.0em;
-            }
-
-            /* Mobile Sidebar */
-            #sidebar {
-                width: 250px;
-                position: fixed;
-                left: -250px;
-                z-index: 999;
-                height: 100vh;
-                padding-top: 80px;
-                z-index: 1000;
-            }
-
-            #sidebar.open {
-                left: 0;
-            }
-
-            #sidebarOverlay {
-                display: none;
-                position: fixed;
-                z-index: 998;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                background: rgba(0, 0, 0, 0.5);
-            }
-
-            #sidebarOverlay.show {
-                display: block;
-            }
-
-            #content {
-                padding-top: 0;
-            }
-
-
-            /* Mobile Input */
-            #globalSearch,
-            select {
-                font-size: 16px !important;
-            }
-
-            #sidebar label {
-                font-size: 12px;
-            }
-        }
-
-        /* Deprecated */
-        #statSelect {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -279,9 +13,9 @@
     <div id="sidebar">
         <div style="flex-grow: 1;">
             <label>Search</label>
-            <div style="position: relative;"> <input type="text" id="globalSearch" autocomplete="off"
-                    placeholder="Type to search...">
-                <div id="searchResults"></div>
+            <div style="position: relative;"> <input type="text" id="sidebarSearch" autocomplete="off"
+                    placeholder="Search by map or item">
+                <div id="sidebarSearchResults"></div>
             </div>
 
             <label>Map</label>
@@ -296,15 +30,14 @@
             <select id="statSelect"></select>
         </div>
 
-
         <label>Y-Axis Scale</label>
-        <select id="yAxisType">
+        <select id="yAxisTypeSelect">
             <option value="linear">Linear</option>
             <option value="logarithmic">Logarithmic</option>
         </select>
 
         <label>Buckets</label>
-        <select id="bucketType">
+        <select id="bucketTypeSelect">
             <option value="cumulative">Cumulative</option>
             <option value="unique">Unique</option>
         </select>
@@ -312,43 +45,27 @@
 
     <div id="content">
         <div id="header-container">
-            <button id="menuToggle" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
-            <h2 id="itemTitle"></h2>
+            <button id="headerButton" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
+            <h2 id="headerH2"></h2>
         </div>
         <div class="chart-container">
-            <div id="statTabs" class="tabs-container"></div>
-            <label></label>
+            <div id="chartTabs" class="chart-tabs-container"></div>
+            <label id="chartLabel"></label>
             <canvas id="chart"></canvas>
         </div>
         <div id="ratesList" class="rates-container"></div>
-        <small id="dataDisclaimer" style="color: var(--fg2)"></small>
+        <small id="dataSmall" style="color: var(--fg2)"></small>
     </div>
 
+    <script src="js/dd.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/rates.js"></script>
+    <script src="js/search.js"></script>
+
     <script>
-        Chart.defaults.font.family = "monospace";
-        Chart.defaults.color = '#888';
-
-        const STAT_LABELS = {
-            "quality": "Quality",
-            "level": "Level",
-            "damage": "Damage",
-            "damage_2": "Ranged Damage",
-            "tower_caps": "Tower Caps",
-            "tower_totals": "Tower Totals",
-            "app_totals": "Apprentice Totals",
-            "hermit_totals": "Hermit Totals",
-            "guardian_totals": "Guardian Totals",
-            "support_caps": "Support Caps",
-            "scale": "Size",
-            "multiproj": "Multiple Projectiles"
-        };
-
-        const RARITY_LABELS = ["Cursed", "Torn", "Worn", "Stocky", "Solid", "Sturdy", "Polished", "Shining", "Powerful", "Amazing", "Epic", "Legendary", "Godly", "Mythical", "Transcendent", "Supreme", "Ultimate", "Ultimate 93", "Ultimate +", "Ultimate ++"];
-        const RARITY_LABELS_SHORT = ["CRSD", "TORN", "WORN", "STKY", "SLD", "STRDY", "PLSH", "SHNY", "PWR", "AMZ", "EPIC", "LEG", "GODLY", "MYTH", "TRANS", "SUP", "ULT", "U93", "ULT+", "ULT++"];
-        const DIFF_NAMES_SHORT = { "Ruthless": "RL", "Nightmare": "NM" }
-
         let gameVersion = "";
         let totalSeeds = 0;
+
         let currentChart = null;
         let manifestData = null;
 
@@ -377,11 +94,11 @@
                 document.getElementById('statSelect').value = params.get('stat');
             }
 
-            document.getElementById('yAxisType').onchange = () => {
+            document.getElementById('yAxisTypeSelect').onchange = () => {
                 loadData(false);
             };
 
-            document.getElementById('bucketType').onchange = () => {
+            document.getElementById('bucketTypeSelect').onchange = () => {
                 loadData(false);
             };
 
@@ -400,7 +117,7 @@
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebarOverlay');
             if (sidebar.classList.contains('open') && window.innerWidth <= 768) {
-                if (event.clientX > 250 || event.target === overlay) {
+                if (event.target === overlay) {
                     sidebar.classList.remove('open');
                     overlay.classList.remove('show');
                 }
@@ -443,7 +160,7 @@
                     updateURL();
                 };
 
-                setupGlobalSearch();
+                setupSidebarSearch();
             } catch (err) {
                 console.error("Error: Failed to load manifest:", err);
             }
@@ -493,13 +210,16 @@
             }
         }
 
-        async function loadData(rebuildStats = false) {
+        async function loadData(shouldRebuild = false) {
+            const chartTabs = document.getElementById('chartTabs');
+            const statSelect = document.getElementById('statSelect');
+
             const map = document.getElementById('mapSelect').value;
             const diff = document.getElementById('diffSelect').value;
             const item = document.getElementById('itemSelect').value;
-            const statSelect = document.getElementById('statSelect');
-            const bucketType = document.getElementById('bucketType').value;
+            const bucketType = document.getElementById('bucketTypeSelect').value;
 
+            let stat = statSelect.value;
 
             if (!item) return;
 
@@ -511,97 +231,106 @@
                 gameVersion = json.game_version;
                 totalSeeds = json.total_seeds
 
-                if (rebuildStats) {
-                    const availableStats = Object.keys(json.rates);
-                    const currentVal = statSelect.value;
-                    const tabContainer = document.getElementById('statTabs');
+                if (shouldRebuild) {
+                    const rates = Object.keys(json.rates);
 
                     statSelect.innerHTML = '';
-                    tabContainer.innerHTML = '';
+                    chartTabs.innerHTML = '';
 
-                    availableStats.forEach(key => {
-                        let opt = document.createElement('option');
-                        opt.value = key;
-                        let label = STAT_LABELS[key] || key;
-                        opt.textContent = label;
-                        statSelect.appendChild(opt);
+                    rates.forEach(key => {
+                        let option = document.createElement('option');
+                        let tabName = getTabName(key, json.rates);
+                        option.value = key;
+                        option.textContent = tabName;
+                        statSelect.appendChild(option);
 
-                        const btn = document.createElement('button');
-                        btn.className = 'tab-btn';
-                        btn.textContent = label;
-                        btn.dataset.key = key;
+                        const button = document.createElement('button');
 
-                        btn.onclick = () => {
+                        button.className = 'chart-tab-button';
+                        button.textContent = tabName;
+                        button.dataset.key = key;
+
+                        button.onclick = () => {
                             statSelect.value = key;
-                            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                            btn.classList.add('active');
+                            document.querySelectorAll('.chart-tab-button').forEach(b => b.classList.remove('active'));
+                            button.classList.add('active');
                             loadData(false);
                             updateURL();
                         };
-                        tabContainer.appendChild(btn);
+
+                        chartTabs.appendChild(button);
                     });
 
-                    let activeKey = currentVal;
 
-                    if (!availableStats.includes(activeKey)) {
+
+                    if (!rates.includes(stat)) {
                         const params = new URLSearchParams(window.location.search);
                         const urlStat = params.get('stat');
-                        activeKey = (urlStat && availableStats.includes(urlStat)) ? urlStat : availableStats[0];
+                        stat = (urlStat && rates.includes(urlStat)) ? urlStat : rates[0];
                     }
 
-                    statSelect.value = activeKey;
+                    statSelect.value = stat;
 
-                    const activeTab = Array.from(tabContainer.children).find(t => t.dataset.key === activeKey);
+                    const activeTab = Array.from(chartTabs.children).find(t => t.dataset.key === stat);
+
                     if (activeTab) activeTab.classList.add('active');
                 }
 
-                const statKey = statSelect.value;
-                const dataElement = document.getElementById("dataDisclaimer");
-                const titleElement = document.getElementById('itemTitle');
-                const labelElement = document.querySelector('.chart-container label');
+                const headerH2Element = document.getElementById('headerH2');
+                const chartLabelElement = document.getElementById('chartLabel');
+                const dataSmallElement = document.getElementById("dataSmall");
 
-                dataElement.textContent = `Game Version: ${gameVersion}, Item Count: ${totalSeeds.toLocaleString("fr-FR")}`;
-                titleElement.textContent = `${item}`;
-                let labels, data, binSize, buckets, bucketCount, result, highest;
-                switch (statKey) {
+                headerH2Element.textContent = `${item}`;
+                chartLabelElement.textContent = "";
+                dataSmallElement.textContent = `Game Version: ${gameVersion}, Item Count: ${totalSeeds.toLocaleString("fr-FR")}`;
+
+
+                let data = json.rates[stat]
+                let buckets, binSize, binnedData, labels;
+                switch (stat) {
                     case "quality":
-                        labelElement.textContent = "";
-                        data = [...json.rates.quality.slice(0, 13).reverse(), ...json.rates.quality.slice(13)];
+                        data = orderQualityArray(data);
+
                         renderChart(RARITY_LABELS_SHORT, data);
                         updateRatesList(RARITY_LABELS, data);
                         break;
+
                     case "level":
-                        labelElement.textContent = "";
                         binSize = 10;
-                        result = getBinnedData(json.rates.level.buckets, binSize);
-                        renderChart(result.labels, result.values);
-                        updateRatesList(result.labels, result.values);
+                        binnedData = getBinnedData(data.buckets, binSize);
+
+                        renderChart(binnedData.labels, binnedData.values);
+                        updateRatesList(binnedData.labels, binnedData.values);
                         break;
+
                     case "damage":
                     case "damage_2":
-                        labelElement.textContent = "Upgrades: " + json.rates[statKey].info;
-                        buckets = Object.keys(json.rates[statKey].buckets)
-                        bucketCount = buckets.length;
-                        highest = buckets[bucketCount - 1]
+                        chartLabelElement.textContent = "Upgrades: " + json.rates[stat].info;
+
+                        buckets = Object.keys(data.buckets);
+                        highest = buckets[buckets.length - 1];
                         binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
-                        result = getBinnedData(json.rates[statKey].buckets, binSize);
-                        renderChart(result.labels, result.values);
-                        updateRatesList(result.labels, result.values);
+                        binnedData = getBinnedData(data.buckets, binSize);
+
+                        renderChart(binnedData.labels, binnedData.values);
+                        updateRatesList(binnedData.labels, binnedData.values);
                         break;
+
                     case "tower_totals":
                     case "app_totals":
                     case "hermit_totals":
                     case "guardian_totals":
-                        labelElement.textContent = "";
                         binSize = 50;
-                        result = getBinnedData(json.rates[statKey].buckets, binSize);
-                        renderChart(result.labels, result.values);
-                        updateRatesList(result.labels, result.values);
+                        binnedData = getBinnedData(json.rates[stat].buckets, binSize);
+
+                        renderChart(binnedData.labels, binnedData.values);
+                        updateRatesList(binnedData.labels, binnedData.values);
                         break;
+
                     case "tower_caps":
-                        labelElement.textContent = "";
                         labels = ["Single", "Double", "Triple", "Quad"];
-                        data = [json.rates[statKey].buckets["101"] || 0, json.rates[statKey].buckets["102"] || 0, json.rates[statKey].buckets["103"] || 0, json.rates[statKey].buckets["104"] || 0];
+                        buckets = ["101", "102", "103", "104"];
+                        data = buckets.map(b => data.buckets[b] || 0);
 
                         if (bucketType === "cumulative") {
                             for (let i = data.length - 2; i >= 0; i--) {
@@ -612,41 +341,44 @@
                         renderChart(labels, data, "bar");
                         updateRatesList(labels, data);
                         break;
+
                     case "support_caps":
-                        labelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
+                        chartLabelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
+
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
-                        data = [json.rates[statKey].buckets["4"], json.rates[statKey].buckets["5"], json.rates[statKey].buckets["6"]];
+                        buckets = ["4", "5", "6"];
+                        data = buckets.map(b => data.buckets[b] || 0);
+
                         renderChart(labels, data, "bar");
                         updateRatesList(labels, data);
                         break;
+
                     case "scale":
-                        labelElement.textContent = "";
-                        bucketCount = Object.keys(json.rates.scale.buckets).length;
-                        binSize = bucketCount > 20 ? 5 : 1;
-                        result = getBinnedData(json.rates.scale.buckets, binSize);
-                        renderChart(result.labels, result.values);
-                        updateRatesList(result.labels, result.values);
+                        buckets = Object.keys(data.buckets);
+                        binSize = buckets.length > 20 ? 5 : 1;
+                        binnedData = getBinnedData(json.rates.scale.buckets, binSize);
+                        renderChart(binnedData.labels, binnedData.values);
+                        updateRatesList(binnedData.labels, binnedData.values);
                         break;
+
                     case "multiproj":
-                        labelElement.textContent = "";
-                        data = [...json.rates.multiproj.slice(0, 13).reverse(), ...json.rates.multiproj.slice(13)];
+                        data = orderQualityArray(data);
                         renderChart(RARITY_LABELS_SHORT, data);
                         updateRatesList(RARITY_LABELS, data);
                         break;
+
                     default:
                         break;
                 }
-            } catch (err) {
-                console.error("Error: Failed to load item data:", err);
-            }
+            } catch (_) { }
         }
 
         function getBinnedData(buckets, size) {
-            const binned = {};
-            const mode = document.getElementById('bucketType').value;
+            const mode = document.getElementById('bucketTypeSelect').value;
             const isScale = document.getElementById('statSelect').value === 'scale';
 
-            // 1. Group data into bins
+            const binned = {};
+
             Object.entries(buckets).forEach(([key, value]) => {
                 const numKey = Number(key);
                 if (numKey < 0) return;
@@ -670,7 +402,6 @@
                 sortedKeys.forEach((key, i) => {
                     finalValues.push(binned[key]);
                     const nextBin = sortedKeys[i + 1];
-
                     if (isScale) {
                         const start = (key / 10).toFixed(1);
                         if (nextBin) {
@@ -696,222 +427,6 @@
                 labels: finalLabels,
                 values: finalValues
             };
-        }
-
-        function renderChart(labels, data, chartType = "line") {
-            const ctx = document.getElementById('chart').getContext('2d');
-            const yAxisType = document.getElementById('yAxisType').value;
-
-            if (currentChart) currentChart.destroy();
-
-            currentChart = new Chart(ctx, {
-                type: chartType,
-                data: {
-                    labels,
-                    datasets: [{
-                        data,
-                        borderWidth: 2,
-                        borderColor: '#0091ff',
-                        backgroundColor: '#0091ff22',
-                        pointBackgroundColor: '#0060c0',
-                        fill: true,
-                        pointRadius: 4,
-                        pointHoverRadius: 8,
-                        pointHoverBorderWidth: 4,
-                        pointBorderWidth: 2,
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    animation: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false,
-                    },
-                    scales: {
-                        y: {
-                            type: yAxisType,
-                            grid: { color: 'transparent' },
-                            ticks: { callback: () => "" }
-                        },
-                        x: {
-                            grid: {
-                                color: '#333',
-                            },
-                            ticks: {
-                                autoSkip: true,
-                                maxTicksLimit: 20,
-                                callback: function (value, index, values) {
-                                    const label = this.getLabelForValue(value);
-                                    return label;
-                                }
-                            }
-                        }
-                    },
-                    onHover: (event, activeElements) => {
-                        document.querySelectorAll('.rate-item').forEach(el => el.classList.remove('highlight'));
-
-                        if (activeElements.length > 0) {
-                            const index = activeElements[0].index;
-                            const items = document.querySelectorAll('.rate-item');
-
-                            const labelText = currentChart.data.labels[index];
-                            const target = Array.from(items).find(item =>
-                                item.querySelector('label').textContent === labelText
-                            );
-
-                            if (target) {
-                                target.classList.add('highlight');
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            backgroundColor: '#121212',
-                            titleColor: '#aaa',
-                            bodyColor: '#0091ff',
-                            borderColor: '#444',
-                            borderWidth: 1,
-                            padding: 10,
-                            displayColors: false,
-                            cornerRadius: 0,
-                            titleColor: '#fff',
-                            titleFont: {
-                                family: 'sans-serif',
-                            },
-                            callbacks: {
-                                label: (context) => {
-                                    const rate = context.raw;
-
-                                    let formatted
-                                    if (!rate) {
-                                        formatted = "∞";
-                                    } else {
-                                        let chance = (totalSeeds / rate);
-                                        formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
-                                    }
-
-                                    return `1 / ${formatted}`;
-                                }
-                            }
-                        }
-                    },
-                }
-            });
-
-            const canvas = document.getElementById('chart');
-
-            canvas.onmouseleave = () => {
-                document.querySelectorAll('.rate-item').forEach(el => el.classList.remove('highlight'));
-            };
-        }
-
-        function updateRatesList(labels, data) {
-            const listDiv = document.getElementById('ratesList');
-            if (!listDiv) return;
-
-            listDiv.innerHTML = '';
-            const statKey = document.getElementById('statSelect').value;
-
-            labels.forEach((label, index) => {
-                const rate = data[index];
-
-                if (!rate || rate <= 0 || isNaN(rate)) return;
-
-                const chance = (totalSeeds / rate);
-
-
-                if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals") || statKey === "scale") {
-                    if (chance < 30) return;
-                }
-
-
-
-                if (statKey === "tower_caps" && index === 0) {
-                    if (chance === 1.0) return;
-                }
-
-                let formattedChance = chance < 10 ?
-                    chance.toFixed(2) :
-                    Math.round(chance).toLocaleString("fr-FR");
-
-                const row = document.createElement('div');
-                row.className = 'rate-item';
-                row.dataset.index = index;
-
-                row.onmouseenter = () => {
-                    if (!currentChart) return;
-
-                    const meta = currentChart.getDatasetMeta(0);
-                    const point = meta.data[index];
-
-                    if (point) {
-                        currentChart.setActiveElements([{ datasetIndex: 0, index: index }]);
-                        currentChart.tooltip.setActiveElements([{ datasetIndex: 0, index: index }], {
-                            x: point.x,
-                            y: point.y,
-                        });
-                        currentChart.update();
-                    }
-                };
-
-                row.onmouseleave = () => {
-                    if (!currentChart) return;
-                    currentChart.setActiveElements([]);
-                    currentChart.tooltip.setActiveElements([], { x: 0, y: 0 });
-                    currentChart.update();
-                };
-
-                row.innerHTML = `
-                    <label>${label}</label>
-                    <span class="rate-value">1 / ${formattedChance}</span>
-                `;
-
-                listDiv.appendChild(row);
-            });
-            listDiv.style.display = listDiv.childElementCount > 0 ? 'grid' : 'none';
-        }
-
-
-        function setupGlobalSearch() {
-            const input = document.getElementById('globalSearch');
-            const resultsDiv = document.getElementById('searchResults');
-
-            input.addEventListener('input', () => {
-                const query = input.value.toLowerCase();
-                resultsDiv.innerHTML = '';
-                if (query.length < 2) return;
-
-                let matches = [];
-
-                for (const [map, diffs] of Object.entries(manifestData)) {
-                    for (const [diff, items] of Object.entries(diffs)) {
-                        if (!diff.toLowerCase().includes('ruthless')) continue; // TODO: Enable search for lower difficulties
-
-                        items.forEach(item => {
-                            if (item.toLowerCase().includes(query) || map.toLowerCase().includes(query)) {
-                                matches.push({ map, diff, item });
-                            }
-                        });
-                    }
-                }
-
-                matches.slice(0, 10).forEach(match => {
-                    const div = document.createElement('div');
-                    div.style.padding = '10px';
-                    div.style.borderBottom = '1px solid #333';
-                    div.innerHTML = `<label>${match.item}</label><small>${match.map}</small>`;
-                    div.onclick = () => {
-                        applySelection(match.map, match.diff, match.item);
-                        resultsDiv.innerHTML = '';
-                        input.value = '';
-                    };
-                    resultsDiv.appendChild(div);
-                });
-
-
-            });
         }
 
         function applySelection(map, diff, item) {
