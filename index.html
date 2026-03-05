@@ -151,6 +151,13 @@
             font-family: monospace;
         }
 
+
+        /* Data Disclaimer */
+        #dataDisclaimer {
+            margin-top: 20px;
+            display: block;
+        }
+
         /* Chart Tabs */
         .tab-btn {
             background: none;
@@ -314,13 +321,12 @@
             <canvas id="chart"></canvas>
         </div>
         <div id="ratesList" class="rates-container"></div>
+        <small id="dataDisclaimer" style="color: var(--fg2)"></small>
     </div>
 
     <script>
         Chart.defaults.font.family = "monospace";
         Chart.defaults.color = '#888';
-
-        const TOTAL_SEEDS = 2147483647;
 
         const STAT_LABELS = {
             "quality": "Quality",
@@ -341,6 +347,8 @@
         const RARITY_LABELS_SHORT = ["CRSD", "TORN", "WORN", "STKY", "SLD", "STRDY", "PLSH", "SHNY", "PWR", "AMZ", "EPIC", "LEG", "GODLY", "MYTH", "TRANS", "SUP", "ULT", "U93", "ULT+", "ULT++"];
         const DIFF_NAMES_SHORT = { "Ruthless": "RL", "Nightmare": "NM" }
 
+        let gameVersion = "";
+        let totalSeeds = 0;
         let currentChart = null;
         let manifestData = null;
 
@@ -500,6 +508,9 @@
                 const response = await fetch(url);
                 const json = await response.json();
 
+                gameVersion = json.game_version;
+                totalSeeds = json.total_seeds
+
                 if (rebuildStats) {
                     const availableStats = Object.keys(json.rates);
                     const currentVal = statSelect.value;
@@ -545,9 +556,11 @@
                 }
 
                 const statKey = statSelect.value;
+                const dataElement = document.getElementById("dataDisclaimer");
                 const titleElement = document.getElementById('itemTitle');
                 const labelElement = document.querySelector('.chart-container label');
 
+                dataElement.textContent = `Game Version: ${gameVersion}, Item Count: ${totalSeeds.toLocaleString("fr-FR")}`;
                 titleElement.textContent = `${item}`;
                 let labels, data, binSize, buckets, bucketCount, result, highest;
                 switch (statKey) {
@@ -775,7 +788,7 @@
                                     if (!rate) {
                                         formatted = "∞";
                                     } else {
-                                        let chance = (TOTAL_SEEDS / rate);
+                                        let chance = (totalSeeds / rate);
                                         formatted = chance < 10 ? chance.toFixed(2) : Math.round(chance).toLocaleString("fr-FR");
                                     }
 
@@ -806,7 +819,7 @@
 
                 if (!rate || rate <= 0 || isNaN(rate)) return;
 
-                const chance = (TOTAL_SEEDS / rate);
+                const chance = (totalSeeds / rate);
 
 
                 if (statKey === "damage" || statKey === "damage_2" || statKey === "level" || statKey.includes("totals") || statKey === "scale") {
