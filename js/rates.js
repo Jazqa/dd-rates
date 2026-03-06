@@ -44,32 +44,6 @@ function updateRatesList(labels, data) {
     row.className = "rate-item";
     row.dataset.index = index;
 
-    row.onmouseenter = () => {
-      if (!currentChart) return;
-
-      const meta = currentChart.getDatasetMeta(0);
-      const point = meta.data[index];
-
-      if (point) {
-        currentChart.setActiveElements([{ datasetIndex: 0, index: index }]);
-        currentChart.tooltip.setActiveElements(
-          [{ datasetIndex: 0, index: index }],
-          {
-            x: point.x,
-            y: point.y,
-          },
-        );
-        currentChart.update();
-      }
-    };
-
-    row.onmouseleave = () => {
-      if (!currentChart) return;
-      currentChart.setActiveElements([]);
-      currentChart.tooltip.setActiveElements([], { x: 0, y: 0 });
-      currentChart.update();
-    };
-
     row.innerHTML = `
                     <label>${label}</label>
                     <span class="rate-value">1 / ${formattedChance}</span>

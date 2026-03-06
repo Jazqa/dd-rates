@@ -48,8 +48,8 @@
             <button id="headerButton" onclick="event.stopPropagation(); toggleSidebar();">☰</button>
             <h2 id="headerH2"></h2>
         </div>
+        <div id="chartTabs" class="chart-tabs-container"></div>
         <div class="chart-container">
-            <div id="chartTabs" class="chart-tabs-container"></div>
             <label id="chartLabel"></label>
             <canvas id="chart"></canvas>
         </div>
@@ -58,8 +58,8 @@
     </div>
 
     <script src="js/dd.js"></script>
-    <script src="js/chart.js"></script>
     <script src="js/rates.js"></script>
+    <script src="js/chart.js"></script>
     <script src="js/search.js"></script>
 
     <script>
@@ -296,10 +296,10 @@
                         break;
 
                     case "level":
-                        binSize = 10;
-                        binnedData = getBinnedData(data.buckets, binSize);
-
+                        buckets = Object.keys(data.buckets);
+                        binnedData = getBinnedData(data.buckets, buckets.length > 250 ? 20 : 10);
                         renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, 10);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
@@ -307,12 +307,9 @@
                     case "damage_2":
                         chartLabelElement.textContent = "Upgrades: " + getReadableUpgrades(data.info);
 
-                        buckets = Object.keys(data.buckets);
-                        highest = buckets[buckets.length - 1];
-                        binSize = highest > 200000 ? 5000 : highest > 100000 ? 2000 : 1000;
-                        binnedData = getBinnedData(data.buckets, binSize);
-
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 33));
                         renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50));
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
@@ -320,8 +317,10 @@
                     case "app_totals":
                     case "hermit_totals":
                     case "guardian_totals":
-                        binSize = 50;
-                        binnedData = getBinnedData(json.rates[stat].buckets, binSize);
+                        chartLabelElement.textContent = getReadableTotals(stat);
+
+                        binSize = getDynamicBinSize(data.buckets, 33);
+                        binnedData = getBinnedData(data.buckets, binSize);
 
                         renderChart(binnedData.labels, binnedData.values);
                         updateRatesList(binnedData.labels, binnedData.values);
@@ -343,7 +342,7 @@
                         break;
 
                     case "support_caps":
-                        chartLabelElement.textContent = "Upgrades: " + json.rates.support_caps.info;
+                        chartLabelElement.textContent = "Upgrades: " + data.info;
 
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
                         buckets = ["4", "5", "6"];
@@ -355,9 +354,9 @@
 
                     case "scale":
                         buckets = Object.keys(data.buckets);
-                        binSize = buckets.length > 20 ? 5 : 1;
-                        binnedData = getBinnedData(json.rates.scale.buckets, binSize);
+                        binnedData = getBinnedData(data.buckets, buckets.length > 20 ? 10 : 1);
                         renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, buckets.length > 20 ? 5 : 1);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
@@ -427,6 +426,24 @@
                 labels: finalLabels,
                 values: finalValues
             };
+        }
+
+        function getDynamicBinSize(buckets, targetBins = 20) {
+            const keys = Object.keys(buckets).map(Number);
+            const min = Math.min(...keys);
+            const max = Math.max(...keys);
+            const range = max - min;
+
+            if (range === 0) return 1;
+
+            let rawSize = range / targetBins;
+            const magnitude = Math.pow(10, Math.floor(Math.log10(rawSize)));
+            const res = rawSize / magnitude;
+
+            if (res < 1.5) return 1 * magnitude;
+            if (res < 3) return 2 * magnitude;
+            if (res < 7) return 5 * magnitude;
+            return 10 * magnitude;
         }
 
         function applySelection(map, diff, item) {

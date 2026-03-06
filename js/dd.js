@@ -3,11 +3,11 @@ const STAT_LABELS = {
   level: "Level",
   damage: "Damage",
   damage_2: "Damage",
-  tower_caps: "Tower Caps",
-  tower_totals: "Tower Totals",
-  app_totals: "App Totals",
-  hermit_totals: "Hermit Totals",
-  guardian_totals: "Guardian Totals",
+  tower_caps: "Caps",
+  tower_totals: "Towers",
+  app_totals: "App",
+  hermit_totals: "Hermit",
+  guardian_totals: "Guardian",
   support_caps: "Support Caps",
   scale: "Size",
   multiproj: "Multiple Projectiles",
@@ -90,6 +90,19 @@ function getReadableUpgrades(info) {
   return info
     .replace("Additional Damage", "Elemental Damage")
     .replace("Alt", "Ranged");
+}
+
+function getReadableTotals(key) {
+  switch (key) {
+    case "app_totals":
+      return "Damage + Rate + Range"
+    case "hermit_totals":
+      return "Damage + Range + HP"
+    case "guardian_totals":
+      return "HP + Rate + Range"
+    case "tower_totals":
+      return "Damage + Rate + Range + HP"
+  }
 }
 
 function orderQualityArray(arr) {

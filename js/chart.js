@@ -1,7 +1,16 @@
 Chart.defaults.font.family = "monospace";
-Chart.defaults.color = "#888";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = "#ededed";
 
 function renderChart(labels, data, chartType = "line") {
+  const rootStyles = getComputedStyle(document.documentElement);
+  const accentColor = rootStyles.getPropertyValue("--accent").trim();
+  const bgColor = rootStyles.getPropertyValue("--bg").trim();
+  const bg2Color = rootStyles.getPropertyValue("--bg2").trim();
+  const borderColor = rootStyles.getPropertyValue("--border").trim();
+  const fgColor = rootStyles.getPropertyValue("--fg").trim();
+  const fg2Color = rootStyles.getPropertyValue("--fg2").trim();
+
   const chartContext = document.getElementById("chart").getContext("2d");
   const yAxisType = document.getElementById("yAxisTypeSelect").value;
 
@@ -15,14 +24,13 @@ function renderChart(labels, data, chartType = "line") {
         {
           data,
           borderWidth: 2,
-          borderColor: "#0091ff",
-          backgroundColor: "#0091ff22",
-          pointBackgroundColor: "#0060c0",
+          borderColor: accentColor,
+          backgroundColor: `${accentColor}22`,
+          pointBackgroundColor: accentColor,
           fill: true,
           pointRadius: 4,
           pointHoverRadius: 8,
           pointHoverBorderWidth: 4,
-          pointBorderWidth: 2,
         },
       ],
     },
@@ -41,11 +49,12 @@ function renderChart(labels, data, chartType = "line") {
         },
         x: {
           grid: {
-            color: "#333",
+            color: bgColor,
           },
           ticks: {
             autoSkip: true,
             maxTicksLimit: 20,
+            color: fgColor,
             callback: function (value, index, values) {
               const label = this.getLabelForValue(value);
               return label;
@@ -53,37 +62,17 @@ function renderChart(labels, data, chartType = "line") {
           },
         },
       },
-      onHover: (event, activeElements) => {
-        document
-          .querySelectorAll(".rate-item")
-          .forEach((el) => el.classList.remove("highlight"));
-
-        if (activeElements.length > 0) {
-          const index = activeElements[0].index;
-          const items = document.querySelectorAll(".rate-item");
-
-          const labelText = currentChart.data.labels[index];
-          const target = Array.from(items).find(
-            (item) => item.querySelector("label").textContent === labelText,
-          );
-
-          if (target) {
-            target.classList.add("highlight");
-          }
-        }
-      },
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: "#121212",
-          titleColor: "#aaa",
-          bodyColor: "#0091ff",
-          borderColor: "#444",
+          backgroundColor: bg2Color,
+          bodyColor: fg2Color,
+          borderColor: borderColor,
+          titleColor: fgColor,
           borderWidth: 1,
           padding: 10,
           displayColors: false,
           cornerRadius: 0,
-          titleColor: "#fff",
           titleFont: {
             family: "sans-serif",
           },
