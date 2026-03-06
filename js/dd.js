@@ -95,13 +95,13 @@ function getReadableUpgrades(info) {
 function getReadableTotals(key) {
   switch (key) {
     case "app_totals":
-      return "Damage + Rate + Range"
+      return "Damage + Rate + Range";
     case "hermit_totals":
-      return "Damage + Range + HP"
+      return "Damage + Range + HP";
     case "guardian_totals":
-      return "HP + Rate + Range"
+      return "HP + Rate + Range";
     case "tower_totals":
-      return "Damage + Rate + Range + HP"
+      return "Damage + Rate + Range + HP";
   }
 }
 

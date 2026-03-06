@@ -23,6 +23,7 @@ function renderChart(labels, data, chartType = "line") {
       datasets: [
         {
           data,
+          tension: 0.2,
           borderWidth: 2,
           borderColor: accentColor,
           backgroundColor: `${accentColor}22`,
@@ -54,7 +55,7 @@ function renderChart(labels, data, chartType = "line") {
           ticks: {
             autoSkip: true,
             maxTicksLimit: 20,
-            color: fgColor,
+            color: fg2Color,
             callback: function (value, index, values) {
               const label = this.getLabelForValue(value);
               return label;

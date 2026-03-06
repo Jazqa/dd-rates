@@ -297,19 +297,18 @@
 
                     case "level":
                         buckets = Object.keys(data.buckets);
-                        binnedData = getBinnedData(data.buckets, buckets.length > 250 ? 20 : 10);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, 10);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
                     case "damage":
                     case "damage_2":
-                        chartLabelElement.textContent = "Upgrades: " + getReadableUpgrades(data.info);
-
-                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 33));
+                        chartLabelElement.textContent = "After upgrading: " + getReadableUpgrades(data.info);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50));
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
@@ -318,15 +317,15 @@
                     case "hermit_totals":
                     case "guardian_totals":
                         chartLabelElement.textContent = getReadableTotals(stat);
-
-                        binSize = getDynamicBinSize(data.buckets, 33);
-                        binnedData = getBinnedData(data.buckets, binSize);
-
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
                     case "tower_caps":
+                        chartLabelElement.textContent = "# of simultaneous tower stat caps"
+
                         labels = ["Single", "Double", "Triple", "Quad"];
                         buckets = ["101", "102", "103", "104"];
                         data = buckets.map(b => data.buckets[b] || 0);
@@ -353,10 +352,12 @@
                         break;
 
                     case "scale":
+                        chartLabelElement.textContent = "Size at max level"
+
                         buckets = Object.keys(data.buckets);
-                        binnedData = getBinnedData(data.buckets, buckets.length > 20 ? 10 : 1);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, buckets.length > 20 ? 5 : 1);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
@@ -372,7 +373,7 @@
             } catch (_) { }
         }
 
-        function getBinnedData(buckets, size) {
+        function getBinnedData(buckets, size, forChart = true) {
             const mode = document.getElementById('bucketTypeSelect').value;
             const isScale = document.getElementById('statSelect').value === 'scale';
 
