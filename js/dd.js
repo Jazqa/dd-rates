@@ -68,18 +68,18 @@ function getTabName(key, rates) {
 function getReadableDamageType(label) {
   switch (label) {
     case "Alt":
-      return "Ranged Damage";
+      return "Ranged Dmg";
 
     case "Base":
     case "Base + Additional":
-      return "Damage";
+      return "Dmg";
 
     case "Additional":
     case "Additional + Base":
-      return "Elemental Damage";
+      return "Ele Dmg";
 
     case "50/50":
-      return "Hybrid Damage";
+      return "Hybrid Dmg";
 
     default:
       return "";
@@ -88,20 +88,25 @@ function getReadableDamageType(label) {
 
 function getReadableUpgrades(info) {
   return info
-    .replace("Additional Damage", "Elemental Damage")
-    .replace("Alt", "Ranged");
+    .replace("Additional Projectiles", "Projs")
+    .replace("Projectile Speed", "ProjSpeed")
+    .replace("Shots Per Second", "SPS")
+    .replace("Charge Speed", "Charge")
+    .replace("Base Damage", "Base Dmg")
+    .replace("Additional Damage", "Ele Dmg")
+    .replace("Alt Damage", "Ranged Dmg");
 }
 
 function getReadableTotals(key) {
   switch (key) {
     case "app_totals":
-      return "Damage + Rate + Range";
+      return "Dmg + Rate + Range";
     case "hermit_totals":
-      return "Damage + Range + HP";
+      return "Dmg + Range + HP";
     case "guardian_totals":
       return "HP + Rate + Range";
     case "tower_totals":
-      return "Damage + Rate + Range + HP";
+      return "Dmg + Rate + Range + HP";
   }
 }
 

@@ -299,13 +299,13 @@
                         buckets = Object.keys(data.buckets);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
+                        binnedData = getBinnedData(data.buckets, 10, false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
                     case "damage":
                     case "damage_2":
-                        chartLabelElement.textContent = "After upgrading: " + getReadableUpgrades(data.info);
+                        chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
@@ -319,12 +319,12 @@
                         chartLabelElement.textContent = getReadableTotals(stat);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
+                        binnedData = getBinnedData(data.buckets, 50, false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
                     case "tower_caps":
-                        chartLabelElement.textContent = "# of simultaneous tower stat caps"
+                        chartLabelElement.textContent = "# of simultaneous tower caps"
 
                         labels = ["Single", "Double", "Triple", "Quad"];
                         buckets = ["101", "102", "103", "104"];
@@ -341,7 +341,7 @@
                         break;
 
                     case "support_caps":
-                        chartLabelElement.textContent = "Upgrades: " + data.info;
+                        chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);
 
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
                         buckets = ["4", "5", "6"];
