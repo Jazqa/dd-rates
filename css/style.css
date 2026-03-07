@@ -3,6 +3,7 @@
     --bg: #2b2b2b;
     --bg2: #202020;
     --border: #5c2d2a;
+    --border2: #373737;
     --fg: #ededed;
     --fg2: #d2b48c;
     --hov: #ffffff05;
@@ -21,6 +22,7 @@ body {
 /* Text */
 h2 {
     margin-top: 0;
+    margin-bottom: 0;
     color: var(--fg);
     font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
     font-size: 28px;
@@ -41,7 +43,7 @@ label {
     width: 33vw;
     background: var(--bg2);
     padding: 20px;
-    border-right: 1px solid var(--border);
+    border-right: 1px solid var(--border2);
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -56,7 +58,7 @@ select {
     margin-bottom: 20px;
     background: var(--bg);
     color: var(--fg);
-    border: 1px solid var(--border);
+    border: 1px solid var(--border2);
     box-sizing: border-box;
 }
 
@@ -66,17 +68,17 @@ select {
 select:hover,
 select:active,
 select:focus {
-    border: 1px solid var(--accent);
+    border: 1px solid var(--border2);
     outline: none;
 }
 
 #sidebarSearchResults:not(:empty) {
-    margin-top: -20px;
+    margin-top: -21px;
     margin-bottom: 10px;
     border-top: none;
     color: var(--fg);
     background-color: var(--bg);
-    border: 1px solid var(--border);
+    border: 1px solid var(--border2);
 }
 
 #sidebarSearchResults div small {
@@ -99,6 +101,13 @@ select:focus {
     overflow-y: auto;
     max-width: 1080px;
     margin: 0 auto;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 /* Chart */
@@ -156,18 +165,20 @@ select:focus {
 .rates-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    margin-top: 21px;
-    margin-left: 1px;
+    margin-top: 20px;
+    border: 1px solid var(--border);
+    background-color: var(--bg2);
+    overflow: hidden;
 }
 
 .rate-item {
     display: flex;
     flex-direction: column;
-    background-color: var(--bg2);
     padding: 10px;
-    margin-top: -1px;
-    margin-left: -1px;
-    border: 1px solid var(--border);
+    border-right: 1px solid var(--bg);
+    border-bottom: 1px solid var(--bg);
+    margin-right: -1px;
+    margin-bottom: -1px;
 }
 
 .rate-item.highlight,
@@ -199,7 +210,6 @@ select:focus {
     display: none;
 }
 
-
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -210,12 +220,10 @@ select:focus {
         top: 0;
         z-index: 100;
         background: var(--bg2);
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid var(--border2);
         padding: 10px 20px;
         padding-top: calc(env(safe-area-inset-top) + 10px);
         margin: 0px -20px 20px -20px;
-        display: flex;
-        flex-direction: row;
         align-items: center;
         gap: 15px;
         z-index: 1001;

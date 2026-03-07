@@ -6,7 +6,7 @@
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
   "hero_equipment": "Equipment_Familiar_Fairy",
-  "seq_act": "Main_Sequence",
+  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,

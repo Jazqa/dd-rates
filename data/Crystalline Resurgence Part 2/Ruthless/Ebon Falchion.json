@@ -7,7 +7,7 @@
   "difficulty": "Ruthless",
   "hero_equipment": "BroadswordStyle8_EMHv2",
   "weapon_template": "Weapon_Ebonv2",
-  "seq_act": "Prefab_SeparatedVictory",
+  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,

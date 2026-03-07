@@ -39,6 +39,7 @@
     "Ruthless": [
       "Backstabber",
       "Big Stick",
+      "Rainbow Unicorn",
       "Retribution"
     ]
   },
@@ -197,9 +198,21 @@
   "Crystalline Resurgence Part 3": {
     "Ruthless": [
       "Aquian Cog-Maul",
+      "Crystal Blade",
+      "Crystal Staff",
+      "Crystalline Dragon",
       "Kelp Harvester",
       "Pressurized Energy Core",
       "Xilent's Rhythm Staff"
+    ]
+  },
+  "Crystalline Resurgence Part 4": {
+    "Ruthless": [
+      "Clockwork Spear",
+      "Cog Sword",
+      "Gargoyle Staff",
+      "Mini Kraken",
+      "The Gartner"
     ]
   },
   "Deeper Well": {
@@ -340,7 +353,7 @@
       "Hand of the Queen",
       "Leg of the Queen",
       "Shroomite",
-      "Webbign Untangler"
+      "Webbing Untangler"
     ]
   },
   "Moonbase": {
@@ -373,12 +386,10 @@
       "Steam Robot"
     ]
   },
-  "Pet Forge": {
+  "Portal Defense": {
     "Ruthless": [
-      "Baby Old One",
-      "Baby Old One on a Treadmill",
-      "Rainbow Unicorn",
-      "Zamira's Mount"
+      "Glaive of Unicorn",
+      "Patellar Hammer"
     ]
   },
   "Return to Aquanos": {
@@ -389,6 +400,8 @@
   },
   "Return to Crystalline Dimension": {
     "Ruthless": [
+      "Baby Old One",
+      "Baby Old One on a Treadmill",
       "Constellation Blunderbuss",
       "Constellation Dagger",
       "Constellation Staff",
@@ -513,7 +526,11 @@
   "The Summit": {
     "Ruthless": [
       "Baby Ancient Dragon",
-      "Dragon"
+      "Draconis Ignis",
+      "Dragon",
+      "Dragon-Crested Glaive",
+      "Flamewarder",
+      "The Flame Buffet"
     ]
   },
   "Throne Room": {
@@ -571,10 +588,16 @@
       "Fish"
     ]
   },
+  "Warping Core Challenge Pack 2": {
+    "Ruthless": [
+      "Zamira's Mount"
+    ]
+  },
   "Winter Mire": {
     "Ruthless": [
       "Ban Hammer",
       "Candy Cane",
+      "Christmas Elephant",
       "Mini Snowman",
       "Turkey on a Treadmill",
       "Winter's Flame"
