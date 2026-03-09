@@ -39,7 +39,6 @@
     "Ruthless": [
       "Backstabber",
       "Big Stick",
-      "Rainbow Unicorn",
       "Retribution"
     ]
   },
@@ -50,9 +49,6 @@
     ]
   },
   "Boss Rush 2": {
-    "Nightmare": [
-      "Soup Baby"
-    ],
     "Ruthless": [
       "Soup Baby",
       "Vampire Halberd"
@@ -386,6 +382,14 @@
       "Steam Robot"
     ]
   },
+  "Pet Forge": {
+    "Ruthless": [
+      "Baby Old One",
+      "Baby Old One on a Treadmill",
+      "Rainbow Unicorn",
+      "Zamira's Mount"
+    ]
+  },
   "Portal Defense": {
     "Ruthless": [
       "Glaive of Unicorn",
@@ -400,8 +404,6 @@
   },
   "Return to Crystalline Dimension": {
     "Ruthless": [
-      "Baby Old One",
-      "Baby Old One on a Treadmill",
       "Constellation Blunderbuss",
       "Constellation Dagger",
       "Constellation Staff",
@@ -586,11 +588,6 @@
       "Bachelor Seahorse",
       "Bouncing Heart Staff",
       "Fish"
-    ]
-  },
-  "Warping Core Challenge Pack 2": {
-    "Ruthless": [
-      "Zamira's Mount"
     ]
   },
   "Winter Mire": {

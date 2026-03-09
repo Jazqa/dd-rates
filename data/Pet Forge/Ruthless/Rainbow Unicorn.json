@@ -1,18 +1,18 @@
 {
   "game_version": "10.6.3",
-  "total_seeds": 2147483647,
+  "total_seeds": 2147483648,
   "item_name": "Rainbow Unicorn",
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
   "hero_equipment": "EquipmentPony_Ruthless",
   "projectile_template": "PonyRainbowProjectileHarpoon_Ruthless",
-  "hardcore_randomizer_multiplier": 1.0,
-  "nightmare_randomizer_multiplier": 1.0,
-  "base_force_randomization_quality": 1.6,
-  "max_randomization_quality": 1.6,
-  "randomizer_multiplier_override": 23.0,
-  "total_randomizer_multiplier": 23.0,
+  "hardcore_randomizer_multiplier": 2.0,
+  "nightmare_randomizer_multiplier": 2.0,
+  "base_force_randomization_quality": 3.2,
+  "max_randomization_quality": 3.2,
+  "randomizer_multiplier_override": 46.0,
+  "total_randomizer_multiplier": 46.0,
   "rates": {
     "quality": [
       16254104,
@@ -29,7 +29,7 @@
       97022,
       4476816,
       374465171,
-      1628668039,
+      1628668040,
       79408282,
       24464431,
       11334260,
@@ -333,7 +333,7 @@
         "296": 6079719,
         "297": 5907189,
         "298": 5738551,
-        "299": 5564863,
+        "299": 5564864,
         "300": 5393440,
         "301": 5221285,
         "302": 5050310,
@@ -615,7 +615,7 @@
         "29000": 129723545,
         "30000": 112364349,
         "31000": 91720461,
-        "32000": 73265639,
+        "32000": 73265640,
         "33000": 56003821,
         "34000": 39697534,
         "35000": 25198913,
@@ -644,7 +644,7 @@
         "58000": 324,
         "59000": 31
       },
-      "step": 1000
+      "step": 2000
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -729,7 +729,7 @@
         "1550": 65028414,
         "1600": 50097149,
         "1650": 51578939,
-        "1700": 62382086,
+        "1700": 62382087,
         "1750": 47519398,
         "1800": 21496262,
         "1850": 7957894,
@@ -759,7 +759,7 @@
         "3050": 130,
         "3100": 13
       },
-      "step": 50
+      "step": 100
     },
     "app_totals": {
       "buckets": {
@@ -819,7 +819,7 @@
         "1200": 72340539,
         "1250": 145309628,
         "1300": 129547339,
-        "1350": 50514059,
+        "1350": 50514060,
         "1400": 13116330,
         "1450": 7720866,
         "1500": 13052344,
@@ -843,7 +843,7 @@
         "2400": 872,
         "2450": 87
       },
-      "step": 50
+      "step": 100
     },
     "hermit_totals": {
       "buckets": {
@@ -902,7 +902,7 @@
         "1200": 72342813,
         "1250": 145312199,
         "1300": 129544359,
-        "1350": 50511359,
+        "1350": 50511360,
         "1400": 13114429,
         "1450": 7720214,
         "1500": 13050195,
@@ -927,7 +927,7 @@
         "2450": 85,
         "2500": 1
       },
-      "step": 50
+      "step": 100
     },
     "guardian_totals": {
       "buckets": {
@@ -983,7 +983,7 @@
         "1050": 115822050,
         "1100": 112465672,
         "1150": 98380042,
-        "1200": 72358954,
+        "1200": 72358955,
         "1250": 145301068,
         "1300": 129560544,
         "1350": 50513876,
@@ -1010,7 +1010,7 @@
         "2400": 859,
         "2450": 72
       },
-      "step": 50
+      "step": 100
     },
     "scale": {
       "info": "Divide by 10 for in-game values",
@@ -1064,7 +1064,7 @@
         "85": 17932427,
         "86": 17740990,
         "87": 17509983,
-        "88": 17310161,
+        "88": 17310162,
         "89": 17122329,
         "90": 16973297,
         "91": 16789674,
