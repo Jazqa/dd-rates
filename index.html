@@ -284,7 +284,7 @@
 
                 headerH2Element.textContent = `${item}`;
                 chartLabelElement.textContent = "";
-                dataSmallElement.textContent = `Game Version ${gameVersion}`;
+                dataSmallElement.textContent = `Sample Size: ${totalSeeds.toLocaleString("fr-FR")}, Game Version ${gameVersion}`;
 
                 let data = json.rates[stat]
                 let buckets, binSize, binnedData, labels;
