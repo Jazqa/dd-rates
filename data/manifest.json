@@ -346,6 +346,7 @@
   "Magus Citadel": {
     "Ruthless": [
       "Ace of Spades",
+      "Apprentice Guardian",
       "Arch Mage's Blade Staff",
       "Deadly Striker",
       "Harpoon",
@@ -400,7 +401,11 @@
     "Ruthless": [
       "Baby Old One",
       "Baby Old One on a Treadmill",
+      "Big Coal",
+      "Crystal Heart",
+      "Diamond",
       "Rainbow Unicorn",
+      "Small Diamond",
       "Zamira's Mount"
     ]
   },
@@ -581,6 +586,7 @@
   },
   "Tomb of Etheria": {
     "Ruthless": [
+      "Anubis Sand Blade",
       "Mummy",
       "Scarab Bow",
       "Serpent Staff",
