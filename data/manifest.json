@@ -242,6 +242,16 @@
       "Imp"
     ]
   },
+  "Eternia Gauntlet": {
+    "Ruthless": [
+      "Abyssal Fin",
+      "Apprentice Guardian",
+      "Huntress Guardian",
+      "Lumeric Staff",
+      "Monk Guardian",
+      "Squire Guardian"
+    ]
+  },
   "Foundries and Forges": {
     "Ruthless": [
       "Steam Robot"
@@ -249,6 +259,10 @@
   },
   "Frostdale Royal Court": {
     "Ruthless": [
+      "Boxing Glove",
+      "Candy Cane Launcher",
+      "Ice Pick",
+      "Lil' Pengy",
       "Reindeer"
     ]
   },
