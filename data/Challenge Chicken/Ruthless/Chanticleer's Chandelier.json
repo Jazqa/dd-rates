@@ -1,5 +1,5 @@
 {
-  "game_version": "10.6.3",
+  "game_version": "10.6.5",
   "total_seeds": 2147483648,
   "item_name": "Chanticleer's Chandelier",
   "map_name": "Challenge Chicken",
@@ -1017,11 +1017,11 @@
       "step": 50
     },
     "support_caps": {
-      "info": "Additional Projectiles > Projectile Speed > Charge Speed > Stat",
+      "info": "Additional Projectiles > Projectile Speed > Charge Speed > Base Damage to 5000 > Stat",
       "buckets": {
-        "4": 2425189,
-        "5": 4087313,
-        "6": 2422740
+        "4": 2420832,
+        "5": 4080948,
+        "6": 2418486
       }
     },
     "scale": {
