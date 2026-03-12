@@ -147,7 +147,15 @@
                 };
 
                 document.getElementById('diffSelect').onchange = () => {
+                    const itemSelect = document.getElementById('itemSelect');
+                    const selectedItem = itemSelect.value;
+
                     updateItems();
+
+                    if (selectedItem) {
+                        itemSelect.value = selectedItem;
+                    }
+
                     loadData(true);
                     updateURL();
                 };
