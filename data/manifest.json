@@ -559,8 +559,12 @@
   },
   "Temple of Polybius": {
     "Ruthless": [
+      "Defensive Polybius",
+      "Destruction Polybius",
+      "Expansive Polybius",
       "Kraken Kannon",
-      "Mischief Maker"
+      "Mischief Maker",
+      "Speedy Polybius"
     ]
   },
   "Temple of Water": {
