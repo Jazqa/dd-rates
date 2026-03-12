@@ -287,6 +287,22 @@
       "Witch's Broom"
     ]
   },
+  "Halloween Spooktacular": {
+    "Ruthless": [
+      "Bonecutter",
+      "Mad Jack",
+      "Nosferatu",
+      "Sicarius"
+    ]
+  },
+  "Halloween Spooktacular 2": {
+    "Ruthless": [
+      "Couteau",
+      "Geier",
+      "Van Wolfenstein",
+      "Weisgram"
+    ]
+  },
   "Infested Ruins": {
     "Ruthless": [
       "Honey Gun",
@@ -376,6 +392,7 @@
     "Ruthless": [
       "Black Death",
       "Hand of the Queen",
+      "Kairy the Brave Fairy",
       "Leg of the Queen",
       "Shroomite",
       "Webbing Untangler"
@@ -398,6 +415,7 @@
       "Crysknife of the Efreet",
       "Donkey",
       "Junbao's Sun-kissed Saber",
+      "Magic Carpet",
       "Oculus of the Genie King",
       "Shaitan of a Thousand Winds"
     ]
@@ -484,6 +502,7 @@
   "Sky City": {
     "Ruthless": [
       "Krytykal Stryke",
+      "Lil' Cruiser",
       "Monk Wrench",
       "Staffaphone",
       "Steam Saw"
