@@ -312,6 +312,14 @@
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
 
+                    case "cat":
+                        buckets = Object.keys(data.buckets);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 10));
+                        renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, 5, false);
+                        updateRatesList(binnedData.labels, binnedData.values);
+                        break;
+
                     case "damage":
                     case "damage_2":
                         chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);

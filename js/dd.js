@@ -3,6 +3,7 @@ const STAT_LABELS = {
   level: "Level",
   damage: "Damage",
   damage_2: "Damage",
+  cat: "Boost",
   tower_caps: "Caps",
   tower_totals: "Towers",
   app_totals: "App",
@@ -78,6 +79,7 @@ const ALIASES = {
   ],
   "baby old one": ["boo"],
   dice: ["Fortuna", "Chance", "Roller", "Venture", "Risk", "Luck"],
+  corgi: ["Chainsaw Corgi"],
 };
 
 const ALIAS_LOOKUP = {};
