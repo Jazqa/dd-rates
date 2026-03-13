@@ -3,20 +3,30 @@ function setupSidebarSearch() {
   const sidebarSearchResults = document.getElementById("sidebarSearchResults");
 
   input.addEventListener("input", () => {
-    const query = input.value.toLowerCase();
+    const query = input.value.toLowerCase().trim();
     sidebarSearchResults.innerHTML = "";
     if (query.length < 2) return;
+
+    const aliases = [];
+    for (const [alias, category] of Object.entries(ALIAS_LOOKUP)) {
+      if (alias.includes(query)) {
+        aliases.push(category);
+      }
+    }
 
     let matches = [];
 
     for (const [map, diffs] of Object.entries(manifestData)) {
       for (const [diff, items] of Object.entries(diffs)) {
-        if (!diff.toLowerCase().includes("ruthless")) continue; // TODO: Enable search for lower difficulties
+        if (!diff.toLowerCase().includes("ruthless")) continue;
 
         items.forEach((item) => {
+          const itemLow = item.toLowerCase();
+
           if (
-            item.toLowerCase().includes(query) ||
-            map.toLowerCase().includes(query)
+            itemLow.includes(query) ||
+            map.toLowerCase().includes(query) ||
+            aliases.includes(itemLow)
           ) {
             matches.push({ map, diff, item });
           }

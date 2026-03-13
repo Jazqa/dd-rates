@@ -61,6 +61,32 @@ const RARITY_LABELS_SHORT = [
 
 const DIFF_NAMES_SHORT = { Ruthless: "RL", Nightmare: "NM" };
 
+const ALIASES = {
+  eye: ["eye of ruin", "eye of ravaging", "eye of devastation"],
+  parrot: ["polly"],
+  owl: ["mr. owl", "mr. peckers", "mr. crackers", "mr. bed", "mike"],
+  bunny: [
+    "bugs",
+    "peter",
+    "babs",
+    "peppy",
+    "ruby",
+    "hopper",
+    "thumper",
+    "nibbles",
+    "buttercup",
+  ],
+  "baby old one": ["boo"],
+  dice: ["Fortuna", "Chance", "Roller", "Venture", "Risk", "Luck"],
+};
+
+const ALIAS_LOOKUP = {};
+for (const [category, names] of Object.entries(ALIASES)) {
+  names.forEach((name) => {
+    ALIAS_LOOKUP[name.toLowerCase()] = category;
+  });
+}
+
 function getTabName(key, rates) {
   return getReadableDamageType(rates[key].label) || STAT_LABELS[key] || key;
 }
