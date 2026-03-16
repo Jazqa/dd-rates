@@ -568,17 +568,17 @@
                         const start = (key / 10).toFixed(1);
                         if (nextBin) {
                             const end = (nextBin / 10).toFixed(1);
-                            finalLabels.push(`${start} - ${end} `);
+                            finalLabels.push(`${start}-${end}`);
                         } else {
-                            finalLabels.push(`${start} +`);
+                            finalLabels.push(`${start}+`);
                         }
                     } else {
                         const startStr = key.toLocaleString("fr-FR");
                         if (nextBin) {
                             const endStr = (nextBin - 1).toLocaleString("fr-FR");
-                            finalLabels.push(`${startStr} - ${endStr} `);
+                            finalLabels.push(`${startStr}-${endStr}`);
                         } else {
-                            finalLabels.push(`${startStr} +`);
+                            finalLabels.push(`${startStr}+`);
                         }
                     }
                 });
