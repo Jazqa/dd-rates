@@ -281,6 +281,9 @@ select:focus {
     font-size: inherit;
     font-family: inherit;
     outline: none;
+    appearance: none;
+    border-radius: 0;
+    -webkit-appearance: none;  
 }
 
 .grid-input::-webkit-outer-spin-button,
@@ -373,6 +376,7 @@ select:focus {
     #content {
         padding: 10px;
         padding-top: 0;
+        box-sizing: border-box;
     }
 
     .rates-container {
