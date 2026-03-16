@@ -30,6 +30,37 @@ function interpolate(target, buckets) {
   return cumulativeData[cumulativeData.length - 1].val;
 }
 
+function reverseInterpolate(targetValue, buckets) {
+  const keys = Object.keys(buckets)
+    .map(Number)
+    .sort((a, b) => a - b);
+  if (keys.length === 0) return 0;
+
+  let runningTotal = 0;
+  const cumulativeData = [];
+  for (let i = keys.length - 1; i >= 0; i--) {
+    runningTotal += buckets[keys[i]];
+    cumulativeData.unshift({
+      val: keys[i],
+      chance: totalSeeds / runningTotal,
+    });
+  }
+
+  if (targetValue <= cumulativeData[0].val) return cumulativeData[0].chance;
+
+  for (let i = 0; i < cumulativeData.length - 1; i++) {
+    const low = cumulativeData[i];
+    const high = cumulativeData[i + 1];
+
+    if (targetValue >= low.val && targetValue <= high.val) {
+      const ratio = (targetValue - low.val) / (high.val - low.val);
+      return low.chance + ratio * (high.chance - low.chance);
+    }
+  }
+
+  return cumulativeData[cumulativeData.length - 1].chance;
+}
+
 function updateAverages(buckets) {
   const averageList = document.getElementById("averageList");
   const stat = document.getElementById("statSelect").value;

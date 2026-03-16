@@ -292,18 +292,29 @@ select:focus {
 .grid-input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid var(--fg2);
     color: var(--fg2);
-    width: 60px;
-    text-align: center;
+    width: 80px;
     font-size: inherit;
     font-family: inherit;
     outline: none;
-    appearance: none;
     border-radius: 0;
+    appearance: none;
     -webkit-appearance: none;  
 }
 
+.grid-input-2 {
+    color: var(--fg);
+    border: none;
+    width: auto;
+    background: transparent;
+    outline: none;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;  
+}
+
+.grid-input-2::-webkit-outer-spin-button,
+.grid-input-2::-webkit-inner-spin-button
 .grid-input::-webkit-outer-spin-button,
 .grid-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -403,6 +414,7 @@ select:focus {
         font-size: 16px !important;
     }
 
+    .grid-input-2,
     .grid-input  {
         font-size: 16px !important;
     }

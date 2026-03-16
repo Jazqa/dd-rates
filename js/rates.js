@@ -80,63 +80,80 @@ function updateCustomRate(buckets) {
   const stat = document.getElementById("statSelect").value;
   const isScale = stat === "scale";
 
-  // Calculate the rarest chance in this bucket set for the "+" logic
-  const keys = Object.keys(buckets)
-    .map(Number)
-    .sort((a, b) => a - b);
-  let totalInBuckets = 0;
-  keys.forEach((k) => (totalInBuckets += buckets[k]));
-  const rarestChance = totalSeeds / buckets[keys[keys.length - 1]];
-  // Note: If your interpolate logic uses cumulative,
-  // rarestChance is usually totalSeeds / buckets[maxKey]
-
   const calcItem = document.createElement("div");
   calcItem.className = "rate-item simulator-item";
+
+  // inputmode="decimal" ensures mobile users get the right keyboard without the spinner hell
   calcItem.innerHTML = `
-        <label id="gridCalcResult" style="color: var(--fg);">∞</label>
+        <input type="text" id="gridCalcResult" class="grid-input-2" 
+               placeholder="Value" autocomplete="off" spellcheck="false"
+               inputmode="decimal"
+               style="text-align: left; color: var(--fg); width: 80px;">
         <div class="rate-value">
-            1 / <input type="number" id="gridCalcChance" placeholder="Custom" 
-                 class="grid-input" inputmode="numeric" step="1" 
+            1 / <input type="text" id="gridCalcChance" class="grid-input" 
+                 placeholder="Chance" autocomplete="off" spellcheck="false"
+                 inputmode="numeric"
                  value="${savedCustomChance}">
         </div>
     `;
   ratestList.appendChild(calcItem);
 
   const chanceInput = document.getElementById("gridCalcChance");
-  const resultLabel = document.getElementById("gridCalcResult");
+  const valueInput = document.getElementById("gridCalcResult");
 
-  const runCalc = (val) => {
-    savedCustomChance = val;
-    if (!val) {
-      resultLabel.textContent = "∞";
+  const cleanInput = (val) => val.replace(/\s/g, "").replace(",", ".");
+
+  const toFr = (num, decimals = 0) =>
+    num.toLocaleString("fr-FR", {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    });
+
+  const runForward = () => {
+    const raw = cleanInput(chanceInput.value);
+    const chance = parseInt(raw, 10);
+    savedCustomChance = chanceInput.value;
+
+    if (isNaN(chance) || chance < 1) {
+      valueInput.value = "";
       return;
     }
-    const target = parseInt(val, 10);
-    if (isNaN(target) || target < 1) {
-      resultLabel.textContent = "∞";
-      return;
-    }
 
-    const value = interpolate(target, buckets);
-    if (!value || value <= 0) {
-      resultLabel.textContent = "∞";
-    } else {
-      const displayVal = isScale
-        ? (value / 10).toFixed(2)
-        : Math.round(value).toLocaleString("fr-FR");
+    const result = interpolate(chance, buckets);
+    const finalVal = isScale ? result / 10 : Math.round(result);
 
-      // Check if target meets or exceeds the rarest documented bucket
-      const isMaxed = target >= rarestChance;
-      resultLabel.textContent = isMaxed ? `${displayVal}+` : displayVal;
-    }
+    valueInput.value = toFr(finalVal, isScale ? 2 : 0);
   };
 
-  if (savedCustomChance) runCalc(savedCustomChance);
+  const runReverse = () => {
+    const raw = cleanInput(valueInput.value);
+    const val = parseFloat(raw);
 
-  // Block decimals/scientific notation
+    if (isNaN(val)) {
+      chanceInput.value = "";
+      return;
+    }
+
+    const internalVal = isScale ? val * 10 : val;
+    const chance = reverseInterpolate(internalVal, buckets);
+
+    chanceInput.value = toFr(Math.round(chance), 0);
+    savedCustomChance = chanceInput.value;
+  };
+
+  chanceInput.oninput = runForward;
+  valueInput.oninput = runReverse;
+
   chanceInput.onkeypress = (e) => {
-    if ([".", ",", "e", "+", "-"].includes(e.key)) e.preventDefault();
+    if (!/[0-9\s]/.test(e.key)) e.preventDefault();
+  };
+  valueInput.onkeypress = (e) => {
+    if (!/[0-9.,\s]/.test(e.key)) e.preventDefault();
   };
 
-  chanceInput.oninput = () => runCalc(chanceInput.value);
+  if (savedCustomChance) {
+    const initial = parseInt(cleanInput(savedCustomChance), 10);
+    if (!isNaN(initial)) chanceInput.value = toFr(initial, 0);
+    runForward();
+  }
 }
