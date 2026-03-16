@@ -359,16 +359,6 @@ select:focus {
         padding-top: 0;
     }
 
-    .chart-tab-button {
-        font-size: 11px;
-        width: 72px;
-    }
-
-    .chart-tab-dropdown-content button {
-        font-size: 11px;
-        width: 71px;
-    }
-
     /* Mobile Input */
     #sidebarSearch,
     select {
