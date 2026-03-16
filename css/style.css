@@ -7,6 +7,7 @@
     --fg: #ededed;
     --fg2: #d2b48c;
     --hov: #ffffff05;
+    --shadow1: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -94,6 +95,17 @@ select:focus {
     background-color: var(--hov);
 }
 
+.sidebar-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--fg);
+    background-color: var(--bg);
+    border: 1px solid var(--border2);
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Content Area */
 #content {
     flex-grow: 1;
@@ -136,14 +148,16 @@ select:focus {
     color: var(--fg2);
     border-left: 1px solid var(--border);
     border-image: linear-gradient(to top, var(--border), transparent) 1;
+    vertical-align: bottom;
     margin-bottom: -1px;
     padding: 10px;
     padding-top: 15px;
+    width: 90px;
 }
 
 .chart-tab-button.active {
     color: var(--fg);
-    background: var(--bg2);
+    background-image: linear-gradient(to top, var(--bg2), transparent);
     border-left: 1px solid var(--border);
 }
 
@@ -156,9 +170,54 @@ select:focus {
     text-decoration: underline;
 }
 
-.chart-tab-button.active:hover {
+.chart-tab-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.chart-tab-dropdown:hover .chart-tab-dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-tab-dropdown:last-child {
+    border-right: 1px solid var(--border);
+    border-image: linear-gradient(to top, var(--border), transparent) 1;
+}
+
+.chart-tab-dropdown:hover > .chart-tab-button {
+    background-image: none;
+    border-left: 1px solid var(--border);
+}
+
+.chart-tab-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg);
+    z-index: 1000;
+    border: 1px solid var(--border);
+    border-top: none;
+    box-shadow: var(--shadow1);
+}
+
+.chart-tab-dropdown-content button {
+    width: 89px;
+    padding: 10px;
+    text-align: left;
+    background: none;
     color: var(--fg2);
-    text-decoration: none !important;
+    border: none;
+    cursor: pointer;
+    border-top: 1px solid var(--border2);
+    text-align: center;
+}
+
+.chart-tab-dropdown-content button:hover {
+    background-color: var(--hov);
+}
+
+.chart-tab-dropdown-content button.active {
+    color: var(--fg);
 }
 
 /* Rates Grid */
@@ -195,6 +254,24 @@ select:focus {
     color: var(--fg2);
     font-family: monospace;
     font-size: 14px;
+}
+
+.grid-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--fg2);
+    color: var(--fg2);
+    width: 60px;
+    text-align: center;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+}
+
+.grid-input::-webkit-outer-spin-button,
+.grid-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Data */

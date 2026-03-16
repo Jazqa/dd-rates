@@ -1105,5 +1105,8 @@
         "21": 9933
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 3,
+  "class_name": 0
 }

@@ -1071,5 +1071,8 @@
         "18": 202032384
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 3,
+  "class_name": 0
 }

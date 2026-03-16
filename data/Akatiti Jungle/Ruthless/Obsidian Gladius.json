@@ -1000,5 +1000,8 @@
         "14": 296788346
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 2,
+  "class_name": 0
 }

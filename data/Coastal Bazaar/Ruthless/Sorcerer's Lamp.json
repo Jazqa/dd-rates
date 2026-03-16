@@ -1012,5 +1012,8 @@
         "11": 1340646644
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 3,
+  "class_name": 0
 }

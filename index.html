@@ -30,6 +30,7 @@
             <select id="statSelect"></select>
         </div>
 
+
         <label>Y-Axis Scale</label>
         <select id="yAxisTypeSelect">
             <option value="linear">Linear</option>
@@ -41,6 +42,8 @@
             <option value="cumulative">Cumulative</option>
             <option value="unique">Unique</option>
         </select>
+
+        <button class="sidebar-button" onclick="selectRandomItem()">Random Item</button>
     </div>
 
     <div id="content">
@@ -49,17 +52,20 @@
             <h2 id="headerH2"></h2>
         </div>
         <div id="chartTabs" class="chart-tabs-container"></div>
-        <div class="chart-container">
+        <div id="chartContainer" class="chart-container">
             <label id="chartLabel"></label>
             <canvas id="chart"></canvas>
         </div>
+
         <div id="ratesList" class="rates-container"></div>
+
         <div style="display: flex; width: 100%; justify-content: flex-end;">
             <small id="dataSmall" style="color: var(--fg2)"></small>
         </div>
     </div>
 
     <script src="js/dd.js"></script>
+    <script src="js/averages.js"></script>
     <script src="js/rates.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/search.js"></script>
@@ -78,6 +84,9 @@
 
             if (params.has('map')) {
                 document.getElementById('mapSelect').value = params.get('map');
+            } else {
+                const maps = Object.keys(manifestData);
+                mapSelect.value = maps[Math.floor(Math.random() * maps.length)];
             }
 
             updateDifficulties();
@@ -90,6 +99,9 @@
 
             if (params.has('item')) {
                 document.getElementById('itemSelect').value = params.get('item');
+            } else {
+                const items = manifestData[mapSelect.value][diffSelect.value];
+                itemSelect.value = items[Math.floor(Math.random() * items.length)];
             }
 
             if (params.has('stat')) {
@@ -176,6 +188,21 @@
             }
         }
 
+        function selectRandomItem() {
+            const maps = Object.keys(manifestData);
+            if (maps.length === 0) return;
+
+            const randomMap = maps[Math.floor(Math.random() * maps.length)];
+
+            const diffs = Object.keys(manifestData[randomMap]);
+            const randomDiff = diffs[Math.floor(Math.random() * diffs.length)];
+
+            const items = manifestData[randomMap][randomDiff];
+            const randomItem = items[Math.floor(Math.random() * items.length)];
+
+            applySelection(randomMap, randomDiff, randomItem);
+        }
+
         function updateURL() {
             const params = new URLSearchParams({
                 map: document.getElementById('mapSelect').value,
@@ -231,8 +258,6 @@
 
             let stat = statSelect.value;
 
-            if (!item) return;
-
             try {
                 const url = `./data/${map}/${diff}/${item}.json`;
                 const response = await fetch(url);
@@ -243,48 +268,41 @@
 
                 if (shouldRebuild) {
                     const rates = Object.keys(json.rates);
-
                     statSelect.innerHTML = '';
                     chartTabs.innerHTML = '';
 
                     rates.forEach(key => {
-                        let option = document.createElement('option');
-                        let tabName = getTabName(key, json.rates);
-                        option.value = key;
-                        option.textContent = tabName;
-                        statSelect.appendChild(option);
-
-                        const button = document.createElement('button');
-
-                        button.className = 'chart-tab-button';
-                        button.textContent = tabName;
-                        button.dataset.key = key;
-
-                        button.onclick = () => {
-                            statSelect.value = key;
-                            document.querySelectorAll('.chart-tab-button').forEach(b => b.classList.remove('active'));
-                            button.classList.add('active');
-                            loadData(false);
-                            updateURL();
-                        };
-
-                        chartTabs.appendChild(button);
+                        let opt = document.createElement('option');
+                        opt.value = key;
+                        opt.textContent = getTabName(key, json.rates);
+                        statSelect.appendChild(opt);
                     });
 
+                    const allGroupedKeys = Object.values(STAT_GROUPS).flat();
 
+                    rates.forEach(key => {
+                        if (!allGroupedKeys.includes(key)) {
+                            renderTabButton(key, getTabName(key, json.rates), chartTabs);
+                        }
+                    });
 
-                    if (!rates.includes(stat)) {
-                        const params = new URLSearchParams(window.location.search);
-                        const urlStat = params.get('stat');
-                        stat = (urlStat && rates.includes(urlStat)) ? urlStat : rates[0];
-                    }
+                    Object.entries(STAT_GROUPS).forEach(([groupName, members]) => {
+                        const available = members.filter(m => rates.includes(m));
 
-                    statSelect.value = stat;
+                        if (available.length === 1) {
+                            const singleKey = available[0];
+                            renderTabButton(singleKey, groupName === "Damage" ? groupName : getTabName(singleKey, json.rates), chartTabs);
+                        } else if (available.length > 1) {
+                            renderMetaTab(groupName, available, json.rates);
+                        }
+                    });
 
-                    const activeTab = Array.from(chartTabs.children).find(t => t.dataset.key === stat);
-
-                    if (activeTab) activeTab.classList.add('active');
+                    const urlStat = new URLSearchParams(window.location.search).get('stat');
+                    statSelect.value = (urlStat && rates.includes(urlStat)) ? urlStat : rates[0];
                 }
+
+                let stat = statSelect.value;
+                if (!stat) return;
 
                 const headerH2Element = document.getElementById('headerH2');
                 const chartLabelElement = document.getElementById('chartLabel');
@@ -309,6 +327,7 @@
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, 10, false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
                     case "cat":
@@ -326,6 +345,7 @@
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
                     case "tower_totals":
@@ -335,12 +355,14 @@
                         chartLabelElement.textContent = getReadableTotals(stat);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, data.step === 50 ? 50 : 20, false);
+                        binnedData = getBinnedData(data.buckets, data.step, false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
                     case "hdmgab1":
                     case "hdmgab2":
+                    case "hdmgboth":
                     case "hdmg":
                     case "ab1":
                     case "ab2":
@@ -348,11 +370,13 @@
                     case "trate":
                     case "tdmg":
                     case "trange":
+                        chartLabelElement.textContent = getReadableTotals(stat) || STAT_LABELS[stat];
                         buckets = Object.keys(data.buckets);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, 5, false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
 
@@ -391,6 +415,7 @@
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 50), false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
                     case "multiproj":
@@ -402,7 +427,70 @@
                     default:
                         break;
                 }
+
+                updateActiveTabStyles(stat);
             } catch (_) { }
+        }
+
+        function renderTabButton(key, label, container) {
+            const btn = document.createElement('button');
+            btn.className = 'chart-tab-button';
+            btn.textContent = label;
+            btn.dataset.stat = key;
+
+            btn.onclick = () => {
+                document.getElementById('statSelect').value = key;
+                loadData(false);
+                updateURL();
+            };
+            container.appendChild(btn);
+        }
+
+        function renderMetaTab(groupName, members, ratesData) {
+            const wrap = document.createElement('div');
+            wrap.className = 'chart-tab-dropdown';
+            wrap.dataset.group = groupName;
+
+            const mainBtn = document.createElement('button');
+            mainBtn.className = 'chart-tab-button';
+            mainBtn.textContent = `${groupName} ▾`;
+            wrap.appendChild(mainBtn);
+
+            const content = document.createElement('div');
+            content.className = 'chart-tab-dropdown-content';
+
+            members.forEach(key => {
+                const b = document.createElement('button');
+                b.textContent = getTabName(key, ratesData);
+                b.dataset.stat = key;
+
+                b.onclick = () => {
+                    document.getElementById('statSelect').value = key;
+                    loadData(false);
+                    updateURL();
+                };
+                content.appendChild(b);
+            });
+
+            wrap.appendChild(content);
+            document.getElementById('chartTabs').appendChild(wrap);
+        }
+
+        function updateActiveTabStyles(currentStat) {
+            document.querySelectorAll('.chart-tab-button, .chart-tab-dropdown-content button').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            const activeBtn = document.querySelector(`[data-stat="${currentStat}"]`);
+
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+
+                const parentDropdown = activeBtn.closest('.chart-tab-dropdown');
+                if (parentDropdown) {
+                    parentDropdown.querySelector('.chart-tab-button').classList.add('active');
+                }
+            }
         }
 
         function getBinnedData(buckets, size, forChart = true) {
@@ -485,14 +573,13 @@
             }
 
             const mapSelect = document.getElementById('mapSelect');
-            mapSelect.value = map;
-
-            updateDifficulties();
             const diffSelect = document.getElementById('diffSelect');
-            diffSelect.value = diff;
-
-            updateItems();
             const itemSelect = document.getElementById('itemSelect');
+
+            mapSelect.value = map;
+            updateDifficulties();
+            diffSelect.value = diff;
+            updateItems();
             itemSelect.value = item;
 
             loadData(true);

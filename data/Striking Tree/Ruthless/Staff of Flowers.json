@@ -425,5 +425,8 @@
       },
       "step": 50
     }
-  }
+  },
+  "equipment_type": 10,
+  "weapon_type": 0,
+  "class_name": 0
 }

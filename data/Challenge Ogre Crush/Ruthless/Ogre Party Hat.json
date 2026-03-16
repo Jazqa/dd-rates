@@ -1341,5 +1341,8 @@
         "20": 24490539
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 4,
+  "class_name": 0
 }

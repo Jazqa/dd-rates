@@ -5,15 +5,16 @@ const STAT_LABELS = {
   damage_2: "Damage",
   cat: "Boost",
   tower_caps: "Caps",
-  tower_totals: "Towers",
+  tower_totals: "All",
   app_totals: "App",
   hermit_totals: "Hermit",
   guardian_totals: "Guardian",
   support_caps: "Support Caps",
   scale: "Size",
   multiproj: "Multiple Projectiles",
-  hdmgab1: "HDmg + Ab1",
-  hdmgab2: "HDmg + Ab2",
+  hdmgab1: "Ab1 DPS",
+  hdmgab2: "Ab2 DPS",
+  hdmgboth: "Hybrid DPS",
   hdmg: "HDmg",
   ab1: "Ab1",
   ab2: "Ab2",
@@ -21,6 +22,20 @@ const STAT_LABELS = {
   trate: "TRate",
   tdmg: "TDmg",
   trange: "TRange",
+};
+
+const STAT_GROUPS = {
+  Damage: ["damage", "damage_2"],
+  DPS: ["hdmgab1", "hdmgab2", "hdmgboth"],
+  Builder: [
+    "tower_totals",
+    "app_totals",
+    "hermit_totals",
+    "guardian_totals",
+    "tower_caps",
+  ],
+  Singles: ["hdmg", "ab1", "ab2", "thp", "trate", "tdmg", "trange"],
+  More: ["scale", "multiproj", "support_caps"],
 };
 
 const RARITY_LABELS = [
@@ -117,18 +132,18 @@ function getTabName(key, rates) {
 function getReadableDamageType(label) {
   switch (label) {
     case "Alt":
-      return "Ranged Dmg";
+      return "Ranged";
 
     case "Base":
     case "Base + Additional":
-      return "Dmg";
+      return "Base";
 
     case "Additional":
     case "Additional + Base":
-      return "Ele Dmg";
+      return "Elemental";
 
     case "50/50":
-      return "Hybrid Dmg";
+      return "Hybrid";
 
     default:
       return "";
@@ -149,13 +164,19 @@ function getReadableUpgrades(info) {
 function getReadableTotals(key) {
   switch (key) {
     case "app_totals":
-      return "Dmg + Rate + Range";
+      return "TDmg + TRate + TRange";
     case "hermit_totals":
-      return "Dmg + Range + HP";
+      return "TDmg + TRange + THP";
     case "guardian_totals":
-      return "HP + Rate + Range";
+      return "THP + TRate + TRange";
     case "tower_totals":
-      return "Dmg + Rate + Range + HP";
+      return "TDmg + TRate + TRange + THP";
+    case "hdmgab1":
+      return "HDmg + Ab1";
+    case "hdmgab2":
+      return "HDmg + Ab2";
+    case "hdmgboth":
+      return "HDmg + Ab1 + Ab2";
   }
 }
 

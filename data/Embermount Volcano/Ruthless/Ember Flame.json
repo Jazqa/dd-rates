@@ -1150,5 +1150,8 @@
         "13": 191480054
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 3,
+  "class_name": 0
 }

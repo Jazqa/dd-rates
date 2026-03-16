@@ -1083,5 +1083,8 @@
         "17": 51466236
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 1,
+  "class_name": 0
 }

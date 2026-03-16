@@ -1191,5 +1191,8 @@
         "19": 45890309
       }
     }
-  }
+  },
+  "equipment_type": 0,
+  "weapon_type": 3,
+  "class_name": 0
 }

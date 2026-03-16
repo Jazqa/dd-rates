@@ -593,5 +593,8 @@
         "281": 8
       }
     }
-  }
+  },
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 3
 }

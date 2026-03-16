@@ -17,6 +17,7 @@ function shouldDisplayRate(stat, chance, displayed, index, length) {
     stat.includes("totals") ||
     stat === "hdmgab1" ||
     stat === "hdmgab2" ||
+    stat === "hdmgboth" ||
     stat === "hdmg" ||
     stat === "ab1" ||
     stat === "ab2" ||
@@ -68,4 +69,74 @@ function updateRatesList(labels, data) {
   });
 
   ratestList.style.display = ratestList.childElementCount > 0 ? "grid" : "none";
+}
+
+let savedCustomChance = "";
+
+function updateCustomRate(buckets) {
+  const ratestList = document.getElementById("ratesList");
+  if (!ratestList || !buckets) return;
+
+  const stat = document.getElementById("statSelect").value;
+  const isScale = stat === "scale";
+
+  // Calculate the rarest chance in this bucket set for the "+" logic
+  const keys = Object.keys(buckets)
+    .map(Number)
+    .sort((a, b) => a - b);
+  let totalInBuckets = 0;
+  keys.forEach((k) => (totalInBuckets += buckets[k]));
+  const rarestChance = totalSeeds / buckets[keys[keys.length - 1]];
+  // Note: If your interpolate logic uses cumulative,
+  // rarestChance is usually totalSeeds / buckets[maxKey]
+
+  const calcItem = document.createElement("div");
+  calcItem.className = "rate-item simulator-item";
+  calcItem.innerHTML = `
+        <label id="gridCalcResult" style="color: var(--fg);">∞</label>
+        <div class="rate-value">
+            1 / <input type="number" id="gridCalcChance" placeholder="Custom" 
+                 class="grid-input" inputmode="numeric" step="1" 
+                 value="${savedCustomChance}">
+        </div>
+    `;
+  ratestList.appendChild(calcItem);
+
+  const chanceInput = document.getElementById("gridCalcChance");
+  const resultLabel = document.getElementById("gridCalcResult");
+
+  const runCalc = (val) => {
+    savedCustomChance = val;
+    if (!val) {
+      resultLabel.textContent = "∞";
+      return;
+    }
+    const target = parseInt(val, 10);
+    if (isNaN(target) || target < 1) {
+      resultLabel.textContent = "∞";
+      return;
+    }
+
+    const value = interpolate(target, buckets);
+    if (!value || value <= 0) {
+      resultLabel.textContent = "∞";
+    } else {
+      const displayVal = isScale
+        ? (value / 10).toFixed(2)
+        : Math.round(value).toLocaleString("fr-FR");
+
+      // Check if target meets or exceeds the rarest documented bucket
+      const isMaxed = target >= rarestChance;
+      resultLabel.textContent = isMaxed ? `${displayVal}+` : displayVal;
+    }
+  };
+
+  if (savedCustomChance) runCalc(savedCustomChance);
+
+  // Block decimals/scientific notation
+  chanceInput.onkeypress = (e) => {
+    if ([".", ",", "e", "+", "-"].includes(e.key)) e.preventDefault();
+  };
+
+  chanceInput.oninput = () => runCalc(chanceInput.value);
 }

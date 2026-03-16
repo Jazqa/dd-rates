@@ -1044,5 +1044,8 @@
         "245": 23
       }
     }
-  }
+  },
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 3
 }
