@@ -12,6 +12,15 @@ const STAT_LABELS = {
   support_caps: "Support Caps",
   scale: "Size",
   multiproj: "Multiple Projectiles",
+  hdmgab1: "HDmg + Ab1",
+  hdmgab2: "HDmg + Ab2",
+  hdmg: "HDmg",
+  ab1: "Ab1",
+  ab2: "Ab2",
+  thp: "THP",
+  trate: "TRate",
+  tdmg: "TDmg",
+  trange: "TRange",
 };
 
 const RARITY_LABELS = [
@@ -62,6 +71,10 @@ const RARITY_LABELS_SHORT = [
 
 const DIFF_NAMES_SHORT = { Ruthless: "RL", Nightmare: "NM" };
 
+const ACC_ALIAS_HEAD = ["head", "brooch", "hat"];
+const ACC_ALIAS_MASK = ["mask", "face"];
+const ACC_ALIAS_BRACER = ["wrist", "bracer"];
+
 const ALIASES = {
   eye: ["eye of ruin", "eye of ravaging", "eye of devastation"],
   parrot: ["polly"],
@@ -80,6 +93,14 @@ const ALIASES = {
   "baby old one": ["boo"],
   dice: ["Fortuna", "Chance", "Roller", "Venture", "Risk", "Luck"],
   corgi: ["Chainsaw Corgi"],
+
+  "Rudolph's Spare Antlers": ACC_ALIAS_HEAD,
+  "Rudolph's Spare Nose": ACC_ALIAS_MASK,
+  "Spare Christmas Lights": ACC_ALIAS_BRACER,
+
+  "Cat Brooch": ACC_ALIAS_HEAD,
+  "Cat Mask": ACC_ALIAS_MASK,
+  "Cat Bracers": ACC_ALIAS_BRACER,
 };
 
 const ALIAS_LOOKUP = {};

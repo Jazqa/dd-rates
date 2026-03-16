@@ -430,6 +430,18 @@
       "Steam Robot"
     ]
   },
+  "Palantir": {
+    "Ruthless": [
+      "Apprentice Animus",
+      "Bracers of Annatar",
+      "Brooch of Annatar",
+      "Huntress Animus",
+      "Mask of Annatar",
+      "Monk Animus",
+      "Shield of Annatar",
+      "Squire Animus"
+    ]
+  },
   "Pet Forge": {
     "Ruthless": [
       "Baby Old One",
@@ -660,6 +672,14 @@
       "Bachelor Seahorse",
       "Bouncing Heart Staff",
       "Fish"
+    ]
+  },
+  "Volcanic Eruption": {
+    "Ruthless": [
+      "BF Drill",
+      "Lava Slinger",
+      "Stone's Throw Spear",
+      "Sword of Masters"
     ]
   },
   "Winter Mire": {

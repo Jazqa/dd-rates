@@ -299,7 +299,6 @@
                 switch (stat) {
                     case "quality":
                         data = orderQualityArray(data);
-
                         renderChart(RARITY_LABELS_SHORT, data);
                         updateRatesList(RARITY_LABELS, data);
                         break;
@@ -336,9 +335,26 @@
                         chartLabelElement.textContent = getReadableTotals(stat);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);
-                        binnedData = getBinnedData(data.buckets, 50, false);
+                        binnedData = getBinnedData(data.buckets, data.step === 50 ? 50 : 20, false);
                         updateRatesList(binnedData.labels, binnedData.values);
                         break;
+
+                    case "hdmgab1":
+                    case "hdmgab2":
+                    case "hdmg":
+                    case "ab1":
+                    case "ab2":
+                    case "thp":
+                    case "trate":
+                    case "tdmg":
+                    case "trange":
+                        buckets = Object.keys(data.buckets);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
+                        renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, 5, false);
+                        updateRatesList(binnedData.labels, binnedData.values);
+                        break;
+
 
                     case "tower_caps":
                         chartLabelElement.textContent = "# of simultaneous tower caps"
@@ -370,7 +386,6 @@
 
                     case "scale":
                         chartLabelElement.textContent = "Size at max level"
-
                         buckets = Object.keys(data.buckets);
                         binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
                         renderChart(binnedData.labels, binnedData.values);

@@ -8,9 +8,24 @@ function shouldDisplayRate(stat, chance, displayed, index, length) {
     stat === "damage_2" ||
     stat === "level" ||
     stat === "scale" ||
-    stat.includes("totals")
+    stat === "cat"
   ) {
     if (chance < 30) return false;
+  }
+
+  if (
+    stat.includes("totals") ||
+    stat === "hdmgab1" ||
+    stat === "hdmgab2" ||
+    stat === "hdmg" ||
+    stat === "ab1" ||
+    stat === "ab2" ||
+    stat === "thp" ||
+    stat === "trate" ||
+    stat === "tdmg" ||
+    stat === "trange"
+  ) {
+    if (chance < 50) return false;
   }
 
   return true;

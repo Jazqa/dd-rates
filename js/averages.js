@@ -1,0 +1,59 @@
+function interpolate(target, buckets) {
+  const keys = Object.keys(buckets)
+    .map(Number)
+    .sort((a, b) => a - b);
+  if (keys.length === 0) return 0;
+
+  let runningTotal = 0;
+  const cumulativeData = [];
+
+  for (let i = keys.length - 1; i >= 0; i--) {
+    runningTotal += buckets[keys[i]];
+    cumulativeData.unshift({
+      val: keys[i],
+      chance: totalSeeds / runningTotal,
+    });
+  }
+
+  if (cumulativeData[0].chance >= target) return cumulativeData[0].val;
+
+  for (let i = 0; i < cumulativeData.length - 1; i++) {
+    const low = cumulativeData[i];
+    const high = cumulativeData[i + 1];
+
+    if (target >= low.chance && target <= high.chance) {
+      const ratio = (target - low.chance) / (high.chance - low.chance);
+      return low.val + ratio * (high.val - low.val);
+    }
+  }
+
+  return cumulativeData[cumulativeData.length - 1].val;
+}
+
+function updateAverages(buckets) {
+  const averageList = document.getElementById("averageList");
+  const stat = document.getElementById("statSelect").value;
+  if (!averageList || !buckets) return;
+
+  averageList.innerHTML = "";
+  const targets = [50, 100, 250, 500, 1000, 2500, 5000];
+
+  targets.forEach((target) => {
+    const value = interpolate(target, buckets);
+
+    let displayVal =
+      stat === "scale"
+        ? (value / 10).toFixed(2)
+        : Math.round(value).toLocaleString("fr-FR");
+
+    const row = document.createElement("div");
+    row.className = "average-item";
+    row.innerHTML = `
+            <span class="avg-label">${displayVal}</span>
+            <span class="avg-count">1 / ${target.toLocaleString("fr-FR")}</span>
+        `;
+    averageList.appendChild(row);
+  });
+
+  averageList.style.display = "grid";
+}
