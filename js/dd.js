@@ -5,6 +5,7 @@ const STAT_LABELS = {
   damage_2: "Damage",
   cat: "Boost",
   tower_caps: "Caps",
+  tower_caps_individual: "Cap Combos",
   tower_totals: "All",
   app_totals: "App",
   hermit_totals: "Hermit",
@@ -33,6 +34,7 @@ const STAT_GROUPS = {
     "hermit_totals",
     "guardian_totals",
     "tower_caps",
+    "tower_caps_individual",
   ],
   Singles: ["hdmg", "ab1", "ab2", "thp", "trate", "tdmg", "trange"],
   More: ["scale", "multiproj", "support_caps"],
@@ -83,6 +85,24 @@ const RARITY_LABELS_SHORT = [
   "ULT+",
   "ULT++",
 ];
+
+const CAP_COMBOS = {
+  1: "HP",
+  2: "Rate",
+  4: "Dmg",
+  8: "Range",
+  3: "HP + Rate",
+  5: "HP + Dmg",
+  6: "Rate + Dmg",
+  9: "HP + Range",
+  10: "Rate + Range",
+  12: "Dmg + Range",
+  7: "HP + Rate + Dmg",
+  11: "HP + Rate + Range",
+  13: "HP + Dmg + Range",
+  14: "Rate + Dmg + Range",
+  15: "All",
+};
 
 const DIFF_NAMES_SHORT = { Ruthless: "RL", Nightmare: "NM" };
 
