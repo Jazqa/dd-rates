@@ -371,7 +371,12 @@ select:focus {
     }
 
     #content {
+        padding: 10px;
         padding-top: 0;
+    }
+
+    .rates-container {
+        margin-top: 10px;
     }
 
     /* Mobile Input */
