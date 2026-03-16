@@ -303,6 +303,7 @@ select:focus {
 }
 
 .grid-input-2 {
+    padding-left: 0px;
     color: var(--fg);
     border: none;
     width: auto;

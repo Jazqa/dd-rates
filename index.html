@@ -267,6 +267,7 @@
                 gameVersion = json.game_version;
                 totalSeeds = json.total_seeds
 
+                // A bit of a hack to easily force a separate tab out of it; really the data for both is under json.rates.tower_caps
                 if (json.rates.tower_caps) {
                     json.rates.tower_caps_individual = { buckets: {} };
                 }
@@ -405,15 +406,13 @@
                         const sourceData = json.rates["tower_caps"];
                         if (!sourceData) break;
 
-                        const isCumulative = (bucketType === "cumulative");
-
                         const individuals = Object.keys(CAP_COMBOS)
                             .map(Number)
                             .filter(key => key >= 1 && key <= 15)
                             .map(currentComboKey => {
                                 let totalValue = 0;
 
-                                if (isCumulative) {
+                                if (bucketType === "cumulative") {
                                     Object.entries(sourceData.buckets).forEach(([bucketKey, count]) => {
                                         const bKey = Number(bucketKey);
                                         if (bKey >= 1 && bKey <= 15 && (bKey & currentComboKey) === currentComboKey) {

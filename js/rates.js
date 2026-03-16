@@ -137,7 +137,12 @@ function updateCustomRate(buckets) {
     const internalVal = isScale ? val * 10 : val;
     const chance = reverseInterpolate(internalVal, buckets);
 
-    chanceInput.value = toFr(Math.round(chance), 0);
+    if (chance === Infinity) {
+      chanceInput.value = "?";
+    } else {
+      chanceInput.value = toFr(Math.round(chance), 0);
+    }
+
     savedCustomChance = chanceInput.value;
   };
 

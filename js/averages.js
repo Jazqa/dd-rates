@@ -35,6 +35,11 @@ function reverseInterpolate(targetValue, buckets) {
     .map(Number)
     .sort((a, b) => a - b);
   if (keys.length === 0) return 0;
+  const maxKey = keys[keys.length - 1];
+
+  if (targetValue > maxKey) {
+    return Infinity;
+  }
 
   let runningTotal = 0;
   const cumulativeData = [];
