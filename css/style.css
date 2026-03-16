@@ -143,21 +143,25 @@ select:focus {
 /* Chart Tabs */
 .chart-tabs-container {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: visible;
 }
 
 .chart-tab-button {
+    flex: 1 1 0;
+    min-width: 0;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--fg2);
     border-left: 1px solid var(--border);
     border-image: linear-gradient(to top, var(--border), transparent) 1;
-    vertical-align: bottom;
+    padding: 10px 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
     margin-bottom: -1px;
-    padding: 10px;
-    padding-top: 15px;
-    width: 90px;
 }
 
 .chart-tab-button.active {
@@ -176,8 +180,11 @@ select:focus {
 }
 
 .chart-tab-dropdown {
+    flex: 1 1 0;
+    min-width: 0;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .chart-tab-dropdown:hover .chart-tab-dropdown-content {
@@ -198,6 +205,9 @@ select:focus {
 .chart-tab-dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0px;
+    right: -1px;
     background-color: var(--bg);
     z-index: 1000;
     border: 1px solid var(--border);
@@ -206,15 +216,15 @@ select:focus {
 }
 
 .chart-tab-dropdown-content button {
-    width: 89px;
+    width: 100%;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     background: none;
     color: var(--fg2);
     border: none;
     cursor: pointer;
     border-top: 1px solid var(--border2);
-    text-align: center;
+    overflow: hidden;
 }
 
 .chart-tab-dropdown-content button:hover {
