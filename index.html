@@ -267,6 +267,10 @@
                 gameVersion = json.game_version;
                 totalSeeds = json.total_seeds
 
+                if (json.rates.tower_caps) {
+                    json.rates.tower_caps_individual = { buckets: {} };
+                }
+
                 if (shouldRebuild) {
                     const rates = Object.keys(json.rates);
                     statSelect.innerHTML = '';
@@ -397,6 +401,45 @@
                         updateRatesList(capLabels, capValues);
                         break;
 
+                    case "tower_caps_individual": {
+                        const sourceData = json.rates["tower_caps"];
+                        if (!sourceData) break;
+
+                        const isCumulative = (bucketType === "cumulative");
+
+                        const individuals = Object.keys(CAP_COMBOS)
+                            .map(Number)
+                            .filter(key => key >= 1 && key <= 15)
+                            .map(currentComboKey => {
+                                let totalValue = 0;
+
+                                if (isCumulative) {
+                                    Object.entries(sourceData.buckets).forEach(([bucketKey, count]) => {
+                                        const bKey = Number(bucketKey);
+                                        if (bKey >= 1 && bKey <= 15 && (bKey & currentComboKey) === currentComboKey) {
+                                            totalValue += count;
+                                        }
+                                    });
+                                } else {
+                                    totalValue = sourceData.buckets[currentComboKey] || 0;
+                                }
+
+                                return {
+                                    label: CAP_COMBOS[currentComboKey] || currentComboKey,
+                                    value: totalValue
+                                };
+                            })
+                            .filter(i => i.value > 0)
+                            .sort((a, b) => b.value - a.value);
+
+                        const labels = individuals.map(i => i.label);
+                        const values = individuals.map(i => i.value);
+
+                        renderChart(labels, values, "bar");
+                        updateRatesList(labels, values);
+                        break;
+                    }
+
                     case "support_caps":
                         chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);
 
@@ -485,7 +528,6 @@
 
             if (activeBtn) {
                 activeBtn.classList.add('active');
-
                 const parentDropdown = activeBtn.closest('.chart-tab-dropdown');
                 if (parentDropdown) {
                     parentDropdown.querySelector('.chart-tab-button').classList.add('active');
@@ -526,17 +568,17 @@
                         const start = (key / 10).toFixed(1);
                         if (nextBin) {
                             const end = (nextBin / 10).toFixed(1);
-                            finalLabels.push(`${start} - ${end}`);
+                            finalLabels.push(`${start} - ${end} `);
                         } else {
-                            finalLabels.push(`${start}+`);
+                            finalLabels.push(`${start} +`);
                         }
                     } else {
                         const startStr = key.toLocaleString("fr-FR");
                         if (nextBin) {
                             const endStr = (nextBin - 1).toLocaleString("fr-FR");
-                            finalLabels.push(`${startStr} - ${endStr}`);
+                            finalLabels.push(`${startStr} - ${endStr} `);
                         } else {
-                            finalLabels.push(`${startStr}+`);
+                            finalLabels.push(`${startStr} +`);
                         }
                     }
                 });
