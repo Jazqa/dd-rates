@@ -13,7 +13,7 @@
   "max_randomization_quality": 1.7,
   "randomizer_multiplier_override": 160.0,
   "total_randomizer_multiplier": 232.0,
-  "equipment_type": 0,
+  "equipment_type": 8,
   "weapon_type": 0,
   "class_name": 0,
   "rates": {
