@@ -5,6 +5,7 @@
       "Obsidian Clava",
       "Obsidian Gladius",
       "Obsidian Sparus",
+      "Tiki Mask",
       "Tiki Protector",
       "Turtle Shell Launcher"
     ]
@@ -323,6 +324,7 @@
   "Jester's Spooktacular": {
     "Ruthless": [
       "Corrupted Axe",
+      "Devil Mask",
       "Dragon Halberd",
       "Flying Pumpkin"
     ]
@@ -359,9 +361,11 @@
   "Lover's Paradise": {
     "Ruthless": [
       "Bow of Hearts",
+      "Cool Glasses",
       "Fluffy Dragon",
       "Hamster",
       "Lover's Cupid",
+      "Shield of Hearts",
       "Spear of Hearts"
     ]
   },
@@ -431,6 +435,10 @@
       "Battle Droid",
       "Goblin Wrench",
       "Mini Mech",
+      "Omenak Bracers",
+      "Omenak Brooch",
+      "Omenak Mask",
+      "Omenak Shield",
       "Soul Dissolver",
       "Steam Robot"
     ]
@@ -487,7 +495,13 @@
   },
   "Return to Moraggo": {
     "Ruthless": [
-      "Genie's Blunderbuss"
+      "Blue Oni Bracers",
+      "Blue Oni Horns",
+      "Blue Oni Mask",
+      "Genie's Blunderbuss",
+      "Red Oni Bracers",
+      "Red Oni Horns",
+      "Red Oni Mask"
     ]
   },
   "Return to Sky City": {
@@ -676,6 +690,9 @@
     "Ruthless": [
       "Bachelor Seahorse",
       "Bouncing Heart Staff",
+      "Elegant Bracers",
+      "Elegant Patch",
+      "Elegant Pirate Hat",
       "Fish"
     ]
   },

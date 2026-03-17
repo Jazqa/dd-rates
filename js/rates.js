@@ -54,7 +54,7 @@ function updateRatesList(labels, data) {
     const formattedChance =
       chance < 10
         ? chance.toFixed(2)
-        : Math.round(chance).toLocaleString("fr-FR");
+        : Math.floor(chance).toLocaleString("fr-FR");
 
     const row = document.createElement("div");
     row.className = "rate-item";
@@ -72,7 +72,6 @@ function updateRatesList(labels, data) {
 }
 
 let savedCustomChance = "";
-
 function updateCustomRate(buckets) {
   const ratestList = document.getElementById("ratesList");
   if (!ratestList || !buckets) return;
@@ -83,17 +82,16 @@ function updateCustomRate(buckets) {
   const calcItem = document.createElement("div");
   calcItem.className = "rate-item simulator-item";
 
-  // inputmode="decimal" ensures mobile users get the right keyboard without the spinner hell
   calcItem.innerHTML = `
         <input type="text" id="gridCalcResult" class="grid-input-2" 
                placeholder="Value" autocomplete="off" spellcheck="false"
-               inputmode="decimal"
-               style="text-align: left; color: var(--fg); width: 80px;">
-        <div class="rate-value">
-            1 / <input type="text" id="gridCalcChance" class="grid-input" 
-                 placeholder="Chance" autocomplete="off" spellcheck="false"
-                 inputmode="numeric"
-                 value="${savedCustomChance}">
+               inputmode="decimal">
+        <div class="rate-value" style="display: inline-flex; white-space: nowrap; align-items: center; border-bottom: 1px solid var(--border2);">
+            1 /&nbsp;
+            <input type="text" id="gridCalcChance" class="grid-input" 
+                  placeholder="Chance" autocomplete="off" spellcheck="false"
+                  inputmode="numeric"
+                  value="${savedCustomChance}">
         </div>
     `;
   ratestList.appendChild(calcItem);
@@ -101,64 +99,68 @@ function updateCustomRate(buckets) {
   const chanceInput = document.getElementById("gridCalcChance");
   const valueInput = document.getElementById("gridCalcResult");
 
-  const cleanInput = (val) => val.replace(/\s/g, "").replace(",", ".");
+  const clean = (val) => val.replace(/\s/g, "").replace(",", ".");
 
-  const toFr = (num, decimals = 0) =>
+  const toFr = (num, dec = 0) =>
     num.toLocaleString("fr-FR", {
-      minimumFractionDigits: decimals,
-      maximumFractionDigits: decimals,
+      minimumFractionDigits: dec,
+      maximumFractionDigits: dec,
     });
 
+  const formatOnBlur = (input) => {
+    const num = parseFloat(clean(input.value));
+    if (!isNaN(num)) {
+      const dec = input === valueInput && isScale ? 2 : 0;
+      input.value = toFr(num, dec);
+      input.size = Math.max(1, input.value.length);
+    }
+  };
+
   const runForward = () => {
-    const raw = cleanInput(chanceInput.value);
-    const chance = parseInt(raw, 10);
+    const chance = parseInt(clean(chanceInput.value), 10);
     savedCustomChance = chanceInput.value;
 
-    if (isNaN(chance) || chance < 1) {
-      valueInput.value = "";
-      return;
-    }
+    if (isNaN(chance) || chance < 1) return (valueInput.value = "");
 
     const result = interpolate(chance, buckets);
     const finalVal = isScale ? result / 10 : Math.round(result);
-
     valueInput.value = toFr(finalVal, isScale ? 2 : 0);
   };
 
   const runReverse = () => {
-    const raw = cleanInput(valueInput.value);
-    const val = parseFloat(raw);
-
-    if (isNaN(val)) {
-      chanceInput.value = "";
-      return;
-    }
+    const val = parseFloat(clean(valueInput.value));
+    if (isNaN(val)) return (chanceInput.value = "");
 
     const internalVal = isScale ? val * 10 : val;
     const chance = reverseInterpolate(internalVal, buckets);
 
-    if (chance === Infinity) {
-      chanceInput.value = "?";
-    } else {
-      chanceInput.value = toFr(Math.round(chance), 0);
-    }
-
-    savedCustomChance = chanceInput.value;
+    const finalChance = chance === Infinity ? "" : toFr(Math.round(chance), 0);
+    chanceInput.value = finalChance;
+    savedCustomChance = finalChance;
   };
 
   chanceInput.oninput = runForward;
   valueInput.oninput = runReverse;
 
-  chanceInput.onkeypress = (e) => {
-    if (!/[0-9\s]/.test(e.key)) e.preventDefault();
-  };
-  valueInput.onkeypress = (e) => {
-    if (!/[0-9.,\s]/.test(e.key)) e.preventDefault();
-  };
+  [chanceInput, valueInput].forEach((input) => {
+    input.onblur = () => formatOnBlur(input);
+
+    input.onkeydown = (e) => {
+      if (e.key === "Enter") input.blur();
+    };
+
+    input.onkeypress = (e) => {
+      const regex = input === chanceInput ? /[0-9\s]/ : /[0-9.,\s]/;
+      if (!regex.test(e.key)) e.preventDefault();
+    };
+  });
 
   if (savedCustomChance) {
-    const initial = parseInt(cleanInput(savedCustomChance), 10);
-    if (!isNaN(initial)) chanceInput.value = toFr(initial, 0);
+    const initial = parseInt(clean(savedCustomChance), 10);
+    if (!isNaN(initial)) {
+      chanceInput.value = toFr(initial, 0);
+      formatOnBlur(chanceInput);
+    }
     runForward();
   }
 }

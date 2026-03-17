@@ -342,6 +342,7 @@
                         renderChart(binnedData.labels, binnedData.values);
                         binnedData = getBinnedData(data.buckets, 5, false);
                         updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
                         break;
 
                     case "damage":

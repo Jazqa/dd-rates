@@ -1,5 +1,6 @@
 :root {
     --accent: #c7427e;
+    --accent2: #626262;
     --bg: #2b2b2b;
     --bg2: #202020;
     --border: #5c2d2a;
@@ -278,11 +279,6 @@ select:focus {
     background-color: var(--hov);
 }
 
-.rate-label {
-    color: var(--fg2);
-    text-transform: uppercase;
-}
-
 .rate-value {
     color: var(--fg2);
     font-family: monospace;
@@ -293,25 +289,34 @@ select:focus {
     background: transparent;
     border: none;
     color: var(--fg2);
-    width: 80px;
+    width: 100%;
     font-size: inherit;
     font-family: inherit;
     outline: none;
     border-radius: 0;
     appearance: none;
-    -webkit-appearance: none;  
+    -webkit-appearance: none;
 }
 
 .grid-input-2 {
-    padding-left: 0px;
-    color: var(--fg);
-    border: none;
-    width: auto;
     background: transparent;
+    border: none;
+    color: var(--fg);
+    width: auto;
+    font-size: 12px;
+    font-weight: 500;
     outline: none;
     border-radius: 0;
     appearance: none;
-    -webkit-appearance: none;  
+    -webkit-appearance: none;
+    padding-left: 0px;
+    margin-bottom: 2px;
+
+}
+
+.grid-input-2::placeholder,
+.grid-input::placeholder {
+    color: var(--accent2);
 }
 
 .grid-input-2::-webkit-outer-spin-button,
