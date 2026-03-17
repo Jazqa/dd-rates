@@ -373,6 +373,20 @@
                     case "hdmg":
                     case "ab1":
                     case "ab2":
+                        chartLabelElement.textContent = getReadableTotals(stat) || STAT_LABELS[stat];
+
+                        if (json.equipment_type >= 1 && json.equipment_type <= 4) {
+                            chartLabelElement.textContent += " After capping res"
+                        }
+
+                        buckets = Object.keys(data.buckets);
+                        binnedData = getBinnedData(data.buckets, getDynamicBinSize(data.buckets, 20));
+                        renderChart(binnedData.labels, binnedData.values);
+                        binnedData = getBinnedData(data.buckets, 5, false);
+                        updateRatesList(binnedData.labels, binnedData.values);
+                        updateCustomRate(data.buckets)
+                        break;
+
                     case "thp":
                     case "trate":
                     case "tdmg":
