@@ -989,6 +989,14 @@
       },
       "step": 50
     },
+    "support_caps": {
+      "info": "Additional Projectiles > Projectile Speed > Shots Per Second > Stat",
+      "buckets": {
+        "4": 711678066,
+        "5": 711685076,
+        "6": 711703921
+      }
+    },
     "scale": {
       "info": "Divide by 10 for in-game values",
       "buckets": {
