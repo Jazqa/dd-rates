@@ -265,6 +265,13 @@
     ]
   },
   "Frostdale Royal Court": {
+    "Nightmare": [
+      "Boxing Glove",
+      "Candy Cane Launcher",
+      "Ice Pick",
+      "Lil' Pengy",
+      "Reindeer"
+    ],
     "Ruthless": [
       "Boxing Glove",
       "Candy Cane Launcher",
@@ -622,6 +629,10 @@
     ]
   },
   "Tavern Incursion": {
+    "Nightmare": [
+      "Calamity Blade",
+      "Jewelled Bident"
+    ],
     "Ruthless": [
       "Calamity Blade",
       "Jewelled Bident"
