@@ -31,7 +31,6 @@
             <select id="statSelect"></select>
         </div>
 
-
         <label>Dataset</label>
         <select id="datasetSelect">
             <option value="all">All</option>
@@ -284,7 +283,7 @@
 
                 if (datasetKey === 'ratespp' && !json.ratespp) {
                     datasetKey = 'rates';
-                    datasetSelect.value = 'rates';
+                    datasetSelect.value = 'all';
                 }
 
                 const dataset = json[datasetKey];
