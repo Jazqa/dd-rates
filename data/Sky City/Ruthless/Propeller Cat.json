@@ -1,5 +1,5 @@
 {
-  "game_version": "10.6.5",
+  "game_version": "10.6.6",
   "total_seeds": 2147483648,
   "item_name": "Propeller Cat",
   "map_name": "Sky City",
@@ -13,6 +13,9 @@
   "max_randomization_quality": 1.43,
   "randomizer_multiplier_override": 11.75,
   "total_randomizer_multiplier": 17.0375,
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 9,
   "rates": {
     "quality": [
       1122880871,
@@ -962,8 +965,5 @@
         "382": 3
       }
     }
-  },
-  "equipment_type": 5,
-  "weapon_type": 0,
-  "class_name": 9
+  }
 }

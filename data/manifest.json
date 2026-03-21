@@ -1,5 +1,14 @@
 {
   "Akatiti Jungle": {
+    "Nightmare": [
+      "Cowboy Monkey",
+      "Obsidian Clava",
+      "Obsidian Gladius",
+      "Obsidian Sparus",
+      "Tiki Mask",
+      "Tiki Protector",
+      "Turtle Shell Launcher"
+    ],
     "Ruthless": [
       "Cowboy Monkey",
       "Obsidian Clava",
@@ -31,12 +40,21 @@
     ]
   },
   "Arcane Library": {
+    "Nightmare": [
+      "Owl",
+      "Skeleton on a Treadmill"
+    ],
     "Ruthless": [
       "Owl",
       "Skeleton on a Treadmill"
     ]
   },
   "Assault Challenge Pack 1": {
+    "Nightmare": [
+      "Backstabber",
+      "Big Stick",
+      "Retribution"
+    ],
     "Ruthless": [
       "Backstabber",
       "Big Stick",
@@ -44,18 +62,31 @@
     ]
   },
   "Boss Rush": {
+    "Nightmare": [
+      "Classic's Eagle Crested Standard",
+      "Monk Punk Glaive"
+    ],
     "Ruthless": [
       "Classic's Eagle Crested Standard",
       "Monk Punk Glaive"
     ]
   },
   "Boss Rush 2": {
+    "Nightmare": [
+      "Soup Baby",
+      "Vampire Halberd"
+    ],
     "Ruthless": [
       "Soup Baby",
       "Vampire Halberd"
     ]
   },
   "Buccaneer Bay": {
+    "Nightmare": [
+      "Moby's Mobile Launcher",
+      "Parrot",
+      "Roger's Revenge"
+    ],
     "Ruthless": [
       "Moby's Mobile Launcher",
       "Parrot",
@@ -83,6 +114,9 @@
     ]
   },
   "Challenge Forest Ogre Crush": {
+    "Nightmare": [
+      "Madness Boulder Thrower"
+    ],
     "Ruthless": [
       "Madness Boulder Thrower"
     ]
@@ -148,7 +182,27 @@
       "Djinnlet"
     ]
   },
+  "Coal Forge": {
+    "Nightmare": [
+      "Big Coal",
+      "Crystal Heart",
+      "Diamond",
+      "Small Diamond"
+    ],
+    "Ruthless": [
+      "Big Coal",
+      "Crystal Heart",
+      "Diamond",
+      "Small Diamond"
+    ]
+  },
   "Coastal Bazaar": {
+    "Nightmare": [
+      "Flying Carpet Beater",
+      "Genie",
+      "Mini Genie King",
+      "Sorcerer's Lamp"
+    ],
     "Ruthless": [
       "Flying Carpet Beater",
       "Genie",
@@ -157,6 +211,14 @@
     ]
   },
   "Crystal Cave": {
+    "Nightmare": [
+      "Chromatic Gemstone",
+      "Crystal Cane",
+      "Crystal Cannon",
+      "Crystal Mace",
+      "Crystal Spear",
+      "Etherian Ancient"
+    ],
     "Ruthless": [
       "Chromatic Gemstone",
       "Crystal Cane",
@@ -167,12 +229,25 @@
     ]
   },
   "Crystal Escort Spring Valley": {
+    "Nightmare": [
+      "Chicken Baller",
+      "Egganator 2000"
+    ],
     "Ruthless": [
       "Chicken Baller",
       "Egganator 2000"
     ]
   },
   "Crystalline Resurgence Part 1": {
+    "Nightmare": [
+      "Crystal Gun",
+      "Hastat's Recurve",
+      "Mini Spider Queen",
+      "Preying Prayer",
+      "Shroomite",
+      "Spiderling Cleaver",
+      "The Forest's Sorrow"
+    ],
     "Ruthless": [
       "Crystal Gun",
       "Hastat's Recurve",
@@ -184,6 +259,14 @@
     ]
   },
   "Crystalline Resurgence Part 2": {
+    "Nightmare": [
+      "Donkey",
+      "Ebon Falchion",
+      "Jade Spear",
+      "Samiel the Flayer",
+      "Shimmerblade Scimitar",
+      "Undying Rod"
+    ],
     "Ruthless": [
       "Donkey",
       "Ebon Falchion",
@@ -194,6 +277,15 @@
     ]
   },
   "Crystalline Resurgence Part 3": {
+    "Nightmare": [
+      "Aquian Cog-Maul",
+      "Crystal Blade",
+      "Crystal Staff",
+      "Crystalline Dragon",
+      "Kelp Harvester",
+      "Pressurized Energy Core",
+      "Xilent's Rhythm Staff"
+    ],
     "Ruthless": [
       "Aquian Cog-Maul",
       "Crystal Blade",
@@ -205,6 +297,13 @@
     ]
   },
   "Crystalline Resurgence Part 4": {
+    "Nightmare": [
+      "Clockwork Spear",
+      "Cog Sword",
+      "Gargoyle Staff",
+      "Mini Kraken",
+      "The Gartner"
+    ],
     "Ruthless": [
       "Clockwork Spear",
       "Cog Sword",
@@ -220,6 +319,15 @@
     ]
   },
   "Embermount Volcano": {
+    "Nightmare": [
+      "Animorphic Ember",
+      "Ember Crescent",
+      "Ember Flame",
+      "Ember Pony",
+      "Ember Sceptre",
+      "Fenix",
+      "Sword of Embers"
+    ],
     "Ruthless": [
       "Animorphic Ember",
       "Ember Crescent",
@@ -231,6 +339,18 @@
     ]
   },
   "Emerald City": {
+    "Nightmare": [
+      "Desert Goblin",
+      "Emerald Bracers",
+      "Emerald Feather",
+      "Emerald Halberd",
+      "Emerald Mask",
+      "Emerald Shield",
+      "Emerald Staff",
+      "Emerald Sword",
+      "Emerald Thrower",
+      "Imp"
+    ],
     "Ruthless": [
       "Desert Goblin",
       "Emerald Bracers",
@@ -250,6 +370,14 @@
     ]
   },
   "Eternia Gauntlet": {
+    "Nightmare": [
+      "Abyssal Fin",
+      "Apprentice Guardian",
+      "Huntress Guardian",
+      "Lumeric Staff",
+      "Monk Guardian",
+      "Squire Guardian"
+    ],
     "Ruthless": [
       "Abyssal Fin",
       "Apprentice Guardian",
@@ -281,6 +409,13 @@
     ]
   },
   "Frostdale Wonderland": {
+    "Nightmare": [
+      "Frost Rifle",
+      "Ice Cube",
+      "Nut Cracker",
+      "Pack Rat",
+      "Staff of Frost"
+    ],
     "Ruthless": [
       "Frost Rifle",
       "Ice Cube",
@@ -295,6 +430,11 @@
     ]
   },
   "Halloween Invasion": {
+    "Nightmare": [
+      "Eye on a Treadmill",
+      "Moon Staff",
+      "Witch's Broom"
+    ],
     "Ruthless": [
       "Eye on a Treadmill",
       "Moon Staff",
@@ -318,6 +458,15 @@
     ]
   },
   "Infested Ruins": {
+    "Nightmare": [
+      "Honey Gun",
+      "Honey Spear",
+      "Honey Staff",
+      "Honey Sword",
+      "Mini Wasp Queen",
+      "Serpent",
+      "Wasp"
+    ],
     "Ruthless": [
       "Honey Gun",
       "Honey Spear",
@@ -329,6 +478,12 @@
     ]
   },
   "Jester's Spooktacular": {
+    "Nightmare": [
+      "Corrupted Axe",
+      "Devil Mask",
+      "Dragon Halberd",
+      "Flying Pumpkin"
+    ],
     "Ruthless": [
       "Corrupted Axe",
       "Devil Mask",
@@ -348,11 +503,22 @@
     ]
   },
   "Lab Assault": {
+    "Nightmare": [
+      "Armor (Lab Assault)"
+    ],
     "Ruthless": [
       "Armor (Lab Assault)"
     ]
   },
   "Lifestream Hollow": {
+    "Nightmare": [
+      "Hermit's Swallow",
+      "Mushroom Launcher",
+      "Nature's Griffin",
+      "Navi Fairy",
+      "The Forest's Experience",
+      "Woodland Sword"
+    ],
     "Ruthless": [
       "Hermit's Swallow",
       "Mushroom Launcher",
@@ -363,6 +529,12 @@
     ]
   },
   "Love Machine": {
+    "Nightmare": [
+      "Cane of Doomed Relationships",
+      "Love Blaster",
+      "Lover Snake",
+      "Minigun"
+    ],
     "Ruthless": [
       "Cane of Doomed Relationships",
       "Love Blaster",
@@ -417,9 +589,15 @@
     ]
   },
   "Magus Citadel": {
+    "Nightmare": [
+      "Ace of Spades",
+      "Arch Mage's Blade Staff",
+      "Deadly Striker",
+      "Harpoon",
+      "Jewel Encrusted Sword"
+    ],
     "Ruthless": [
       "Ace of Spades",
-      "Apprentice Guardian",
       "Arch Mage's Blade Staff",
       "Deadly Striker",
       "Harpoon",
@@ -442,6 +620,16 @@
     ]
   },
   "Moonbase": {
+    "Nightmare": [
+      "Dynast",
+      "Fish in a Bowl",
+      "Fusion Rift",
+      "Hyper Rifle",
+      "Laser Robot",
+      "Moon",
+      "Quietus",
+      "Treadmill on a Treadmill"
+    ],
     "Ruthless": [
       "Dynast",
       "Fish in a Bowl",
@@ -464,6 +652,17 @@
     ]
   },
   "Omenak": {
+    "Nightmare": [
+      "Battle Droid",
+      "Goblin Wrench",
+      "Mini Mech",
+      "Omenak Bracers",
+      "Omenak Brooch",
+      "Omenak Mask",
+      "Omenak Shield",
+      "Soul Dissolver",
+      "Steam Robot"
+    ],
     "Ruthless": [
       "Battle Droid",
       "Goblin Wrench",
@@ -489,15 +688,18 @@
     ]
   },
   "Pet Forge": {
+    "Nightmare": [
+      "Baby Old One",
+      "Baby Old One on a Treadmill",
+      "Fairy",
+      "Rainbow Unicorn",
+      "Zamira's Mount"
+    ],
     "Ruthless": [
       "Baby Old One",
       "Baby Old One on a Treadmill",
-      "Big Coal",
-      "Crystal Heart",
-      "Diamond",
       "Fairy",
       "Rainbow Unicorn",
-      "Small Diamond",
       "Zamira's Mount"
     ]
   },
@@ -508,12 +710,22 @@
     ]
   },
   "Return to Aquanos": {
+    "Nightmare": [
+      "Sea Snail",
+      "Xiphos Blade"
+    ],
     "Ruthless": [
       "Sea Snail",
       "Xiphos Blade"
     ]
   },
   "Return to Crystalline Dimension": {
+    "Nightmare": [
+      "Constellation Blunderbuss",
+      "Constellation Dagger",
+      "Constellation Staff",
+      "Constellation Sword"
+    ],
     "Ruthless": [
       "Constellation Blunderbuss",
       "Constellation Dagger",
@@ -522,12 +734,25 @@
     ]
   },
   "Return to Mistymire": {
+    "Nightmare": [
+      "Altered Spider Queen",
+      "Forest Mage Staff"
+    ],
     "Ruthless": [
       "Altered Spider Queen",
       "Forest Mage Staff"
     ]
   },
   "Return to Moraggo": {
+    "Nightmare": [
+      "Blue Oni Bracers",
+      "Blue Oni Horns",
+      "Blue Oni Mask",
+      "Genie's Blunderbuss",
+      "Red Oni Bracers",
+      "Red Oni Horns",
+      "Red Oni Mask"
+    ],
     "Ruthless": [
       "Blue Oni Bracers",
       "Blue Oni Horns",
@@ -539,6 +764,10 @@
     ]
   },
   "Return to Sky City": {
+    "Nightmare": [
+      "Corgi",
+      "Gem Dagger"
+    ],
     "Ruthless": [
       "Corgi",
       "Gem Dagger"
@@ -556,6 +785,10 @@
     ]
   },
   "Scorched Arabia": {
+    "Nightmare": [
+      "Fenix",
+      "Lavabringer"
+    ],
     "Ruthless": [
       "Fenix",
       "Lavabringer"
@@ -597,6 +830,13 @@
     ]
   },
   "Spooktacular Bay": {
+    "Nightmare": [
+      "Demon Sword",
+      "Devil's Spine",
+      "Eye",
+      "Little Wizard",
+      "Pumpkin Pirate on a Treadmill"
+    ],
     "Ruthless": [
       "Demon Sword",
       "Devil's Spine",
@@ -606,6 +846,15 @@
     ]
   },
   "Striking Tree": {
+    "Nightmare": [
+      "Fairy",
+      "Forest Rifle",
+      "Jade Island",
+      "Jade Serpent",
+      "Leaf Blade",
+      "Staff of Flowers",
+      "Turtle Shell Polearm"
+    ],
     "Ruthless": [
       "Fairy",
       "Forest Rifle",
@@ -657,6 +906,13 @@
     ]
   },
   "Temple of Water": {
+    "Nightmare": [
+      "Elder Staff",
+      "Fairy",
+      "Sea Turtle on a Treadmill",
+      "Seahorse",
+      "Undertow"
+    ],
     "Ruthless": [
       "Elder Staff",
       "Fairy",
@@ -691,6 +947,14 @@
     ]
   },
   "Tinkerer's Lab": {
+    "Nightmare": [
+      "Blaster Rifle",
+      "Laser Robot",
+      "Mega Chicken",
+      "The High Tinkerer's Proto-Staff",
+      "Tinkerer's Perfection",
+      "Tinkerer's Pride"
+    ],
     "Ruthless": [
       "Blaster Rifle",
       "Laser Robot",
@@ -701,6 +965,14 @@
     ]
   },
   "Tinkerer's Workshop": {
+    "Nightmare": [
+      "Airplane",
+      "Firestarter Staff",
+      "Luminescence Hologram Crystallizer",
+      "Mushroom Spear",
+      "Nessie Launcher I",
+      "Robo Chicken"
+    ],
     "Ruthless": [
       "Airplane",
       "Firestarter Staff",
@@ -711,6 +983,16 @@
     ]
   },
   "Tomb of Etheria": {
+    "Nightmare": [
+      "Anubis Sand Blade",
+      "Cat Bracers",
+      "Cat Brooch",
+      "Cat Mask",
+      "Mummy",
+      "Scarab Bow",
+      "Serpent Staff",
+      "Spear of the New Kingdom"
+    ],
     "Ruthless": [
       "Anubis Sand Blade",
       "Cat Bracers",
@@ -723,8 +1005,15 @@
     ]
   },
   "Tropics of Etheria": {
+    "Nightmare": [
+      "Disaster Rapier",
+      "Dragon Staff",
+      "Ink Splatter",
+      "Owl",
+      "Parrot",
+      "Phantom Destroyer"
+    ],
     "Ruthless": [
-      "Beach Island",
       "Disaster Rapier",
       "Dragon Staff",
       "Ink Splatter",
@@ -734,6 +1023,14 @@
     ]
   },
   "Valentine's Citadel": {
+    "Nightmare": [
+      "Bachelor Seahorse",
+      "Bouncing Heart Staff",
+      "Elegant Bracers",
+      "Elegant Patch",
+      "Elegant Pirate Hat",
+      "Fish"
+    ],
     "Ruthless": [
       "Bachelor Seahorse",
       "Bouncing Heart Staff",
@@ -757,6 +1054,18 @@
     ]
   },
   "Winter Mire": {
+    "Nightmare": [
+      "Ban Hammer",
+      "Candy Cane",
+      "Christmas Elephant",
+      "Mini Snowman",
+      "Peppermint Shield",
+      "Rudolph's Spare Antlers",
+      "Rudolph's Spare Nose",
+      "Spare Christmas Lights",
+      "Turkey on a Treadmill",
+      "Winter's Flame"
+    ],
     "Ruthless": [
       "Ban Hammer",
       "Candy Cane",
@@ -771,6 +1080,9 @@
     ]
   },
   "Workshop Assault": {
+    "Nightmare": [
+      "Bloodletting Blade"
+    ],
     "Ruthless": [
       "Bloodletting Blade"
     ]

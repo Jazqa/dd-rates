@@ -1,5 +1,5 @@
 {
-  "game_version": "10.6.3",
+  "game_version": "10.6.6",
   "total_seeds": 2147483648,
   "item_name": "Sea Turtle on a Treadmill",
   "map_name": "Temple of Water",
@@ -13,6 +13,9 @@
   "max_randomization_quality": 1.6,
   "randomizer_multiplier_override": 10.0,
   "total_randomizer_multiplier": 14.5,
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 3,
   "rates": {
     "quality": [
       2147483648,
@@ -487,8 +490,5 @@
         "281": 12
       }
     }
-  },
-  "equipment_type": 5,
-  "weapon_type": 0,
-  "class_name": 3
+  }
 }

@@ -1,17 +1,20 @@
 {
-  "game_version": "10.6.3",
+  "game_version": "10.6.6",
   "total_seeds": 2147483648,
   "item_name": "Baby Old One on a Treadmill",
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
   "hero_equipment": "Equipment_familiar_OldOne_Treadmill",
-  "hardcore_randomizer_multiplier": 2.0,
-  "nightmare_randomizer_multiplier": 2.0,
-  "base_force_randomization_quality": 2.0,
-  "max_randomization_quality": 2.0,
-  "randomizer_multiplier_override": 18.0,
-  "total_randomizer_multiplier": 18.0,
+  "hardcore_randomizer_multiplier": 1.0,
+  "nightmare_randomizer_multiplier": 1.0,
+  "base_force_randomization_quality": 1.0,
+  "max_randomization_quality": 1.0,
+  "randomizer_multiplier_override": 9.0,
+  "total_randomizer_multiplier": 9.0,
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 3,
   "rates": {
     "quality": [
       0,
@@ -389,7 +392,7 @@
         "3250": 79543,
         "3300": 2121
       },
-      "step": 100
+      "step": 50
     },
     "app_totals": {
       "buckets": {
@@ -418,7 +421,7 @@
         "2550": 171495,
         "2600": 119
       },
-      "step": 100
+      "step": 50
     },
     "hermit_totals": {
       "buckets": {
@@ -447,7 +450,7 @@
         "2550": 171399,
         "2600": 71
       },
-      "step": 100
+      "step": 50
     },
     "guardian_totals": {
       "buckets": {
@@ -476,7 +479,7 @@
         "2550": 171083,
         "2600": 115
       },
-      "step": 100
+      "step": 50
     },
     "scale": {
       "info": "Divide by 10 for in-game values",
@@ -531,8 +534,5 @@
         "91": 9
       }
     }
-  },
-  "equipment_type": 5,
-  "weapon_type": 0,
-  "class_name": 3
+  }
 }

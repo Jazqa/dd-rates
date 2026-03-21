@@ -1,17 +1,20 @@
 {
-  "game_version": "10.6.3",
+  "game_version": "10.6.6",
   "total_seeds": 2147483648,
   "item_name": "Baby Old One",
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
   "hero_equipment": "Equipment_familiar_OldOne",
-  "hardcore_randomizer_multiplier": 2.0,
-  "nightmare_randomizer_multiplier": 2.0,
-  "base_force_randomization_quality": 2.0,
-  "max_randomization_quality": 2.0,
-  "randomizer_multiplier_override": 18.0,
-  "total_randomizer_multiplier": 18.0,
+  "hardcore_randomizer_multiplier": 1.0,
+  "nightmare_randomizer_multiplier": 1.0,
+  "base_force_randomization_quality": 1.0,
+  "max_randomization_quality": 1.0,
+  "randomizer_multiplier_override": 9.0,
+  "total_randomizer_multiplier": 9.0,
+  "equipment_type": 5,
+  "weapon_type": 0,
+  "class_name": 3,
   "rates": {
     "quality": [
       0,
@@ -370,7 +373,7 @@
         "29000": 54065557,
         "30000": 9442992
       },
-      "step": 2000
+      "step": 1000
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -421,7 +424,7 @@
         "3250": 79494,
         "3300": 2032
       },
-      "step": 100
+      "step": 50
     },
     "app_totals": {
       "buckets": {
@@ -450,7 +453,7 @@
         "2550": 170454,
         "2600": 77
       },
-      "step": 100
+      "step": 50
     },
     "hermit_totals": {
       "buckets": {
@@ -479,7 +482,7 @@
         "2550": 171401,
         "2600": 82
       },
-      "step": 100
+      "step": 50
     },
     "guardian_totals": {
       "buckets": {
@@ -508,7 +511,7 @@
         "2550": 171317,
         "2600": 97
       },
-      "step": 100
+      "step": 50
     },
     "scale": {
       "info": "Divide by 10 for in-game values",
@@ -564,8 +567,5 @@
         "92": 3
       }
     }
-  },
-  "equipment_type": 5,
-  "weapon_type": 0,
-  "class_name": 3
+  }
 }
