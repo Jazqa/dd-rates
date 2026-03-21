@@ -99,6 +99,8 @@
 
             if (params.has('diff')) {
                 document.getElementById('diffSelect').value = params.get('diff');
+            } else {
+                diffSelect.value = "Ruthless"
             }
 
             updateItems();
@@ -162,7 +164,20 @@
                 });
 
                 mapSelect.onchange = () => {
+                    const previousDiff = document.getElementById('diffSelect').value;
+
                     updateDifficulties();
+
+                    const diffSelect = document.getElementById('diffSelect');
+                    const hasRuthless = Array.from(diffSelect.options).some(opt => opt.value === "Ruthless");
+                    const hasPrevious = Array.from(diffSelect.options).some(opt => opt.value === previousDiff);
+
+                    if (hasPrevious) {
+                        diffSelect.value = previousDiff;
+                    } else if (hasRuthless) {
+                        diffSelect.value = "Ruthless";
+                    }
+
                     updateItems();
                     loadData(true);
                     updateURL();
@@ -174,7 +189,7 @@
 
                     updateItems();
 
-                    if (selectedItem) {
+                    if (Array.from(itemSelect.options).some(opt => opt.value === selectedItem)) {
                         itemSelect.value = selectedItem;
                     }
 
@@ -209,10 +224,11 @@
 
             const randomMap = maps[Math.floor(Math.random() * maps.length)];
 
-            const diffs = Object.keys(manifestData[randomMap]);
-            const randomDiff = diffs[Math.floor(Math.random() * diffs.length)];
+            const availableDiffs = Object.keys(manifestData[randomMap]);
+            const randomDiff = availableDiffs[Math.floor(Math.random() * availableDiffs.length)];
 
             const items = manifestData[randomMap][randomDiff];
+            if (!items || items.length === 0) return;
             const randomItem = items[Math.floor(Math.random() * items.length)];
 
             applySelection(randomMap, randomDiff, randomItem);
