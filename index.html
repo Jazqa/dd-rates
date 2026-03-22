@@ -497,7 +497,9 @@
                     }
 
                     case "support_caps":
-                        chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);
+                        if (data.info) {
+                            chartLabelElement.textContent = "After upgrading " + getReadableUpgrades(data.info);
+                        }
 
                         labels = ["Cast Rate", "Ability 1", "Ability 2"]
                         buckets = ["4", "5", "6"];
