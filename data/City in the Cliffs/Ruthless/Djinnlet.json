@@ -977,6 +977,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Additional Projectiles > Projectile Speed > Shots Per Second > Stat",
       "buckets": {
         "4": 5529935,
         "5": 5535679,
@@ -1915,6 +1916,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Additional Projectiles > Projectile Speed > Shots Per Second > Stat",
       "buckets": {
         "4": 5529935,
         "5": 5535679,

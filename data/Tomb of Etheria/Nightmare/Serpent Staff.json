@@ -986,6 +986,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Projectile Speed > Charge Speed > Stat",
       "buckets": {
         "4": 935583,
         "5": 659342,
@@ -1745,6 +1746,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Projectile Speed > Charge Speed > Stat",
       "buckets": {
         "4": 935583,
         "5": 659342,

@@ -1079,6 +1079,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": " > Base Damage to 29004 > Stat",
       "buckets": {
         "4": 1464947,
         "5": 1465593,
@@ -2204,6 +2205,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": " > Base Damage to 29004 > Stat",
       "buckets": {
         "4": 1464947,
         "5": 1465593,

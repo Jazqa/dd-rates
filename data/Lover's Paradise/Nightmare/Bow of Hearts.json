@@ -750,6 +750,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Projectile Speed > Shots Per Second > Base Damage to 4200 > Stat",
       "buckets": {
         "4": 8
       }
@@ -1311,6 +1312,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Projectile Speed > Shots Per Second > Base Damage to 4200 > Stat",
       "buckets": {
         "4": 8
       }

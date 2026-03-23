@@ -1031,6 +1031,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Shots Per Second > Stat",
       "buckets": {
         "4": 1068290,
         "5": 1068543,
@@ -1851,6 +1852,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Shots Per Second > Stat",
       "buckets": {
         "4": 1068290,
         "5": 1068543,

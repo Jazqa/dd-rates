@@ -1080,6 +1080,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Additional Projectiles > Projectile Speed > Alt Damage to 4200 > Stat",
       "buckets": {
         "4": 1548812,
         "5": 2642464,
@@ -1893,6 +1894,7 @@
       "step": 50
     },
     "support_caps": {
+      "info": "Additional Projectiles > Projectile Speed > Alt Damage to 4200 > Stat",
       "buckets": {
         "4": 1548812,
         "5": 2642464,
