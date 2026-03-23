@@ -37,16 +37,28 @@ function setupSidebarSearch() {
     matches.slice(0, 10).forEach((match) => {
       const div = document.createElement("div");
 
+      div.tabIndex = 0;
+      div.role = "button";
+
       div.style.padding = "10px";
       div.style.borderBottom = "1px solid #333";
 
       div.innerHTML = `<label>${match.item}</label><small>${match.map}</small>`;
 
-      div.onclick = () => {
+      const select = () => {
         applySelection(match.map, match.diff, match.item);
         sidebarSearchResults.innerHTML = "";
         input.value = "";
       };
+
+      div.onclick = select;
+
+      div.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          select();
+        }
+      });
 
       sidebarSearchResults.appendChild(div);
     });

@@ -556,10 +556,24 @@
             const mainBtn = document.createElement('button');
             mainBtn.className = 'chart-tab-button';
             mainBtn.textContent = `${groupName} ▾`;
-            wrap.appendChild(mainBtn);
+
+            mainBtn.setAttribute('aria-haspopup', 'true');
+            mainBtn.setAttribute('aria-expanded', 'false');
 
             const content = document.createElement('div');
             content.className = 'chart-tab-dropdown-content';
+
+            const toggle = (e) => {
+                e.stopPropagation();
+                const isOpen = content.classList.toggle('show');
+                mainBtn.setAttribute('aria-expanded', isOpen);
+
+                document.querySelectorAll('.chart-tab-dropdown-content.show').forEach(el => {
+                    if (el !== content) el.classList.remove('show');
+                });
+            };
+
+            mainBtn.onclick = toggle;
 
             members.forEach(key => {
                 const b = document.createElement('button');
@@ -570,10 +584,13 @@
                     document.getElementById('statSelect').value = key;
                     loadData(false);
                     updateURL();
+                    content.classList.remove('show');
+                    mainBtn.focus();
                 };
                 content.appendChild(b);
             });
 
+            wrap.appendChild(mainBtn);
             wrap.appendChild(content);
             document.getElementById('chartTabs').appendChild(wrap);
         }
