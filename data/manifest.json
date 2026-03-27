@@ -183,12 +183,6 @@
     ]
   },
   "Coal Forge": {
-    "Nightmare": [
-      "Big Coal",
-      "Crystal Heart",
-      "Diamond",
-      "Small Diamond"
-    ],
     "Ruthless": [
       "Big Coal",
       "Crystal Heart",
@@ -236,6 +230,14 @@
     "Ruthless": [
       "Chicken Baller",
       "Egganator 2000"
+    ]
+  },
+  "Crystalline Dimension": {
+    "Ruthless": [
+      "Eternian Energy Cannon",
+      "Eternian Greatsword",
+      "Eternian Spear",
+      "Eternian Staff"
     ]
   },
   "Crystalline Resurgence Part 1": {
@@ -613,7 +615,7 @@
     "Ruthless": [
       "Black Death",
       "Hand of the Queen",
-      "Kairy the Brave Fairy",
+      "Kairi the Brave",
       "Leg of the Queen",
       "Shroomite",
       "Webbing Untangler"
@@ -689,10 +691,6 @@
   },
   "Pet Forge": {
     "Nightmare": [
-      "Baby Old One",
-      "Baby Old One on a Treadmill",
-      "Fairy",
-      "Rainbow Unicorn",
       "Zamira's Mount"
     ],
     "Ruthless": [
@@ -782,6 +780,14 @@
   "Royal Gardens": {
     "Ruthless": [
       "Fairy"
+    ]
+  },
+  "Rumble in the Jungle": {
+    "Ruthless": [
+      "Apocalypse",
+      "Karathikan Stone Thrower",
+      "Slash and Burn",
+      "The Maquahuitl"
     ]
   },
   "Scorched Arabia": {
