@@ -1061,9 +1061,23 @@
     ]
   },
   "Wandering Heart": {
-    "Ruthless": [
+    "Nightmare": [
+      "Bow",
+      "Love Links",
+      "Masquerade",
+      "Shield of Hearts",
       "Staff of Hearts",
-      "Sword of Hearts"
+      "Sword of Hearts",
+      "Top Hat"
+    ],
+    "Ruthless": [
+      "Bow",
+      "Love Links",
+      "Masquerade",
+      "Shield of Hearts",
+      "Staff of Hearts",
+      "Sword of Hearts",
+      "Top Hat"
     ]
   },
   "Warping Core Challenge Pack 1": {
