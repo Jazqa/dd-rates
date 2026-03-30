@@ -223,10 +223,12 @@
   },
   "Crystal Escort Spring Valley": {
     "Nightmare": [
+      "Bunny Whiskers",
       "Chicken Baller",
       "Egganator 2000"
     ],
     "Ruthless": [
+      "Bunny Whiskers",
       "Chicken Baller",
       "Egganator 2000"
     ]
@@ -1081,8 +1083,18 @@
     ]
   },
   "Warping Core Challenge Pack 1": {
+    "Nightmare": [
+      "Armor (Zamira)"
+    ],
     "Ruthless": [
       "Armor (Zamira)"
+    ]
+  },
+  "Warping Core Challenge Pack 2": {
+    "Ruthless": [
+      "Zamira Bracers",
+      "Zamira Hat",
+      "Zamira Mask"
     ]
   },
   "Winter Mire": {
