@@ -1,3 +1,10 @@
+const formatInterpolationWarning = (num) => {
+  return new Intl.NumberFormat("en-US", {
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(num);
+};
+
 function shouldDisplayRate(stat, chance, displayed, index, length) {
   if (index > length - 7) {
     return true;
@@ -116,7 +123,60 @@ function updateCustomRate(buckets) {
     }
   };
 
+  function checkReliability(chance, buckets, reverse) {
+    const input = reverse ? chanceInput : valueInput;
+
+    if (!buckets) return;
+
+    const keys = Object.keys(buckets)
+      .map(Number)
+      .sort((a, b) => a - b);
+    let runningTotal = 0;
+    const cumulativeData = [];
+
+    for (let i = keys.length - 1; i >= 0; i--) {
+      runningTotal += buckets[keys[i]];
+      cumulativeData.unshift({
+        val: keys[i],
+        chance: totalSeeds / runningTotal,
+      });
+    }
+
+    let isUnreliable = false;
+
+    if (chance < cumulativeData[0].chance) {
+      isUnreliable = true;
+    } else {
+      for (let i = 0; i < cumulativeData.length - 1; i++) {
+        const low = cumulativeData[i];
+        const high = cumulativeData[i + 1];
+
+        if (chance >= low.chance && chance <= high.chance) {
+          if (high.chance / low.chance > 100) {
+            isUnreliable = true;
+            reason = `Accuracy warning! Massive jump between data points:
+${keys[i]} and ${keys[i + 1]} (from 1/${formatInterpolationWarning(low.chance)} to 1/${formatInterpolationWarning(high.chance)})`;
+          }
+          break;
+        }
+      }
+    }
+
+    if (isUnreliable) {
+      input.style.color = "#ffa500";
+      input.style.textDecoration = "underline wavy #ffa500";
+      input.title = reason;
+    }
+  }
+
   const runForward = () => {
+    valueInput.style.color = "";
+    valueInput.style.textDecoration = "";
+    valueInput.title = "";
+    chanceInput.style.color = "";
+    chanceInput.style.textDecoration = "";
+    chanceInput.title = "";
+
     const chance = parseInt(clean(chanceInput.value), 10);
     savedCustomChance = chanceInput.value;
 
@@ -125,9 +185,18 @@ function updateCustomRate(buckets) {
     const result = interpolate(chance, buckets);
     const finalVal = isScale ? result / 10 : Math.round(result);
     valueInput.value = toFr(finalVal, isScale ? 2 : 0);
+
+    checkReliability(chance, buckets);
   };
 
   const runReverse = () => {
+    valueInput.style.color = "";
+    valueInput.style.textDecoration = "";
+    valueInput.title = "";
+    chanceInput.style.color = "";
+    chanceInput.style.textDecoration = "";
+    chanceInput.title = "";
+
     const val = parseFloat(clean(valueInput.value));
     if (isNaN(val)) return (chanceInput.value = "");
 
@@ -137,6 +206,8 @@ function updateCustomRate(buckets) {
     const finalChance = chance === Infinity ? "" : toFr(Math.round(chance), 0);
     chanceInput.value = finalChance;
     savedCustomChance = finalChance;
+
+    if (chance !== Infinity) checkReliability(chance, buckets, true);
   };
 
   chanceInput.oninput = runForward;
