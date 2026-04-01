@@ -142,30 +142,33 @@ function updateCustomRate(buckets) {
       });
     }
 
-    let isUnreliable = false;
+    let accuracy = 0;
+    let reason = "";
 
     if (chance < cumulativeData[0].chance) {
-      isUnreliable = true;
+      accuracy = 1;
     } else {
       for (let i = 0; i < cumulativeData.length - 1; i++) {
         const low = cumulativeData[i];
         const high = cumulativeData[i + 1];
 
         if (chance >= low.chance && chance <= high.chance) {
-          if (high.chance / low.chance > 100) {
-            isUnreliable = true;
-            reason = `Accuracy warning! Massive jump between data points:
-${keys[i]} and ${keys[i + 1]} (from 1/${formatInterpolationWarning(low.chance)} to 1/${formatInterpolationWarning(high.chance)})`;
+          accuracy = high.chance / low.chance;
+          if (accuracy > 10) {
+            reason = `ACCURACY WARNING!
+${accuracy > 100 ? "Huge" : "Large"} difference between data points ${formatInterpolationWarning(keys[i])} and ${formatInterpolationWarning(keys[i + 1])} (from 1/${formatInterpolationWarning(low.chance)} to 1/${formatInterpolationWarning(high.chance)})`;
           }
           break;
         }
       }
     }
 
-    if (isUnreliable) {
-      input.style.color = "#ffa500";
-      input.style.textDecoration = "underline wavy #ffa500";
+    if (accuracy > 10) {
+      input.style.color = accuracy > 100 ? "#ff4d4d" : "#ffa500";
       input.title = reason;
+      input.classList.add(
+        accuracy > 100 ? "grid-input-error" : "grid-input-warning",
+      );
     }
   }
 
@@ -173,9 +176,13 @@ ${keys[i]} and ${keys[i + 1]} (from 1/${formatInterpolationWarning(low.chance)} 
     valueInput.style.color = "";
     valueInput.style.textDecoration = "";
     valueInput.title = "";
+    valueInput.classList.remove("grid-input-warning");
+    valueInput.classList.remove("grid-input-error");
     chanceInput.style.color = "";
     chanceInput.style.textDecoration = "";
     chanceInput.title = "";
+    chanceInput.classList.remove("grid-input-warning");
+    chanceInput.classList.remove("grid-input-error");
 
     const chance = parseInt(clean(chanceInput.value), 10);
     savedCustomChance = chanceInput.value;
@@ -193,9 +200,13 @@ ${keys[i]} and ${keys[i + 1]} (from 1/${formatInterpolationWarning(low.chance)} 
     valueInput.style.color = "";
     valueInput.style.textDecoration = "";
     valueInput.title = "";
+    valueInput.classList.remove("grid-input-warning");
+    valueInput.classList.remove("grid-input-error");
     chanceInput.style.color = "";
     chanceInput.style.textDecoration = "";
     chanceInput.title = "";
+    chanceInput.classList.remove("grid-input-warning");
+    chanceInput.classList.remove("grid-input-error");
 
     const val = parseFloat(clean(valueInput.value));
     if (isNaN(val)) return (chanceInput.value = "");
