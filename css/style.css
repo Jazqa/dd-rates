@@ -203,6 +203,7 @@ select {
     border-image: linear-gradient(to top, var(--border), transparent) 1;
 }
 
+.chart-tab-button[aria-expanded="true"],
 .chart-tab-dropdown:hover > .chart-tab-button {
     background-image: none;
     border-left: 1px solid var(--border);
