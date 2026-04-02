@@ -551,35 +551,49 @@
         function renderMetaTab(groupName, members, ratesData) {
             const wrap = document.createElement('div');
             wrap.className = 'chart-tab-dropdown';
-            wrap.dataset.group = groupName;
 
             const mainBtn = document.createElement('button');
             mainBtn.className = 'chart-tab-button';
             mainBtn.innerHTML = `${groupName} <span class="arrow">▾</span>`;
+            mainBtn.setAttribute('aria-expanded', 'false');
 
             const content = document.createElement('div');
             content.className = 'chart-tab-dropdown-content';
 
+            const openMenu = () => {
+                closeAllDropdowns();
+                mainBtn.setAttribute('aria-expanded', 'true');
+                content.classList.add('show');
+            };
+
+            const closeMenu = () => {
+                mainBtn.setAttribute('aria-expanded', 'false');
+                content.classList.remove('show');
+            };
+
+            wrap.onmouseenter = openMenu;
+            wrap.onmouseleave = closeMenu;
+
             mainBtn.onclick = (e) => {
                 e.stopPropagation();
                 const isExpanded = mainBtn.getAttribute('aria-expanded') === 'true';
-
-                closeAllDropdowns();
-
-                mainBtn.setAttribute('aria-expanded', !isExpanded);
-                content.classList.toggle('show', !isExpanded);
+                if (isExpanded) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
             };
 
             members.forEach(key => {
                 const b = document.createElement('button');
                 b.textContent = getTabName(key, ratesData);
                 b.dataset.stat = key;
-
-                b.onclick = () => {
+                b.onclick = (e) => {
+                    e.stopPropagation();
                     document.getElementById('statSelect').value = key;
                     loadData(false);
                     updateURL();
-                    closeAllDropdowns();
+                    closeMenu();
                 };
                 content.appendChild(b);
             });

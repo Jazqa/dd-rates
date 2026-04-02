@@ -193,17 +193,6 @@ select {
     justify-content: center;
 }
 
-@media (min-width: 769px) {
-    .chart-tab-dropdown:hover .chart-tab-dropdown-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .chart-tab-dropdown:hover > .chart-tab-button {
-        background-image: none;
-        border-left: 1px solid var(--border);
-    }
-}
-
 .chart-tab-dropdown:last-child {
     border-right: 1px solid var(--border);
     border-image: linear-gradient(to top, var(--border), transparent) 1;
