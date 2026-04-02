@@ -180,6 +180,11 @@ select {
     text-decoration: underline;
 }
 
+.chart-tab-button[aria-expanded="true"] .arrow {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
 .chart-tab-dropdown {
     flex: 1 1 0;
     min-width: 0;

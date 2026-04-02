@@ -555,25 +555,20 @@
 
             const mainBtn = document.createElement('button');
             mainBtn.className = 'chart-tab-button';
-            mainBtn.textContent = `${groupName} ▾`;
-
-            mainBtn.setAttribute('aria-haspopup', 'true');
-            mainBtn.setAttribute('aria-expanded', 'false');
+            mainBtn.innerHTML = `${groupName} <span class="arrow">▾</span>`;
 
             const content = document.createElement('div');
             content.className = 'chart-tab-dropdown-content';
 
-            const toggle = (e) => {
+            mainBtn.onclick = (e) => {
                 e.stopPropagation();
-                const isOpen = content.classList.toggle('show');
-                mainBtn.setAttribute('aria-expanded', isOpen);
+                const isExpanded = mainBtn.getAttribute('aria-expanded') === 'true';
 
-                document.querySelectorAll('.chart-tab-dropdown-content.show').forEach(el => {
-                    if (el !== content) el.classList.remove('show');
-                });
+                closeAllDropdowns();
+
+                mainBtn.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('show', !isExpanded);
             };
-
-            mainBtn.onclick = toggle;
 
             members.forEach(key => {
                 const b = document.createElement('button');
@@ -584,8 +579,7 @@
                     document.getElementById('statSelect').value = key;
                     loadData(false);
                     updateURL();
-                    content.classList.remove('show');
-                    mainBtn.focus();
+                    closeAllDropdowns();
                 };
                 content.appendChild(b);
             });
@@ -594,6 +588,13 @@
             wrap.appendChild(content);
             document.getElementById('chartTabs').appendChild(wrap);
         }
+
+        function closeAllDropdowns() {
+            document.querySelectorAll('.chart-tab-dropdown-content').forEach(el => el.classList.remove('show'));
+            document.querySelectorAll('.chart-tab-button').forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+        }
+
+        document.addEventListener('click', () => closeAllDropdowns());
 
         function updateActiveTabStyles(currentStat) {
             document.querySelectorAll('.chart-tab-button, .chart-tab-dropdown-content button').forEach(el => {
