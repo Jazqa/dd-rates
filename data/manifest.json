@@ -505,7 +505,14 @@
   },
   "King's Game": {
     "Nightmare": [
-      "Jester Guardian"
+      "Dice",
+      "Enchanted Bishop",
+      "Gambler's Polearm",
+      "Jester Guardian",
+      "Pawn Shot",
+      "The Dark Knight",
+      "The Light Knight",
+      "Tormented Bishop"
     ],
     "Ruthless": [
       "Dice",
