@@ -504,12 +504,13 @@
     ]
   },
   "King's Game": {
+    "Nightmare": [
+      "Jester Guardian"
+    ],
     "Ruthless": [
       "Dice",
-      "EV Guardian",
       "Enchanted Bishop",
       "Gambler's Polearm",
-      "Jester Guardian",
       "Pawn Shot",
       "The Dark Knight",
       "The Light Knight",
@@ -981,6 +982,7 @@
   "Tinkerer's Workshop": {
     "Nightmare": [
       "Airplane",
+      "EV Guardian",
       "Firestarter Staff",
       "Luminescence Hologram Crystallizer",
       "Mushroom Spear",
@@ -989,6 +991,7 @@
     ],
     "Ruthless": [
       "Airplane",
+      "EV Guardian",
       "Firestarter Staff",
       "Luminescence Hologram Crystallizer",
       "Mushroom Spear",
