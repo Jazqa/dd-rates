@@ -124,8 +124,6 @@ function updateCustomRate(buckets) {
   };
 
   function checkReliability(chance, buckets, reverse) {
-    const input = reverse ? chanceInput : valueInput;
-
     if (!buckets) return;
 
     const keys = Object.keys(buckets)
@@ -156,7 +154,7 @@ function updateCustomRate(buckets) {
           accuracy = high.chance / low.chance;
           if (accuracy > 10) {
             reason = `ACCURACY WARNING!
-${accuracy > 100 ? "Huge" : "Large"} difference between data points ${formatInterpolationWarning(keys[i])} and ${formatInterpolationWarning(keys[i + 1])} (from 1/${formatInterpolationWarning(low.chance)} to 1/${formatInterpolationWarning(high.chance)})`;
+${accuracy > 100 ? "Massive" : "Large"} difference between data points ${formatInterpolationWarning(keys[i])} and ${formatInterpolationWarning(keys[i + 1])} (from 1/${formatInterpolationWarning(low.chance)} to 1/${formatInterpolationWarning(high.chance)})`;
           }
           break;
         }
@@ -164,15 +162,18 @@ ${accuracy > 100 ? "Huge" : "Large"} difference between data points ${formatInte
     }
 
     if (accuracy > 10) {
-      input.style.color = accuracy > 100 ? "#ff4d4d" : "#ffa500";
-      input.title = reason;
-      input.classList.add(
+      const color = accuracy > 100 ? "#ff4d4d" : "#ffa500";
+      chanceInput.style.color = color;
+      chanceInput.title = reason;
+      valueInput.style.color = color;
+      valueInput.title = reason;
+      valueInput.classList.add(
         accuracy > 100 ? "grid-input-error" : "grid-input-warning",
       );
     }
   }
 
-  const runForward = () => {
+  const clearInputErrors = () => {
     valueInput.style.color = "";
     valueInput.style.textDecoration = "";
     valueInput.title = "";
@@ -183,6 +184,10 @@ ${accuracy > 100 ? "Huge" : "Large"} difference between data points ${formatInte
     chanceInput.title = "";
     chanceInput.classList.remove("grid-input-warning");
     chanceInput.classList.remove("grid-input-error");
+  };
+
+  const runForward = () => {
+    clearInputErrors();
 
     const chance = parseInt(clean(chanceInput.value), 10);
     savedCustomChance = chanceInput.value;
@@ -197,16 +202,7 @@ ${accuracy > 100 ? "Huge" : "Large"} difference between data points ${formatInte
   };
 
   const runReverse = () => {
-    valueInput.style.color = "";
-    valueInput.style.textDecoration = "";
-    valueInput.title = "";
-    valueInput.classList.remove("grid-input-warning");
-    valueInput.classList.remove("grid-input-error");
-    chanceInput.style.color = "";
-    chanceInput.style.textDecoration = "";
-    chanceInput.title = "";
-    chanceInput.classList.remove("grid-input-warning");
-    chanceInput.classList.remove("grid-input-error");
+    clearInputErrors();
 
     const val = parseFloat(clean(valueInput.value));
     if (isNaN(val)) return (chanceInput.value = "");
