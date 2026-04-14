@@ -5,7 +5,6 @@
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "projectile_template": "FamiliarProjectile_Hippogryph",
   "hardcore_randomizer_multiplier": 1.0,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,

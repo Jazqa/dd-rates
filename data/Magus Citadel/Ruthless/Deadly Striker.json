@@ -5,7 +5,6 @@
   "map_name": "Magus Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "projectile_template": "Projectile_DeadlyStrikerpet",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.76,

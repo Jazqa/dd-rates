@@ -5,7 +5,6 @@
   "map_name": "Scorched Arabia",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "projectile_template": "Fenix_ProjectileHarpoon_Colorized",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
