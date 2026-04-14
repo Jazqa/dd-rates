@@ -5,9 +5,7 @@
   "map_name": "Lover's Paradise",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Familiar_Hamster",
   "projectile_template": "Projectile_Familiar_HamsterHearts",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1672,9 +1670,7 @@
         "543": 51,
         "544": 18,
         "545": 5
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1726,8 +1722,6 @@
         "76000": 1269,
         "77000": 122
       },
-      "max": 77983,
-      "min": 33140,
       "step": 1000
     },
     "tower_caps": {
@@ -1818,8 +1812,6 @@
         "3050": 749,
         "3100": 63
       },
-      "max": 3142,
-      "min": -602,
       "step": 50
     },
     "app_totals": {
@@ -1888,8 +1880,6 @@
         "2450": 567,
         "2500": 5
       },
-      "max": 2507,
-      "min": -605,
       "step": 50
     },
     "hermit_totals": {
@@ -1958,8 +1948,6 @@
         "2450": 536,
         "2500": 7
       },
-      "max": 2512,
-      "min": -612,
       "step": 50
     },
     "guardian_totals": {
@@ -2028,8 +2016,6 @@
         "2450": 549,
         "2500": 6
       },
-      "max": 2506,
-      "min": -637,
       "step": 50
     },
     "scale": {
@@ -2355,9 +2341,7 @@
         "377": 1,
         "378": 1,
         "380": 1
-      },
-      "max": 380,
-      "min": 39
+      }
     }
   }
 }

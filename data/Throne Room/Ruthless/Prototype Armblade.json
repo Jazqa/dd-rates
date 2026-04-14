@@ -5,9 +5,6 @@
   "map_name": "Throne Room",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "SpearStyle6_Boss_Ruthless",
-  "weapon_template": "DLC_WeaponMonkSpear_Style6",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.25,
   "base_force_randomization_quality": 1.5,
@@ -1524,9 +1521,7 @@
         "544": 16,
         "545": 9,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1712,8 +1707,6 @@
         "234000": 18,
         "235000": 3
       },
-      "max": 235356,
-      "min": 56934,
       "step": 1000
     },
     "damage_2": {
@@ -1773,8 +1766,6 @@
         "78000": 453,
         "79000": 21
       },
-      "max": 79375,
-      "min": 28098,
       "step": 1000
     },
     "tower_caps": {
@@ -1866,8 +1857,6 @@
         "3250": 11,
         "3300": 1
       },
-      "max": 3330,
-      "min": -465,
       "step": 50
     },
     "app_totals": {
@@ -1932,8 +1921,6 @@
         "2550": 269,
         "2600": 16
       },
-      "max": 2633,
-      "min": -303,
       "step": 50
     },
     "hermit_totals": {
@@ -1997,8 +1984,6 @@
         "2550": 267,
         "2600": 9
       },
-      "max": 2629,
-      "min": -292,
       "step": 50
     },
     "guardian_totals": {
@@ -2062,8 +2047,6 @@
         "2550": 265,
         "2600": 10
       },
-      "max": 2628,
-      "min": -292,
       "step": 50
     },
     "scale": {
@@ -2084,9 +2067,7 @@
         "18": 1441206,
         "19": 1715203,
         "20": 471108
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

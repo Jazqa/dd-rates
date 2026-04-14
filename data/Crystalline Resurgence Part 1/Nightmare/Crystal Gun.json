@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Huntress_EMHv2",
-  "weapon_template": "Weapon_Huntress_EMH",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1576,9 +1573,7 @@
         "543": 10,
         "544": 6,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1816,8 +1811,6 @@
         "367000": 8,
         "368000": 1
       },
-      "max": 368653,
-      "min": 137688,
       "step": 1000
     },
     "tower_caps": {
@@ -1909,8 +1902,6 @@
         "3200": 119,
         "3250": 9
       },
-      "max": 3283,
-      "min": -422,
       "step": 50
     },
     "app_totals": {
@@ -1975,8 +1966,6 @@
         "2600": 254,
         "2650": 12
       },
-      "max": 2680,
-      "min": -279,
       "step": 50
     },
     "hermit_totals": {
@@ -2041,8 +2030,6 @@
         "2600": 258,
         "2650": 13
       },
-      "max": 2678,
-      "min": -296,
       "step": 50
     },
     "guardian_totals": {
@@ -2105,8 +2092,6 @@
         "2500": 452,
         "2550": 19
       },
-      "max": 2567,
-      "min": -262,
       "step": 50
     },
     "scale": {
@@ -2126,9 +2111,7 @@
         "16": 4561916,
         "17": 5573438,
         "18": 2253538
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

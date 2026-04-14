@@ -5,9 +5,6 @@
   "map_name": "Embermount Volcano",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_EmberSceptre",
-  "weapon_template": "Weapon_EmberSceptre",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1349,9 +1346,7 @@
         "543": 11,
         "544": 3,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1418,8 +1413,6 @@
         "75000": 75,
         "76000": 9
       },
-      "max": 76992,
-      "min": 17916,
       "step": 1000
     },
     "tower_caps": {
@@ -1514,8 +1507,6 @@
         "3150": 41,
         "3200": 1
       },
-      "max": 3209,
-      "min": -715,
       "step": 50
     },
     "app_totals": {
@@ -1587,8 +1578,6 @@
         "2500": 67,
         "2550": 2
       },
-      "max": 2559,
-      "min": -715,
       "step": 50
     },
     "hermit_totals": {
@@ -1660,8 +1649,6 @@
         "2500": 294,
         "2550": 17
       },
-      "max": 2583,
-      "min": -799,
       "step": 50
     },
     "guardian_totals": {
@@ -1733,8 +1720,6 @@
         "2500": 325,
         "2550": 26
       },
-      "max": 2576,
-      "min": -811,
       "step": 50
     },
     "scale": {
@@ -1745,9 +1730,7 @@
         "10": 3272524,
         "11": 3655105,
         "12": 446
-      },
-      "max": 12,
-      "min": 8
+      }
     }
   }
 }

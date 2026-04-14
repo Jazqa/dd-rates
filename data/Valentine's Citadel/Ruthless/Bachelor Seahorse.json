@@ -5,9 +5,7 @@
   "map_name": "Valentine's Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_BachelorSeahorse_Blue",
   "projectile_template": "Projectile_P_BachelorSeahorse",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1441,9 +1439,7 @@
         "544": 11,
         "545": 4,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1500,8 +1496,6 @@
         "76000": 136,
         "77000": 2
       },
-      "max": 77272,
-      "min": 28768,
       "step": 1000
     },
     "tower_caps": {
@@ -1595,8 +1589,6 @@
         "3050": 40,
         "3100": 2
       },
-      "max": 3128,
-      "min": -777,
       "step": 50
     },
     "app_totals": {
@@ -1668,8 +1660,6 @@
         "2450": 67,
         "2500": 2
       },
-      "max": 2501,
-      "min": -794,
       "step": 50
     },
     "hermit_totals": {
@@ -1742,8 +1732,6 @@
         "2450": 44,
         "2500": 1
       },
-      "max": 2508,
-      "min": -844,
       "step": 50
     },
     "guardian_totals": {
@@ -1816,8 +1804,6 @@
         "2400": 693,
         "2450": 54
       },
-      "max": 2499,
-      "min": -862,
       "step": 50
     },
     "scale": {
@@ -1928,9 +1914,7 @@
         "199": 41455,
         "200": 22099,
         "201": 3393
-      },
-      "max": 201,
-      "min": 97
+      }
     }
   }
 }

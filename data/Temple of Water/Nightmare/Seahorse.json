@@ -5,9 +5,7 @@
   "map_name": "Temple of Water",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_SeahorseProjectile",
   "projectile_template": "Seahorse_Projectile",
-  "seq_act": "Survival_Familiar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1659,9 +1657,7 @@
         "530": 1,
         "533": 1,
         "536": 1
-      },
-      "max": 536,
-      "min": 241
+      }
     },
     "damage": {
       "label": "Base",
@@ -1703,8 +1699,6 @@
         "62000": 5,
         "63000": 2
       },
-      "max": 63316,
-      "min": 28886,
       "step": 1000
     },
     "tower_caps": {
@@ -1765,8 +1759,6 @@
         "3000": 16,
         "3050": 4
       },
-      "max": 3086,
-      "min": 719,
       "step": 50
     },
     "app_totals": {
@@ -1815,8 +1807,6 @@
         "2350": 61,
         "2400": 16
       },
-      "max": 2443,
-      "min": 322,
       "step": 50
     },
     "hermit_totals": {
@@ -1866,8 +1856,6 @@
         "2400": 17,
         "2450": 3
       },
-      "max": 2468,
-      "min": 255,
       "step": 50
     },
     "guardian_totals": {
@@ -1916,8 +1904,6 @@
         "2400": 11,
         "2450": 1
       },
-      "max": 2459,
-      "min": 349,
       "step": 50
     },
     "scale": {
@@ -2110,9 +2096,7 @@
         "224": 32,
         "225": 26,
         "226": 11
-      },
-      "max": 226,
-      "min": 40
+      }
     }
   }
 }

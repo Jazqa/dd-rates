@@ -5,8 +5,6 @@
   "map_name": "Winter Mire",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "AccesoryEquipment_LightBracers",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,

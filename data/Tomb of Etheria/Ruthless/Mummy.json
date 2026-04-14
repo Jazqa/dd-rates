@@ -5,9 +5,7 @@
   "map_name": "Tomb of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Familar_Mummy",
   "projectile_template": "Projectile_ScarabPet_Generic",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1395,9 +1393,7 @@
         "544": 6,
         "545": 4,
         "546": 5
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1447,8 +1443,6 @@
         "66000": 110,
         "67000": 2
       },
-      "max": 67273,
-      "min": 25084,
       "step": 1000
     },
     "tower_caps": {
@@ -1534,8 +1528,6 @@
         "3050": 1006,
         "3100": 81
       },
-      "max": 3149,
-      "min": -353,
       "step": 50
     },
     "app_totals": {
@@ -1598,8 +1590,6 @@
         "2450": 591,
         "2500": 6
       },
-      "max": 2518,
-      "min": -326,
       "step": 50
     },
     "hermit_totals": {
@@ -1663,8 +1653,6 @@
         "2450": 597,
         "2500": 6
       },
-      "max": 2516,
-      "min": -353,
       "step": 50
     },
     "guardian_totals": {
@@ -1729,8 +1717,6 @@
         "2450": 603,
         "2500": 4
       },
-      "max": 2523,
-      "min": -407,
       "step": 50
     },
     "scale": {
@@ -1823,9 +1809,7 @@
         "185": 61962,
         "186": 41714,
         "187": 14191
-      },
-      "max": 187,
-      "min": 101
+      }
     }
   }
 }

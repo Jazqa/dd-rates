@@ -5,8 +5,6 @@
   "map_name": "Endless Spires",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Imp",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1691,9 +1689,7 @@
         "544": 3,
         "545": 2,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1721,8 +1717,6 @@
         "31000": 2551,
         "32000": 11
       },
-      "max": 32172,
-      "min": 12838,
       "step": 1000
     },
     "tower_caps": {
@@ -1816,8 +1810,6 @@
         "3050": 120,
         "3100": 5
       },
-      "max": 3125,
-      "min": -769,
       "step": 50
     },
     "app_totals": {
@@ -1890,8 +1882,6 @@
         "2450": 105,
         "2500": 2
       },
-      "max": 2514,
-      "min": -804,
       "step": 50
     },
     "hermit_totals": {
@@ -1963,8 +1953,6 @@
         "2400": 1155,
         "2450": 68
       },
-      "max": 2493,
-      "min": -974,
       "step": 50
     },
     "guardian_totals": {
@@ -2036,8 +2024,6 @@
         "2450": 87,
         "2500": 1
       },
-      "max": 2501,
-      "min": -769,
       "step": 50
     },
     "scale": {
@@ -2312,9 +2298,7 @@
         "373": 1,
         "378": 2,
         "381": 1
-      },
-      "max": 381,
-      "min": 39
+      }
     }
   }
 }

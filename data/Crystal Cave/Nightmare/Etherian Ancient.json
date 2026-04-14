@@ -5,8 +5,6 @@
   "map_name": "Crystal Cave",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Ancient",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1527,9 +1525,7 @@
         "544": 5,
         "545": 2,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1558,8 +1554,6 @@
         "36000": 4006,
         "37000": 83
       },
-      "max": 37545,
-      "min": 16292,
       "step": 1000
     },
     "tower_caps": {
@@ -1648,8 +1642,6 @@
         "3050": 63,
         "3100": 2
       },
-      "max": 3127,
-      "min": -548,
       "step": 50
     },
     "app_totals": {
@@ -1718,8 +1710,6 @@
         "2450": 50,
         "2500": 1
       },
-      "max": 2503,
-      "min": -629,
       "step": 50
     },
     "hermit_totals": {
@@ -1787,8 +1777,6 @@
         "2400": 834,
         "2450": 59
       },
-      "max": 2494,
-      "min": -607,
       "step": 50
     },
     "guardian_totals": {
@@ -1856,8 +1844,6 @@
         "2400": 845,
         "2450": 64
       },
-      "max": 2490,
-      "min": -626,
       "step": 50
     },
     "scale": {
@@ -2068,9 +2054,7 @@
         "333": 1,
         "336": 1,
         "347": 2
-      },
-      "max": 347,
-      "min": 103
+      }
     }
   }
 }

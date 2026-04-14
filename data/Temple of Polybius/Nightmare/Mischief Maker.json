@@ -5,9 +5,6 @@
   "map_name": "Temple of Polybius",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_WaterChakram",
-  "weapon_template": "Weapon_WaterChakram",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1562,9 +1559,7 @@
         "543": 29,
         "544": 10,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1675,8 +1670,6 @@
         "163000": 42,
         "164000": 7
       },
-      "max": 164437,
-      "min": 61139,
       "step": 1000
     },
     "damage_2": {
@@ -1695,8 +1688,6 @@
         "14000": 359330,
         "15000": 10787
       },
-      "max": 15768,
-      "min": 5055,
       "step": 1000
     },
     "tower_caps": {
@@ -1841,8 +1832,6 @@
         "3900": 4446,
         "3950": 6912
       },
-      "max": 3996,
-      "min": -1751,
       "step": 50
     },
     "app_totals": {
@@ -1941,8 +1930,6 @@
         "2900": 57621,
         "2950": 156405
       },
-      "max": 2997,
-      "min": -1712,
       "step": 50
     },
     "hermit_totals": {
@@ -2042,8 +2029,6 @@
         "2900": 44399,
         "2950": 95005
       },
-      "max": 2997,
-      "min": -1711,
       "step": 50
     },
     "guardian_totals": {
@@ -2143,8 +2128,6 @@
         "2900": 57676,
         "2950": 156695
       },
-      "max": 2997,
-      "min": -1794,
       "step": 50
     },
     "scale": {
@@ -2156,9 +2139,7 @@
         "9": 5829959,
         "10": 6517783,
         "11": 885
-      },
-      "max": 11,
-      "min": 6
+      }
     }
   }
 }

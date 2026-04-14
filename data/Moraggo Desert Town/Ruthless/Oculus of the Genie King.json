@@ -5,9 +5,6 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle7_Boss_Ruthless",
-  "weapon_template": "Weapon_GenieEyeStaff",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1360,9 +1357,7 @@
         "544": 24,
         "545": 16,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1418,8 +1413,6 @@
         "68000": 48,
         "69000": 2
       },
-      "max": 69299,
-      "min": 21310,
       "step": 1000
     },
     "damage_2": {
@@ -1496,8 +1489,6 @@
         "100000": 66,
         "101000": 6
       },
-      "max": 101900,
-      "min": 32115,
       "step": 1000
     },
     "tower_caps": {
@@ -1581,8 +1572,6 @@
         "3000": 268,
         "3050": 24
       },
-      "max": 3092,
-      "min": -344,
       "step": 50
     },
     "app_totals": {
@@ -1642,8 +1631,6 @@
         "2400": 1303,
         "2450": 36
       },
-      "max": 2485,
-      "min": -200,
       "step": 50
     },
     "hermit_totals": {
@@ -1702,8 +1689,6 @@
         "2350": 2615,
         "2400": 155
       },
-      "max": 2445,
-      "min": -219,
       "step": 50
     },
     "guardian_totals": {
@@ -1763,8 +1748,6 @@
         "2400": 186,
         "2450": 2
       },
-      "max": 2452,
-      "min": -215,
       "step": 50
     },
     "scale": {
@@ -1783,9 +1766,7 @@
         "13": 1690505,
         "14": 2328426,
         "15": 832296
-      },
-      "max": 15,
-      "min": 3
+      }
     }
   }
 }

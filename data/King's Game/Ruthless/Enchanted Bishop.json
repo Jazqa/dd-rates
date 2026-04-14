@@ -5,9 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Apprentice",
-  "weapon_template": "Weapon_Apprentice",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1282,9 +1279,7 @@
         "544": 13,
         "545": 1,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1352,8 +1347,6 @@
         "90000": 104,
         "91000": 11
       },
-      "max": 91749,
-      "min": 31415,
       "step": 1000
     },
     "tower_caps": {
@@ -1439,8 +1432,6 @@
         "3050": 56,
         "3100": 3
       },
-      "max": 3113,
-      "min": -357,
       "step": 50
     },
     "app_totals": {
@@ -1501,8 +1492,6 @@
         "2450": 66,
         "2500": 1
       },
-      "max": 2506,
-      "min": -247,
       "step": 50
     },
     "hermit_totals": {
@@ -1562,8 +1551,6 @@
         "2400": 920,
         "2450": 68
       },
-      "max": 2485,
-      "min": -244,
       "step": 50
     },
     "guardian_totals": {
@@ -1623,8 +1610,6 @@
         "2400": 923,
         "2450": 72
       },
-      "max": 2492,
-      "min": -227,
       "step": 50
     },
     "scale": {
@@ -1643,9 +1628,7 @@
         "14": 553631,
         "15": 772167,
         "16": 476119
-      },
-      "max": 16,
-      "min": 4
+      }
     }
   }
 }

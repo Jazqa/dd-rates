@@ -5,9 +5,6 @@
   "map_name": "Infested Ruins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_HoneySpear",
-  "weapon_template": "Weapon_HoneySpear",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1733,9 +1730,7 @@
         "544": 13,
         "545": 9,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1870,8 +1865,6 @@
         "210000": 8,
         "211000": 2
       },
-      "max": 211103,
-      "min": 83882,
       "step": 1000
     },
     "damage_2": {
@@ -2085,8 +2078,6 @@
         "324000": 17,
         "325000": 6
       },
-      "max": 325822,
-      "min": 119470,
       "step": 1000
     },
     "tower_caps": {
@@ -2177,8 +2168,6 @@
         "3250": 8,
         "3300": 1
       },
-      "max": 3311,
-      "min": -401,
       "step": 50
     },
     "app_totals": {
@@ -2242,8 +2231,6 @@
         "2550": 232,
         "2600": 8
       },
-      "max": 2625,
-      "min": -275,
       "step": 50
     },
     "hermit_totals": {
@@ -2307,8 +2294,6 @@
         "2550": 197,
         "2600": 10
       },
-      "max": 2634,
-      "min": -281,
       "step": 50
     },
     "guardian_totals": {
@@ -2372,8 +2357,6 @@
         "2550": 230,
         "2600": 7
       },
-      "max": 2622,
-      "min": -280,
       "step": 50
     },
     "scale": {
@@ -2384,9 +2367,7 @@
         "10": 6134370,
         "11": 18397306,
         "12": 796
-      },
-      "max": 12,
-      "min": 8
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Crystal Cave",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_CrystalStaff",
-  "weapon_template": "CrystalStaff_Weapon",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1545,9 +1542,7 @@
         "544": 12,
         "545": 4,
         "546": 6
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1629,8 +1624,6 @@
         "95000": 37,
         "96000": 2
       },
-      "max": 96157,
-      "min": 22538,
       "step": 1000
     },
     "damage_2": {
@@ -1712,8 +1705,6 @@
         "94000": 86,
         "95000": 22
       },
-      "max": 95830,
-      "min": 22445,
       "step": 1000
     },
     "tower_caps": {
@@ -1838,8 +1829,6 @@
         "3700": 5,
         "3750": 1
       },
-      "max": 3758,
-      "min": -1217,
       "step": 50
     },
     "app_totals": {
@@ -1927,8 +1916,6 @@
         "2900": 1084,
         "2950": 82
       },
-      "max": 2997,
-      "min": -1133,
       "step": 50
     },
     "hermit_totals": {
@@ -2018,8 +2005,6 @@
         "2850": 376,
         "2900": 20
       },
-      "max": 2935,
-      "min": -1264,
       "step": 50
     },
     "guardian_totals": {
@@ -2107,8 +2092,6 @@
         "2850": 686,
         "2900": 39
       },
-      "max": 2937,
-      "min": -1186,
       "step": 50
     },
     "scale": {
@@ -2125,9 +2108,7 @@
         "13": 4873650,
         "14": 6504249,
         "15": 6372307
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

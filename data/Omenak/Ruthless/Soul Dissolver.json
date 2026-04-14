@@ -5,9 +5,6 @@
   "map_name": "Omenak",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Bolter",
-  "weapon_template": "Weapon_Bolter",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1539,9 +1536,7 @@
         "544": 14,
         "545": 2,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1763,8 +1758,6 @@
         "357000": 7,
         "358000": 3
       },
-      "max": 358521,
-      "min": 142932,
       "step": 1000
     },
     "tower_caps": {
@@ -1850,8 +1843,6 @@
         "3050": 152,
         "3100": 29
       },
-      "max": 3142,
-      "min": -392,
       "step": 50
     },
     "app_totals": {
@@ -1913,8 +1904,6 @@
         "2450": 297,
         "2500": 17
       },
-      "max": 2534,
-      "min": -261,
       "step": 50
     },
     "hermit_totals": {
@@ -1976,8 +1965,6 @@
         "2450": 271,
         "2500": 13
       },
-      "max": 2518,
-      "min": -259,
       "step": 50
     },
     "guardian_totals": {
@@ -2039,8 +2026,6 @@
         "2450": 347,
         "2500": 7
       },
-      "max": 2531,
-      "min": -252,
       "step": 50
     },
     "scale": {
@@ -2060,9 +2045,7 @@
         "16": 5310913,
         "17": 6492855,
         "18": 2624257
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

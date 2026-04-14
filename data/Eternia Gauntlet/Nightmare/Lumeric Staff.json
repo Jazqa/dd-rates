@@ -5,9 +5,6 @@
   "map_name": "Eternia Gauntlet",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_LumericStaff",
-  "weapon_template": "Weapon_LumericStaff",
-  "seq_act": "coreVictory_event",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1346,9 +1343,7 @@
         "544": 5,
         "545": 1,
         "546": 5
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1416,8 +1411,6 @@
         "76000": 52,
         "77000": 3
       },
-      "max": 77533,
-      "min": 16361,
       "step": 1000
     },
     "tower_caps": {
@@ -1511,8 +1504,6 @@
         "3100": 160,
         "3150": 5
       },
-      "max": 3180,
-      "min": -711,
       "step": 50
     },
     "app_totals": {
@@ -1584,8 +1575,6 @@
         "2500": 287,
         "2550": 4
       },
-      "max": 2565,
-      "min": -715,
       "step": 50
     },
     "hermit_totals": {
@@ -1656,8 +1645,6 @@
         "2450": 811,
         "2500": 29
       },
-      "max": 2523,
-      "min": -723,
       "step": 50
     },
     "guardian_totals": {
@@ -1727,8 +1714,6 @@
         "2450": 880,
         "2500": 26
       },
-      "max": 2525,
-      "min": -677,
       "step": 50
     },
     "scale": {
@@ -1739,9 +1724,7 @@
         "10": 6587801,
         "11": 7783497,
         "12": 872
-      },
-      "max": 12,
-      "min": 8
+      }
     }
   }
 }

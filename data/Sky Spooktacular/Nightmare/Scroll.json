@@ -5,9 +5,7 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Familar_Scroll_Pet",
   "projectile_template": "Projectile_Scroll_Generic",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1454,9 +1452,7 @@
         "544": 8,
         "545": 4,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1545,8 +1541,6 @@
         "124000": 72,
         "125000": 4
       },
-      "max": 125896,
-      "min": 44295,
       "step": 1000
     },
     "tower_caps": {
@@ -1632,8 +1626,6 @@
         "3050": 1012,
         "3100": 76
       },
-      "max": 3149,
-      "min": -353,
       "step": 50
     },
     "app_totals": {
@@ -1696,8 +1688,6 @@
         "2450": 583,
         "2500": 5
       },
-      "max": 2518,
-      "min": -326,
       "step": 50
     },
     "hermit_totals": {
@@ -1761,8 +1751,6 @@
         "2450": 611,
         "2500": 6
       },
-      "max": 2515,
-      "min": -353,
       "step": 50
     },
     "guardian_totals": {
@@ -1826,8 +1814,6 @@
         "2450": 594,
         "2500": 3
       },
-      "max": 2523,
-      "min": -353,
       "step": 50
     },
     "scale": {
@@ -1920,9 +1906,7 @@
         "185": 61538,
         "186": 41153,
         "187": 14125
-      },
-      "max": 187,
-      "min": 101
+      }
     }
   }
 }

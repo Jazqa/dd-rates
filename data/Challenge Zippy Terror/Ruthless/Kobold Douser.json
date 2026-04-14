@@ -5,9 +5,6 @@
   "map_name": "Challenge Zippy Terror",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle7_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style7_ruth",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.48,
@@ -1402,9 +1399,7 @@
         "544": 16,
         "545": 8,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1557,8 +1552,6 @@
         "191000": 18,
         "192000": 2
       },
-      "max": 192055,
-      "min": 46531,
       "step": 1000
     },
     "tower_caps": {
@@ -1650,8 +1643,6 @@
         "3250": 8,
         "3300": 1
       },
-      "max": 3328,
-      "min": -468,
       "step": 50
     },
     "app_totals": {
@@ -1716,8 +1707,6 @@
         "2550": 224,
         "2600": 14
       },
-      "max": 2631,
-      "min": -305,
       "step": 50
     },
     "hermit_totals": {
@@ -1781,8 +1770,6 @@
         "2550": 215,
         "2600": 8
       },
-      "max": 2627,
-      "min": -293,
       "step": 50
     },
     "guardian_totals": {
@@ -1846,8 +1833,6 @@
         "2550": 229,
         "2600": 9
       },
-      "max": 2626,
-      "min": -293,
       "step": 50
     },
     "scale": {
@@ -1871,9 +1856,7 @@
         "22": 1191165,
         "23": 1356703,
         "24": 438332
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

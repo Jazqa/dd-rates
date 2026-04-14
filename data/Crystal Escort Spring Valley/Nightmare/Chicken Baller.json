@@ -5,9 +5,6 @@
   "map_name": "Crystal Escort Spring Valley",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_ChickenBallBlaster",
-  "weapon_template": "Weapon_ChickenBallBlaster",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1275,9 +1272,7 @@
         "543": 18,
         "544": 11,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1357,8 +1352,6 @@
         "118000": 245,
         "119000": 33
       },
-      "max": 119737,
-      "min": 46212,
       "step": 1000
     },
     "tower_caps": {
@@ -1432,8 +1425,6 @@
         "2750": 19,
         "2800": 2
       },
-      "max": 2801,
-      "min": -74,
       "step": 50
     },
     "app_totals": {
@@ -1485,8 +1476,6 @@
         "2150": 1684,
         "2200": 89
       },
-      "max": 2241,
-      "min": -65,
       "step": 50
     },
     "hermit_totals": {
@@ -1538,8 +1527,6 @@
         "2150": 1680,
         "2200": 90
       },
-      "max": 2239,
-      "min": -67,
       "step": 50
     },
     "guardian_totals": {
@@ -1592,8 +1579,6 @@
         "2200": 100,
         "2250": 1
       },
-      "max": 2250,
-      "min": -54,
       "step": 50
     },
     "support_caps": {
@@ -1619,9 +1604,7 @@
         "13": 4614403,
         "14": 5930573,
         "15": 2036439
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

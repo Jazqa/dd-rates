@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Lab",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Laser_Staff",
-  "weapon_template": "Weapon_Laser_Staff",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1274,9 +1271,7 @@
         "544": 5,
         "545": 1,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1344,8 +1339,6 @@
         "76000": 135,
         "77000": 23
       },
-      "max": 77541,
-      "min": 17241,
       "step": 1000
     },
     "tower_caps": {
@@ -1421,8 +1414,6 @@
         "2350": 15,
         "2400": 1
       },
-      "max": 2401,
-      "min": -578,
       "step": 50
     },
     "app_totals": {
@@ -1477,8 +1468,6 @@
         "1900": 78,
         "1950": 2
       },
-      "max": 1951,
-      "min": -474,
       "step": 50
     },
     "hermit_totals": {
@@ -1533,8 +1522,6 @@
         "1850": 1071,
         "1900": 63
       },
-      "max": 1946,
-      "min": -535,
       "step": 50
     },
     "guardian_totals": {
@@ -1591,8 +1578,6 @@
         "1850": 748,
         "1900": 28
       },
-      "max": 1925,
-      "min": -607,
       "step": 50
     },
     "support_caps": {
@@ -1618,9 +1603,7 @@
         "18": 3652642,
         "19": 4318349,
         "20": 1419123
-      },
-      "max": 20,
-      "min": 9
+      }
     }
   }
 }

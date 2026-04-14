@@ -5,9 +5,6 @@
   "map_name": "The Summit",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle4_EMH_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style4",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.0,
   "base_force_randomization_quality": 1.6,
@@ -1381,9 +1378,7 @@
         "544": 30,
         "545": 1,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1517,8 +1512,6 @@
         "172000": 33,
         "173000": 6
       },
-      "max": 173757,
-      "min": 46625,
       "step": 1000
     },
     "tower_caps": {
@@ -1609,8 +1602,6 @@
         "3200": 179,
         "3250": 18
       },
-      "max": 3297,
-      "min": -463,
       "step": 50
     },
     "app_totals": {
@@ -1674,8 +1665,6 @@
         "2550": 606,
         "2600": 34
       },
-      "max": 2643,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1739,8 +1728,6 @@
         "2550": 558,
         "2600": 26
       },
-      "max": 2643,
-      "min": -291,
       "step": 50
     },
     "guardian_totals": {
@@ -1805,8 +1792,6 @@
         "2600": 23,
         "2650": 1
       },
-      "max": 2651,
-      "min": -299,
       "step": 50
     },
     "scale": {
@@ -1830,9 +1815,7 @@
         "22": 1569385,
         "23": 1938224,
         "24": 657271
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

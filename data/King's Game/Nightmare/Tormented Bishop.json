@@ -5,9 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_ColorableBishop",
-  "weapon_template": "Weapon_Apprentice",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1282,9 +1279,7 @@
         "544": 10,
         "545": 3,
         "546": 2
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1352,8 +1347,6 @@
         "90000": 83,
         "91000": 10
       },
-      "max": 91749,
-      "min": 31415,
       "step": 1000
     },
     "tower_caps": {
@@ -1438,8 +1431,6 @@
         "3050": 43,
         "3100": 1
       },
-      "max": 3106,
-      "min": -342,
       "step": 50
     },
     "app_totals": {
@@ -1499,8 +1490,6 @@
         "2400": 679,
         "2450": 46
       },
-      "max": 2485,
-      "min": -229,
       "step": 50
     },
     "hermit_totals": {
@@ -1561,8 +1550,6 @@
         "2450": 59,
         "2500": 1
       },
-      "max": 2504,
-      "min": -244,
       "step": 50
     },
     "guardian_totals": {
@@ -1623,8 +1610,6 @@
         "2450": 64,
         "2500": 1
       },
-      "max": 2504,
-      "min": -227,
       "step": 50
     },
     "scale": {
@@ -1643,9 +1628,7 @@
         "14": 439004,
         "15": 612153,
         "16": 378538
-      },
-      "max": 16,
-      "min": 4
+      }
     }
   }
 }

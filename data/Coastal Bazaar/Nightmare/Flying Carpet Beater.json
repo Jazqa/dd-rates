@@ -5,9 +5,6 @@
   "map_name": "Coastal Bazaar",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_MagicCarpetBazaar",
-  "weapon_template": "Weapon_MagicCarpetBazaar",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1492,9 +1489,7 @@
         "543": 11,
         "544": 19,
         "545": 6
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1623,8 +1618,6 @@
         "200000": 39,
         "201000": 5
       },
-      "max": 201268,
-      "min": 79883,
       "step": 1000
     },
     "damage_2": {
@@ -1696,8 +1689,6 @@
         "97000": 118,
         "98000": 2
       },
-      "max": 98041,
-      "min": 35712,
       "step": 1000
     },
     "tower_caps": {
@@ -1783,8 +1774,6 @@
         "3200": 21,
         "3250": 2
       },
-      "max": 3259,
-      "min": -205,
       "step": 50
     },
     "app_totals": {
@@ -1845,8 +1834,6 @@
         "2550": 53,
         "2600": 1
       },
-      "max": 2601,
-      "min": -140,
       "step": 50
     },
     "hermit_totals": {
@@ -1907,8 +1894,6 @@
         "2500": 994,
         "2550": 48
       },
-      "max": 2585,
-      "min": -154,
       "step": 50
     },
     "guardian_totals": {
@@ -1969,8 +1954,6 @@
         "2550": 64,
         "2600": 1
       },
-      "max": 2600,
-      "min": -149,
       "step": 50
     },
     "scale": {
@@ -1989,9 +1972,7 @@
         "17": 6500727,
         "18": 8011682,
         "19": 264276
-      },
-      "max": 19,
-      "min": 7
+      }
     }
   }
 }

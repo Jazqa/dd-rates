@@ -5,9 +5,6 @@
   "map_name": "Moonbase",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HuntressEquipment",
-  "weapon_template": "HuntressWeapon",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1578,9 +1575,7 @@
         "544": 34,
         "545": 5,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1802,8 +1797,6 @@
         "312000": 16,
         "313000": 8
       },
-      "max": 313722,
-      "min": 97996,
       "step": 1000
     },
     "tower_caps": {
@@ -1911,8 +1904,6 @@
         "3100": 414,
         "3150": 19
       },
-      "max": 3175,
-      "min": -1435,
       "step": 50
     },
     "app_totals": {
@@ -1991,8 +1982,6 @@
         "2450": 4304,
         "2500": 148
       },
-      "max": 2544,
-      "min": -1128,
       "step": 50
     },
     "hermit_totals": {
@@ -2072,8 +2061,6 @@
         "2450": 4251,
         "2500": 174
       },
-      "max": 2549,
-      "min": -1171,
       "step": 50
     },
     "guardian_totals": {
@@ -2152,8 +2139,6 @@
         "2450": 4286,
         "2500": 173
       },
-      "max": 2541,
-      "min": -1142,
       "step": 50
     },
     "scale": {
@@ -2173,9 +2158,7 @@
         "16": 9786420,
         "17": 15609007,
         "18": 7350049
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

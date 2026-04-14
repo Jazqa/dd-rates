@@ -5,9 +5,6 @@
   "map_name": "Tomb of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SerpentStaff",
-  "weapon_template": "Weapon_SerpentStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1345,9 +1342,7 @@
         "543": 25,
         "544": 22,
         "545": 12
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1418,8 +1413,6 @@
         "83000": 100,
         "84000": 9
       },
-      "max": 84750,
-      "min": 21096,
       "step": 1000
     },
     "tower_caps": {
@@ -1516,8 +1509,6 @@
         "3000": 12,
         "3050": 1
       },
-      "max": 3056,
-      "min": -965,
       "step": 50
     },
     "app_totals": {
@@ -1591,8 +1582,6 @@
         "2350": 574,
         "2400": 22
       },
-      "max": 2445,
-      "min": -1004,
       "step": 50
     },
     "hermit_totals": {
@@ -1666,8 +1655,6 @@
         "2350": 566,
         "2400": 27
       },
-      "max": 2430,
-      "min": -961,
       "step": 50
     },
     "guardian_totals": {
@@ -1741,8 +1728,6 @@
         "2350": 559,
         "2400": 26
       },
-      "max": 2426,
-      "min": -955,
       "step": 50
     },
     "support_caps": {
@@ -1761,9 +1746,7 @@
         "9": 5920374,
         "10": 17759268,
         "11": 720
-      },
-      "max": 11,
-      "min": 7
+      }
     }
   }
 }

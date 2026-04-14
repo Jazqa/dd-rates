@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Cleaverv2",
-  "weapon_template": "Weapon_Cleaverv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1383,9 +1380,7 @@
         "542": 19,
         "543": 30,
         "544": 4
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1528,8 +1523,6 @@
         "223000": 21,
         "224000": 13
       },
-      "max": 224817,
-      "min": 89180,
       "step": 1000
     },
     "tower_caps": {
@@ -1611,8 +1604,6 @@
         "2900": 137,
         "2950": 20
       },
-      "max": 2989,
-      "min": -342,
       "step": 50
     },
     "app_totals": {
@@ -1670,8 +1661,6 @@
         "2300": 306,
         "2350": 11
       },
-      "max": 2373,
-      "min": -209,
       "step": 50
     },
     "hermit_totals": {
@@ -1730,8 +1719,6 @@
         "2350": 104,
         "2400": 1
       },
-      "max": 2417,
-      "min": -235,
       "step": 50
     },
     "guardian_totals": {
@@ -1790,8 +1777,6 @@
         "2350": 224,
         "2400": 7
       },
-      "max": 2410,
-      "min": -228,
       "step": 50
     },
     "scale": {
@@ -1802,9 +1787,7 @@
         "14": 6889949,
         "15": 7875482,
         "16": 891
-      },
-      "max": 16,
-      "min": 12
+      }
     }
   }
 }

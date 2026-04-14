@@ -5,7 +5,6 @@
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "EquipmentPony_Ruthless",
   "projectile_template": "PonyRainbowProjectileHarpoon_Ruthless",
   "hardcore_randomizer_multiplier": 1.0,
   "nightmare_randomizer_multiplier": 1.0,
@@ -1702,9 +1701,7 @@
         "540": 7,
         "541": 6,
         "542": 4
-      },
-      "max": 542,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1746,8 +1743,6 @@
         "58000": 324,
         "59000": 31
       },
-      "max": 59863,
-      "min": 25850,
       "step": 1000
     },
     "tower_caps": {
@@ -1820,8 +1815,6 @@
         "3050": 130,
         "3100": 13
       },
-      "max": 3144,
-      "min": 268,
       "step": 50
     },
     "app_totals": {
@@ -1879,8 +1872,6 @@
         "2400": 872,
         "2450": 87
       },
-      "max": 2493,
-      "min": -136,
       "step": 50
     },
     "hermit_totals": {
@@ -1939,8 +1930,6 @@
         "2450": 85,
         "2500": 1
       },
-      "max": 2503,
-      "min": -131,
       "step": 50
     },
     "guardian_totals": {
@@ -1998,8 +1987,6 @@
         "2400": 859,
         "2450": 72
       },
-      "max": 2493,
-      "min": -126,
       "step": 50
     },
     "scale": {
@@ -2223,9 +2210,7 @@
         "355": 1,
         "357": 1,
         "358": 1
-      },
-      "max": 358,
-      "min": 39
+      }
     }
   }
 }

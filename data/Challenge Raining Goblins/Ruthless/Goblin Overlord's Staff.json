@@ -5,9 +5,6 @@
   "map_name": "Challenge Raining Goblins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle04_Ruthless",
-  "weapon_template": "DunDefWeapon_MagicStaff_AltStyle04",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.485,
@@ -1297,9 +1294,7 @@
         "544": 18,
         "545": 6,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1378,8 +1373,6 @@
         "86000": 109,
         "87000": 1
       },
-      "max": 87031,
-      "min": 16892,
       "step": 1000
     },
     "tower_caps": {
@@ -1470,8 +1463,6 @@
         "3250": 41,
         "3300": 2
       },
-      "max": 3307,
-      "min": -441,
       "step": 50
     },
     "app_totals": {
@@ -1536,8 +1527,6 @@
         "2600": 110,
         "2650": 1
       },
-      "max": 2658,
-      "min": -286,
       "step": 50
     },
     "hermit_totals": {
@@ -1601,8 +1590,6 @@
         "2550": 458,
         "2600": 29
       },
-      "max": 2639,
-      "min": -288,
       "step": 50
     },
     "guardian_totals": {
@@ -1667,8 +1654,6 @@
         "2600": 116,
         "2650": 1
       },
-      "max": 2653,
-      "min": -277,
       "step": 50
     },
     "scale": {
@@ -1689,9 +1674,7 @@
         "18": 1393684,
         "19": 1642123,
         "20": 447896
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

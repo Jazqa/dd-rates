@@ -5,9 +5,7 @@
   "map_name": "Deeper Well",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Griffon",
   "projectile_template": "FamiliarProjectile_Electric",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1737,9 +1735,7 @@
         "544": 6,
         "545": 2,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1793,8 +1789,6 @@
         "77000": 76,
         "78000": 2
       },
-      "max": 78128,
-      "min": 32342,
       "step": 1000
     },
     "tower_caps": {
@@ -1889,8 +1883,6 @@
         "3050": 45,
         "3100": 4
       },
-      "max": 3119,
-      "min": -893,
       "step": 50
     },
     "app_totals": {
@@ -1964,8 +1956,6 @@
         "2450": 56,
         "2500": 2
       },
-      "max": 2500,
-      "min": -893,
       "step": 50
     },
     "hermit_totals": {
@@ -2035,8 +2025,6 @@
         "2400": 711,
         "2450": 57
       },
-      "max": 2498,
-      "min": -743,
       "step": 50
     },
     "guardian_totals": {
@@ -2109,8 +2097,6 @@
         "2450": 46,
         "2500": 1
       },
-      "max": 2500,
-      "min": -824,
       "step": 50
     },
     "scale": {
@@ -2380,9 +2366,7 @@
         "361": 1,
         "363": 1,
         "364": 1
-      },
-      "max": 364,
-      "min": 39
+      }
     }
   }
 }

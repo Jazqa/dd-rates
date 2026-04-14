@@ -5,8 +5,6 @@
   "map_name": "Frostdale Royal Court",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Familiar_JITB",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1618,9 +1616,7 @@
         "543": 9,
         "544": 7,
         "545": 7
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1693,8 +1689,6 @@
         "114000": 36,
         "115000": 11
       },
-      "max": 115721,
-      "min": 50866,
       "step": 1000
     },
     "tower_caps": {
@@ -1782,8 +1776,6 @@
         "3050": 62,
         "3100": 4
       },
-      "max": 3123,
-      "min": -467,
       "step": 50
     },
     "app_totals": {
@@ -1850,8 +1842,6 @@
         "2450": 59,
         "2500": 1
       },
-      "max": 2515,
-      "min": -544,
       "step": 50
     },
     "hermit_totals": {
@@ -1918,8 +1908,6 @@
         "2400": 767,
         "2450": 69
       },
-      "max": 2494,
-      "min": -580,
       "step": 50
     },
     "guardian_totals": {
@@ -1985,8 +1973,6 @@
         "2400": 711,
         "2450": 58
       },
-      "max": 2497,
-      "min": -548,
       "step": 50
     },
     "scale": {
@@ -2162,9 +2148,7 @@
         "148": 1,
         "149": 1,
         "153": 1
-      },
-      "max": 153,
-      "min": -97
+      }
     }
   }
 }

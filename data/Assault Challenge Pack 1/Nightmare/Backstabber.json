@@ -5,9 +5,6 @@
   "map_name": "Assault Challenge Pack 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "SquireBroadsword_AssaultPack_Ruthless",
-  "weapon_template": "Weapon_backstabber",
-  "seq_act": "VictoryLogic",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1397,9 +1394,7 @@
         "543": 3,
         "544": 1,
         "545": 1
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1518,8 +1513,6 @@
         "194000": 6,
         "195000": 2
       },
-      "max": 195293,
-      "min": 84809,
       "step": 1000
     },
     "tower_caps": {
@@ -1590,8 +1583,6 @@
         "2600": 115,
         "2650": 25
       },
-      "max": 2679,
-      "min": -73,
       "step": 50
     },
     "app_totals": {
@@ -1642,8 +1633,6 @@
         "2100": 240,
         "2150": 15
       },
-      "max": 2196,
-      "min": -68,
       "step": 50
     },
     "hermit_totals": {
@@ -1694,8 +1683,6 @@
         "2100": 262,
         "2150": 14
       },
-      "max": 2192,
-      "min": -53,
       "step": 50
     },
     "guardian_totals": {
@@ -1746,8 +1733,6 @@
         "2100": 250,
         "2150": 14
       },
-      "max": 2192,
-      "min": -89,
       "step": 50
     },
     "scale": {
@@ -1765,9 +1750,7 @@
         "14": 270957,
         "15": 388630,
         "16": 254667
-      },
-      "max": 16,
-      "min": 5
+      }
     }
   }
 }

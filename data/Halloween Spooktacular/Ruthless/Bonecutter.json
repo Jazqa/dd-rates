@@ -5,9 +5,6 @@
   "map_name": "Halloween Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Squire02_Ruthless",
-  "weapon_template": "Weapon_Squire02_ruth",
-  "seq_act": "Prefab_PerLevelStartup_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.55,
@@ -1442,9 +1439,7 @@
         "544": 21,
         "545": 8,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1627,8 +1622,6 @@
         "243000": 14,
         "244000": 1
       },
-      "max": 244577,
-      "min": 69018,
       "step": 1000
     },
     "tower_caps": {
@@ -1719,8 +1712,6 @@
         "3200": 107,
         "3250": 8
       },
-      "max": 3283,
-      "min": -466,
       "step": 50
     },
     "app_totals": {
@@ -1784,8 +1775,6 @@
         "2550": 365,
         "2600": 15
       },
-      "max": 2635,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1850,8 +1839,6 @@
         "2550": 351,
         "2600": 15
       },
-      "max": 2632,
-      "min": -301,
       "step": 50
     },
     "guardian_totals": {
@@ -1915,8 +1902,6 @@
         "2550": 384,
         "2600": 16
       },
-      "max": 2632,
-      "min": -298,
       "step": 50
     },
     "scale": {
@@ -1934,9 +1919,7 @@
         "14": 1456166,
         "15": 1978922,
         "16": 2058841
-      },
-      "max": 16,
-      "min": 5
+      }
     }
   }
 }

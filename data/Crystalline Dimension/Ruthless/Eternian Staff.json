@@ -5,9 +5,6 @@
   "map_name": "Crystalline Dimension",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Apprentice_BOSS",
-  "weapon_template": "Weapon_Apprentice_Boss",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1415,9 +1412,7 @@
         "544": 18,
         "545": 8,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1493,8 +1488,6 @@
         "98000": 70,
         "99000": 7
       },
-      "max": 99313,
-      "min": 31898,
       "step": 1000
     },
     "damage_2": {
@@ -1572,8 +1565,6 @@
         "101000": 130,
         "102000": 24
       },
-      "max": 102755,
-      "min": 33012,
       "step": 1000
     },
     "tower_caps": {
@@ -1664,8 +1655,6 @@
         "3250": 433,
         "3300": 27
       },
-      "max": 3333,
-      "min": -403,
       "step": 50
     },
     "app_totals": {
@@ -1731,8 +1720,6 @@
         "2600": 396,
         "2650": 6
       },
-      "max": 2666,
-      "min": -307,
       "step": 50
     },
     "hermit_totals": {
@@ -1797,8 +1784,6 @@
         "2600": 425,
         "2650": 3
       },
-      "max": 2662,
-      "min": -293,
       "step": 50
     },
     "guardian_totals": {
@@ -1863,8 +1848,6 @@
         "2600": 400,
         "2650": 3
       },
-      "max": 2660,
-      "min": -298,
       "step": 50
     },
     "scale": {
@@ -1881,9 +1864,7 @@
         "13": 6422305,
         "14": 9873595,
         "15": 10695086
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

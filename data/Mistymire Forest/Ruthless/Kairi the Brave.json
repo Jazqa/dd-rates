@@ -5,8 +5,6 @@
   "map_name": "Mistymire Forest",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_LegendaryFairy",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.69,
@@ -1664,9 +1662,7 @@
         "540": 1,
         "541": 3,
         "542": 1
-      },
-      "max": 542,
-      "min": 234
+      }
     },
     "damage": {
       "label": "Base",
@@ -1681,8 +1677,6 @@
         "11000": 12004,
         "12000": 22
       },
-      "max": 12198,
-      "min": 5550,
       "step": 1000
     },
     "tower_caps": {
@@ -1756,8 +1750,6 @@
         "3700": 3,
         "3750": 1
       },
-      "max": 3750,
-      "min": 1289,
       "step": 50
     },
     "app_totals": {
@@ -1812,8 +1804,6 @@
         "2850": 302,
         "2900": 25
       },
-      "max": 2946,
-      "min": 549,
       "step": 50
     },
     "hermit_totals": {
@@ -1867,8 +1857,6 @@
         "2850": 278,
         "2900": 21
       },
-      "max": 2939,
-      "min": 564,
       "step": 50
     },
     "guardian_totals": {
@@ -1923,8 +1911,6 @@
         "2850": 295,
         "2900": 18
       },
-      "max": 2939,
-      "min": 544,
       "step": 50
     },
     "scale": {
@@ -2126,9 +2112,7 @@
         "310": 1,
         "336": 1,
         "338": 1
-      },
-      "max": 338,
-      "min": 39
+      }
     }
   }
 }

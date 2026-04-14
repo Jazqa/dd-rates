@@ -5,8 +5,6 @@
   "map_name": "Frostdale Wonderland",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_IceCube",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1493,9 +1491,7 @@
         "543": 56,
         "544": 19,
         "545": 10
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1543,8 +1539,6 @@
         "69000": 1911,
         "70000": 124
       },
-      "max": 70965,
-      "min": 30378,
       "step": 1000
     },
     "tower_caps": {
@@ -1633,8 +1627,6 @@
         "3100": 220,
         "3150": 4
       },
-      "max": 3169,
-      "min": -452,
       "step": 50
     },
     "app_totals": {
@@ -1702,8 +1694,6 @@
         "2450": 1551,
         "2500": 15
       },
-      "max": 2520,
-      "min": -577,
       "step": 50
     },
     "hermit_totals": {
@@ -1771,8 +1761,6 @@
         "2450": 1590,
         "2500": 12
       },
-      "max": 2514,
-      "min": -567,
       "step": 50
     },
     "guardian_totals": {
@@ -1840,8 +1828,6 @@
         "2450": 1527,
         "2500": 14
       },
-      "max": 2510,
-      "min": -567,
       "step": 50
     },
     "scale": {
@@ -2051,9 +2037,7 @@
         "276": 13906,
         "277": 7162,
         "278": 1010
-      },
-      "max": 278,
-      "min": 75
+      }
     }
   }
 }

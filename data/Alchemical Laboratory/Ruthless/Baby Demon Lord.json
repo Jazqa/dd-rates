@@ -5,9 +5,7 @@
   "map_name": "Alchemical Laboratory",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_BabyDemonLord",
   "projectile_template": "Projectile_WaspMagicDotFireDot",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1559,9 +1557,7 @@
         "544": 23,
         "545": 9,
         "546": 3
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1617,8 +1613,6 @@
         "74000": 169,
         "75000": 1
       },
-      "max": 75234,
-      "min": 27734,
       "step": 1000
     },
     "tower_caps": {
@@ -1718,8 +1712,6 @@
         "3100": 104,
         "3150": 1
       },
-      "max": 3167,
-      "min": -1049,
       "step": 50
     },
     "app_totals": {
@@ -1794,8 +1786,6 @@
         "2450": 1032,
         "2500": 11
       },
-      "max": 2514,
-      "min": -930,
       "step": 50
     },
     "hermit_totals": {
@@ -1872,8 +1862,6 @@
         "2450": 1023,
         "2500": 10
       },
-      "max": 2510,
-      "min": -1006,
       "step": 50
     },
     "guardian_totals": {
@@ -1951,8 +1939,6 @@
         "2450": 1021,
         "2500": 10
       },
-      "max": 2514,
-      "min": -1084,
       "step": 50
     },
     "scale": {
@@ -2199,9 +2185,7 @@
         "296": 4,
         "298": 1,
         "299": 1
-      },
-      "max": 299,
-      "min": 58
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Workshop Assault",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_AssaultSword",
-  "weapon_template": "Weapon_AssaultSword",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1434,9 +1431,7 @@
         "544": 16,
         "545": 4,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1513,8 +1508,6 @@
         "113000": 82,
         "114000": 1
       },
-      "max": 114091,
-      "min": 45255,
       "step": 1000
     },
     "tower_caps": {
@@ -1637,8 +1630,6 @@
         "3550": 78,
         "3600": 2
       },
-      "max": 3607,
-      "min": -1376,
       "step": 50
     },
     "app_totals": {
@@ -1729,8 +1720,6 @@
         "2800": 813,
         "2850": 43
       },
-      "max": 2894,
-      "min": -1376,
       "step": 50
     },
     "hermit_totals": {
@@ -1819,8 +1808,6 @@
         "2800": 151,
         "2850": 1
       },
-      "max": 2850,
-      "min": -1287,
       "step": 50
     },
     "guardian_totals": {
@@ -1908,8 +1895,6 @@
         "2750": 1856,
         "2800": 145
       },
-      "max": 2846,
-      "min": -1294,
       "step": 50
     },
     "scale": {
@@ -1924,9 +1909,7 @@
         "16": 8196573,
         "17": 10698064,
         "18": 1040
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

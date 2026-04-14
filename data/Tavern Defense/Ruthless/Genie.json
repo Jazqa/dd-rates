@@ -5,8 +5,6 @@
   "map_name": "Tavern Defense",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Genie",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1779,9 +1777,7 @@
         "544": 12,
         "545": 9,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1857,8 +1853,6 @@
         "109000": 204,
         "110000": 18
       },
-      "max": 110865,
-      "min": 42693,
       "step": 1000
     },
     "tower_caps": {
@@ -1961,8 +1955,6 @@
         "3050": 102,
         "3100": 10
       },
-      "max": 3149,
-      "min": -1222,
       "step": 50
     },
     "app_totals": {
@@ -2041,8 +2033,6 @@
         "2450": 103,
         "2500": 1
       },
-      "max": 2500,
-      "min": -1147,
       "step": 50
     },
     "hermit_totals": {
@@ -2120,8 +2110,6 @@
         "2450": 110,
         "2500": 1
       },
-      "max": 2501,
-      "min": -1083,
       "step": 50
     },
     "guardian_totals": {
@@ -2200,8 +2188,6 @@
         "2450": 109,
         "2500": 1
       },
-      "max": 2501,
-      "min": -1111,
       "step": 50
     },
     "support_caps": {
@@ -2513,9 +2499,7 @@
         "370": 1,
         "372": 1,
         "378": 2
-      },
-      "max": 378,
-      "min": 39
+      }
     }
   }
 }

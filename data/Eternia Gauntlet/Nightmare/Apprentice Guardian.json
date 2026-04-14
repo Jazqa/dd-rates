@@ -5,8 +5,6 @@
   "map_name": "Eternia Gauntlet",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "EquipmentGuardianMage_Buffed",
-  "seq_act": "coreVictory_event",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1585,9 +1583,7 @@
         "542": 1,
         "544": 1,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -1659,8 +1655,6 @@
         "3050": 12,
         "3100": 2
       },
-      "max": 3138,
-      "min": 336,
       "step": 50
     },
     "app_totals": {
@@ -1717,8 +1711,6 @@
         "2450": 17,
         "2500": 1
       },
-      "max": 2511,
-      "min": 33,
       "step": 50
     },
     "hermit_totals": {
@@ -1774,8 +1766,6 @@
         "2400": 166,
         "2450": 14
       },
-      "max": 2481,
-      "min": 46,
       "step": 50
     },
     "guardian_totals": {
@@ -1831,8 +1821,6 @@
         "2400": 200,
         "2450": 14
       },
-      "max": 2478,
-      "min": 20,
       "step": 50
     },
     "scale": {
@@ -2035,9 +2023,7 @@
         "301": 1,
         "318": 1,
         "323": 1
-      },
-      "max": 323,
-      "min": 39
+      }
     }
   }
 }

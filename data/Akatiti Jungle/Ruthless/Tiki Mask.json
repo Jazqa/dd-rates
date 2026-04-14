@@ -5,8 +5,6 @@
   "map_name": "Akatiti Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_familiar_TikiMask",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.705,
@@ -1130,9 +1128,7 @@
         "511": 8,
         "512": 1,
         "513": 2
-      },
-      "max": 513,
-      "min": 234
+      }
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -1173,8 +1169,6 @@
         "3550": 163,
         "3600": 1
       },
-      "max": 3627,
-      "min": 2713,
       "step": 50
     },
     "app_totals": {
@@ -1198,8 +1192,6 @@
         "2750": 3030,
         "2800": 104
       },
-      "max": 2844,
-      "min": 1975,
       "step": 50
     },
     "hermit_totals": {
@@ -1223,8 +1215,6 @@
         "2750": 3065,
         "2800": 119
       },
-      "max": 2843,
-      "min": 1969,
       "step": 50
     },
     "guardian_totals": {
@@ -1248,8 +1238,6 @@
         "2750": 3051,
         "2800": 124
       },
-      "max": 2843,
-      "min": 1973,
       "step": 50
     },
     "scale": {
@@ -1349,9 +1337,7 @@
         "150": 1,
         "163": 2,
         "164": 1
-      },
-      "max": 164,
-      "min": 39
+      }
     }
   }
 }

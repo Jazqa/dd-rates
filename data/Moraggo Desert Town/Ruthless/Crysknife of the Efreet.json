@@ -5,9 +5,6 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BoardswordStyle4_Boss_Ruthless",
-  "weapon_template": "Weapon_Crys",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1403,9 +1400,7 @@
         "544": 24,
         "545": 15,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1558,8 +1553,6 @@
         "233000": 11,
         "234000": 3
       },
-      "max": 234088,
-      "min": 89842,
       "step": 1000
     },
     "tower_caps": {
@@ -1643,8 +1636,6 @@
         "2950": 86,
         "3000": 6
       },
-      "max": 3019,
-      "min": -384,
       "step": 50
     },
     "app_totals": {
@@ -1703,8 +1694,6 @@
         "2350": 499,
         "2400": 12
       },
-      "max": 2419,
-      "min": -231,
       "step": 50
     },
     "hermit_totals": {
@@ -1763,8 +1752,6 @@
         "2350": 471,
         "2400": 19
       },
-      "max": 2421,
-      "min": -239,
       "step": 50
     },
     "guardian_totals": {
@@ -1823,8 +1810,6 @@
         "2350": 494,
         "2400": 12
       },
-      "max": 2425,
-      "min": -235,
       "step": 50
     },
     "scale": {
@@ -1841,9 +1826,7 @@
         "12": 1800801,
         "13": 2707629,
         "14": 1006469
-      },
-      "max": 14,
-      "min": 4
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Glitterhelm Caverns",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle4_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style4",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.6,
@@ -1379,9 +1376,7 @@
         "544": 30,
         "545": 1,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1519,8 +1514,6 @@
         "171000": 16,
         "172000": 1
       },
-      "max": 172254,
-      "min": 41624,
       "step": 1000
     },
     "tower_caps": {
@@ -1611,8 +1604,6 @@
         "3200": 179,
         "3250": 18
       },
-      "max": 3297,
-      "min": -463,
       "step": 50
     },
     "app_totals": {
@@ -1676,8 +1667,6 @@
         "2550": 606,
         "2600": 34
       },
-      "max": 2643,
-      "min": -296,
       "step": 50
     },
     "hermit_totals": {
@@ -1741,8 +1730,6 @@
         "2550": 558,
         "2600": 26
       },
-      "max": 2643,
-      "min": -291,
       "step": 50
     },
     "guardian_totals": {
@@ -1807,8 +1794,6 @@
         "2600": 23,
         "2650": 1
       },
-      "max": 2651,
-      "min": -299,
       "step": 50
     },
     "scale": {
@@ -1832,9 +1817,7 @@
         "22": 1573176,
         "23": 1942789,
         "24": 658809
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

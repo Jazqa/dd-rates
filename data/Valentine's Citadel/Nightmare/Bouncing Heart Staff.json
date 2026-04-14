@@ -5,9 +5,6 @@
   "map_name": "Valentine's Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_BouncingHeartStaff",
-  "weapon_template": "Weapon_BouncingHeartStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1425,9 +1422,7 @@
         "542": 28,
         "543": 20,
         "544": 12
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1496,8 +1491,6 @@
         "89000": 49,
         "90000": 2
       },
-      "max": 90237,
-      "min": 29695,
       "step": 1000
     },
     "damage_2": {
@@ -1563,8 +1556,6 @@
         "82000": 192,
         "83000": 12
       },
-      "max": 83734,
-      "min": 26451,
       "step": 1000
     },
     "tower_caps": {
@@ -1672,8 +1663,6 @@
         "3650": 51,
         "3700": 4
       },
-      "max": 3729,
-      "min": -506,
       "step": 50
     },
     "app_totals": {
@@ -1746,8 +1735,6 @@
         "2900": 409,
         "2950": 19
       },
-      "max": 2975,
-      "min": -368,
       "step": 50
     },
     "hermit_totals": {
@@ -1819,8 +1806,6 @@
         "2900": 39,
         "2950": 1
       },
-      "max": 2952,
-      "min": -342,
       "step": 50
     },
     "guardian_totals": {
@@ -1891,8 +1876,6 @@
         "2850": 237,
         "2900": 8
       },
-      "max": 2919,
-      "min": -348,
       "step": 50
     },
     "scale": {
@@ -1911,9 +1894,7 @@
         "15": 1134843,
         "16": 1420077,
         "17": 816253
-      },
-      "max": 17,
-      "min": 5
+      }
     }
   }
 }

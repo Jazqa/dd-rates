@@ -5,9 +5,6 @@
   "map_name": "Portal Defense",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_GlaiveOfUnicorn_Ruthless",
-  "weapon_template": "Weapon_GlaiveOfUnicorn_Ruthless",
-  "seq_act": "PortalDefense",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1371,9 +1368,7 @@
         "543": 44,
         "544": 14,
         "545": 6
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1459,8 +1454,6 @@
         "126000": 33,
         "127000": 2
       },
-      "max": 127174,
-      "min": 49351,
       "step": 1000
     },
     "damage_2": {
@@ -1532,8 +1525,6 @@
         "100000": 582,
         "101000": 84
       },
-      "max": 101821,
-      "min": 37748,
       "step": 1000
     },
     "tower_caps": {
@@ -1603,8 +1594,6 @@
         "2400": 75,
         "2450": 3
       },
-      "max": 2466,
-      "min": -247,
       "step": 50
     },
     "app_totals": {
@@ -1653,8 +1642,6 @@
         "1950": 155,
         "2000": 1
       },
-      "max": 2002,
-      "min": -129,
       "step": 50
     },
     "hermit_totals": {
@@ -1703,8 +1690,6 @@
         "1950": 170,
         "2000": 1
       },
-      "max": 2005,
-      "min": -133,
       "step": 50
     },
     "guardian_totals": {
@@ -1753,8 +1738,6 @@
         "1950": 165,
         "2000": 2
       },
-      "max": 2007,
-      "min": -138,
       "step": 50
     },
     "support_caps": {
@@ -1779,9 +1762,7 @@
         "13": 8558839,
         "14": 12472100,
         "15": 863
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

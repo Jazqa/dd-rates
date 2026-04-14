@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "MonkSpearStyle7_DLC_EMHv2",
-  "weapon_template": "Weapon_KelpHarvesterv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1370,9 +1367,7 @@
         "542": 23,
         "543": 12,
         "544": 6
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1441,8 +1436,6 @@
         "98000": 156,
         "99000": 14
       },
-      "max": 99344,
-      "min": 37950,
       "step": 1000
     },
     "damage_2": {
@@ -1510,8 +1503,6 @@
         "91000": 124,
         "92000": 21
       },
-      "max": 92330,
-      "min": 33867,
       "step": 1000
     },
     "tower_caps": {
@@ -1592,8 +1583,6 @@
         "2900": 55,
         "2950": 6
       },
-      "max": 2984,
-      "min": -275,
       "step": 50
     },
     "app_totals": {
@@ -1651,8 +1640,6 @@
         "2300": 316,
         "2350": 7
       },
-      "max": 2368,
-      "min": -202,
       "step": 50
     },
     "hermit_totals": {
@@ -1710,8 +1697,6 @@
         "2300": 515,
         "2350": 30
       },
-      "max": 2379,
-      "min": -201,
       "step": 50
     },
     "guardian_totals": {
@@ -1770,8 +1755,6 @@
         "2350": 56,
         "2400": 3
       },
-      "max": 2404,
-      "min": -217,
       "step": 50
     },
     "scale": {
@@ -1790,9 +1773,7 @@
         "13": 868578,
         "14": 1002297,
         "15": 324307
-      },
-      "max": 15,
-      "min": 3
+      }
     }
   }
 }

@@ -5,9 +5,7 @@
   "map_name": "Sky City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_LilCruiser",
   "projectile_template": "Projectile_Cruiser",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1441,9 +1439,7 @@
         "544": 10,
         "545": 4,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1498,8 +1494,6 @@
         "77000": 103,
         "78000": 3
       },
-      "max": 78164,
-      "min": 31478,
       "step": 1000
     },
     "tower_caps": {
@@ -1594,8 +1588,6 @@
         "3100": 5,
         "3150": 1
       },
-      "max": 3154,
-      "min": -752,
       "step": 50
     },
     "app_totals": {
@@ -1667,8 +1659,6 @@
         "2450": 103,
         "2500": 3
       },
-      "max": 2501,
-      "min": -752,
       "step": 50
     },
     "hermit_totals": {
@@ -1739,8 +1729,6 @@
         "2450": 82,
         "2500": 1
       },
-      "max": 2508,
-      "min": -743,
       "step": 50
     },
     "guardian_totals": {
@@ -1810,8 +1798,6 @@
         "2400": 1138,
         "2450": 89
       },
-      "max": 2499,
-      "min": -730,
       "step": 50
     },
     "scale": {
@@ -1922,9 +1908,7 @@
         "199": 44071,
         "200": 23377,
         "201": 3636
-      },
-      "max": 201,
-      "min": 97
+      }
     }
   }
 }

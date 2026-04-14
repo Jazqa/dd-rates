@@ -5,9 +5,6 @@
   "map_name": "Embermount Volcano",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SwordOfEmbers",
-  "weapon_template": "Weapon_SwordOfEmbers",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1414,9 +1411,7 @@
         "544": 5,
         "545": 3,
         "546": 6
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1512,8 +1507,6 @@
         "145000": 97,
         "146000": 30
       },
-      "max": 146963,
-      "min": 58324,
       "step": 1000
     },
     "tower_caps": {
@@ -1613,8 +1606,6 @@
         "3100": 66,
         "3150": 10
       },
-      "max": 3180,
-      "min": -1105,
       "step": 50
     },
     "app_totals": {
@@ -1692,8 +1683,6 @@
         "2500": 72,
         "2550": 2
       },
-      "max": 2559,
-      "min": -1105,
       "step": 50
     },
     "hermit_totals": {
@@ -1769,8 +1758,6 @@
         "2500": 61,
         "2550": 1
       },
-      "max": 2553,
-      "min": -974,
       "step": 50
     },
     "guardian_totals": {
@@ -1846,8 +1833,6 @@
         "2450": 728,
         "2500": 64
       },
-      "max": 2545,
-      "min": -977,
       "step": 50
     },
     "scale": {
@@ -1862,9 +1847,7 @@
         "16": 4074588,
         "17": 4481593,
         "18": 615
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

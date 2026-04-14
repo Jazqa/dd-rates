@@ -5,9 +5,6 @@
   "map_name": "Sky City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Staffaphone_Boss_Ruthless",
-  "weapon_template": "Weapon_Staffaphone",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1418,9 +1415,7 @@
         "544": 25,
         "545": 9,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1490,8 +1485,6 @@
         "91000": 112,
         "92000": 9
       },
-      "max": 92758,
-      "min": 30128,
       "step": 1000
     },
     "damage_2": {
@@ -1562,8 +1555,6 @@
         "91000": 76,
         "92000": 2
       },
-      "max": 92506,
-      "min": 30028,
       "step": 1000
     },
     "tower_caps": {
@@ -1666,8 +1657,6 @@
         "3450": 122,
         "3500": 4
       },
-      "max": 3516,
-      "min": -470,
       "step": 50
     },
     "app_totals": {
@@ -1736,8 +1725,6 @@
         "2750": 210,
         "2800": 3
       },
-      "max": 2818,
-      "min": -317,
       "step": 50
     },
     "hermit_totals": {
@@ -1805,8 +1792,6 @@
         "2700": 2340,
         "2750": 223
       },
-      "max": 2796,
-      "min": -310,
       "step": 50
     },
     "guardian_totals": {
@@ -1874,8 +1859,6 @@
         "2700": 528,
         "2750": 16
       },
-      "max": 2777,
-      "min": -335,
       "step": 50
     },
     "scale": {
@@ -1892,9 +1875,7 @@
         "13": 6096103,
         "14": 9370934,
         "15": 10155543
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

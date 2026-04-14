@@ -5,9 +5,6 @@
   "map_name": "Akatiti Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Monk_Spear",
-  "weapon_template": "Weapon_ObsidianSparus",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.48,
@@ -1528,9 +1525,7 @@
         "543": 25,
         "544": 21,
         "545": 10
-      },
-      "max": 545,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base",
@@ -1692,8 +1687,6 @@
         "260000": 12,
         "261000": 4
       },
-      "max": 261075,
-      "min": 107685,
       "step": 1000
     },
     "damage_2": {
@@ -1772,8 +1765,6 @@
         "106000": 272,
         "107000": 62
       },
-      "max": 107973,
-      "min": 37996,
       "step": 1000
     },
     "tower_caps": {
@@ -1856,8 +1847,6 @@
         "3100": 59,
         "3150": 1
       },
-      "max": 3156,
-      "min": -199,
       "step": 50
     },
     "app_totals": {
@@ -1916,8 +1905,6 @@
         "2450": 841,
         "2500": 37
       },
-      "max": 2524,
-      "min": -105,
       "step": 50
     },
     "hermit_totals": {
@@ -1976,8 +1963,6 @@
         "2450": 871,
         "2500": 39
       },
-      "max": 2527,
-      "min": -109,
       "step": 50
     },
     "guardian_totals": {
@@ -2036,8 +2021,6 @@
         "2450": 120,
         "2500": 1
       },
-      "max": 2508,
-      "min": -134,
       "step": 50
     },
     "scale": {
@@ -2049,9 +2032,7 @@
         "7": 7102815,
         "8": 9686922,
         "9": 3403039
-      },
-      "max": 9,
-      "min": 4
+      }
     }
   }
 }

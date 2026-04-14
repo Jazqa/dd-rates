@@ -5,9 +5,6 @@
   "map_name": "Return to Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_ReturniaSword",
-  "weapon_template": "Weapon_ReturniaSword",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.675,
@@ -1563,9 +1560,7 @@
         "544": 17,
         "545": 6,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1722,8 +1717,6 @@
         "254000": 17,
         "255000": 1
       },
-      "max": 255013,
-      "min": 106212,
       "step": 1000
     },
     "tower_caps": {
@@ -1842,8 +1835,6 @@
         "3550": 138,
         "3600": 5
       },
-      "max": 3612,
-      "min": -1175,
       "step": 50
     },
     "app_totals": {
@@ -1930,8 +1921,6 @@
         "2800": 1327,
         "2850": 75
       },
-      "max": 2897,
-      "min": -1151,
       "step": 50
     },
     "hermit_totals": {
@@ -2018,8 +2007,6 @@
         "2800": 235,
         "2850": 2
       },
-      "max": 2853,
-      "min": -1193,
       "step": 50
     },
     "guardian_totals": {
@@ -2106,8 +2093,6 @@
         "2800": 257,
         "2850": 1
       },
-      "max": 2863,
-      "min": -1220,
       "step": 50
     },
     "scale": {
@@ -2125,9 +2110,7 @@
         "13": 6870357,
         "14": 11553376,
         "15": 4572404
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

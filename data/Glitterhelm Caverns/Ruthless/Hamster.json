@@ -5,9 +5,7 @@
   "map_name": "Glitterhelm Caverns",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Hamster_Slappy_Ruthless",
   "projectile_template": "Projectile_Familiar_HamsterHearts",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.74,
@@ -1660,9 +1658,7 @@
         "544": 12,
         "545": 1,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1734,8 +1730,6 @@
         "81000": 690,
         "82000": 13
       },
-      "max": 82410,
-      "min": 18086,
       "step": 1000
     },
     "tower_caps": {
@@ -1822,8 +1816,6 @@
         "3050": 131,
         "3100": 9
       },
-      "max": 3135,
-      "min": -429,
       "step": 50
     },
     "app_totals": {
@@ -1884,8 +1876,6 @@
         "2400": 1469,
         "2450": 125
       },
-      "max": 2496,
-      "min": -270,
       "step": 50
     },
     "hermit_totals": {
@@ -1947,8 +1937,6 @@
         "2450": 127,
         "2500": 1
       },
-      "max": 2501,
-      "min": -267,
       "step": 50
     },
     "guardian_totals": {
@@ -2010,8 +1998,6 @@
         "2450": 129,
         "2500": 2
       },
-      "max": 2516,
-      "min": -267,
       "step": 50
     },
     "scale": {
@@ -2347,9 +2333,7 @@
         "374": 1,
         "376": 1,
         "382": 1
-      },
-      "max": 382,
-      "min": 39
+      }
     }
   }
 }

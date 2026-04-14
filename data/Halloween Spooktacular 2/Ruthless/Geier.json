@@ -5,9 +5,6 @@
   "map_name": "Halloween Spooktacular 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Monk01_Ruthless",
-  "weapon_template": "Weapon_Monk01_Ruth",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.5,
@@ -1537,9 +1534,7 @@
         "543": 29,
         "544": 25,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1725,8 +1720,6 @@
         "242000": 63,
         "243000": 10
       },
-      "max": 243985,
-      "min": 64891,
       "step": 1000
     },
     "damage_2": {
@@ -1797,8 +1790,6 @@
         "92000": 221,
         "93000": 10
       },
-      "max": 93699,
-      "min": 31393,
       "step": 1000
     },
     "tower_caps": {
@@ -1889,8 +1880,6 @@
         "3200": 71,
         "3250": 6
       },
-      "max": 3289,
-      "min": -451,
       "step": 50
     },
     "app_totals": {
@@ -1954,8 +1943,6 @@
         "2550": 266,
         "2600": 6
       },
-      "max": 2614,
-      "min": -297,
       "step": 50
     },
     "hermit_totals": {
@@ -2019,8 +2006,6 @@
         "2550": 232,
         "2600": 10
       },
-      "max": 2625,
-      "min": -294,
       "step": 50
     },
     "guardian_totals": {
@@ -2084,8 +2069,6 @@
         "2550": 236,
         "2600": 11
       },
-      "max": 2638,
-      "min": -296,
       "step": 50
     },
     "scale": {
@@ -2103,9 +2086,7 @@
         "13": 7369807,
         "14": 9471671,
         "15": 3253730
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

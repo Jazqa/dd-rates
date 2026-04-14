@@ -5,9 +5,6 @@
   "map_name": "Tomb of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SpartanSpear",
-  "weapon_template": "Weapon_SpartanSpear",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1541,9 +1538,7 @@
         "544": 16,
         "545": 10,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1697,8 +1692,6 @@
         "242000": 9,
         "243000": 4
       },
-      "max": 243692,
-      "min": 96537,
       "step": 1000
     },
     "damage_2": {
@@ -1771,8 +1764,6 @@
         "100000": 108,
         "101000": 3
       },
-      "max": 101234,
-      "min": 37604,
       "step": 1000
     },
     "tower_caps": {
@@ -1863,8 +1854,6 @@
         "3250": 12,
         "3300": 1
       },
-      "max": 3323,
-      "min": -422,
       "step": 50
     },
     "app_totals": {
@@ -1928,8 +1917,6 @@
         "2550": 345,
         "2600": 13
       },
-      "max": 2637,
-      "min": -275,
       "step": 50
     },
     "hermit_totals": {
@@ -1993,8 +1980,6 @@
         "2550": 313,
         "2600": 13
       },
-      "max": 2634,
-      "min": -281,
       "step": 50
     },
     "guardian_totals": {
@@ -2058,8 +2043,6 @@
         "2550": 355,
         "2600": 10
       },
-      "max": 2625,
-      "min": -280,
       "step": 50
     },
     "scale": {
@@ -2072,9 +2055,7 @@
         "10": 4078565,
         "11": 8158766,
         "12": 9465450
-      },
-      "max": 12,
-      "min": 6
+      }
     }
   }
 }

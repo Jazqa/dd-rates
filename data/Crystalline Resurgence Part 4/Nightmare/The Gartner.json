@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 4",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_SteamGun_EMHv2",
-  "weapon_template": "Weapon_SteamGun_v2",
-  "seq_act": "Artificials",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1597,9 +1594,7 @@
         "543": 10,
         "544": 1,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1839,8 +1834,6 @@
         "370000": 8,
         "372000": 1
       },
-      "max": 372501,
-      "min": 136844,
       "step": 1000
     },
     "tower_caps": {
@@ -1940,8 +1933,6 @@
         "3350": 123,
         "3400": 29
       },
-      "max": 3431,
-      "min": -448,
       "step": 50
     },
     "app_totals": {
@@ -2009,8 +2000,6 @@
         "2700": 80,
         "2750": 4
       },
-      "max": 2765,
-      "min": -305,
       "step": 50
     },
     "hermit_totals": {
@@ -2078,8 +2067,6 @@
         "2700": 92,
         "2750": 1
       },
-      "max": 2753,
-      "min": -307,
       "step": 50
     },
     "guardian_totals": {
@@ -2146,8 +2133,6 @@
         "2650": 882,
         "2700": 80
       },
-      "max": 2746,
-      "min": -308,
       "step": 50
     },
     "scale": {
@@ -2167,9 +2152,7 @@
         "16": 4007626,
         "17": 4576673,
         "18": 1781001
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

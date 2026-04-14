@@ -5,9 +5,6 @@
   "map_name": "Challenge Treasure Hunt",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle02_Ruthless",
-  "weapon_template": "DunDefWeapon_MagicStaff_AltStyle02",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.53,
@@ -1295,9 +1292,7 @@
         "544": 21,
         "545": 11,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1375,8 +1370,6 @@
         "86000": 159,
         "87000": 2
       },
-      "max": 87039,
-      "min": 17827,
       "step": 1000
     },
     "tower_caps": {
@@ -1467,8 +1460,6 @@
         "3200": 75,
         "3250": 5
       },
-      "max": 3281,
-      "min": -458,
       "step": 50
     },
     "app_totals": {
@@ -1532,8 +1523,6 @@
         "2550": 269,
         "2600": 13
       },
-      "max": 2631,
-      "min": -292,
       "step": 50
     },
     "hermit_totals": {
@@ -1597,8 +1586,6 @@
         "2550": 254,
         "2600": 11
       },
-      "max": 2618,
-      "min": -292,
       "step": 50
     },
     "guardian_totals": {
@@ -1662,8 +1649,6 @@
         "2550": 285,
         "2600": 11
       },
-      "max": 2618,
-      "min": -289,
       "step": 50
     },
     "scale": {
@@ -1684,9 +1669,7 @@
         "18": 1527591,
         "19": 1857923,
         "20": 517491
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

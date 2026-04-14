@@ -5,9 +5,6 @@
   "map_name": "Eternia Gauntlet",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_EterniaSword_new",
-  "weapon_template": "Weapon_EterniaSword_new",
-  "seq_act": "coreVictory_event",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1491,9 +1488,7 @@
         "544": 11,
         "545": 2,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1648,8 +1643,6 @@
         "247000": 2,
         "248000": 1
       },
-      "max": 248174,
-      "min": 101457,
       "step": 1000
     },
     "tower_caps": {
@@ -1745,8 +1738,6 @@
         "3000": 381,
         "3050": 57
       },
-      "max": 3088,
-      "min": -919,
       "step": 50
     },
     "app_totals": {
@@ -1821,8 +1812,6 @@
         "2400": 1034,
         "2450": 34
       },
-      "max": 2493,
-      "min": -984,
       "step": 50
     },
     "hermit_totals": {
@@ -1895,8 +1884,6 @@
         "2400": 986,
         "2450": 37
       },
-      "max": 2478,
-      "min": -882,
       "step": 50
     },
     "guardian_totals": {
@@ -1970,8 +1957,6 @@
         "2400": 1104,
         "2450": 41
       },
-      "max": 2474,
-      "min": -919,
       "step": 50
     },
     "scale": {
@@ -1986,9 +1971,7 @@
         "13": 5540555,
         "14": 8071166,
         "15": 2962893
-      },
-      "max": 15,
-      "min": 7
+      }
     }
   }
 }

@@ -5,8 +5,6 @@
   "map_name": "Arcane Library",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_MrPeckers",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1524,9 +1522,7 @@
         "544": 3,
         "545": 1,
         "546": 1
-      },
-      "max": 546,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1555,8 +1551,6 @@
         "36000": 2485,
         "37000": 57
       },
-      "max": 37545,
-      "min": 16945,
       "step": 1000
     },
     "tower_caps": {
@@ -1640,8 +1634,6 @@
         "3050": 58,
         "3100": 2
       },
-      "max": 3127,
-      "min": -306,
       "step": 50
     },
     "app_totals": {
@@ -1705,8 +1697,6 @@
         "2450": 42,
         "2500": 1
       },
-      "max": 2503,
-      "min": -368,
       "step": 50
     },
     "hermit_totals": {
@@ -1768,8 +1758,6 @@
         "2400": 644,
         "2450": 47
       },
-      "max": 2494,
-      "min": -348,
       "step": 50
     },
     "guardian_totals": {
@@ -1831,8 +1819,6 @@
         "2400": 670,
         "2450": 51
       },
-      "max": 2490,
-      "min": -322,
       "step": 50
     },
     "scale": {
@@ -2025,9 +2011,7 @@
         "333": 1,
         "336": 1,
         "347": 1
-      },
-      "max": 347,
-      "min": 103
+      }
     }
   }
 }

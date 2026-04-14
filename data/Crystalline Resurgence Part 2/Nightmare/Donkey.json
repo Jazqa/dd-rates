@@ -5,9 +5,7 @@
   "map_name": "Crystalline Resurgence Part 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Donkey",
   "projectile_template": "Projectile_Donkey_Turd",
-  "seq_act": "SurvivalFamiliars",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1656,9 +1654,7 @@
         "543": 40,
         "544": 19,
         "545": 8
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1707,8 +1703,6 @@
         "70000": 810,
         "71000": 24
       },
-      "max": 71652,
-      "min": 30044,
       "step": 1000
     },
     "tower_caps": {
@@ -1800,8 +1794,6 @@
         "3100": 98,
         "3150": 1
       },
-      "max": 3154,
-      "min": -613,
       "step": 50
     },
     "app_totals": {
@@ -1870,8 +1862,6 @@
         "2450": 855,
         "2500": 8
       },
-      "max": 2512,
-      "min": -620,
       "step": 50
     },
     "hermit_totals": {
@@ -1940,8 +1930,6 @@
         "2450": 872,
         "2500": 7
       },
-      "max": 2515,
-      "min": -621,
       "step": 50
     },
     "guardian_totals": {
@@ -2010,8 +1998,6 @@
         "2450": 906,
         "2500": 7
       },
-      "max": 2510,
-      "min": -633,
       "step": 50
     },
     "scale": {
@@ -2343,9 +2329,7 @@
         "379": 1,
         "380": 1,
         "381": 1
-      },
-      "max": 381,
-      "min": 39
+      }
     }
   }
 }

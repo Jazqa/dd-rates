@@ -5,9 +5,7 @@
   "map_name": "Lover's Revenge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Teddy",
   "projectile_template": "Projectile_WaspMagicDotFireDot",
-  "seq_act": "w25_SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.58,
@@ -1571,9 +1569,7 @@
         "543": 26,
         "544": 11,
         "545": 7
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1628,8 +1624,6 @@
         "74000": 261,
         "75000": 9
       },
-      "max": 75306,
-      "min": 28079,
       "step": 1000
     },
     "tower_caps": {
@@ -1726,8 +1720,6 @@
         "3050": 142,
         "3100": 15
       },
-      "max": 3141,
-      "min": -969,
       "step": 50
     },
     "app_totals": {
@@ -1800,8 +1792,6 @@
         "2450": 159,
         "2500": 5
       },
-      "max": 2506,
-      "min": -822,
       "step": 50
     },
     "hermit_totals": {
@@ -1876,8 +1866,6 @@
         "2400": 2223,
         "2450": 127
       },
-      "max": 2498,
-      "min": -969,
       "step": 50
     },
     "guardian_totals": {
@@ -1953,8 +1941,6 @@
         "2450": 177,
         "2500": 1
       },
-      "max": 2504,
-      "min": -1056,
       "step": 50
     },
     "scale": {
@@ -2197,9 +2183,7 @@
         "296": 1,
         "298": 1,
         "299": 1
-      },
-      "max": 299,
-      "min": 58
+      }
     }
   }
 }

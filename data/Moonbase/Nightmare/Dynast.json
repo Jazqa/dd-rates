@@ -5,9 +5,6 @@
   "map_name": "Moonbase",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Sword_Equipment",
-  "weapon_template": "Sword_WeaponTemplate",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1488,9 +1485,7 @@
         "544": 28,
         "545": 5,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1654,8 +1649,6 @@
         "258000": 39,
         "259000": 8
       },
-      "max": 259648,
-      "min": 95529,
       "step": 1000
     },
     "tower_caps": {
@@ -1757,8 +1750,6 @@
         "2900": 205,
         "2950": 3
       },
-      "max": 2956,
-      "min": -1332,
       "step": 50
     },
     "app_totals": {
@@ -1833,8 +1824,6 @@
         "2300": 1711,
         "2350": 31
       },
-      "max": 2384,
-      "min": -1056,
       "step": 50
     },
     "hermit_totals": {
@@ -1909,8 +1898,6 @@
         "2300": 1682,
         "2350": 40
       },
-      "max": 2369,
-      "min": -1075,
       "step": 50
     },
     "guardian_totals": {
@@ -1985,8 +1972,6 @@
         "2300": 1626,
         "2350": 38
       },
-      "max": 2382,
-      "min": -1068,
       "step": 50
     },
     "scale": {
@@ -2004,9 +1989,7 @@
         "13": 8043940,
         "14": 14399409,
         "15": 5887222
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

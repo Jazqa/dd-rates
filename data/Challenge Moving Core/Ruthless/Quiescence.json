@@ -5,9 +5,6 @@
   "map_name": "Challenge Moving Core",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle1_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style1",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.47,
@@ -1445,9 +1442,7 @@
         "544": 20,
         "545": 4,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1631,8 +1626,6 @@
         "243000": 9,
         "244000": 1
       },
-      "max": 244211,
-      "min": 67471,
       "step": 1000
     },
     "tower_caps": {
@@ -1723,8 +1716,6 @@
         "3200": 36,
         "3250": 4
       },
-      "max": 3276,
-      "min": -463,
       "step": 50
     },
     "app_totals": {
@@ -1788,8 +1779,6 @@
         "2550": 123,
         "2600": 6
       },
-      "max": 2631,
-      "min": -294,
       "step": 50
     },
     "hermit_totals": {
@@ -1853,8 +1842,6 @@
         "2550": 151,
         "2600": 5
       },
-      "max": 2624,
-      "min": -294,
       "step": 50
     },
     "guardian_totals": {
@@ -1918,8 +1905,6 @@
         "2550": 168,
         "2600": 4
       },
-      "max": 2624,
-      "min": -285,
       "step": 50
     },
     "scale": {
@@ -1940,9 +1925,7 @@
         "18": 1344930,
         "19": 1568544,
         "20": 426505
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

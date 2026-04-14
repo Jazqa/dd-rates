@@ -5,9 +5,6 @@
   "map_name": "Challenge No Towers Allowed",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle5_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style5",
-  "seq_act": "NoTowersMission",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.52,
@@ -1445,9 +1442,7 @@
         "544": 18,
         "545": 12,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1630,8 +1625,6 @@
         "242000": 2,
         "243000": 2
       },
-      "max": 243249,
-      "min": 67979,
       "step": 1000
     },
     "tower_caps": {
@@ -1722,8 +1715,6 @@
         "3250": 41,
         "3300": 1
       },
-      "max": 3307,
-      "min": -439,
       "step": 50
     },
     "app_totals": {
@@ -1788,8 +1779,6 @@
         "2550": 246,
         "2600": 11
       },
-      "max": 2634,
-      "min": -302,
       "step": 50
     },
     "hermit_totals": {
@@ -1854,8 +1843,6 @@
         "2600": 103,
         "2650": 1
       },
-      "max": 2657,
-      "min": -274,
       "step": 50
     },
     "guardian_totals": {
@@ -1920,8 +1907,6 @@
         "2600": 105,
         "2650": 1
       },
-      "max": 2657,
-      "min": -271,
       "step": 50
     },
     "scale": {
@@ -1942,9 +1927,7 @@
         "18": 1492590,
         "19": 1802474,
         "20": 499321
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

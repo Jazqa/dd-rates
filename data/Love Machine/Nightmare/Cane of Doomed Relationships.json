@@ -5,9 +5,6 @@
   "map_name": "Love Machine",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_CaneofDommedRelationships",
-  "weapon_template": "CaneofDommedRelationships_weapon",
-  "seq_act": "rewards",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1407,9 +1404,7 @@
         "544": 7,
         "545": 2,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1470,8 +1465,6 @@
         "68000": 32,
         "69000": 4
       },
-      "max": 69339,
-      "min": 16011,
       "step": 1000
     },
     "tower_caps": {
@@ -1588,8 +1581,6 @@
         "3650": 164,
         "3700": 23
       },
-      "max": 3744,
-      "min": -871,
       "step": 50
     },
     "app_totals": {
@@ -1671,8 +1662,6 @@
         "2850": 851,
         "2900": 54
       },
-      "max": 2945,
-      "min": -871,
       "step": 50
     },
     "hermit_totals": {
@@ -1755,8 +1744,6 @@
         "2900": 927,
         "2950": 86
       },
-      "max": 2997,
-      "min": -871,
       "step": 50
     },
     "guardian_totals": {
@@ -1839,8 +1826,6 @@
         "2900": 275,
         "2950": 13
       },
-      "max": 2969,
-      "min": -864,
       "step": 50
     },
     "scale": {
@@ -1851,9 +1836,7 @@
         "10": 4835816,
         "11": 5717493,
         "12": 643
-      },
-      "max": 12,
-      "min": 8
+      }
     }
   }
 }

@@ -5,8 +5,6 @@
   "map_name": "Warping Core Challenge Pack 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "GauntletArmorBase_Leather_Zamira",
-  "seq_act": "MovingCoreMission",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1987,9 +1985,7 @@
         "539": 1,
         "541": 1,
         "545": 1
-      },
-      "max": 545,
-      "min": 236
+      }
     },
     "tower_totals": {
       "buckets": {
@@ -2053,8 +2049,6 @@
         "3100": 1,
         "3150": 2
       },
-      "max": 3152,
-      "min": 298,
       "step": 50
     },
     "app_totals": {
@@ -2110,8 +2104,6 @@
         "2450": 98,
         "2500": 27
       },
-      "max": 2544,
-      "min": 67,
       "step": 50
     },
     "hermit_totals": {
@@ -2167,8 +2159,6 @@
         "2500": 16,
         "2550": 1
       },
-      "max": 2563,
-      "min": 117,
       "step": 50
     },
     "guardian_totals": {
@@ -2223,8 +2213,6 @@
         "2450": 84,
         "2500": 14
       },
-      "max": 2544,
-      "min": 107,
       "step": 50
     },
     "hdmgab1": {
@@ -2269,8 +2257,6 @@
         "1800": 122,
         "1850": 13
       },
-      "max": 1883,
-      "min": -96,
       "step": 50
     },
     "hdmgab2": {
@@ -2314,8 +2300,6 @@
         "1800": 138,
         "1850": 15
       },
-      "max": 1892,
-      "min": -42,
       "step": 50
     },
     "hdmgboth": {
@@ -2371,8 +2355,6 @@
         "2400": 23,
         "2450": 1
       },
-      "max": 2465,
-      "min": 37,
       "step": 50
     },
     "hdmg": {
@@ -2433,8 +2415,6 @@
         "1250": 51,
         "1275": 7
       },
-      "max": 1290,
-      "min": -103,
       "step": 25
     },
     "ab1": {
@@ -2496,8 +2476,6 @@
         "1275": 3,
         "1300": 1
       },
-      "max": 1301,
-      "min": -96,
       "step": 25
     },
     "ab2": {
@@ -2558,8 +2536,6 @@
         "1250": 54,
         "1275": 6
       },
-      "max": 1297,
-      "min": -98,
       "step": 25
     },
     "thp": {
@@ -2619,8 +2595,6 @@
         "1325": 113,
         "1350": 11
       },
-      "max": 1363,
-      "min": 30,
       "step": 25
     },
     "trate": {
@@ -2680,8 +2654,6 @@
         "1325": 99,
         "1350": 11
       },
-      "max": 1363,
-      "min": 45,
       "step": 25
     },
     "tdmg": {
@@ -2741,8 +2713,6 @@
         "1325": 114,
         "1350": 9
       },
-      "max": 1367,
-      "min": 13,
       "step": 25
     },
     "trange": {
@@ -2802,8 +2772,6 @@
         "1325": 118,
         "1350": 9
       },
-      "max": 1372,
-      "min": -23,
       "step": 25
     }
   }

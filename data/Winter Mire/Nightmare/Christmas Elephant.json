@@ -5,8 +5,6 @@
   "map_name": "Winter Mire",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_ChristmasElephant",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1647,9 +1645,7 @@
         "543": 10,
         "544": 5,
         "545": 3
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1697,8 +1693,6 @@
         "69000": 372,
         "70000": 12
       },
-      "max": 70227,
-      "min": 30557,
       "step": 1000
     },
     "tower_caps": {
@@ -1786,8 +1780,6 @@
         "3050": 523,
         "3100": 40
       },
-      "max": 3137,
-      "min": -455,
       "step": 50
     },
     "app_totals": {
@@ -1854,8 +1846,6 @@
         "2450": 366,
         "2500": 3
       },
-      "max": 2517,
-      "min": -501,
       "step": 50
     },
     "hermit_totals": {
@@ -1922,8 +1912,6 @@
         "2450": 360,
         "2500": 3
       },
-      "max": 2505,
-      "min": -541,
       "step": 50
     },
     "guardian_totals": {
@@ -1990,8 +1978,6 @@
         "2450": 358,
         "2500": 6
       },
-      "max": 2515,
-      "min": -529,
       "step": 50
     },
     "scale": {
@@ -2280,9 +2266,7 @@
         "366": 1,
         "376": 1,
         "377": 2
-      },
-      "max": 377,
-      "min": 39
+      }
     }
   }
 }

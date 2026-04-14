@@ -5,9 +5,7 @@
   "map_name": "Infested Ruins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Serpent",
   "projectile_template": "FamiliarProjectile_Poison",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1735,9 +1733,7 @@
         "542": 7,
         "543": 6,
         "544": 5
-      },
-      "max": 544,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1790,8 +1786,6 @@
         "77000": 160,
         "78000": 3
       },
-      "max": 78027,
-      "min": 33588,
       "step": 1000
     },
     "tower_caps": {
@@ -1888,8 +1882,6 @@
         "3050": 128,
         "3100": 11
       },
-      "max": 3132,
-      "min": -912,
       "step": 50
     },
     "app_totals": {
@@ -1963,8 +1955,6 @@
         "2450": 116,
         "2500": 5
       },
-      "max": 2509,
-      "min": -894,
       "step": 50
     },
     "hermit_totals": {
@@ -2037,8 +2027,6 @@
         "2450": 108,
         "2500": 1
       },
-      "max": 2509,
-      "min": -815,
       "step": 50
     },
     "guardian_totals": {
@@ -2112,8 +2100,6 @@
         "2450": 99,
         "2500": 1
       },
-      "max": 2505,
-      "min": -912,
       "step": 50
     },
     "scale": {
@@ -2394,9 +2380,7 @@
         "365": 1,
         "366": 4,
         "369": 1
-      },
-      "max": 369,
-      "min": 39
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Moonbase",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Apprentice_Equipment",
-  "weapon_template": "Apprentice_Weapon",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1466,9 +1463,7 @@
         "544": 24,
         "545": 5,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1552,8 +1547,6 @@
         "106000": 107,
         "107000": 12
       },
-      "max": 107863,
-      "min": 31811,
       "step": 1000
     },
     "damage_2": {
@@ -1639,8 +1632,6 @@
         "107000": 71,
         "108000": 7
       },
-      "max": 108682,
-      "min": 31983,
       "step": 1000
     },
     "tower_caps": {
@@ -1743,8 +1734,6 @@
         "2900": 1099,
         "2950": 85
       },
-      "max": 2988,
-      "min": -1435,
       "step": 50
     },
     "app_totals": {
@@ -1819,8 +1808,6 @@
         "2300": 1620,
         "2350": 32
       },
-      "max": 2384,
-      "min": -1051,
       "step": 50
     },
     "hermit_totals": {
@@ -1896,8 +1883,6 @@
         "2350": 584,
         "2400": 2
       },
-      "max": 2405,
-      "min": -1074,
       "step": 50
     },
     "guardian_totals": {
@@ -1972,8 +1957,6 @@
         "2350": 596,
         "2400": 5
       },
-      "max": 2409,
-      "min": -1048,
       "step": 50
     },
     "scale": {
@@ -1994,9 +1977,7 @@
         "15": 9924827,
         "16": 15171933,
         "17": 9970459
-      },
-      "max": 17,
-      "min": 3
+      }
     }
   }
 }

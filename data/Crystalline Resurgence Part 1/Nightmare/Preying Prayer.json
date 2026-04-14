@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_MantisSpearv2",
-  "weapon_template": "Weapon_MantisSpearv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1520,9 +1517,7 @@
         "542": 22,
         "543": 19,
         "544": 1
-      },
-      "max": 544,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1680,8 +1675,6 @@
         "246000": 2,
         "247000": 2
       },
-      "max": 247141,
-      "min": 97728,
       "step": 1000
     },
     "damage_2": {
@@ -1754,8 +1747,6 @@
         "98000": 124,
         "99000": 18
       },
-      "max": 99391,
-      "min": 35634,
       "step": 1000
     },
     "tower_caps": {
@@ -1838,8 +1829,6 @@
         "2900": 137,
         "2950": 13
       },
-      "max": 2964,
-      "min": -350,
       "step": 50
     },
     "app_totals": {
@@ -1898,8 +1887,6 @@
         "2350": 236,
         "2400": 5
       },
-      "max": 2417,
-      "min": -222,
       "step": 50
     },
     "hermit_totals": {
@@ -1958,8 +1945,6 @@
         "2350": 215,
         "2400": 5
       },
-      "max": 2426,
-      "min": -218,
       "step": 50
     },
     "guardian_totals": {
@@ -2018,8 +2003,6 @@
         "2350": 51,
         "2400": 1
       },
-      "max": 2416,
-      "min": -212,
       "step": 50
     },
     "scale": {
@@ -2036,9 +2019,7 @@
         "13": 4444083,
         "14": 5252266,
         "15": 533
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

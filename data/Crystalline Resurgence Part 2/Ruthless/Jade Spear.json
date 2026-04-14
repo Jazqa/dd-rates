@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Monk_EMHv2",
-  "weapon_template": "Weapon_Monk_EMHv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1500,9 +1497,7 @@
         "542": 23,
         "543": 22,
         "544": 3
-      },
-      "max": 544,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1662,8 +1657,6 @@
         "253000": 22,
         "254000": 11
       },
-      "max": 254758,
-      "min": 101605,
       "step": 1000
     },
     "damage_2": {
@@ -1735,8 +1728,6 @@
         "99000": 105,
         "100000": 5
       },
-      "max": 100313,
-      "min": 37370,
       "step": 1000
     },
     "tower_caps": {
@@ -1809,8 +1800,6 @@
         "2550": 50,
         "2600": 1
       },
-      "max": 2608,
-      "min": -235,
       "step": 50
     },
     "app_totals": {
@@ -1861,8 +1850,6 @@
         "2050": 214,
         "2100": 1
       },
-      "max": 2103,
-      "min": -138,
       "step": 50
     },
     "hermit_totals": {
@@ -1912,8 +1899,6 @@
         "2000": 2882,
         "2050": 172
       },
-      "max": 2099,
-      "min": -141,
       "step": 50
     },
     "guardian_totals": {
@@ -1964,8 +1949,6 @@
         "2050": 189,
         "2100": 3
       },
-      "max": 2111,
-      "min": -149,
       "step": 50
     },
     "scale": {
@@ -1983,9 +1966,7 @@
         "13": 5600520,
         "14": 7199288,
         "15": 2472061
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

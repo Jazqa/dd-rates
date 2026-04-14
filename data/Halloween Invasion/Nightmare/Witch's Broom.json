@@ -5,9 +5,6 @@
   "map_name": "Halloween Invasion",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SpookyRifle",
-  "weapon_template": "SpookyRifle_WeaponTemplate",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1619,9 +1616,7 @@
         "543": 24,
         "544": 6,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1884,8 +1879,6 @@
         "387000": 16,
         "388000": 3
       },
-      "max": 388910,
-      "min": 130280,
       "step": 1000
     },
     "tower_caps": {
@@ -1974,8 +1967,6 @@
         "2700": 340,
         "2750": 40
       },
-      "max": 2787,
-      "min": -870,
       "step": 50
     },
     "app_totals": {
@@ -2042,8 +2033,6 @@
         "2150": 1861,
         "2200": 124
       },
-      "max": 2240,
-      "min": -816,
       "step": 50
     },
     "hermit_totals": {
@@ -2112,8 +2101,6 @@
         "2200": 424,
         "2250": 8
       },
-      "max": 2262,
-      "min": -870,
       "step": 50
     },
     "guardian_totals": {
@@ -2182,8 +2169,6 @@
         "2200": 65,
         "2250": 2
       },
-      "max": 2255,
-      "min": -850,
       "step": 50
     },
     "scale": {
@@ -2201,9 +2186,7 @@
         "13": 4650303,
         "14": 5977874,
         "15": 2053464
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "The Summit",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "SpearStyle8_EMH_Ruthless",
-  "weapon_template": "DLC_WeaponMonkSpear_Style8_Ruthles",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.0,
   "base_force_randomization_quality": 1.6,
@@ -1543,9 +1540,7 @@
         "544": 26,
         "545": 7,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1738,8 +1733,6 @@
         "242000": 29,
         "243000": 3
       },
-      "max": 243488,
-      "min": 57570,
       "step": 1000
     },
     "damage_2": {
@@ -1808,8 +1801,6 @@
         "95000": 478,
         "96000": 41
       },
-      "max": 96574,
-      "min": 36568,
       "step": 1000
     },
     "tower_caps": {
@@ -1901,8 +1892,6 @@
         "3250": 24,
         "3300": 3
       },
-      "max": 3336,
-      "min": -464,
       "step": 50
     },
     "app_totals": {
@@ -1966,8 +1955,6 @@
         "2550": 537,
         "2600": 34
       },
-      "max": 2637,
-      "min": -297,
       "step": 50
     },
     "hermit_totals": {
@@ -2032,8 +2019,6 @@
         "2550": 521,
         "2600": 25
       },
-      "max": 2636,
-      "min": -301,
       "step": 50
     },
     "guardian_totals": {
@@ -2097,8 +2082,6 @@
         "2550": 576,
         "2600": 21
       },
-      "max": 2636,
-      "min": -299,
       "step": 50
     },
     "scale": {
@@ -2119,9 +2102,7 @@
         "15": 1519747,
         "16": 2023085,
         "17": 1875029
-      },
-      "max": 17,
-      "min": 3
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "MagicStaffStyle4_EMHv2",
-  "weapon_template": "Weapon_UndyingRodv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1371,9 +1368,7 @@
         "542": 22,
         "543": 22,
         "544": 4
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1445,8 +1440,6 @@
         "93000": 71,
         "94000": 6
       },
-      "max": 94335,
-      "min": 30505,
       "step": 1000
     },
     "damage_2": {
@@ -1520,8 +1513,6 @@
         "94000": 161,
         "95000": 21
       },
-      "max": 95839,
-      "min": 30109,
       "step": 1000
     },
     "tower_caps": {
@@ -1604,8 +1595,6 @@
         "2950": 32,
         "3000": 2
       },
-      "max": 3011,
-      "min": -346,
       "step": 50
     },
     "app_totals": {
@@ -1664,8 +1653,6 @@
         "2350": 382,
         "2400": 18
       },
-      "max": 2432,
-      "min": -223,
       "step": 50
     },
     "hermit_totals": {
@@ -1724,8 +1711,6 @@
         "2350": 343,
         "2400": 10
       },
-      "max": 2439,
-      "min": -241,
       "step": 50
     },
     "guardian_totals": {
@@ -1783,8 +1768,6 @@
         "2300": 518,
         "2350": 29
       },
-      "max": 2389,
-      "min": -220,
       "step": 50
     },
     "scale": {
@@ -1800,9 +1783,7 @@
         "14": 1038587,
         "15": 1186820,
         "16": 119
-      },
-      "max": 16,
-      "min": 7
+      }
     }
   }
 }

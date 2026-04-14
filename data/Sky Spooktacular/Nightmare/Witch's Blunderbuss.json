@@ -5,9 +5,6 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_GW_Gun",
-  "weapon_template": "GWGun_WeaponTemplate",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1516,9 +1513,7 @@
         "543": 24,
         "544": 4,
         "545": 10
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1664,8 +1659,6 @@
         "204000": 30,
         "205000": 5
       },
-      "max": 205551,
-      "min": 67632,
       "step": 1000
     },
     "tower_caps": {
@@ -1779,8 +1772,6 @@
         "3350": 28,
         "3400": 5
       },
-      "max": 3428,
-      "min": -1145,
       "step": 50
     },
     "app_totals": {
@@ -1863,8 +1854,6 @@
         "2650": 234,
         "2700": 9
       },
-      "max": 2743,
-      "min": -1197,
       "step": 50
     },
     "hermit_totals": {
@@ -1945,8 +1934,6 @@
         "2650": 247,
         "2700": 11
       },
-      "max": 2738,
-      "min": -1030,
       "step": 50
     },
     "guardian_totals": {
@@ -2030,8 +2017,6 @@
         "2700": 19,
         "2750": 2
       },
-      "max": 2757,
-      "min": -1145,
       "step": 50
     },
     "scale": {
@@ -2049,9 +2034,7 @@
         "13": 3241097,
         "14": 3834060,
         "15": 1258180
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

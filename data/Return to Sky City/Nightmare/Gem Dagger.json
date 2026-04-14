@@ -5,9 +5,6 @@
   "map_name": "Return to Sky City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_ReturniaPoleArm",
-  "weapon_template": "Weapon_ReturniaPoleArm_V2",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.675,
@@ -1593,9 +1590,7 @@
         "544": 19,
         "545": 10,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1736,8 +1731,6 @@
         "223000": 11,
         "224000": 1
       },
-      "max": 224280,
-      "min": 91001,
       "step": 1000
     },
     "damage_2": {
@@ -1810,8 +1803,6 @@
         "100000": 193,
         "101000": 9
       },
-      "max": 101235,
-      "min": 37301,
       "step": 1000
     },
     "tower_caps": {
@@ -1914,8 +1905,6 @@
         "3150": 107,
         "3200": 1
       },
-      "max": 3221,
-      "min": -1125,
       "step": 50
     },
     "app_totals": {
@@ -1994,8 +1983,6 @@
         "2500": 638,
         "2550": 11
       },
-      "max": 2559,
-      "min": -1098,
       "step": 50
     },
     "hermit_totals": {
@@ -2075,8 +2062,6 @@
         "2450": 2358,
         "2500": 110
       },
-      "max": 2532,
-      "min": -1151,
       "step": 50
     },
     "guardian_totals": {
@@ -2156,8 +2141,6 @@
         "2500": 425,
         "2550": 3
       },
-      "max": 2571,
-      "min": -1125,
       "step": 50
     },
     "scale": {
@@ -2175,9 +2158,7 @@
         "13": 6296047,
         "14": 10595530,
         "15": 4189795
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

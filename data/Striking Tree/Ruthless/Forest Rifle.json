@@ -5,9 +5,6 @@
   "map_name": "Striking Tree",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_WoodRifle",
-  "weapon_template": "WoodRifle_WeaponTemplate",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.28,
@@ -1496,9 +1493,7 @@
         "543": 17,
         "544": 12,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1661,8 +1656,6 @@
         "209000": 3,
         "210000": 2
       },
-      "max": 210096,
-      "min": 55424,
       "step": 1000
     },
     "tower_caps": {
@@ -1763,8 +1756,6 @@
         "3200": 14,
         "3250": 2
       },
-      "max": 3282,
-      "min": -1052,
       "step": 50
     },
     "app_totals": {
@@ -1842,8 +1833,6 @@
         "2550": 67,
         "2600": 2
       },
-      "max": 2606,
-      "min": -1052,
       "step": 50
     },
     "hermit_totals": {
@@ -1920,8 +1909,6 @@
         "2550": 66,
         "2600": 1
       },
-      "max": 2609,
-      "min": -929,
       "step": 50
     },
     "guardian_totals": {
@@ -1998,8 +1985,6 @@
         "2550": 68,
         "2600": 4
       },
-      "max": 2608,
-      "min": -912,
       "step": 50
     },
     "scale": {
@@ -2017,9 +2002,7 @@
         "13": 2771545,
         "14": 3055786,
         "15": 967546
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

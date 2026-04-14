@@ -5,9 +5,6 @@
   "map_name": "Challenge Assault",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle5_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style5",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.49,
@@ -1349,9 +1346,7 @@
         "543": 44,
         "544": 17,
         "545": 13
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1462,8 +1457,6 @@
         "142000": 54,
         "143000": 3
       },
-      "max": 143584,
-      "min": 40366,
       "step": 1000
     },
     "tower_caps": {
@@ -1554,8 +1547,6 @@
         "3200": 93,
         "3250": 17
       },
-      "max": 3291,
-      "min": -450,
       "step": 50
     },
     "app_totals": {
@@ -1619,8 +1610,6 @@
         "2550": 485,
         "2600": 29
       },
-      "max": 2646,
-      "min": -286,
       "step": 50
     },
     "hermit_totals": {
@@ -1684,8 +1673,6 @@
         "2550": 459,
         "2600": 25
       },
-      "max": 2637,
-      "min": -287,
       "step": 50
     },
     "guardian_totals": {
@@ -1749,8 +1736,6 @@
         "2550": 176,
         "2600": 11
       },
-      "max": 2631,
-      "min": -287,
       "step": 50
     },
     "scale": {
@@ -1774,9 +1759,7 @@
         "22": 1213431,
         "23": 1390327,
         "24": 451359
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

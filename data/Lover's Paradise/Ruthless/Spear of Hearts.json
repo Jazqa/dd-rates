@@ -5,9 +5,6 @@
   "map_name": "Lover's Paradise",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SpearOfHearts",
-  "weapon_template": "Weapon_SpearOfHearts",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1513,9 +1510,7 @@
         "543": 17,
         "544": 14,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1640,8 +1635,6 @@
         "197000": 77,
         "198000": 14
       },
-      "max": 198788,
-      "min": 81461,
       "step": 1000
     },
     "damage_2": {
@@ -1697,8 +1690,6 @@
         "72000": 1029,
         "73000": 110
       },
-      "max": 73922,
-      "min": 26921,
       "step": 1000
     },
     "tower_caps": {
@@ -1804,8 +1795,6 @@
         "3800": 190,
         "3850": 21
       },
-      "max": 3884,
-      "min": -15,
       "step": 50
     },
     "app_totals": {
@@ -1871,8 +1860,6 @@
         "2900": 21965,
         "2950": 7813
       },
-      "max": 2997,
-      "min": -30,
       "step": 50
     },
     "hermit_totals": {
@@ -1939,8 +1926,6 @@
         "2900": 10713,
         "2950": 2487
       },
-      "max": 2997,
-      "min": -50,
       "step": 50
     },
     "guardian_totals": {
@@ -2007,8 +1992,6 @@
         "2900": 10041,
         "2950": 2778
       },
-      "max": 2997,
-      "min": -54,
       "step": 50
     },
     "scale": {
@@ -2026,9 +2009,7 @@
         "13": 3470696,
         "14": 4459967,
         "15": 1530813
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

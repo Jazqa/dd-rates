@@ -5,9 +5,6 @@
   "map_name": "Volcanic Eruption",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_HuntressGun",
-  "weapon_template": "Weapon_HuntressGun",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1631,9 +1628,7 @@
         "544": 18,
         "545": 5,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1886,8 +1881,6 @@
         "394000": 8,
         "395000": 3
       },
-      "max": 395082,
-      "min": 147306,
       "step": 1000
     },
     "tower_caps": {
@@ -1975,8 +1968,6 @@
         "3100": 76,
         "3150": 2
       },
-      "max": 3161,
-      "min": -403,
       "step": 50
     },
     "app_totals": {
@@ -2038,8 +2029,6 @@
         "2450": 680,
         "2500": 32
       },
-      "max": 2544,
-      "min": -264,
       "step": 50
     },
     "hermit_totals": {
@@ -2101,8 +2090,6 @@
         "2450": 686,
         "2500": 43
       },
-      "max": 2539,
-      "min": -270,
       "step": 50
     },
     "guardian_totals": {
@@ -2164,8 +2151,6 @@
         "2450": 707,
         "2500": 35
       },
-      "max": 2539,
-      "min": -267,
       "step": 50
     },
     "scale": {
@@ -2174,9 +2159,7 @@
         "12": 5765263,
         "13": 5235547,
         "14": 19224716
-      },
-      "max": 14,
-      "min": 12
+      }
     }
   }
 }

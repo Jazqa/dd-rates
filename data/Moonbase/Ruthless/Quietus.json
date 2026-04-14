@@ -5,9 +5,6 @@
   "map_name": "Moonbase",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Spear",
-  "weapon_template": "WeaponTemplate_Spear",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1549,9 +1546,7 @@
         "545": 18,
         "546": 4,
         "547": 2
-      },
-      "max": 547,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1666,8 +1661,6 @@
         "177000": 74,
         "178000": 6
       },
-      "max": 178479,
-      "min": 71135,
       "step": 1000
     },
     "damage_2": {
@@ -1730,8 +1723,6 @@
         "77000": 249,
         "78000": 12
       },
-      "max": 78996,
-      "min": 24324,
       "step": 1000
     },
     "tower_caps": {
@@ -1832,8 +1823,6 @@
         "2900": 133,
         "2950": 2
       },
-      "max": 2978,
-      "min": -1273,
       "step": 50
     },
     "app_totals": {
@@ -1908,8 +1897,6 @@
         "2300": 1080,
         "2350": 25
       },
-      "max": 2376,
-      "min": -1085,
       "step": 50
     },
     "hermit_totals": {
@@ -1983,8 +1970,6 @@
         "2300": 998,
         "2350": 22
       },
-      "max": 2375,
-      "min": -1038,
       "step": 50
     },
     "guardian_totals": {
@@ -2059,8 +2044,6 @@
         "2300": 1080,
         "2350": 17
       },
-      "max": 2372,
-      "min": -1054,
       "step": 50
     },
     "scale": {
@@ -2078,9 +2061,7 @@
         "13": 5591502,
         "14": 10004971,
         "15": 4086322
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

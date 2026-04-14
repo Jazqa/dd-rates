@@ -5,9 +5,7 @@
   "map_name": "Lover's Paradise",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Dragon_Fluffy",
   "projectile_template": "FluffyFire",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1349,9 +1347,7 @@
         "543": 52,
         "544": 19,
         "545": 11
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1399,8 +1395,6 @@
         "69000": 1793,
         "70000": 147
       },
-      "max": 70816,
-      "min": 30180,
       "step": 1000
     },
     "tower_caps": {
@@ -1486,8 +1480,6 @@
         "3050": 782,
         "3100": 54
       },
-      "max": 3146,
-      "min": -405,
       "step": 50
     },
     "app_totals": {
@@ -1550,8 +1542,6 @@
         "2450": 598,
         "2500": 3
       },
-      "max": 2510,
-      "min": -320,
       "step": 50
     },
     "hermit_totals": {
@@ -1614,8 +1604,6 @@
         "2450": 583,
         "2500": 2
       },
-      "max": 2507,
-      "min": -313,
       "step": 50
     },
     "guardian_totals": {
@@ -1678,8 +1666,6 @@
         "2450": 622,
         "2500": 4
       },
-      "max": 2505,
-      "min": -313,
       "step": 50
     },
     "scale": {
@@ -1790,9 +1776,7 @@
         "199": 81100,
         "200": 44939,
         "201": 7258
-      },
-      "max": 201,
-      "min": 97
+      }
     }
   }
 }

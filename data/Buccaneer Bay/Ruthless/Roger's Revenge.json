@@ -5,9 +5,6 @@
   "map_name": "Buccaneer Bay",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_BucBayCutlass",
-  "weapon_template": "Weapon_BucBayCutlass",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1465,9 +1462,7 @@
         "544": 17,
         "545": 8,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1626,8 +1621,6 @@
         "247000": 37,
         "248000": 3
       },
-      "max": 248886,
-      "min": 95943,
       "step": 1000
     },
     "tower_caps": {
@@ -1729,8 +1722,6 @@
         "3400": 275,
         "3450": 30
       },
-      "max": 3493,
-      "min": -482,
       "step": 50
     },
     "app_totals": {
@@ -1798,8 +1789,6 @@
         "2700": 747,
         "2750": 46
       },
-      "max": 2795,
-      "min": -327,
       "step": 50
     },
     "hermit_totals": {
@@ -1867,8 +1856,6 @@
         "2700": 738,
         "2750": 48
       },
-      "max": 2791,
-      "min": -324,
       "step": 50
     },
     "guardian_totals": {
@@ -1936,8 +1923,6 @@
         "2700": 798,
         "2750": 43
       },
-      "max": 2784,
-      "min": -323,
       "step": 50
     },
     "scale": {
@@ -1954,9 +1939,7 @@
         "13": 1634675,
         "14": 2103172,
         "15": 720857
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

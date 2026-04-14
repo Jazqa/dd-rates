@@ -5,9 +5,6 @@
   "map_name": "Striking Tree",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_LeafBlade",
-  "weapon_template": "Weapon_LeafBlade",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.38,
@@ -1442,9 +1439,7 @@
         "544": 5,
         "545": 1,
         "546": 1
-      },
-      "max": 546,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1581,8 +1576,6 @@
         "210000": 10,
         "211000": 2
       },
-      "max": 211339,
-      "min": 82630,
       "step": 1000
     },
     "tower_caps": {
@@ -1672,8 +1665,6 @@
         "2850": 2,
         "2900": 2
       },
-      "max": 2915,
-      "min": -770,
       "step": 50
     },
     "app_totals": {
@@ -1741,8 +1732,6 @@
         "2250": 208,
         "2300": 8
       },
-      "max": 2334,
-      "min": -770,
       "step": 50
     },
     "hermit_totals": {
@@ -1810,8 +1799,6 @@
         "2250": 214,
         "2300": 10
       },
-      "max": 2333,
-      "min": -754,
       "step": 50
     },
     "guardian_totals": {
@@ -1877,8 +1864,6 @@
         "2250": 206,
         "2300": 14
       },
-      "max": 2321,
-      "min": -659,
       "step": 50
     },
     "scale": {
@@ -1893,9 +1878,7 @@
         "12": 4779671,
         "13": 5876772,
         "14": 513
-      },
-      "max": 14,
-      "min": 6
+      }
     }
   }
 }

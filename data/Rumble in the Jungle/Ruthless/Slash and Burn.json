@@ -5,9 +5,6 @@
   "map_name": "Rumble in the Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SlashAndBurn_Ruthless",
-  "weapon_template": "SlashAndBurn_Weapon_Ruthless",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1443,9 +1440,7 @@
         "543": 25,
         "544": 15,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1601,8 +1596,6 @@
         "250000": 13,
         "251000": 1
       },
-      "max": 251093,
-      "min": 103604,
       "step": 1000
     },
     "tower_caps": {
@@ -1692,8 +1685,6 @@
         "3250": 53,
         "3300": 1
       },
-      "max": 3316,
-      "min": -390,
       "step": 50
     },
     "app_totals": {
@@ -1757,8 +1748,6 @@
         "2550": 933,
         "2600": 29
       },
-      "max": 2641,
-      "min": -283,
       "step": 50
     },
     "hermit_totals": {
@@ -1822,8 +1811,6 @@
         "2550": 941,
         "2600": 39
       },
-      "max": 2631,
-      "min": -291,
       "step": 50
     },
     "guardian_totals": {
@@ -1887,8 +1874,6 @@
         "2550": 890,
         "2600": 43
       },
-      "max": 2638,
-      "min": -265,
       "step": 50
     },
     "scale": {
@@ -1906,9 +1891,7 @@
         "14": 4462100,
         "15": 6379306,
         "16": 4185529
-      },
-      "max": 16,
-      "min": 5
+      }
     }
   }
 }

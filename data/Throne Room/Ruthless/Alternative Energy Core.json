@@ -5,9 +5,6 @@
   "map_name": "Throne Room",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle03_Boss_Ruthless",
-  "weapon_template": "DunDefWeapon_MagicStaff_AltStyle03",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.25,
   "base_force_randomization_quality": 1.5,
@@ -1288,9 +1285,7 @@
         "543": 49,
         "544": 19,
         "545": 11
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1365,8 +1360,6 @@
         "81000": 521,
         "82000": 27
       },
-      "max": 82902,
-      "min": 15251,
       "step": 1000
     },
     "tower_caps": {
@@ -1457,8 +1450,6 @@
         "3200": 58,
         "3250": 13
       },
-      "max": 3299,
-      "min": -459,
       "step": 50
     },
     "app_totals": {
@@ -1522,8 +1513,6 @@
         "2550": 248,
         "2600": 7
       },
-      "max": 2633,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1588,8 +1577,6 @@
         "2550": 228,
         "2600": 12
       },
-      "max": 2624,
-      "min": -302,
       "step": 50
     },
     "guardian_totals": {
@@ -1653,8 +1640,6 @@
         "2550": 257,
         "2600": 9
       },
-      "max": 2631,
-      "min": -290,
       "step": 50
     },
     "scale": {
@@ -1675,9 +1660,7 @@
         "18": 1440251,
         "19": 1714907,
         "20": 471601
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

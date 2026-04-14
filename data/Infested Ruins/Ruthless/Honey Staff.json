@@ -5,9 +5,6 @@
   "map_name": "Infested Ruins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_HoneyStaff",
-  "weapon_template": "Weapon_HoneyStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1422,9 +1419,7 @@
         "543": 22,
         "544": 18,
         "545": 1
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1492,8 +1487,6 @@
         "76000": 422,
         "77000": 58
       },
-      "max": 77980,
-      "min": 17748,
       "step": 1000
     },
     "tower_caps": {
@@ -1616,8 +1609,6 @@
         "3700": 9,
         "3750": 1
       },
-      "max": 3775,
-      "min": -1212,
       "step": 50
     },
     "app_totals": {
@@ -1707,8 +1698,6 @@
         "2900": 279,
         "2950": 12
       },
-      "max": 2984,
-      "min": -1234,
       "step": 50
     },
     "hermit_totals": {
@@ -1801,8 +1790,6 @@
         "2900": 110,
         "2950": 1
       },
-      "max": 2951,
-      "min": -1395,
       "step": 50
     },
     "guardian_totals": {
@@ -1893,8 +1880,6 @@
         "2900": 266,
         "2950": 11
       },
-      "max": 2974,
-      "min": -1321,
       "step": 50
     },
     "scale": {
@@ -1911,9 +1896,7 @@
         "13": 7054887,
         "14": 9065770,
         "15": 4195270
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

@@ -5,8 +5,6 @@
   "map_name": "Coastal Bazaar",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_GenieBoss",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1472,9 +1470,7 @@
         "544": 11,
         "545": 8,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1557,8 +1553,6 @@
         "131000": 22,
         "132000": 2
       },
-      "max": 132225,
-      "min": 57187,
       "step": 1000
     },
     "tower_caps": {
@@ -1645,8 +1639,6 @@
         "3050": 97,
         "3100": 11
       },
-      "max": 3130,
-      "min": -439,
       "step": 50
     },
     "app_totals": {
@@ -1713,8 +1705,6 @@
         "2400": 1296,
         "2450": 87
       },
-      "max": 2496,
-      "min": -563,
       "step": 50
     },
     "hermit_totals": {
@@ -1781,8 +1771,6 @@
         "2400": 1303,
         "2450": 120
       },
-      "max": 2498,
-      "min": -575,
       "step": 50
     },
     "guardian_totals": {
@@ -1848,8 +1836,6 @@
         "2400": 1271,
         "2450": 106
       },
-      "max": 2491,
-      "min": -534,
       "step": 50
     },
     "support_caps": {
@@ -1950,9 +1936,7 @@
         "185": 35421,
         "186": 14078,
         "187": 156
-      },
-      "max": 187,
-      "min": 101
+      }
     }
   }
 }

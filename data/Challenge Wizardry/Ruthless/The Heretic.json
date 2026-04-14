@@ -5,9 +5,6 @@
   "map_name": "Challenge Wizardry",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle3_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style3_ruthless",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.39,
@@ -1453,9 +1450,7 @@
         "544": 15,
         "545": 4,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1659,8 +1654,6 @@
         "250000": 18,
         "251000": 1
       },
-      "max": 251473,
-      "min": 54250,
       "step": 1000
     },
     "tower_caps": {
@@ -1750,8 +1743,6 @@
         "3200": 25,
         "3250": 1
       },
-      "max": 3267,
-      "min": -441,
       "step": 50
     },
     "app_totals": {
@@ -1815,8 +1806,6 @@
         "2550": 101,
         "2600": 7
       },
-      "max": 2626,
-      "min": -293,
       "step": 50
     },
     "hermit_totals": {
@@ -1881,8 +1870,6 @@
         "2550": 115,
         "2600": 6
       },
-      "max": 2623,
-      "min": -301,
       "step": 50
     },
     "guardian_totals": {
@@ -1946,8 +1933,6 @@
         "2550": 106,
         "2600": 6
       },
-      "max": 2618,
-      "min": -291,
       "step": 50
     },
     "scale": {
@@ -1968,9 +1953,7 @@
         "18": 1153014,
         "19": 1286494,
         "20": 341287
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

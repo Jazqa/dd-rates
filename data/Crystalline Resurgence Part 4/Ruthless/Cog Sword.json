@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 4",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_CogSword_EMHv2",
-  "weapon_template": "Weapon_CogSword_V2",
-  "seq_act": "Artificials",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1458,9 +1455,7 @@
         "543": 16,
         "544": 1,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1613,8 +1608,6 @@
         "242000": 38,
         "243000": 3
       },
-      "max": 243903,
-      "min": 98597,
       "step": 1000
     },
     "tower_caps": {
@@ -1716,8 +1709,6 @@
         "3400": 164,
         "3450": 14
       },
-      "max": 3491,
-      "min": -458,
       "step": 50
     },
     "app_totals": {
@@ -1784,8 +1775,6 @@
         "2700": 128,
         "2750": 4
       },
-      "max": 2765,
-      "min": -293,
       "step": 50
     },
     "hermit_totals": {
@@ -1852,8 +1841,6 @@
         "2700": 686,
         "2750": 32
       },
-      "max": 2786,
-      "min": -275,
       "step": 50
     },
     "guardian_totals": {
@@ -1921,8 +1908,6 @@
         "2750": 38,
         "2800": 1
       },
-      "max": 2800,
-      "min": -280,
       "step": 50
     },
     "scale": {
@@ -1942,9 +1927,7 @@
         "16": 1205263,
         "17": 1357276,
         "18": 152
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

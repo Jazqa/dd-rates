@@ -5,9 +5,7 @@
   "map_name": "Palantir",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "EquipmentEvilHuntress",
   "projectile_template": "FamiliarProjectile_Evil_Arrow",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1652,9 +1650,7 @@
         "543": 11,
         "544": 3,
         "545": 2
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1700,8 +1696,6 @@
         "68000": 710,
         "69000": 74
       },
-      "max": 69908,
-      "min": 31044,
       "step": 1000
     },
     "tower_caps": {
@@ -1790,8 +1784,6 @@
         "3100": 16,
         "3150": 2
       },
-      "max": 3170,
-      "min": -506,
       "step": 50
     },
     "app_totals": {
@@ -1858,8 +1850,6 @@
         "2450": 173,
         "2500": 3
       },
-      "max": 2510,
-      "min": -507,
       "step": 50
     },
     "hermit_totals": {
@@ -1925,8 +1915,6 @@
         "2450": 171,
         "2500": 2
       },
-      "max": 2515,
-      "min": -459,
       "step": 50
     },
     "guardian_totals": {
@@ -1993,8 +1981,6 @@
         "2450": 203,
         "2500": 4
       },
-      "max": 2512,
-      "min": -506,
       "step": 50
     },
     "scale": {
@@ -2247,9 +2233,7 @@
         "362": 1,
         "364": 1,
         "372": 1
-      },
-      "max": 372,
-      "min": 39
+      }
     }
   }
 }

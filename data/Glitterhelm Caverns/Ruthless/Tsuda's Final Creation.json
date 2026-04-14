@@ -5,9 +5,6 @@
   "map_name": "Glitterhelm Caverns",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle08_Ruthless",
-  "weapon_template": "DunDefWeapon_MagicStaff_AltStyle08_Ruthless",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.6,
@@ -1287,9 +1284,7 @@
         "544": 27,
         "545": 12,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1362,8 +1357,6 @@
         "81000": 120,
         "82000": 5
       },
-      "max": 82235,
-      "min": 17248,
       "step": 1000
     },
     "tower_caps": {
@@ -1454,8 +1447,6 @@
         "3200": 166,
         "3250": 23
       },
-      "max": 3296,
-      "min": -462,
       "step": 50
     },
     "app_totals": {
@@ -1520,8 +1511,6 @@
         "2550": 585,
         "2600": 25
       },
-      "max": 2641,
-      "min": -302,
       "step": 50
     },
     "hermit_totals": {
@@ -1586,8 +1575,6 @@
         "2550": 553,
         "2600": 21
       },
-      "max": 2631,
-      "min": -300,
       "step": 50
     },
     "guardian_totals": {
@@ -1652,8 +1639,6 @@
         "2550": 553,
         "2600": 23
       },
-      "max": 2638,
-      "min": -303,
       "step": 50
     },
     "scale": {
@@ -1674,9 +1659,7 @@
         "18": 1759334,
         "19": 2284421,
         "20": 658413
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Tavern Incursion",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_TavernStaff",
-  "weapon_template": "Weapon_TavernStaff",
-  "seq_act": "OldOne",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.55,
@@ -1452,9 +1449,7 @@
         "544": 15,
         "545": 9,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1527,8 +1522,6 @@
         "83000": 118,
         "84000": 3
       },
-      "max": 84222,
-      "min": 19576,
       "step": 1000
     },
     "tower_caps": {
@@ -1667,8 +1660,6 @@
         "3900": 1307,
         "3950": 425
       },
-      "max": 3996,
-      "min": -1481,
       "step": 50
     },
     "app_totals": {
@@ -1765,8 +1756,6 @@
         "2900": 62171,
         "2950": 49607
       },
-      "max": 2997,
-      "min": -1555,
       "step": 50
     },
     "hermit_totals": {
@@ -1863,8 +1852,6 @@
         "2900": 99149,
         "2950": 110780
       },
-      "max": 2997,
-      "min": -1555,
       "step": 50
     },
     "guardian_totals": {
@@ -1960,8 +1947,6 @@
         "2900": 86141,
         "2950": 86454
       },
-      "max": 2997,
-      "min": -1516,
       "step": 50
     },
     "scale": {
@@ -1972,9 +1957,7 @@
         "5": 1824661,
         "6": 17775437,
         "7": 17445884
-      },
-      "max": 7,
-      "min": 3
+      }
     }
   }
 }

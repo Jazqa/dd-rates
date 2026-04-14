@@ -5,9 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Huntress",
-  "weapon_template": "Weapon_Huntress",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1510,9 +1507,7 @@
         "544": 15,
         "545": 5,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1726,8 +1721,6 @@
         "333000": 7,
         "334000": 2
       },
-      "max": 334278,
-      "min": 127874,
       "step": 1000
     },
     "tower_caps": {
@@ -1814,8 +1807,6 @@
         "3100": 58,
         "3150": 1
       },
-      "max": 3153,
-      "min": -381,
       "step": 50
     },
     "app_totals": {
@@ -1877,8 +1868,6 @@
         "2450": 529,
         "2500": 21
       },
-      "max": 2524,
-      "min": -259,
       "step": 50
     },
     "hermit_totals": {
@@ -1940,8 +1929,6 @@
         "2450": 551,
         "2500": 32
       },
-      "max": 2540,
-      "min": -273,
       "step": 50
     },
     "guardian_totals": {
@@ -2003,8 +1990,6 @@
         "2450": 579,
         "2500": 29
       },
-      "max": 2540,
-      "min": -251,
       "step": 50
     },
     "scale": {
@@ -2015,9 +2000,7 @@
         "8": 59110,
         "9": 13384238,
         "10": 417
-      },
-      "max": 10,
-      "min": 6
+      }
     }
   }
 }

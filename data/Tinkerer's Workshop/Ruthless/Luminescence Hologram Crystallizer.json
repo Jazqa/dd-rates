@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Workshop",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_TinkererSword",
-  "weapon_template": "HoloSword_Weapon",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1443,9 +1440,7 @@
         "543": 25,
         "544": 11,
         "545": 3
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1526,8 +1521,6 @@
         "121000": 69,
         "122000": 2
       },
-      "max": 122040,
-      "min": 49761,
       "step": 1000
     },
     "tower_caps": {
@@ -1643,8 +1636,6 @@
         "3550": 20,
         "3600": 2
       },
-      "max": 3619,
-      "min": -1020,
       "step": 50
     },
     "app_totals": {
@@ -1728,8 +1719,6 @@
         "2800": 267,
         "2850": 13
       },
-      "max": 2881,
-      "min": -1011,
       "step": 50
     },
     "hermit_totals": {
@@ -1812,8 +1801,6 @@
         "2750": 617,
         "2800": 55
       },
-      "max": 2837,
-      "min": -1020,
       "step": 50
     },
     "guardian_totals": {
@@ -1896,8 +1883,6 @@
         "2800": 47,
         "2850": 2
       },
-      "max": 2858,
-      "min": -995,
       "step": 50
     },
     "scale": {
@@ -1915,9 +1900,7 @@
         "13": 4466823,
         "14": 5745293,
         "15": 1974602
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

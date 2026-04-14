@@ -5,9 +5,6 @@
   "map_name": "Return to Crystalline Dimension",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_ReturniaSword_Stars",
-  "weapon_template": "Weapon_ReturniaSword_Stars",
-  "seq_act": "RewardsNightmare",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1551,9 +1548,7 @@
         "544": 18,
         "545": 5,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1710,8 +1705,6 @@
         "254000": 28,
         "255000": 1
       },
-      "max": 255033,
-      "min": 105156,
       "step": 1000
     },
     "tower_caps": {
@@ -1832,8 +1825,6 @@
         "3550": 321,
         "3600": 18
       },
-      "max": 3628,
-      "min": -1286,
       "step": 50
     },
     "app_totals": {
@@ -1922,8 +1913,6 @@
         "2850": 143,
         "2900": 1
       },
-      "max": 2902,
-      "min": -1250,
       "step": 50
     },
     "hermit_totals": {
@@ -2011,8 +2000,6 @@
         "2800": 497,
         "2850": 8
       },
-      "max": 2862,
-      "min": -1237,
       "step": 50
     },
     "guardian_totals": {
@@ -2101,8 +2088,6 @@
         "2800": 530,
         "2850": 4
       },
-      "max": 2858,
-      "min": -1255,
       "step": 50
     },
     "scale": {
@@ -2120,9 +2105,7 @@
         "13": 5900285,
         "14": 12433163,
         "15": 5532115
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Crystalline Dimension",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Monk_BOSS",
-  "weapon_template": "Weapon_Monk_Boss",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1582,9 +1579,7 @@
         "543": 49,
         "544": 24,
         "545": 6
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1752,8 +1747,6 @@
         "269000": 7,
         "270000": 1
       },
-      "max": 270070,
-      "min": 109700,
       "step": 1000
     },
     "damage_2": {
@@ -1829,8 +1822,6 @@
         "107000": 391,
         "108000": 44
       },
-      "max": 108593,
-      "min": 41177,
       "step": 1000
     },
     "tower_caps": {
@@ -1922,8 +1913,6 @@
         "3300": 90,
         "3350": 8
       },
-      "max": 3377,
-      "min": -435,
       "step": 50
     },
     "app_totals": {
@@ -1988,8 +1977,6 @@
         "2600": 805,
         "2650": 26
       },
-      "max": 2684,
-      "min": -298,
       "step": 50
     },
     "hermit_totals": {
@@ -2054,8 +2041,6 @@
         "2600": 759,
         "2650": 20
       },
-      "max": 2670,
-      "min": -292,
       "step": 50
     },
     "guardian_totals": {
@@ -2120,8 +2105,6 @@
         "2600": 791,
         "2650": 20
       },
-      "max": 2685,
-      "min": -298,
       "step": 50
     },
     "scale": {
@@ -2139,9 +2122,7 @@
         "13": 8301396,
         "14": 12084324,
         "15": 4437690
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

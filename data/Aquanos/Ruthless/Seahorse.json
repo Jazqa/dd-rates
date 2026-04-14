@@ -5,9 +5,7 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_SeahorseProjectile",
   "projectile_template": "Seahorse_Projectile",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1663,9 +1661,7 @@
         "530": 1,
         "533": 1,
         "536": 1
-      },
-      "max": 536,
-      "min": 241
+      }
     },
     "damage": {
       "label": "Base",
@@ -1707,8 +1703,6 @@
         "62000": 6,
         "63000": 2
       },
-      "max": 63316,
-      "min": 28886,
       "step": 1000
     },
     "tower_caps": {
@@ -1771,8 +1765,6 @@
         "3000": 17,
         "3050": 4
       },
-      "max": 3086,
-      "min": 719,
       "step": 50
     },
     "app_totals": {
@@ -1822,8 +1814,6 @@
         "2400": 18,
         "2450": 1
       },
-      "max": 2478,
-      "min": 322,
       "step": 50
     },
     "hermit_totals": {
@@ -1873,8 +1863,6 @@
         "2400": 18,
         "2450": 3
       },
-      "max": 2468,
-      "min": 255,
       "step": 50
     },
     "guardian_totals": {
@@ -1924,8 +1912,6 @@
         "2400": 11,
         "2450": 1
       },
-      "max": 2459,
-      "min": 196,
       "step": 50
     },
     "scale": {
@@ -2118,9 +2104,7 @@
         "224": 38,
         "225": 39,
         "226": 14
-      },
-      "max": 226,
-      "min": 40
+      }
     }
   }
 }

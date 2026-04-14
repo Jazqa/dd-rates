@@ -5,9 +5,6 @@
   "map_name": "Riddle of the Deep",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle4_DLC_Ruthless",
-  "weapon_template": "Weapon_Everflame",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1288,9 +1285,7 @@
         "544": 24,
         "545": 5,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1381,8 +1376,6 @@
         "129000": 82,
         "130000": 6
       },
-      "max": 130252,
-      "min": 47084,
       "step": 1000
     },
     "tower_caps": {
@@ -1459,8 +1452,6 @@
         "2650": 47,
         "2700": 1
       },
-      "max": 2701,
-      "min": -301,
       "step": 50
     },
     "app_totals": {
@@ -1513,8 +1504,6 @@
         "2100": 988,
         "2150": 61
       },
-      "max": 2197,
-      "min": -181,
       "step": 50
     },
     "hermit_totals": {
@@ -1567,8 +1556,6 @@
         "2100": 930,
         "2150": 49
       },
-      "max": 2195,
-      "min": -173,
       "step": 50
     },
     "guardian_totals": {
@@ -1622,8 +1609,6 @@
         "2150": 37,
         "2200": 1
       },
-      "max": 2208,
-      "min": -175,
       "step": 50
     },
     "scale": {
@@ -1643,9 +1628,7 @@
         "15": 6376084,
         "16": 8511157,
         "17": 1574365
-      },
-      "max": 17,
-      "min": 4
+      }
     }
   }
 }

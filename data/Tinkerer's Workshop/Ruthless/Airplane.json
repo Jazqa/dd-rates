@@ -5,9 +5,7 @@
   "map_name": "Tinkerer's Workshop",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_AirPlane",
   "projectile_template": "Projectile_MiniGun",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1357,9 +1355,7 @@
         "543": 20,
         "544": 5,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1407,8 +1403,6 @@
         "67000": 927,
         "68000": 48
       },
-      "max": 68855,
-      "min": 28268,
       "step": 1000
     },
     "tower_caps": {
@@ -1498,8 +1492,6 @@
         "3100": 60,
         "3150": 4
       },
-      "max": 3171,
-      "min": -507,
       "step": 50
     },
     "app_totals": {
@@ -1566,8 +1558,6 @@
         "2450": 480,
         "2500": 6
       },
-      "max": 2511,
-      "min": -519,
       "step": 50
     },
     "hermit_totals": {
@@ -1634,8 +1624,6 @@
         "2450": 488,
         "2500": 5
       },
-      "max": 2515,
-      "min": -526,
       "step": 50
     },
     "guardian_totals": {
@@ -1702,8 +1690,6 @@
         "2450": 511,
         "2500": 6
       },
-      "max": 2512,
-      "min": -507,
       "step": 50
     },
     "scale": {
@@ -1765,9 +1751,7 @@
         "162": 156980,
         "163": 157295,
         "164": 61255
-      },
-      "max": 164,
-      "min": 109
+      }
     }
   }
 }

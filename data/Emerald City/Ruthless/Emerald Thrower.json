@@ -5,9 +5,6 @@
   "map_name": "Emerald City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_EmeraldThrower",
-  "weapon_template": "Weapon_EmeraldThrowerTrilo",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1347,9 +1344,7 @@
         "544": 18,
         "545": 1,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1472,8 +1467,6 @@
         "176000": 24,
         "177000": 1
       },
-      "max": 177655,
-      "min": 62414,
       "step": 1000
     },
     "tower_caps": {
@@ -1555,8 +1548,6 @@
         "3050": 142,
         "3100": 10
       },
-      "max": 3120,
-      "min": -197,
       "step": 50
     },
     "app_totals": {
@@ -1614,8 +1605,6 @@
         "2450": 421,
         "2500": 15
       },
-      "max": 2528,
-      "min": -83,
       "step": 50
     },
     "hermit_totals": {
@@ -1673,8 +1662,6 @@
         "2450": 433,
         "2500": 17
       },
-      "max": 2534,
-      "min": -84,
       "step": 50
     },
     "guardian_totals": {
@@ -1732,8 +1719,6 @@
         "2450": 427,
         "2500": 7
       },
-      "max": 2510,
-      "min": -93,
       "step": 50
     },
     "scale": {
@@ -1743,9 +1728,7 @@
         "11": 12141895,
         "12": 18327517,
         "13": 6455233
-      },
-      "max": 13,
-      "min": 10
+      }
     }
   }
 }

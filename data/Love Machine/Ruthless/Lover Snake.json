@@ -5,9 +5,7 @@
   "map_name": "Love Machine",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Snake_Love",
   "projectile_template": "Projectile_SnakeMagicDot_Love",
-  "seq_act": "rewards",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1427,9 +1425,7 @@
         "543": 23,
         "544": 5,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1477,8 +1473,6 @@
         "68000": 293,
         "69000": 4
       },
-      "max": 69256,
-      "min": 29700,
       "step": 1000
     },
     "tower_caps": {
@@ -1570,8 +1564,6 @@
         "3100": 61,
         "3150": 4
       },
-      "max": 3171,
-      "min": -614,
       "step": 50
     },
     "app_totals": {
@@ -1640,8 +1632,6 @@
         "2450": 512,
         "2500": 7
       },
-      "max": 2511,
-      "min": -622,
       "step": 50
     },
     "hermit_totals": {
@@ -1710,8 +1700,6 @@
         "2450": 539,
         "2500": 5
       },
-      "max": 2515,
-      "min": -623,
       "step": 50
     },
     "guardian_totals": {
@@ -1780,8 +1768,6 @@
         "2450": 571,
         "2500": 8
       },
-      "max": 2515,
-      "min": -614,
       "step": 50
     },
     "scale": {
@@ -1903,9 +1889,7 @@
         "194": 5,
         "195": 1,
         "196": 3
-      },
-      "max": 196,
-      "min": 81
+      }
     }
   }
 }

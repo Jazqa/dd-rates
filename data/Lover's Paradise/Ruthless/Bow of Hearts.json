@@ -5,9 +5,6 @@
   "map_name": "Lover's Paradise",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_BowOfHearts",
-  "weapon_template": "Weapon_BowOfHearts",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1110,9 +1107,7 @@
         "543": 16,
         "544": 6,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1138,8 +1133,6 @@
         "26000": 34749,
         "27000": 1694
       },
-      "max": 27876,
-      "min": 9962,
       "step": 1000
     },
     "tower_totals": {
@@ -1186,8 +1179,6 @@
         "1950": 60,
         "2000": 1
       },
-      "max": 2011,
-      "min": 47,
       "step": 50
     },
     "app_totals": {
@@ -1226,8 +1217,6 @@
         "1550": 2756,
         "1600": 138
       },
-      "max": 1648,
-      "min": 47,
       "step": 50
     },
     "hermit_totals": {
@@ -1267,8 +1256,6 @@
         "1600": 123,
         "1650": 1
       },
-      "max": 1650,
-      "min": 37,
       "step": 50
     },
     "guardian_totals": {
@@ -1307,8 +1294,6 @@
         "1550": 456,
         "1600": 1
       },
-      "max": 1601,
-      "min": 37,
       "step": 50
     },
     "support_caps": {
@@ -1329,9 +1314,7 @@
         "16": 2832128,
         "17": 3462263,
         "18": 1399979
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

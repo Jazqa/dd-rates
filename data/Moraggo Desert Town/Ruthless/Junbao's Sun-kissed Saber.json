@@ -5,9 +5,6 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MonkSpearStyle2_Boss_Ruthless",
-  "weapon_template": "Weapon_JunbaoSaber_Ruthless",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1505,9 +1502,7 @@
         "544": 24,
         "545": 8,
         "546": 5
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1658,8 +1653,6 @@
         "227000": 17,
         "228000": 5
       },
-      "max": 228532,
-      "min": 85103,
       "step": 1000
     },
     "damage_2": {
@@ -1731,8 +1724,6 @@
         "100000": 54,
         "101000": 2
       },
-      "max": 101023,
-      "min": 38147,
       "step": 1000
     },
     "tower_caps": {
@@ -1816,8 +1807,6 @@
         "2950": 101,
         "3000": 9
       },
-      "max": 3042,
-      "min": -390,
       "step": 50
     },
     "app_totals": {
@@ -1876,8 +1865,6 @@
         "2350": 501,
         "2400": 15
       },
-      "max": 2433,
-      "min": -236,
       "step": 50
     },
     "hermit_totals": {
@@ -1936,8 +1923,6 @@
         "2350": 504,
         "2400": 11
       },
-      "max": 2426,
-      "min": -239,
       "step": 50
     },
     "guardian_totals": {
@@ -1996,8 +1981,6 @@
         "2350": 530,
         "2400": 10
       },
-      "max": 2423,
-      "min": -238,
       "step": 50
     },
     "scale": {
@@ -2016,9 +1999,7 @@
         "13": 1791524,
         "14": 2466096,
         "15": 880657
-      },
-      "max": 15,
-      "min": 3
+      }
     }
   }
 }

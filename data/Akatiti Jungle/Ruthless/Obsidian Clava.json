@@ -5,9 +5,6 @@
   "map_name": "Akatiti Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Apprentice_Staff",
-  "weapon_template": "Weapon_ObsidianClava",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.48,
@@ -1424,9 +1421,7 @@
         "544": 20,
         "545": 5,
         "546": 5
-      },
-      "max": 546,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1494,8 +1489,6 @@
         "88000": 148,
         "89000": 15
       },
-      "max": 89821,
-      "min": 29525,
       "step": 1000
     },
     "damage_2": {
@@ -1564,8 +1557,6 @@
         "88000": 90,
         "89000": 6
       },
-      "max": 89494,
-      "min": 28839,
       "step": 1000
     },
     "tower_caps": {
@@ -1677,8 +1668,6 @@
         "3800": 37,
         "3850": 1
       },
-      "max": 3859,
-      "min": -344,
       "step": 50
     },
     "app_totals": {
@@ -1748,8 +1737,6 @@
         "2900": 8290,
         "2950": 2061
       },
-      "max": 2997,
-      "min": -216,
       "step": 50
     },
     "hermit_totals": {
@@ -1819,8 +1806,6 @@
         "2900": 8436,
         "2950": 2144
       },
-      "max": 2997,
-      "min": -228,
       "step": 50
     },
     "guardian_totals": {
@@ -1890,8 +1875,6 @@
         "2900": 2764,
         "2950": 456
       },
-      "max": 2997,
-      "min": -249,
       "step": 50
     },
     "scale": {
@@ -1907,9 +1890,7 @@
         "12": 6716156,
         "13": 9384809,
         "14": 5664780
-      },
-      "max": 14,
-      "min": 5
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Mistymire Forest",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SpiderQueenStaff_Ruthless",
-  "weapon_template": "Weapon_SpiderQueenStaff_Ruth",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1225,9 +1222,7 @@
         "543": 32,
         "544": 15,
         "545": 12
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1292,8 +1287,6 @@
         "84000": 8,
         "85000": 1
       },
-      "max": 85472,
-      "min": 28047,
       "step": 1000
     },
     "tower_caps": {
@@ -1363,8 +1356,6 @@
         "2400": 23,
         "2450": 2
       },
-      "max": 2475,
-      "min": -239,
       "step": 50
     },
     "app_totals": {
@@ -1413,8 +1404,6 @@
         "1950": 60,
         "2000": 2
       },
-      "max": 2007,
-      "min": -125,
       "step": 50
     },
     "hermit_totals": {
@@ -1462,8 +1451,6 @@
         "1900": 939,
         "1950": 66
       },
-      "max": 1999,
-      "min": -124,
       "step": 50
     },
     "guardian_totals": {
@@ -1511,8 +1498,6 @@
         "1900": 924,
         "1950": 67
       },
-      "max": 1992,
-      "min": -125,
       "step": 50
     },
     "scale": {
@@ -1535,9 +1520,7 @@
         "17": 3274446,
         "18": 3774006,
         "19": 2074818
-      },
-      "max": 19,
-      "min": 3
+      }
     }
   }
 }

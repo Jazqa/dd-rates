@@ -5,9 +5,6 @@
   "map_name": "Challenge Unlikely Allies",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "SpearStyle1_Ruthless",
-  "weapon_template": "DLC_WeaponMonkSpear_Style1_Ruthless",
-  "seq_act": "OgreAllyMission",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.35,
@@ -1540,9 +1537,7 @@
         "543": 24,
         "544": 10,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1746,8 +1741,6 @@
         "243000": 14,
         "244000": 6
       },
-      "max": 244475,
-      "min": 48794,
       "step": 1000
     },
     "damage_2": {
@@ -1822,8 +1815,6 @@
         "83000": 360,
         "84000": 8
       },
-      "max": 84711,
-      "min": 18375,
       "step": 1000
     },
     "tower_caps": {
@@ -1914,8 +1905,6 @@
         "3250": 10,
         "3300": 1
       },
-      "max": 3303,
-      "min": -419,
       "step": 50
     },
     "app_totals": {
@@ -1980,8 +1969,6 @@
         "2600": 41,
         "2650": 1
       },
-      "max": 2654,
-      "min": -270,
       "step": 50
     },
     "hermit_totals": {
@@ -2046,8 +2033,6 @@
         "2600": 31,
         "2650": 2
       },
-      "max": 2665,
-      "min": -274,
       "step": 50
     },
     "guardian_totals": {
@@ -2111,8 +2096,6 @@
         "2550": 86,
         "2600": 5
       },
-      "max": 2627,
-      "min": -289,
       "step": 50
     },
     "scale": {
@@ -2133,9 +2116,7 @@
         "18": 1074908,
         "19": 1179343,
         "20": 311527
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

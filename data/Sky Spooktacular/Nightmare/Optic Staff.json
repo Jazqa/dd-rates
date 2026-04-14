@@ -5,9 +5,6 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_OpticStaff",
-  "weapon_template": "Weapon_OpticStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1444,9 +1441,7 @@
         "544": 10,
         "545": 1,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1520,8 +1515,6 @@
         "97000": 174,
         "98000": 61
       },
-      "max": 98677,
-      "min": 31102,
       "step": 1000
     },
     "damage_2": {
@@ -1597,8 +1590,6 @@
         "97000": 171,
         "98000": 61
       },
-      "max": 98676,
-      "min": 30069,
       "step": 1000
     },
     "tower_caps": {
@@ -1703,8 +1694,6 @@
         "3550": 80,
         "3600": 6
       },
-      "max": 3624,
-      "min": -460,
       "step": 50
     },
     "app_totals": {
@@ -1775,8 +1764,6 @@
         "2850": 189,
         "2900": 9
       },
-      "max": 2924,
-      "min": -310,
       "step": 50
     },
     "hermit_totals": {
@@ -1846,8 +1833,6 @@
         "2800": 119,
         "2850": 1
       },
-      "max": 2861,
-      "min": -321,
       "step": 50
     },
     "guardian_totals": {
@@ -1916,8 +1901,6 @@
         "2800": 233,
         "2850": 4
       },
-      "max": 2857,
-      "min": -294,
       "step": 50
     },
     "scale": {
@@ -1936,9 +1919,7 @@
         "14": 3998110,
         "15": 4635906,
         "16": 2543811
-      },
-      "max": 16,
-      "min": 4
+      }
     }
   }
 }

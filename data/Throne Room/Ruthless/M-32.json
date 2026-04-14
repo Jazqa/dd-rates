@@ -5,9 +5,6 @@
   "map_name": "Throne Room",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle2_Boss_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.25,
   "base_force_randomization_quality": 1.5,
@@ -1877,9 +1874,7 @@
         "543": 49,
         "544": 19,
         "545": 11
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -2386,8 +2381,6 @@
         "684000": 1,
         "685000": 2
       },
-      "max": 685419,
-      "min": 184054,
       "step": 1000
     },
     "tower_caps": {
@@ -2478,8 +2471,6 @@
         "3200": 58,
         "3250": 13
       },
-      "max": 3299,
-      "min": -459,
       "step": 50
     },
     "app_totals": {
@@ -2543,8 +2534,6 @@
         "2550": 248,
         "2600": 7
       },
-      "max": 2633,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -2609,8 +2598,6 @@
         "2550": 228,
         "2600": 12
       },
-      "max": 2624,
-      "min": -302,
       "step": 50
     },
     "guardian_totals": {
@@ -2674,8 +2661,6 @@
         "2550": 257,
         "2600": 9
       },
-      "max": 2631,
-      "min": -290,
       "step": 50
     },
     "scale": {
@@ -2699,9 +2684,7 @@
         "22": 1254180,
         "23": 1444423,
         "24": 470234
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

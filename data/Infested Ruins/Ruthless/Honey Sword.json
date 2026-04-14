@@ -5,9 +5,6 @@
   "map_name": "Infested Ruins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_HoneySword",
-  "weapon_template": "Weapon_HoneySword",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1489,9 +1486,7 @@
         "543": 21,
         "544": 19,
         "545": 1
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1591,8 +1586,6 @@
         "151000": 53,
         "152000": 1
       },
-      "max": 152160,
-      "min": 60944,
       "step": 1000
     },
     "tower_caps": {
@@ -1714,8 +1707,6 @@
         "3700": 7,
         "3750": 1
       },
-      "max": 3768,
-      "min": -1197,
       "step": 50
     },
     "app_totals": {
@@ -1805,8 +1796,6 @@
         "2900": 158,
         "2950": 8
       },
-      "max": 2978,
-      "min": -1264,
       "step": 50
     },
     "hermit_totals": {
@@ -1899,8 +1888,6 @@
         "2900": 117,
         "2950": 1
       },
-      "max": 2951,
-      "min": -1363,
       "step": 50
     },
     "guardian_totals": {
@@ -1990,8 +1977,6 @@
         "2900": 143,
         "2950": 6
       },
-      "max": 2967,
-      "min": -1308,
       "step": 50
     },
     "scale": {
@@ -2007,9 +1992,7 @@
         "13": 7020421,
         "14": 9022919,
         "15": 4176213
-      },
-      "max": 15,
-      "min": 6
+      }
     }
   }
 }

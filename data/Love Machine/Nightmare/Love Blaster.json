@@ -5,9 +5,6 @@
   "map_name": "Love Machine",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_AssaultGun",
-  "weapon_template": "Weapon_AssaultGun",
-  "seq_act": "rewards",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1522,9 +1519,7 @@
         "543": 28,
         "544": 5,
         "545": 7
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1708,8 +1703,6 @@
         "264000": 8,
         "265000": 4
       },
-      "max": 265807,
-      "min": 89425,
       "step": 1000
     },
     "tower_caps": {
@@ -1806,8 +1799,6 @@
         "2950": 33,
         "3000": 7
       },
-      "max": 3027,
-      "min": -1002,
       "step": 50
     },
     "app_totals": {
@@ -1881,8 +1872,6 @@
         "2350": 283,
         "2400": 18
       },
-      "max": 2437,
-      "min": -959,
       "step": 50
     },
     "hermit_totals": {
@@ -1955,8 +1944,6 @@
         "2350": 251,
         "2400": 24
       },
-      "max": 2446,
-      "min": -980,
       "step": 50
     },
     "guardian_totals": {
@@ -2030,8 +2017,6 @@
         "2350": 287,
         "2400": 10
       },
-      "max": 2436,
-      "min": -966,
       "step": 50
     },
     "scale": {
@@ -2049,9 +2034,7 @@
         "13": 3897726,
         "14": 5008982,
         "15": 1718615
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

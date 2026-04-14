@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "CrossbowStyle3_DLC_EMHv2",
-  "weapon_template": "Weapon_EnergyCorev2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1556,9 +1553,7 @@
         "542": 25,
         "543": 26,
         "544": 4
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1800,8 +1795,6 @@
         "375000": 12,
         "376000": 2
       },
-      "max": 376477,
-      "min": 142761,
       "step": 1000
     },
     "tower_caps": {
@@ -1884,8 +1877,6 @@
         "2950": 139,
         "3000": 18
       },
-      "max": 3040,
-      "min": -327,
       "step": 50
     },
     "app_totals": {
@@ -1944,8 +1935,6 @@
         "2350": 380,
         "2400": 18
       },
-      "max": 2429,
-      "min": -221,
       "step": 50
     },
     "hermit_totals": {
@@ -2004,8 +1993,6 @@
         "2350": 193,
         "2400": 2
       },
-      "max": 2423,
-      "min": -209,
       "step": 50
     },
     "guardian_totals": {
@@ -2064,8 +2051,6 @@
         "2350": 705,
         "2400": 36
       },
-      "max": 2441,
-      "min": -213,
       "step": 50
     },
     "scale": {
@@ -2087,9 +2072,7 @@
         "19": 897822,
         "20": 1000319,
         "21": 131
-      },
-      "max": 21,
-      "min": 6
+      }
     }
   }
 }

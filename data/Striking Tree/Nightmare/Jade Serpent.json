@@ -5,9 +5,7 @@
   "map_name": "Striking Tree",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_JadeSerpent",
   "projectile_template": "Projectile_JadeSerpent",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.87,
@@ -1545,9 +1543,7 @@
         "544": 33,
         "545": 13,
         "546": 2
-      },
-      "max": 546,
-      "min": 233
+      }
     },
     "damage": {
       "label": "Base",
@@ -1596,8 +1592,6 @@
         "70000": 554,
         "71000": 2
       },
-      "max": 71083,
-      "min": 30682,
       "step": 1000
     },
     "tower_caps": {
@@ -1683,8 +1677,6 @@
         "3100": 2200,
         "3150": 41
       },
-      "max": 3176,
-      "min": -309,
       "step": 50
     },
     "app_totals": {
@@ -1747,8 +1739,6 @@
         "2450": 9311,
         "2500": 110
       },
-      "max": 2521,
-      "min": -309,
       "step": 50
     },
     "hermit_totals": {
@@ -1811,8 +1801,6 @@
         "2450": 9209,
         "2500": 89
       },
-      "max": 2522,
-      "min": -302,
       "step": 50
     },
     "guardian_totals": {
@@ -1875,8 +1863,6 @@
         "2450": 9213,
         "2500": 125
       },
-      "max": 2526,
-      "min": -307,
       "step": 50
     },
     "scale": {
@@ -2208,9 +2194,7 @@
         "376": 2,
         "377": 2,
         "378": 1
-      },
-      "max": 378,
-      "min": 39
+      }
     }
   }
 }

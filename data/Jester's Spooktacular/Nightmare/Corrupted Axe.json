@@ -5,9 +5,6 @@
   "map_name": "Jester's Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SpookSword",
-  "weapon_template": "Weapon_SpookSword",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1472,9 +1469,7 @@
         "544": 21,
         "545": 6,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1620,8 +1615,6 @@
         "231000": 12,
         "232000": 2
       },
-      "max": 232601,
-      "min": 94228,
       "step": 1000
     },
     "tower_caps": {
@@ -1737,8 +1730,6 @@
         "3750": 74,
         "3800": 4
       },
-      "max": 3809,
-      "min": -558,
       "step": 50
     },
     "app_totals": {
@@ -1811,8 +1802,6 @@
         "2900": 5246,
         "2950": 1014
       },
-      "max": 2997,
-      "min": -384,
       "step": 50
     },
     "hermit_totals": {
@@ -1885,8 +1874,6 @@
         "2900": 1908,
         "2950": 194
       },
-      "max": 2997,
-      "min": -382,
       "step": 50
     },
     "guardian_totals": {
@@ -1959,8 +1946,6 @@
         "2900": 1903,
         "2950": 167
       },
-      "max": 2997,
-      "min": -393,
       "step": 50
     },
     "scale": {
@@ -1975,9 +1960,7 @@
         "16": 8737083,
         "17": 10829465,
         "18": 1161
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

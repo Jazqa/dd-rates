@@ -5,9 +5,7 @@
   "map_name": "Buccaneer Bay",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Parrot",
   "projectile_template": "ParrotProjectile_piercing",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1817,9 +1815,7 @@
         "539": 4,
         "540": 2,
         "543": 1
-      },
-      "max": 543,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1910,8 +1906,6 @@
         "151000": 12,
         "152000": 5
       },
-      "max": 152275,
-      "min": 69247,
       "step": 1000
     },
     "tower_caps": {
@@ -1985,8 +1979,6 @@
         "3050": 27,
         "3100": 2
       },
-      "max": 3128,
-      "min": 131,
       "step": 50
     },
     "app_totals": {
@@ -2045,8 +2037,6 @@
         "2450": 12,
         "2500": 1
       },
-      "max": 2504,
-      "min": -149,
       "step": 50
     },
     "hermit_totals": {
@@ -2103,8 +2093,6 @@
         "2400": 232,
         "2450": 17
       },
-      "max": 2494,
-      "min": -68,
       "step": 50
     },
     "guardian_totals": {
@@ -2161,8 +2149,6 @@
         "2400": 250,
         "2450": 21
       },
-      "max": 2499,
-      "min": -86,
       "step": 50
     },
     "scale": {
@@ -2363,9 +2349,7 @@
         "277": 1,
         "304": 1,
         "373": 1
-      },
-      "max": 373,
-      "min": 39
+      }
     },
     "multiproj": [
       0,

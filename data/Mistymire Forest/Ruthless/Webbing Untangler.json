@@ -5,9 +5,6 @@
   "map_name": "Mistymire Forest",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_WebbingUntangler_Ruthless",
-  "weapon_template": "Weapon_WebbingUntangler",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1370,9 +1367,7 @@
         "544": 11,
         "545": 8,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1523,8 +1518,6 @@
         "238000": 7,
         "239000": 2
       },
-      "max": 239272,
-      "min": 95543,
       "step": 1000
     },
     "tower_caps": {
@@ -1594,8 +1587,6 @@
         "2400": 11,
         "2450": 1
       },
-      "max": 2479,
-      "min": -220,
       "step": 50
     },
     "app_totals": {
@@ -1643,8 +1634,6 @@
         "1900": 788,
         "1950": 45
       },
-      "max": 1992,
-      "min": -119,
       "step": 50
     },
     "hermit_totals": {
@@ -1692,8 +1681,6 @@
         "1900": 760,
         "1950": 45
       },
-      "max": 1994,
-      "min": -126,
       "step": 50
     },
     "guardian_totals": {
@@ -1741,8 +1728,6 @@
         "1900": 750,
         "1950": 59
       },
-      "max": 1991,
-      "min": -120,
       "step": 50
     },
     "scale": {
@@ -1765,9 +1750,7 @@
         "17": 754324,
         "18": 870694,
         "19": 478306
-      },
-      "max": 19,
-      "min": 3
+      }
     }
   }
 }

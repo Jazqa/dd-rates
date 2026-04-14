@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Lab",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_TinkersPride",
-  "weapon_template": "Weapon_TinkersPride",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1526,9 +1523,7 @@
         "543": 18,
         "544": 14,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1691,8 +1686,6 @@
         "257000": 9,
         "258000": 1
       },
-      "max": 258195,
-      "min": 103359,
       "step": 1000
     },
     "damage_2": {
@@ -1762,8 +1755,6 @@
         "93000": 41,
         "94000": 1
       },
-      "max": 94044,
-      "min": 33479,
       "step": 1000
     },
     "tower_caps": {
@@ -1842,8 +1833,6 @@
         "3000": 73,
         "3050": 5
       },
-      "max": 3087,
-      "min": -84,
       "step": 50
     },
     "app_totals": {
@@ -1900,8 +1889,6 @@
         "2400": 257,
         "2450": 2
       },
-      "max": 2455,
-      "min": -77,
       "step": 50
     },
     "hermit_totals": {
@@ -1958,8 +1945,6 @@
         "2400": 205,
         "2450": 7
       },
-      "max": 2456,
-      "min": -99,
       "step": 50
     },
     "guardian_totals": {
@@ -2016,8 +2001,6 @@
         "2400": 210,
         "2450": 10
       },
-      "max": 2475,
-      "min": -81,
       "step": 50
     },
     "scale": {
@@ -2036,9 +2019,7 @@
         "17": 4458106,
         "18": 5126431,
         "19": 164308
-      },
-      "max": 19,
-      "min": 7
+      }
     }
   }
 }

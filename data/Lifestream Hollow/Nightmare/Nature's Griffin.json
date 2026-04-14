@@ -5,9 +5,7 @@
   "map_name": "Lifestream Hollow",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Griffin",
   "projectile_template": "FamiliarProjectile_ElectricNature",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1588,9 +1586,7 @@
         "543": 54,
         "544": 24,
         "545": 10
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1642,8 +1638,6 @@
         "74000": 1059,
         "75000": 56
       },
-      "max": 75740,
-      "min": 31048,
       "step": 1000
     },
     "tower_caps": {
@@ -1731,8 +1725,6 @@
         "3100": 121,
         "3150": 1
       },
-      "max": 3150,
-      "min": -428,
       "step": 50
     },
     "app_totals": {
@@ -1795,8 +1787,6 @@
         "2450": 972,
         "2500": 7
       },
-      "max": 2513,
-      "min": -322,
       "step": 50
     },
     "hermit_totals": {
@@ -1859,8 +1849,6 @@
         "2450": 944,
         "2500": 10
       },
-      "max": 2509,
-      "min": -317,
       "step": 50
     },
     "guardian_totals": {
@@ -1923,8 +1911,6 @@
         "2450": 1005,
         "2500": 5
       },
-      "max": 2510,
-      "min": -309,
       "step": 50
     },
     "scale": {
@@ -2250,9 +2236,7 @@
         "372": 4,
         "374": 7,
         "376": 3
-      },
-      "max": 376,
-      "min": 39
+      }
     }
   }
 }

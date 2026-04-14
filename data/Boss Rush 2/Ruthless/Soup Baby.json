@@ -5,9 +5,7 @@
   "map_name": "Boss Rush 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Familar_SoupBaby",
   "projectile_template": "Projectile_SoupBaby_Pet",
-  "seq_act": "coreVictory_event",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1417,9 +1415,7 @@
         "544": 10,
         "545": 6,
         "546": 6
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1475,8 +1471,6 @@
         "75000": 33,
         "76000": 2
       },
-      "max": 76124,
-      "min": 28441,
       "step": 1000
     },
     "tower_caps": {
@@ -1567,8 +1561,6 @@
         "3050": 761,
         "3100": 71
       },
-      "max": 3149,
-      "min": -610,
       "step": 50
     },
     "app_totals": {
@@ -1637,8 +1629,6 @@
         "2450": 547,
         "2500": 2
       },
-      "max": 2510,
-      "min": -612,
       "step": 50
     },
     "hermit_totals": {
@@ -1707,8 +1697,6 @@
         "2450": 573,
         "2500": 3
       },
-      "max": 2516,
-      "min": -610,
       "step": 50
     },
     "guardian_totals": {
@@ -1777,8 +1765,6 @@
         "2450": 567,
         "2500": 3
       },
-      "max": 2523,
-      "min": -623,
       "step": 50
     },
     "scale": {
@@ -1884,9 +1870,7 @@
         "195": 47350,
         "196": 17703,
         "197": 13
-      },
-      "max": 197,
-      "min": 98
+      }
     }
   }
 }

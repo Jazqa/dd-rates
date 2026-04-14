@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle7_EMHv2",
-  "weapon_template": "Weapon_SamielFlayerv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1553,9 +1550,7 @@
         "542": 27,
         "543": 22,
         "544": 6
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1797,8 +1792,6 @@
         "371000": 7,
         "372000": 8
       },
-      "max": 372404,
-      "min": 138078,
       "step": 1000
     },
     "tower_caps": {
@@ -1882,8 +1875,6 @@
         "2950": 64,
         "3000": 4
       },
-      "max": 3023,
-      "min": -351,
       "step": 50
     },
     "app_totals": {
@@ -1942,8 +1933,6 @@
         "2350": 476,
         "2400": 21
       },
-      "max": 2430,
-      "min": -221,
       "step": 50
     },
     "hermit_totals": {
@@ -2002,8 +1991,6 @@
         "2350": 242,
         "2400": 5
       },
-      "max": 2427,
-      "min": -238,
       "step": 50
     },
     "guardian_totals": {
@@ -2062,8 +2049,6 @@
         "2350": 148,
         "2400": 3
       },
-      "max": 2412,
-      "min": -227,
       "step": 50
     },
     "scale": {
@@ -2085,9 +2070,7 @@
         "16": 1084127,
         "17": 1215140,
         "18": 467433
-      },
-      "max": 18,
-      "min": 3
+      }
     }
   }
 }

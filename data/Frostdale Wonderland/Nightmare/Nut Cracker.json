@@ -5,9 +5,7 @@
   "map_name": "Frostdale Wonderland",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Familar_NutCracker",
   "projectile_template": "Projectile_Bouncing_Nutcracker",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1416,9 +1414,7 @@
         "544": 7,
         "545": 5,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1473,8 +1469,6 @@
         "73000": 247,
         "74000": 9
       },
-      "max": 74391,
-      "min": 27924,
       "step": 1000
     },
     "tower_caps": {
@@ -1563,8 +1557,6 @@
         "3050": 553,
         "3100": 51
       },
-      "max": 3149,
-      "min": -502,
       "step": 50
     },
     "app_totals": {
@@ -1632,8 +1624,6 @@
         "2450": 384,
         "2500": 2
       },
-      "max": 2510,
-      "min": -581,
       "step": 50
     },
     "hermit_totals": {
@@ -1700,8 +1690,6 @@
         "2450": 415,
         "2500": 2
       },
-      "max": 2511,
-      "min": -541,
       "step": 50
     },
     "guardian_totals": {
@@ -1768,8 +1756,6 @@
         "2450": 401,
         "2500": 3
       },
-      "max": 2523,
-      "min": -539,
       "step": 50
     },
     "scale": {
@@ -1875,9 +1861,7 @@
         "195": 28890,
         "196": 10624,
         "197": 8
-      },
-      "max": 197,
-      "min": 98
+      }
     }
   }
 }

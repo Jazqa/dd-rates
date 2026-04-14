@@ -5,9 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Monk",
-  "weapon_template": "Weapon_Monk",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1443,9 +1440,7 @@
         "543": 17,
         "544": 6,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1583,8 +1578,6 @@
         "219000": 16,
         "220000": 2
       },
-      "max": 220685,
-      "min": 89673,
       "step": 1000
     },
     "damage_2": {
@@ -1615,8 +1608,6 @@
         "34000": 11305,
         "35000": 528
       },
-      "max": 35638,
-      "min": 13781,
       "step": 1000
     },
     "tower_caps": {
@@ -1703,8 +1694,6 @@
         "3150": 23,
         "3200": 1
       },
-      "max": 3207,
-      "min": -325,
       "step": 50
     },
     "app_totals": {
@@ -1766,8 +1755,6 @@
         "2450": 1689,
         "2500": 193
       },
-      "max": 2548,
-      "min": -267,
       "step": 50
     },
     "hermit_totals": {
@@ -1830,8 +1817,6 @@
         "2500": 149,
         "2550": 2
       },
-      "max": 2560,
-      "min": -253,
       "step": 50
     },
     "guardian_totals": {
@@ -1893,8 +1878,6 @@
         "2450": 1623,
         "2500": 143
       },
-      "max": 2547,
-      "min": -266,
       "step": 50
     },
     "scale": {
@@ -1908,9 +1891,7 @@
         "11": 2454071,
         "12": 5217428,
         "13": 2201042
-      },
-      "max": 13,
-      "min": 6
+      }
     }
   }
 }

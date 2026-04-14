@@ -5,9 +5,6 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle6_DLC_Boss_Ruthless",
-  "weapon_template": "Weapon_TritonGlave",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1363,9 +1360,7 @@
         "544": 27,
         "545": 11,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1518,8 +1513,6 @@
         "236000": 22,
         "237000": 7
       },
-      "max": 237472,
-      "min": 92506,
       "step": 1000
     },
     "tower_caps": {
@@ -1589,8 +1582,6 @@
         "2400": 137,
         "2450": 9
       },
-      "max": 2480,
-      "min": -246,
       "step": 50
     },
     "app_totals": {
@@ -1639,8 +1630,6 @@
         "1950": 285,
         "2000": 3
       },
-      "max": 2005,
-      "min": -127,
       "step": 50
     },
     "hermit_totals": {
@@ -1689,8 +1678,6 @@
         "1950": 266,
         "2000": 2
       },
-      "max": 2006,
-      "min": -133,
       "step": 50
     },
     "guardian_totals": {
@@ -1739,8 +1726,6 @@
         "1950": 293,
         "2000": 2
       },
-      "max": 2012,
-      "min": -132,
       "step": 50
     },
     "scale": {
@@ -1759,9 +1744,7 @@
         "15": 1459422,
         "16": 2039948,
         "17": 1256499
-      },
-      "max": 17,
-      "min": 5
+      }
     }
   }
 }

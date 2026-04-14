@@ -5,8 +5,6 @@
   "map_name": "Temple of Polybius",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "EquipmentGuardianMage_Poly",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1355,9 +1353,7 @@
         "542": 1,
         "544": 1,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -1429,8 +1425,6 @@
         "3050": 25,
         "3100": 2
       },
-      "max": 3138,
-      "min": 336,
       "step": 50
     },
     "app_totals": {
@@ -1487,8 +1481,6 @@
         "2450": 25,
         "2500": 1
       },
-      "max": 2511,
-      "min": 33,
       "step": 50
     },
     "hermit_totals": {
@@ -1544,8 +1536,6 @@
         "2400": 288,
         "2450": 30
       },
-      "max": 2493,
-      "min": 5,
       "step": 50
     },
     "guardian_totals": {
@@ -1601,8 +1591,6 @@
         "2400": 316,
         "2450": 26
       },
-      "max": 2495,
-      "min": 20,
       "step": 50
     },
     "scale": {
@@ -1686,9 +1674,7 @@
         "123": 1,
         "125": 1,
         "129": 1
-      },
-      "max": 129,
-      "min": 34
+      }
     }
   }
 }

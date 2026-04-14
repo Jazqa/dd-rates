@@ -5,9 +5,6 @@
   "map_name": "Winter Mire",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_TheBanHammer",
-  "weapon_template": "Weapon_TheBanHammer",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1469,9 +1466,7 @@
         "544": 3,
         "545": 1,
         "546": 5
-      },
-      "max": 546,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base",
@@ -1618,8 +1613,6 @@
         "236000": 33,
         "237000": 1
       },
-      "max": 237324,
-      "min": 98491,
       "step": 1000
     },
     "tower_caps": {
@@ -1711,8 +1704,6 @@
         "2950": 156,
         "3000": 13
       },
-      "max": 3025,
-      "min": -753,
       "step": 50
     },
     "app_totals": {
@@ -1782,8 +1773,6 @@
         "2350": 667,
         "2400": 28
       },
-      "max": 2436,
-      "min": -754,
       "step": 50
     },
     "hermit_totals": {
@@ -1853,8 +1842,6 @@
         "2350": 676,
         "2400": 27
       },
-      "max": 2433,
-      "min": -766,
       "step": 50
     },
     "guardian_totals": {
@@ -1924,8 +1911,6 @@
         "2350": 717,
         "2400": 32
       },
-      "max": 2430,
-      "min": -795,
       "step": 50
     },
     "scale": {
@@ -1934,9 +1919,7 @@
         "9": 8208309,
         "10": 16182476,
         "11": 431
-      },
-      "max": 11,
-      "min": 9
+      }
     }
   }
 }

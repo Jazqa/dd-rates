@@ -5,9 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Squire",
-  "weapon_template": "Weapon_SquireSwordWithProjectiles",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1320,9 +1317,7 @@
         "544": 19,
         "545": 4,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1398,8 +1393,6 @@
         "113000": 68,
         "114000": 2
       },
-      "max": 114324,
-      "min": 46963,
       "step": 1000
     },
     "tower_caps": {
@@ -1491,8 +1484,6 @@
         "3300": 84,
         "3350": 3
       },
-      "max": 3365,
-      "min": -443,
       "step": 50
     },
     "app_totals": {
@@ -1558,8 +1549,6 @@
         "2600": 794,
         "2650": 59
       },
-      "max": 2686,
-      "min": -300,
       "step": 50
     },
     "hermit_totals": {
@@ -1626,8 +1615,6 @@
         "2650": 69,
         "2700": 1
       },
-      "max": 2702,
-      "min": -314,
       "step": 50
     },
     "guardian_totals": {
@@ -1694,8 +1681,6 @@
         "2650": 66,
         "2700": 1
       },
-      "max": 2702,
-      "min": -309,
       "step": 50
     },
     "scale": {
@@ -1712,9 +1697,7 @@
         "11": 4068518,
         "12": 5927788,
         "13": 2174024
-      },
-      "max": 13,
-      "min": 3
+      }
     }
   }
 }

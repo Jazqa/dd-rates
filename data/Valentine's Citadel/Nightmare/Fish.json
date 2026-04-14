@@ -5,9 +5,6 @@
   "map_name": "Valentine's Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_FishSword",
-  "weapon_template": "Weapon_FishSword",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1471,9 +1468,7 @@
         "544": 5,
         "545": 1,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1573,8 +1568,6 @@
         "151000": 53,
         "152000": 1
       },
-      "max": 152320,
-      "min": 60752,
       "step": 1000
     },
     "tower_caps": {
@@ -1693,8 +1686,6 @@
         "3500": 94,
         "3550": 11
       },
-      "max": 3580,
-      "min": -1237,
       "step": 50
     },
     "app_totals": {
@@ -1782,8 +1773,6 @@
         "2800": 222,
         "2850": 13
       },
-      "max": 2884,
-      "min": -1237,
       "step": 50
     },
     "hermit_totals": {
@@ -1871,8 +1860,6 @@
         "2750": 470,
         "2800": 36
       },
-      "max": 2838,
-      "min": -1250,
       "step": 50
     },
     "guardian_totals": {
@@ -1958,8 +1945,6 @@
         "2750": 532,
         "2800": 29
       },
-      "max": 2832,
-      "min": -1193,
       "step": 50
     },
     "scale": {
@@ -1974,9 +1959,7 @@
         "16": 5203496,
         "17": 6000498,
         "18": 761
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

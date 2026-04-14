@@ -5,9 +5,7 @@
   "map_name": "Embermount Volcano",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_EmberPony",
   "projectile_template": "EmberPony_ProjectileHarpoon",
-  "seq_act": "Survival_Familiar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1715,9 +1713,7 @@
         "543": 6,
         "544": 2,
         "545": 2
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1762,8 +1758,6 @@
         "63000": 203,
         "64000": 6
       },
-      "max": 64461,
-      "min": 27458,
       "step": 1000
     },
     "tower_caps": {
@@ -1836,8 +1830,6 @@
         "3100": 26,
         "3150": 1
       },
-      "max": 3161,
-      "min": 379,
       "step": 50
     },
     "app_totals": {
@@ -1894,8 +1886,6 @@
         "2450": 182,
         "2500": 3
       },
-      "max": 2504,
-      "min": -14,
       "step": 50
     },
     "hermit_totals": {
@@ -1952,8 +1942,6 @@
         "2450": 195,
         "2500": 1
       },
-      "max": 2503,
-      "min": -32,
       "step": 50
     },
     "guardian_totals": {
@@ -2010,8 +1998,6 @@
         "2450": 170,
         "2500": 1
       },
-      "max": 2501,
-      "min": -43,
       "step": 50
     },
     "scale": {
@@ -2268,9 +2254,7 @@
         "356": 1,
         "357": 1,
         "375": 1
-      },
-      "max": 375,
-      "min": 39
+      }
     }
   }
 }

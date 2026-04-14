@@ -5,9 +5,7 @@
   "map_name": "Tinkerer's Workshop",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_RoboChicken",
   "projectile_template": "FamiliarProjectile_Egg",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1566,9 +1564,7 @@
         "543": 17,
         "544": 5,
         "545": 4
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1597,8 +1593,6 @@
         "36000": 5985,
         "37000": 75
       },
-      "max": 37364,
-      "min": 16764,
       "step": 1000
     },
     "tower_caps": {
@@ -1682,8 +1676,6 @@
         "3100": 127,
         "3150": 3
       },
-      "max": 3170,
-      "min": -217,
       "step": 50
     },
     "app_totals": {
@@ -1745,8 +1737,6 @@
         "2450": 825,
         "2500": 11
       },
-      "max": 2523,
-      "min": -274,
       "step": 50
     },
     "hermit_totals": {
@@ -1808,8 +1798,6 @@
         "2450": 830,
         "2500": 11
       },
-      "max": 2513,
-      "min": -256,
       "step": 50
     },
     "guardian_totals": {
@@ -1872,8 +1860,6 @@
         "2450": 850,
         "2500": 9
       },
-      "max": 2514,
-      "min": -302,
       "step": 50
     },
     "scale": {
@@ -2132,9 +2118,7 @@
         "381": 1,
         "385": 1,
         "386": 1
-      },
-      "max": 386,
-      "min": 100
+      }
     }
   }
 }

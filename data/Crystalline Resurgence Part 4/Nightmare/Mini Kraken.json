@@ -5,9 +5,7 @@
   "map_name": "Crystalline Resurgence Part 4",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Kraken",
   "projectile_template": "Projectile_BlobDot",
-  "seq_act": "Artificials",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1445,9 +1443,7 @@
         "544": 16,
         "545": 12,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1520,8 +1516,6 @@
         "114000": 50,
         "115000": 2
       },
-      "max": 115011,
-      "min": 50170,
       "step": 1000
     },
     "tower_caps": {
@@ -1606,8 +1600,6 @@
         "3100": 169,
         "3150": 3
       },
-      "max": 3158,
-      "min": -299,
       "step": 50
     },
     "app_totals": {
@@ -1670,8 +1662,6 @@
         "2450": 1200,
         "2500": 11
       },
-      "max": 2522,
-      "min": -346,
       "step": 50
     },
     "hermit_totals": {
@@ -1734,8 +1724,6 @@
         "2450": 1264,
         "2500": 9
       },
-      "max": 2508,
-      "min": -328,
       "step": 50
     },
     "guardian_totals": {
@@ -1798,8 +1786,6 @@
         "2450": 1203,
         "2500": 13
       },
-      "max": 2528,
-      "min": -301,
       "step": 50
     },
     "scale": {
@@ -1899,9 +1885,7 @@
         "207": 105520,
         "208": 53051,
         "209": 3404
-      },
-      "max": 209,
-      "min": 116
+      }
     }
   }
 }

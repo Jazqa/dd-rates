@@ -5,9 +5,6 @@
   "map_name": "Crystal Cave",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Sword_Crystal",
-  "weapon_template": "Weapon_Sword_Crystal",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1494,9 +1491,7 @@
         "544": 5,
         "545": 2,
         "546": 6
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1649,8 +1644,6 @@
         "245000": 20,
         "246000": 2
       },
-      "max": 246688,
-      "min": 101614,
       "step": 1000
     },
     "tower_caps": {
@@ -1743,8 +1736,6 @@
         "3000": 151,
         "3050": 27
       },
-      "max": 3079,
-      "min": -787,
       "step": 50
     },
     "app_totals": {
@@ -1816,8 +1807,6 @@
         "2400": 469,
         "2450": 17
       },
-      "max": 2485,
-      "min": -801,
       "step": 50
     },
     "hermit_totals": {
@@ -1889,8 +1878,6 @@
         "2400": 431,
         "2450": 16
       },
-      "max": 2464,
-      "min": -833,
       "step": 50
     },
     "guardian_totals": {
@@ -1962,8 +1949,6 @@
         "2400": 504,
         "2450": 20
       },
-      "max": 2470,
-      "min": -809,
       "step": 50
     },
     "scale": {
@@ -1978,9 +1963,7 @@
         "13": 4293358,
         "14": 5515738,
         "15": 1895986
-      },
-      "max": 15,
-      "min": 7
+      }
     }
   }
 }

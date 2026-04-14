@@ -5,9 +5,6 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_HalloweenHalberd",
-  "weapon_template": "Weapon_HalloweenHalberd",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1584,9 +1581,7 @@
         "544": 17,
         "545": 10,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1751,8 +1746,6 @@
         "261000": 7,
         "262000": 1
       },
-      "max": 262431,
-      "min": 105614,
       "step": 1000
     },
     "damage_2": {
@@ -1827,8 +1820,6 @@
         "101000": 86,
         "102000": 11
       },
-      "max": 102504,
-      "min": 36808,
       "step": 1000
     },
     "tower_caps": {
@@ -1928,8 +1919,6 @@
         "3500": 3,
         "3550": 1
       },
-      "max": 3553,
-      "min": -288,
       "step": 50
     },
     "app_totals": {
@@ -1994,8 +1983,6 @@
         "2700": 590,
         "2750": 30
       },
-      "max": 2789,
-      "min": -192,
       "step": 50
     },
     "hermit_totals": {
@@ -2061,8 +2048,6 @@
         "2750": 246,
         "2800": 6
       },
-      "max": 2828,
-      "min": -197,
       "step": 50
     },
     "guardian_totals": {
@@ -2128,8 +2113,6 @@
         "2750": 238,
         "2800": 12
       },
-      "max": 2817,
-      "min": -193,
       "step": 50
     },
     "scale": {
@@ -2147,9 +2130,7 @@
         "13": 5566004,
         "14": 6582511,
         "15": 2161361
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

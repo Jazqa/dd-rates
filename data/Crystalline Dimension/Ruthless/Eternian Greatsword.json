@@ -5,9 +5,6 @@
   "map_name": "Crystalline Dimension",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Squire_Boss",
-  "weapon_template": "Weapon_SquireSwordWithProjectiles",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1563,9 +1560,7 @@
         "543": 52,
         "544": 17,
         "545": 7
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1712,8 +1707,6 @@
         "232000": 31,
         "233000": 6
       },
-      "max": 233713,
-      "min": 94433,
       "step": 1000
     },
     "damage_2": {
@@ -1799,8 +1792,6 @@
         "123000": 61,
         "124000": 2
       },
-      "max": 124179,
-      "min": 47814,
       "step": 1000
     },
     "tower_caps": {
@@ -1893,8 +1884,6 @@
         "3300": 88,
         "3350": 1
       },
-      "max": 3396,
-      "min": -467,
       "step": 50
     },
     "app_totals": {
@@ -1960,8 +1949,6 @@
         "2650": 25,
         "2700": 1
       },
-      "max": 2705,
-      "min": -298,
       "step": 50
     },
     "hermit_totals": {
@@ -2027,8 +2014,6 @@
         "2600": 756,
         "2650": 32
       },
-      "max": 2692,
-      "min": -300,
       "step": 50
     },
     "guardian_totals": {
@@ -2094,8 +2079,6 @@
         "2600": 753,
         "2650": 25
       },
-      "max": 2686,
-      "min": -301,
       "step": 50
     },
     "scale": {
@@ -2113,9 +2096,7 @@
         "13": 7409769,
         "14": 10789488,
         "15": 3956069
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

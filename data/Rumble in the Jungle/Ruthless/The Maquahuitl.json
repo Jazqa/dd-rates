@@ -5,9 +5,6 @@
   "map_name": "Rumble in the Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_LeafBlower_Ruthless",
-  "weapon_template": "LeafBlower_Weapon_Ruthless",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1548,9 +1545,7 @@
         "543": 34,
         "544": 20,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1705,8 +1700,6 @@
         "244000": 53,
         "245000": 10
       },
-      "max": 245973,
-      "min": 98066,
       "step": 1000
     },
     "damage_2": {
@@ -1780,8 +1773,6 @@
         "103000": 166,
         "104000": 6
       },
-      "max": 104278,
-      "min": 39896,
       "step": 1000
     },
     "tower_caps": {
@@ -1872,8 +1863,6 @@
         "3250": 41,
         "3300": 4
       },
-      "max": 3328,
-      "min": -425,
       "step": 50
     },
     "app_totals": {
@@ -1937,8 +1926,6 @@
         "2550": 976,
         "2600": 39
       },
-      "max": 2626,
-      "min": -285,
       "step": 50
     },
     "hermit_totals": {
@@ -2002,8 +1989,6 @@
         "2550": 943,
         "2600": 33
       },
-      "max": 2633,
-      "min": -270,
       "step": 50
     },
     "guardian_totals": {
@@ -2067,8 +2052,6 @@
         "2550": 927,
         "2600": 46
       },
-      "max": 2644,
-      "min": -285,
       "step": 50
     },
     "scale": {
@@ -2086,9 +2069,7 @@
         "13": 5277851,
         "14": 7676817,
         "15": 5892907
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

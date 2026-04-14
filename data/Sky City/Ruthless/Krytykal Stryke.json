@@ -5,9 +5,6 @@
   "map_name": "Sky City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_KrytykalStryke_Boss_Ruthless",
-  "weapon_template": "Weapon_KrytykalStryke",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1586,9 +1583,7 @@
         "544": 22,
         "545": 10,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1830,8 +1825,6 @@
         "367000": 10,
         "368000": 1
       },
-      "max": 368166,
-      "min": 133012,
       "step": 1000
     },
     "tower_caps": {
@@ -1934,8 +1927,6 @@
         "3400": 74,
         "3450": 5
       },
-      "max": 3482,
-      "min": -510,
       "step": 50
     },
     "app_totals": {
@@ -2003,8 +1994,6 @@
         "2700": 280,
         "2750": 10
       },
-      "max": 2779,
-      "min": -324,
       "step": 50
     },
     "hermit_totals": {
@@ -2072,8 +2061,6 @@
         "2700": 283,
         "2750": 9
       },
-      "max": 2766,
-      "min": -335,
       "step": 50
     },
     "guardian_totals": {
@@ -2141,8 +2128,6 @@
         "2700": 306,
         "2750": 9
       },
-      "max": 2767,
-      "min": -331,
       "step": 50
     },
     "scale": {
@@ -2160,9 +2145,7 @@
         "13": 7246510,
         "14": 10554686,
         "15": 3870534
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

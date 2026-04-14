@@ -5,9 +5,6 @@
   "map_name": "Volcanic Eruption",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_MonkSpear",
-  "weapon_template": "Weapon_MonkSpear_ruthless",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1611,9 +1608,7 @@
         "543": 25,
         "544": 22,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1775,8 +1770,6 @@
         "256000": 11,
         "257000": 3
       },
-      "max": 257009,
-      "min": 102583,
       "step": 1000
     },
     "damage_2": {
@@ -1848,8 +1841,6 @@
         "99000": 151,
         "100000": 7
       },
-      "max": 100203,
-      "min": 37855,
       "step": 1000
     },
     "tower_caps": {
@@ -1937,8 +1928,6 @@
         "3150": 21,
         "3200": 1
       },
-      "max": 3205,
-      "min": -386,
       "step": 50
     },
     "app_totals": {
@@ -2001,8 +1990,6 @@
         "2500": 91,
         "2550": 1
       },
-      "max": 2555,
-      "min": -252,
       "step": 50
     },
     "hermit_totals": {
@@ -2064,8 +2051,6 @@
         "2450": 1522,
         "2500": 80
       },
-      "max": 2541,
-      "min": -253,
       "step": 50
     },
     "guardian_totals": {
@@ -2128,8 +2113,6 @@
         "2500": 91,
         "2550": 2
       },
-      "max": 2552,
-      "min": -257,
       "step": 50
     },
     "scale": {
@@ -2147,9 +2130,7 @@
         "13": 5866386,
         "14": 8534857,
         "15": 3133960
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

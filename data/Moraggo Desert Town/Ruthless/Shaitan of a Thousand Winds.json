@@ -5,9 +5,6 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle8_Boss_Ruthless",
-  "weapon_template": "Weapon_ShaitanWind",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1365,9 +1362,7 @@
         "544": 24,
         "545": 15,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1492,8 +1487,6 @@
         "181000": 30,
         "182000": 2
       },
-      "max": 182075,
-      "min": 65018,
       "step": 1000
     },
     "tower_caps": {
@@ -1577,8 +1570,6 @@
         "2950": 86,
         "3000": 6
       },
-      "max": 3019,
-      "min": -384,
       "step": 50
     },
     "app_totals": {
@@ -1637,8 +1628,6 @@
         "2350": 499,
         "2400": 12
       },
-      "max": 2419,
-      "min": -238,
       "step": 50
     },
     "hermit_totals": {
@@ -1697,8 +1686,6 @@
         "2350": 471,
         "2400": 19
       },
-      "max": 2421,
-      "min": -239,
       "step": 50
     },
     "guardian_totals": {
@@ -1757,8 +1744,6 @@
         "2350": 494,
         "2400": 12
       },
-      "max": 2425,
-      "min": -235,
       "step": 50
     },
     "scale": {
@@ -1780,9 +1765,7 @@
         "16": 1572049,
         "17": 2032024,
         "18": 852700
-      },
-      "max": 18,
-      "min": 3
+      }
     }
   }
 }

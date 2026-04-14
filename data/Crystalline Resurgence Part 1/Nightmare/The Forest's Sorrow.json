@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_MushroomStaffv2_New",
-  "weapon_template": "Weapon_MushroomStaffv2_new",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1378,9 +1375,7 @@
         "542": 21,
         "543": 23,
         "544": 4
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1453,8 +1448,6 @@
         "95000": 232,
         "96000": 47
       },
-      "max": 96932,
-      "min": 31595,
       "step": 1000
     },
     "damage_2": {
@@ -1529,8 +1522,6 @@
         "95000": 53,
         "96000": 1
       },
-      "max": 96013,
-      "min": 30035,
       "step": 1000
     },
     "tower_caps": {
@@ -1613,8 +1604,6 @@
         "2950": 167,
         "3000": 20
       },
-      "max": 3047,
-      "min": -335,
       "step": 50
     },
     "app_totals": {
@@ -1674,8 +1663,6 @@
         "2400": 118,
         "2450": 2
       },
-      "max": 2459,
-      "min": -215,
       "step": 50
     },
     "hermit_totals": {
@@ -1734,8 +1721,6 @@
         "2350": 637,
         "2400": 35
       },
-      "max": 2449,
-      "min": -242,
       "step": 50
     },
     "guardian_totals": {
@@ -1794,8 +1779,6 @@
         "2350": 798,
         "2400": 52
       },
-      "max": 2445,
-      "min": -214,
       "step": 50
     },
     "scale": {
@@ -1813,9 +1796,7 @@
         "14": 4491009,
         "15": 5306246,
         "16": 1741678
-      },
-      "max": 16,
-      "min": 5
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Emerald City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_EmeraldHalberd",
-  "weapon_template": "Weapon_EmeraldHalberd",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1531,9 +1528,7 @@
         "543": 20,
         "544": 12,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1697,8 +1692,6 @@
         "257000": 11,
         "258000": 1
       },
-      "max": 258195,
-      "min": 100713,
       "step": 1000
     },
     "damage_2": {
@@ -1771,8 +1764,6 @@
         "99000": 51,
         "100000": 1
       },
-      "max": 100182,
-      "min": 36392,
       "step": 1000
     },
     "tower_caps": {
@@ -1853,8 +1844,6 @@
         "3000": 58,
         "3050": 4
       },
-      "max": 3087,
-      "min": -172,
       "step": 50
     },
     "app_totals": {
@@ -1912,8 +1901,6 @@
         "2400": 216,
         "2450": 2
       },
-      "max": 2455,
-      "min": -114,
       "step": 50
     },
     "hermit_totals": {
@@ -1971,8 +1958,6 @@
         "2400": 178,
         "2450": 5
       },
-      "max": 2455,
-      "min": -115,
       "step": 50
     },
     "guardian_totals": {
@@ -2030,8 +2015,6 @@
         "2400": 190,
         "2450": 8
       },
-      "max": 2475,
-      "min": -132,
       "step": 50
     },
     "scale": {
@@ -2049,9 +2032,7 @@
         "13": 4274427,
         "14": 5056155,
         "15": 1661769
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

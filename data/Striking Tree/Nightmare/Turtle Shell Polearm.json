@@ -5,9 +5,6 @@
   "map_name": "Striking Tree",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_TurtlePoleArm",
-  "weapon_template": "Weapon_TurtlePoleArm",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.32,
@@ -1636,9 +1633,7 @@
         "543": 12,
         "544": 5,
         "545": 2
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1804,8 +1799,6 @@
         "254000": 5,
         "255000": 3
       },
-      "max": 255980,
-      "min": 97801,
       "step": 1000
     },
     "damage_2": {
@@ -1885,8 +1878,6 @@
         "100000": 70,
         "101000": 7
       },
-      "max": 101562,
-      "min": 30120,
       "step": 1000
     },
     "tower_caps": {
@@ -1984,8 +1975,6 @@
         "3200": 20,
         "3250": 1
       },
-      "max": 3297,
-      "min": -841,
       "step": 50
     },
     "app_totals": {
@@ -2058,8 +2047,6 @@
         "2550": 210,
         "2600": 14
       },
-      "max": 2640,
-      "min": -797,
       "step": 50
     },
     "hermit_totals": {
@@ -2131,8 +2118,6 @@
         "2500": 232,
         "2550": 11
       },
-      "max": 2593,
-      "min": -735,
       "step": 50
     },
     "guardian_totals": {
@@ -2206,8 +2191,6 @@
         "2550": 46,
         "2600": 1
       },
-      "max": 2607,
-      "min": -752,
       "step": 50
     },
     "scale": {
@@ -2225,9 +2208,7 @@
         "13": 2252007,
         "14": 2537314,
         "15": 809578
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

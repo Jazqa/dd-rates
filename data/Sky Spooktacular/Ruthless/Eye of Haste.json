@@ -5,9 +5,7 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_EyeOfHaste",
   "projectile_template": "Projectile_PiercingLaser_EventEvilEye",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1627,9 +1625,7 @@
         "540": 3,
         "541": 2,
         "542": 1
-      },
-      "max": 542,
-      "min": 233
+      }
     },
     "damage": {
       "label": "Base",
@@ -1650,8 +1646,6 @@
         "24000": 809,
         "25000": 2
       },
-      "max": 25310,
-      "min": 12220,
       "step": 1000
     },
     "tower_caps": {
@@ -1732,8 +1726,6 @@
         "3100": 1,
         "3150": 1
       },
-      "max": 3154,
-      "min": -96,
       "step": 50
     },
     "app_totals": {
@@ -1793,8 +1785,6 @@
         "2450": 6,
         "2500": 1
       },
-      "max": 2500,
-      "min": -157,
       "step": 50
     },
     "hermit_totals": {
@@ -1852,8 +1842,6 @@
         "2400": 46,
         "2450": 8
       },
-      "max": 2496,
-      "min": -143,
       "step": 50
     },
     "guardian_totals": {
@@ -1912,8 +1900,6 @@
         "2400": 60,
         "2450": 6
       },
-      "max": 2492,
-      "min": -151,
       "step": 50
     },
     "scale": {
@@ -2118,9 +2104,7 @@
         "299": 1,
         "324": 1,
         "355": 1
-      },
-      "max": 355,
-      "min": 37
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle2_DLC_Boss_Ruthless",
-  "weapon_template": "Weapon_DepthCharge",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1451,9 +1448,7 @@
         "544": 18,
         "545": 12,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1632,8 +1627,6 @@
         "251000": 14,
         "252000": 2
       },
-      "max": 252224,
-      "min": 78275,
       "step": 1000
     },
     "tower_caps": {
@@ -1716,8 +1709,6 @@
         "2450": 24,
         "2500": 1
       },
-      "max": 2514,
-      "min": -810,
       "step": 50
     },
     "app_totals": {
@@ -1778,8 +1769,6 @@
         "1950": 950,
         "2000": 34
       },
-      "max": 2042,
-      "min": -718,
       "step": 50
     },
     "hermit_totals": {
@@ -1840,8 +1829,6 @@
         "1950": 932,
         "2000": 32
       },
-      "max": 2030,
-      "min": -711,
       "step": 50
     },
     "guardian_totals": {
@@ -1902,8 +1889,6 @@
         "1950": 121,
         "2000": 1
       },
-      "max": 2009,
-      "min": -717,
       "step": 50
     },
     "scale": {
@@ -1925,9 +1910,7 @@
         "19": 1278206,
         "20": 1628770,
         "21": 176
-      },
-      "max": 21,
-      "min": 6
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Tropics of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_IslandSpear",
-  "weapon_template": "Weapon_IslandSpear",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1447,9 +1444,7 @@
         "543": 43,
         "544": 10,
         "545": 2
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1549,8 +1544,6 @@
         "141000": 107,
         "142000": 22
       },
-      "max": 142756,
-      "min": 50332,
       "step": 1000
     },
     "damage_2": {
@@ -1568,8 +1561,6 @@
         "12000": 716478,
         "13000": 19105
       },
-      "max": 13751,
-      "min": 4356,
       "step": 1000
     },
     "tower_caps": {
@@ -1681,8 +1672,6 @@
         "3300": 16,
         "3350": 1
       },
-      "max": 3373,
-      "min": -1480,
       "step": 50
     },
     "app_totals": {
@@ -1765,8 +1754,6 @@
         "2600": 371,
         "2650": 21
       },
-      "max": 2682,
-      "min": -1189,
       "step": 50
     },
     "hermit_totals": {
@@ -1850,8 +1837,6 @@
         "2600": 405,
         "2650": 32
       },
-      "max": 2685,
-      "min": -1219,
       "step": 50
     },
     "guardian_totals": {
@@ -1935,8 +1920,6 @@
         "2600": 377,
         "2650": 27
       },
-      "max": 2696,
-      "min": -1242,
       "step": 50
     },
     "scale": {
@@ -1948,9 +1931,7 @@
         "9": 7297494,
         "10": 8158735,
         "11": 1112
-      },
-      "max": 11,
-      "min": 6
+      }
     }
   }
 }

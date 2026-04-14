@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "MonkSpearStyle9_EMHv2",
-  "weapon_template": "Weapon_ScimtarSwordv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1389,9 +1386,7 @@
         "542": 24,
         "543": 14,
         "544": 6
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1459,8 +1454,6 @@
         "98000": 156,
         "99000": 12
       },
-      "max": 99344,
-      "min": 39091,
       "step": 1000
     },
     "damage_2": {
@@ -1537,8 +1530,6 @@
         "105000": 125,
         "106000": 35
       },
-      "max": 106782,
-      "min": 38473,
       "step": 1000
     },
     "tower_caps": {
@@ -1621,8 +1612,6 @@
         "3000": 18,
         "3050": 2
       },
-      "max": 3053,
-      "min": -278,
       "step": 50
     },
     "app_totals": {
@@ -1682,8 +1671,6 @@
         "2400": 255,
         "2450": 6
       },
-      "max": 2463,
-      "min": -212,
       "step": 50
     },
     "hermit_totals": {
@@ -1742,8 +1729,6 @@
         "2350": 349,
         "2400": 13
       },
-      "max": 2433,
-      "min": -212,
       "step": 50
     },
     "guardian_totals": {
@@ -1802,8 +1787,6 @@
         "2350": 602,
         "2400": 43
       },
-      "max": 2449,
-      "min": -229,
       "step": 50
     },
     "scale": {
@@ -1822,9 +1805,7 @@
         "13": 864082,
         "14": 996078,
         "15": 323371
-      },
-      "max": 15,
-      "min": 3
+      }
     }
   }
 }

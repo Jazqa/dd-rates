@@ -5,9 +5,6 @@
   "map_name": "Mistymire Forest",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_BeetleBow_Ruthless",
-  "weapon_template": "Weapon_BeetleBow",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1404,9 +1401,7 @@
         "543": 27,
         "544": 17,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1584,8 +1579,6 @@
         "265000": 16,
         "266000": 6
       },
-      "max": 266862,
-      "min": 96727,
       "step": 1000
     },
     "tower_caps": {
@@ -1654,8 +1647,6 @@
         "2350": 143,
         "2400": 15
       },
-      "max": 2427,
-      "min": -234,
       "step": 50
     },
     "app_totals": {
@@ -1703,8 +1694,6 @@
         "1900": 952,
         "1950": 68
       },
-      "max": 1992,
-      "min": -127,
       "step": 50
     },
     "hermit_totals": {
@@ -1752,8 +1741,6 @@
         "1900": 994,
         "1950": 76
       },
-      "max": 1989,
-      "min": -122,
       "step": 50
     },
     "guardian_totals": {
@@ -1801,8 +1788,6 @@
         "1900": 956,
         "1950": 76
       },
-      "max": 1996,
-      "min": -124,
       "step": 50
     },
     "scale": {
@@ -1828,9 +1813,7 @@
         "20": 860778,
         "21": 971175,
         "22": 155
-      },
-      "max": 22,
-      "min": 3
+      }
     }
   }
 }

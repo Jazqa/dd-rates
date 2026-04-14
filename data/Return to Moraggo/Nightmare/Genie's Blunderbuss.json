@@ -5,9 +5,6 @@
   "map_name": "Return to Moraggo",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Gun_Returnia",
-  "weapon_template": "Weapon_Gun_Returnia",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.675,
@@ -1884,9 +1881,7 @@
         "542": 10,
         "543": 1,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -2250,8 +2245,6 @@
         "539000": 1,
         "540000": 1
       },
-      "max": 540493,
-      "min": 184688,
       "step": 1000
     },
     "tower_caps": {
@@ -2375,8 +2368,6 @@
         "3400": 44,
         "3450": 5
       },
-      "max": 3469,
-      "min": -1635,
       "step": 50
     },
     "app_totals": {
@@ -2464,8 +2455,6 @@
         "2700": 118,
         "2750": 2
       },
-      "max": 2769,
-      "min": -1342,
       "step": 50
     },
     "hermit_totals": {
@@ -2553,8 +2542,6 @@
         "2700": 369,
         "2750": 18
       },
-      "max": 2787,
-      "min": -1376,
       "step": 50
     },
     "guardian_totals": {
@@ -2641,8 +2628,6 @@
         "2700": 114,
         "2750": 4
       },
-      "max": 2765,
-      "min": -1281,
       "step": 50
     },
     "scale": {
@@ -2660,9 +2645,7 @@
         "13": 4426951,
         "14": 7435526,
         "15": 2942623
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

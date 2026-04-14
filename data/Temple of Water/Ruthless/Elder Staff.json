@@ -5,9 +5,6 @@
   "map_name": "Temple of Water",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_WaterStaff",
-  "weapon_template": "Weapon_WaterStaff",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1361,9 +1358,7 @@
         "543": 24,
         "544": 4,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1438,8 +1433,6 @@
         "85000": 161,
         "86000": 37
       },
-      "max": 86854,
-      "min": 19471,
       "step": 1000
     },
     "tower_caps": {
@@ -1537,8 +1530,6 @@
         "3150": 127,
         "3200": 19
       },
-      "max": 3239,
-      "min": -852,
       "step": 50
     },
     "app_totals": {
@@ -1611,8 +1602,6 @@
         "2450": 200,
         "2500": 16
       },
-      "max": 2528,
-      "min": -844,
       "step": 50
     },
     "hermit_totals": {
@@ -1688,8 +1677,6 @@
         "2550": 179,
         "2600": 8
       },
-      "max": 2616,
-      "min": -852,
       "step": 50
     },
     "guardian_totals": {
@@ -1765,8 +1752,6 @@
         "2550": 455,
         "2600": 31
       },
-      "max": 2634,
-      "min": -928,
       "step": 50
     },
     "scale": {
@@ -1775,9 +1760,7 @@
         "10": 18901824,
         "11": 5534777,
         "12": 658
-      },
-      "max": 12,
-      "min": 10
+      }
     }
   }
 }

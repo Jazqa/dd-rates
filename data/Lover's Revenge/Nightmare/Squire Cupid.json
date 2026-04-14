@@ -5,9 +5,7 @@
   "map_name": "Lover's Revenge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_SquireCupid",
   "projectile_template": "CupidArrowProjectileHarpoon",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1416,9 +1414,7 @@
         "543": 7,
         "544": 3,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1491,8 +1487,6 @@
         "104000": 76,
         "105000": 4
       },
-      "max": 105598,
-      "min": 40040,
       "step": 1000
     },
     "tower_caps": {
@@ -1570,8 +1564,6 @@
         "3050": 712,
         "3100": 50
       },
-      "max": 3147,
-      "min": 80,
       "step": 50
     },
     "app_totals": {
@@ -1631,8 +1623,6 @@
         "2450": 355,
         "2500": 3
       },
-      "max": 2518,
-      "min": -173,
       "step": 50
     },
     "hermit_totals": {
@@ -1692,8 +1682,6 @@
         "2450": 377,
         "2500": 6
       },
-      "max": 2514,
-      "min": -156,
       "step": 50
     },
     "guardian_totals": {
@@ -1752,8 +1740,6 @@
         "2450": 369,
         "2500": 2
       },
-      "max": 2511,
-      "min": -138,
       "step": 50
     },
     "scale": {
@@ -1828,9 +1814,7 @@
         "180": 49731,
         "181": 37249,
         "182": 3273
-      },
-      "max": 182,
-      "min": 114
+      }
     }
   }
 }

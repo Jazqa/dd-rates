@@ -5,9 +5,6 @@
   "map_name": "Boss Rush",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_TheLight_BOSS_Ruthless",
-  "weapon_template": "Weapon_TheLight_Ruthless",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.55,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1336,9 +1333,7 @@
         "544": 22,
         "545": 4,
         "546": 5
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1403,8 +1398,6 @@
         "84000": 51,
         "85000": 1
       },
-      "max": 85213,
-      "min": 28228,
       "step": 1000
     },
     "damage_2": {
@@ -1478,8 +1471,6 @@
         "95000": 73,
         "96000": 2
       },
-      "max": 96595,
-      "min": 31691,
       "step": 1000
     },
     "tower_caps": {
@@ -1552,8 +1543,6 @@
         "2500": 377,
         "2550": 60
       },
-      "max": 2590,
-      "min": -273,
       "step": 50
     },
     "app_totals": {
@@ -1605,8 +1594,6 @@
         "2050": 228,
         "2100": 4
       },
-      "max": 2117,
-      "min": -153,
       "step": 50
     },
     "hermit_totals": {
@@ -1658,8 +1645,6 @@
         "2050": 248,
         "2100": 4
       },
-      "max": 2113,
-      "min": -159,
       "step": 50
     },
     "guardian_totals": {
@@ -1711,8 +1696,6 @@
         "2050": 263,
         "2100": 1
       },
-      "max": 2101,
-      "min": -155,
       "step": 50
     },
     "scale": {
@@ -1731,9 +1714,7 @@
         "14": 1149063,
         "15": 1605037,
         "16": 988849
-      },
-      "max": 16,
-      "min": 4
+      }
     }
   }
 }

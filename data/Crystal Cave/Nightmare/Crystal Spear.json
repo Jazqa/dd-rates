@@ -5,9 +5,6 @@
   "map_name": "Crystal Cave",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Spear_Crystal",
-  "weapon_template": "Weapon_Spear_Crystal",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1523,9 +1520,7 @@
         "543": 12,
         "544": 5,
         "545": 6
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1673,8 +1668,6 @@
         "234000": 33,
         "235000": 5
       },
-      "max": 235823,
-      "min": 95999,
       "step": 1000
     },
     "damage_2": {
@@ -1740,8 +1733,6 @@
         "88000": 353,
         "89000": 43
       },
-      "max": 89638,
-      "min": 32584,
       "step": 1000
     },
     "tower_caps": {
@@ -1830,8 +1821,6 @@
         "3200": 36,
         "3250": 6
       },
-      "max": 3277,
-      "min": -384,
       "step": 50
     },
     "app_totals": {
@@ -1895,8 +1884,6 @@
         "2550": 151,
         "2600": 3
       },
-      "max": 2609,
-      "min": -279,
       "step": 50
     },
     "hermit_totals": {
@@ -1960,8 +1947,6 @@
         "2550": 126,
         "2600": 3
       },
-      "max": 2619,
-      "min": -271,
       "step": 50
     },
     "guardian_totals": {
@@ -2025,8 +2010,6 @@
         "2550": 127,
         "2600": 5
       },
-      "max": 2609,
-      "min": -264,
       "step": 50
     },
     "scale": {
@@ -2044,9 +2027,7 @@
         "13": 2456546,
         "14": 3154111,
         "15": 1085597
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

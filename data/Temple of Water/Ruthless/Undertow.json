@@ -5,9 +5,6 @@
   "map_name": "Temple of Water",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_WaterSword",
-  "weapon_template": "Weapon_WaterSword",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1496,9 +1493,7 @@
         "544": 9,
         "545": 4,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1651,8 +1646,6 @@
         "236000": 24,
         "237000": 1
       },
-      "max": 237436,
-      "min": 92931,
       "step": 1000
     },
     "tower_caps": {
@@ -1754,8 +1747,6 @@
         "3100": 221,
         "3150": 34
       },
-      "max": 3192,
-      "min": -1111,
       "step": 50
     },
     "app_totals": {
@@ -1835,8 +1826,6 @@
         "2500": 684,
         "2550": 51
       },
-      "max": 2595,
-      "min": -1111,
       "step": 50
     },
     "hermit_totals": {
@@ -1912,8 +1901,6 @@
         "2400": 173,
         "2450": 6
       },
-      "max": 2465,
-      "min": -1117,
       "step": 50
     },
     "guardian_totals": {
@@ -1992,8 +1979,6 @@
         "2500": 721,
         "2550": 47
       },
-      "max": 2587,
-      "min": -1089,
       "step": 50
     },
     "scale": {
@@ -2008,9 +1993,7 @@
         "26": 717677,
         "27": 772355,
         "28": 132
-      },
-      "max": 28,
-      "min": 20
+      }
     }
   }
 }

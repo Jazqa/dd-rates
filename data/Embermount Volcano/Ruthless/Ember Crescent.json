@@ -5,9 +5,6 @@
   "map_name": "Embermount Volcano",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_LavaChakram",
-  "weapon_template": "Weapon_LavaChakram",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1639,9 +1636,7 @@
         "543": 31,
         "544": 11,
         "545": 2
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1775,8 +1770,6 @@
         "199000": 29,
         "200000": 4
       },
-      "max": 200089,
-      "min": 74100,
       "step": 1000
     },
     "damage_2": {
@@ -1853,8 +1846,6 @@
         "99000": 256,
         "100000": 19
       },
-      "max": 100502,
-      "min": 32478,
       "step": 1000
     },
     "tower_caps": {
@@ -1978,8 +1969,6 @@
         "3700": 13,
         "3750": 1
       },
-      "max": 3753,
-      "min": -1255,
       "step": 50
     },
     "app_totals": {
@@ -2071,8 +2060,6 @@
         "2900": 399,
         "2950": 21
       },
-      "max": 2989,
-      "min": -1374,
       "step": 50
     },
     "hermit_totals": {
@@ -2163,8 +2150,6 @@
         "2900": 89,
         "2950": 5
       },
-      "max": 2974,
-      "min": -1255,
       "step": 50
     },
     "guardian_totals": {
@@ -2256,8 +2241,6 @@
         "2900": 82,
         "2950": 3
       },
-      "max": 2965,
-      "min": -1379,
       "step": 50
     },
     "scale": {
@@ -2269,9 +2252,7 @@
         "9": 6788435,
         "10": 7593177,
         "11": 990
-      },
-      "max": 11,
-      "min": 6
+      }
     }
   }
 }

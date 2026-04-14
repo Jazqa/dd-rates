@@ -5,9 +5,7 @@
   "map_name": "Throne Room",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_BabyMech",
   "projectile_template": "Projectile_GoblinMechRocketpet",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1390,9 +1388,7 @@
         "544": 36,
         "545": 15,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1453,8 +1449,6 @@
         "82000": 950,
         "83000": 43
       },
-      "max": 83844,
-      "min": 30830,
       "step": 1000
     },
     "tower_caps": {
@@ -1542,8 +1536,6 @@
         "3100": 49,
         "3150": 1
       },
-      "max": 3151,
-      "min": -424,
       "step": 50
     },
     "app_totals": {
@@ -1605,8 +1597,6 @@
         "2450": 589,
         "2500": 7
       },
-      "max": 2514,
-      "min": -262,
       "step": 50
     },
     "hermit_totals": {
@@ -1668,8 +1658,6 @@
         "2450": 610,
         "2500": 9
       },
-      "max": 2513,
-      "min": -265,
       "step": 50
     },
     "guardian_totals": {
@@ -1731,8 +1719,6 @@
         "2450": 587,
         "2500": 4
       },
-      "max": 2516,
-      "min": -264,
       "step": 50
     },
     "scale": {
@@ -1921,9 +1907,7 @@
         "243": 3,
         "244": 2,
         "245": 1
-      },
-      "max": 245,
-      "min": 63
+      }
     }
   }
 }

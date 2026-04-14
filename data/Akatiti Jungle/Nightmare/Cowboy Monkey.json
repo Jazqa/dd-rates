@@ -5,9 +5,7 @@
   "map_name": "Akatiti Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Monkey",
   "projectile_template": "FamiliarProjectile_MonkeyBanana",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1741,9 +1739,7 @@
         "542": 1,
         "543": 1,
         "544": 1
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1838,8 +1834,6 @@
         "152000": 9,
         "153000": 1
       },
-      "max": 153848,
-      "min": 66754,
       "step": 1000
     },
     "tower_caps": {
@@ -1916,8 +1910,6 @@
         "3050": 71,
         "3100": 9
       },
-      "max": 3141,
-      "min": 120,
       "step": 50
     },
     "app_totals": {
@@ -1975,8 +1967,6 @@
         "2400": 539,
         "2450": 51
       },
-      "max": 2489,
-      "min": -114,
       "step": 50
     },
     "hermit_totals": {
@@ -2034,8 +2024,6 @@
         "2450": 61,
         "2500": 1
       },
-      "max": 2506,
-      "min": -75,
       "step": 50
     },
     "guardian_totals": {
@@ -2094,8 +2082,6 @@
         "2450": 54,
         "2500": 2
       },
-      "max": 2505,
-      "min": -123,
       "step": 50
     },
     "scale": {
@@ -2308,9 +2294,7 @@
         "337": 1,
         "357": 1,
         "360": 1
-      },
-      "max": 360,
-      "min": 39
+      }
     }
   }
 }

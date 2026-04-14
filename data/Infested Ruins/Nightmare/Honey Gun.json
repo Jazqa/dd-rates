@@ -5,9 +5,6 @@
   "map_name": "Infested Ruins",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_HoneyGun",
-  "weapon_template": "Weapon_HoneyGun",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1913,9 +1910,7 @@
         "543": 9,
         "544": 4,
         "545": 2
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -2364,8 +2359,6 @@
         "659000": 3,
         "660000": 4
       },
-      "max": 660769,
-      "min": 216704,
       "step": 1000
     },
     "tower_caps": {
@@ -2462,8 +2455,6 @@
         "2950": 82,
         "3000": 14
       },
-      "max": 3035,
-      "min": -1026,
       "step": 50
     },
     "app_totals": {
@@ -2537,8 +2528,6 @@
         "2350": 477,
         "2400": 32
       },
-      "max": 2435,
-      "min": -983,
       "step": 50
     },
     "hermit_totals": {
@@ -2613,8 +2602,6 @@
         "2350": 501,
         "2400": 21
       },
-      "max": 2444,
-      "min": -1023,
       "step": 50
     },
     "guardian_totals": {
@@ -2689,8 +2676,6 @@
         "2350": 530,
         "2400": 22
       },
-      "max": 2425,
-      "min": -1102,
       "step": 50
     },
     "scale": {
@@ -2703,9 +2688,7 @@
         "15": 17271541,
         "16": 6849746,
         "17": 1508748
-      },
-      "max": 17,
-      "min": 7
+      }
     }
   }
 }

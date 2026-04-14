@@ -5,9 +5,6 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MonkSpearStyle6_DLC_Boss_Ruthless",
-  "weapon_template": "Weapon_LemurianHalberd_Ruthless",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1529,9 +1526,7 @@
         "544": 26,
         "545": 7,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1683,8 +1678,6 @@
         "232000": 20,
         "233000": 5
       },
-      "max": 233770,
-      "min": 89998,
       "step": 1000
     },
     "damage_2": {
@@ -1762,8 +1755,6 @@
         "101000": 168,
         "102000": 11
       },
-      "max": 102359,
-      "min": 33788,
       "step": 1000
     },
     "tower_caps": {
@@ -1845,8 +1836,6 @@
         "2400": 110,
         "2450": 7
       },
-      "max": 2478,
-      "min": -824,
       "step": 50
     },
     "app_totals": {
@@ -1908,8 +1897,6 @@
         "1950": 231,
         "2000": 3
       },
-      "max": 2009,
-      "min": -777,
       "step": 50
     },
     "hermit_totals": {
@@ -1970,8 +1957,6 @@
         "1950": 243,
         "2000": 2
       },
-      "max": 2012,
-      "min": -722,
       "step": 50
     },
     "guardian_totals": {
@@ -2033,8 +2018,6 @@
         "1950": 254,
         "2000": 3
       },
-      "max": 2007,
-      "min": -798,
       "step": 50
     },
     "scale": {
@@ -2053,9 +2036,7 @@
         "13": 1571970,
         "14": 2166796,
         "15": 772930
-      },
-      "max": 15,
-      "min": 3
+      }
     }
   }
 }

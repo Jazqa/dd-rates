@@ -5,9 +5,6 @@
   "map_name": "Love Machine",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "DunDefEquipment_Minigun",
-  "weapon_template": "Weapon_Minigun",
-  "seq_act": "rewards",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1690,9 +1687,7 @@
         "544": 6,
         "545": 3,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1929,8 +1924,6 @@
         "343000": 3,
         "344000": 1
       },
-      "max": 344192,
-      "min": 112447,
       "step": 1000
     },
     "tower_caps": {
@@ -2035,8 +2028,6 @@
         "3200": 27,
         "3250": 4
       },
-      "max": 3277,
-      "min": -1164,
       "step": 50
     },
     "app_totals": {
@@ -2116,8 +2107,6 @@
         "2550": 100,
         "2600": 2
       },
-      "max": 2617,
-      "min": -1066,
       "step": 50
     },
     "hermit_totals": {
@@ -2197,8 +2186,6 @@
         "2550": 85,
         "2600": 4
       },
-      "max": 2605,
-      "min": -1089,
       "step": 50
     },
     "guardian_totals": {
@@ -2279,8 +2266,6 @@
         "2550": 80,
         "2600": 3
       },
-      "max": 2602,
-      "min": -1197,
       "step": 50
     },
     "scale": {
@@ -2300,9 +2285,7 @@
         "16": 2877423,
         "17": 3518896,
         "18": 1424528
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Tropics of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_DragonStaff",
-  "weapon_template": "Weapon_DragonStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1239,9 +1236,7 @@
         "543": 27,
         "544": 23,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1266,8 +1261,6 @@
         "21000": 8228,
         "22000": 46
       },
-      "max": 22338,
-      "min": 5805,
       "step": 1000
     },
     "damage_2": {
@@ -1316,8 +1309,6 @@
         "55000": 124,
         "56000": 2
       },
-      "max": 56003,
-      "min": 16321,
       "step": 1000
     },
     "tower_totals": {
@@ -1378,8 +1369,6 @@
         "2150": 29,
         "2200": 3
       },
-      "max": 2208,
-      "min": -513,
       "step": 50
     },
     "app_totals": {
@@ -1432,8 +1421,6 @@
         "1700": 2156,
         "1750": 92
       },
-      "max": 1794,
-      "min": -558,
       "step": 50
     },
     "hermit_totals": {
@@ -1486,8 +1473,6 @@
         "1700": 3314,
         "1750": 163
       },
-      "max": 1793,
-      "min": -558,
       "step": 50
     },
     "guardian_totals": {
@@ -1540,8 +1525,6 @@
         "1700": 2174,
         "1750": 81
       },
-      "max": 1785,
-      "min": -572,
       "step": 50
     },
     "scale": {
@@ -1559,9 +1542,7 @@
         "13": 5290089,
         "14": 6801975,
         "15": 2335721
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Frostdale Royal Court",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_CaneLauncher",
-  "weapon_template": "Weapon_CaneLauncher",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1255,9 +1252,7 @@
         "542": 32,
         "543": 24,
         "544": 7
-      },
-      "max": 544,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1313,8 +1308,6 @@
         "77000": 67,
         "78000": 1
       },
-      "max": 78280,
-      "min": 30076,
       "step": 1000
     },
     "tower_caps": {
@@ -1398,8 +1391,6 @@
         "3000": 1,
         "3050": 1
       },
-      "max": 3057,
-      "min": -332,
       "step": 50
     },
     "app_totals": {
@@ -1458,8 +1449,6 @@
         "2350": 355,
         "2400": 11
       },
-      "max": 2422,
-      "min": -210,
       "step": 50
     },
     "hermit_totals": {
@@ -1518,8 +1507,6 @@
         "2350": 293,
         "2400": 11
       },
-      "max": 2436,
-      "min": -215,
       "step": 50
     },
     "guardian_totals": {
@@ -1578,8 +1565,6 @@
         "2350": 348,
         "2400": 10
       },
-      "max": 2420,
-      "min": -229,
       "step": 50
     },
     "scale": {
@@ -1599,9 +1584,7 @@
         "16": 2786572,
         "17": 3764015,
         "18": 1611356
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

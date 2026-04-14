@@ -5,9 +5,6 @@
   "map_name": "Wandering Heart",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SwordOfHearts",
-  "weapon_template": "Weapon_SwordOfHearts",
-  "seq_act": "Victory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1369,9 +1366,7 @@
         "544": 11,
         "545": 2,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1462,8 +1457,6 @@
         "139000": 43,
         "140000": 2
       },
-      "max": 140377,
-      "min": 57145,
       "step": 1000
     },
     "tower_caps": {
@@ -1567,8 +1560,6 @@
         "3500": 120,
         "3550": 17
       },
-      "max": 3593,
-      "min": -476,
       "step": 50
     },
     "app_totals": {
@@ -1638,8 +1629,6 @@
         "2800": 283,
         "2850": 15
       },
-      "max": 2870,
-      "min": -345,
       "step": 50
     },
     "hermit_totals": {
@@ -1708,8 +1697,6 @@
         "2750": 727,
         "2800": 72
       },
-      "max": 2843,
-      "min": -336,
       "step": 50
     },
     "guardian_totals": {
@@ -1778,8 +1765,6 @@
         "2750": 428,
         "2800": 34
       },
-      "max": 2837,
-      "min": -318,
       "step": 50
     },
     "scale": {
@@ -1797,9 +1782,7 @@
         "13": 3081953,
         "14": 3961292,
         "15": 1358660
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

@@ -5,8 +5,6 @@
   "map_name": "King's Game",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_JesterGuardian",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -973,9 +971,7 @@
         "451": 3744,
         "452": 1244,
         "453": 8
-      },
-      "max": 453,
-      "min": 400
+      }
     },
     "cat": {
       "buckets": {
@@ -990,9 +986,7 @@
         "48": 2948821,
         "49": 1266856,
         "50": 414194
-      },
-      "max": 50,
-      "min": 40
+      }
     },
     "scale": {
       "info": "Divide by 10 for in-game values",
@@ -1285,9 +1279,7 @@
         "370": 2,
         "376": 1,
         "379": 3
-      },
-      "max": 379,
-      "min": 39
+      }
     }
   }
 }

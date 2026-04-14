@@ -5,9 +5,6 @@
   "map_name": "Magus Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_SwordStaff",
-  "weapon_template": "Weapon_SwordStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1448,9 +1445,7 @@
         "543": 12,
         "544": 15,
         "545": 1
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1527,8 +1522,6 @@
         "88000": 53,
         "89000": 1
       },
-      "max": 89215,
-      "min": 20843,
       "step": 1000
     },
     "damage_2": {
@@ -1608,8 +1601,6 @@
         "91000": 90,
         "92000": 24
       },
-      "max": 92755,
-      "min": 21205,
       "step": 1000
     },
     "tower_caps": {
@@ -1704,8 +1695,6 @@
         "3000": 4,
         "3050": 1
       },
-      "max": 3058,
-      "min": -899,
       "step": 50
     },
     "app_totals": {
@@ -1778,8 +1767,6 @@
         "2350": 410,
         "2400": 15
       },
-      "max": 2441,
-      "min": -931,
       "step": 50
     },
     "hermit_totals": {
@@ -1851,8 +1838,6 @@
         "2350": 426,
         "2400": 16
       },
-      "max": 2423,
-      "min": -998,
       "step": 50
     },
     "guardian_totals": {
@@ -1925,8 +1910,6 @@
         "2350": 401,
         "2400": 15
       },
-      "max": 2429,
-      "min": -965,
       "step": 50
     },
     "scale": {
@@ -1943,9 +1926,7 @@
         "13": 3765878,
         "14": 4844121,
         "15": 2240842
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

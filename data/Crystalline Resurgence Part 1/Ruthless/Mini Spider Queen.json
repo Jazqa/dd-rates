@@ -5,9 +5,7 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_MiniSpiderQueen",
   "projectile_template": "Web_Projectile",
-  "seq_act": "SurvivalFamiliars",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1461,9 +1459,7 @@
         "544": 15,
         "545": 7,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1505,8 +1501,6 @@
         "56000": 1810,
         "57000": 20
       },
-      "max": 57285,
-      "min": 23597,
       "step": 1000
     },
     "tower_caps": {
@@ -1590,8 +1584,6 @@
         "3100": 385,
         "3150": 29
       },
-      "max": 3189,
-      "min": -249,
       "step": 50
     },
     "app_totals": {
@@ -1652,8 +1644,6 @@
         "2450": 2646,
         "2500": 159
       },
-      "max": 2548,
-      "min": -221,
       "step": 50
     },
     "hermit_totals": {
@@ -1715,8 +1705,6 @@
         "2500": 159,
         "2550": 1
       },
-      "max": 2560,
-      "min": -235,
       "step": 50
     },
     "guardian_totals": {
@@ -1778,8 +1766,6 @@
         "2500": 150,
         "2550": 1
       },
-      "max": 2550,
-      "min": -225,
       "step": 50
     },
     "scale": {
@@ -2019,9 +2005,7 @@
         "327": 3,
         "334": 2,
         "337": 3
-      },
-      "max": 337,
-      "min": 90
+      }
     }
   }
 }

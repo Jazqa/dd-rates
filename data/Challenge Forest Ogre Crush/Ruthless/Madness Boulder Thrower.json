@@ -5,9 +5,6 @@
   "map_name": "Challenge Forest Ogre Crush",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_MonkSpear",
-  "weapon_template": "Weapon_MonkSpear",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1337,9 +1334,7 @@
         "543": 38,
         "544": 21,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1427,8 +1422,6 @@
         "134000": 112,
         "135000": 10
       },
-      "max": 135496,
-      "min": 55414,
       "step": 1000
     },
     "damage_2": {
@@ -1461,8 +1454,6 @@
         "38000": 5127,
         "39000": 27
       },
-      "max": 39189,
-      "min": 15119,
       "step": 1000
     },
     "tower_caps": {
@@ -1536,8 +1527,6 @@
         "2750": 60,
         "2800": 1
       },
-      "max": 2801,
-      "min": -96,
       "step": 50
     },
     "app_totals": {
@@ -1590,8 +1579,6 @@
         "2200": 252,
         "2250": 1
       },
-      "max": 2252,
-      "min": -81,
       "step": 50
     },
     "hermit_totals": {
@@ -1643,8 +1630,6 @@
         "2150": 4770,
         "2200": 274
       },
-      "max": 2242,
-      "min": -69,
       "step": 50
     },
     "guardian_totals": {
@@ -1697,8 +1682,6 @@
         "2200": 295,
         "2250": 1
       },
-      "max": 2252,
-      "min": -91,
       "step": 50
     },
     "support_caps": {
@@ -1724,9 +1707,7 @@
         "13": 7596728,
         "14": 11058831,
         "15": 4057027
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

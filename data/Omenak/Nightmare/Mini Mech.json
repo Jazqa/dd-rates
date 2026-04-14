@@ -5,9 +5,7 @@
   "map_name": "Omenak",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_MiniFlyingMech",
   "projectile_template": "Projectile_HuntressBullet_Gatling",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1332,9 +1330,7 @@
         "544": 10,
         "545": 5,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1381,8 +1377,6 @@
         "66000": 1318,
         "67000": 78
       },
-      "max": 67962,
-      "min": 28832,
       "step": 1000
     },
     "tower_caps": {
@@ -1465,8 +1459,6 @@
         "3100": 66,
         "3150": 3
       },
-      "max": 3154,
-      "min": -199,
       "step": 50
     },
     "app_totals": {
@@ -1527,8 +1519,6 @@
         "2450": 538,
         "2500": 4
       },
-      "max": 2511,
-      "min": -218,
       "step": 50
     },
     "hermit_totals": {
@@ -1589,8 +1579,6 @@
         "2450": 535,
         "2500": 6
       },
-      "max": 2515,
-      "min": -226,
       "step": 50
     },
     "guardian_totals": {
@@ -1651,8 +1639,6 @@
         "2450": 597,
         "2500": 3
       },
-      "max": 2503,
-      "min": -203,
       "step": 50
     },
     "scale": {
@@ -1758,9 +1744,7 @@
         "195": 43666,
         "196": 16304,
         "197": 8
-      },
-      "max": 197,
-      "min": 98
+      }
     }
   }
 }

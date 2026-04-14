@@ -5,9 +5,6 @@
   "map_name": "Wandering Heart",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_StaffOfHearts",
-  "weapon_template": "Weapon_StaffOfHearts",
-  "seq_act": "Victory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1358,9 +1355,7 @@
         "543": 21,
         "544": 8,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1440,8 +1435,6 @@
         "92000": 43,
         "93000": 2
       },
-      "max": 93796,
-      "min": 21672,
       "step": 1000
     },
     "tower_caps": {
@@ -1535,8 +1528,6 @@
         "3050": 52,
         "3100": 8
       },
-      "max": 3132,
-      "min": -764,
       "step": 50
     },
     "app_totals": {
@@ -1607,8 +1598,6 @@
         "2450": 269,
         "2500": 6
       },
-      "max": 2529,
-      "min": -716,
       "step": 50
     },
     "hermit_totals": {
@@ -1679,8 +1668,6 @@
         "2400": 312,
         "2450": 15
       },
-      "max": 2475,
-      "min": -765,
       "step": 50
     },
     "guardian_totals": {
@@ -1750,8 +1737,6 @@
         "2400": 745,
         "2450": 58
       },
-      "max": 2498,
-      "min": -739,
       "step": 50
     },
     "scale": {
@@ -1768,9 +1753,7 @@
         "13": 2700349,
         "14": 3600399,
         "15": 3523164
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

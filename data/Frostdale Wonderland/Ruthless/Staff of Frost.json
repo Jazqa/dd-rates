@@ -5,9 +5,6 @@
   "map_name": "Frostdale Wonderland",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_FrostdaleStaff",
-  "weapon_template": "Weapon_FrostdaleStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1490,9 +1487,7 @@
         "544": 13,
         "545": 4,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1572,8 +1567,6 @@
         "93000": 130,
         "94000": 24
       },
-      "max": 94611,
-      "min": 22866,
       "step": 1000
     },
     "damage_2": {
@@ -1655,8 +1648,6 @@
         "93000": 73,
         "94000": 11
       },
-      "max": 94285,
-      "min": 21950,
       "step": 1000
     },
     "tower_caps": {
@@ -1761,8 +1752,6 @@
         "3300": 54,
         "3350": 1
       },
-      "max": 3373,
-      "min": -980,
       "step": 50
     },
     "app_totals": {
@@ -1841,8 +1830,6 @@
         "2650": 301,
         "2700": 2
       },
-      "max": 2722,
-      "min": -940,
       "step": 50
     },
     "hermit_totals": {
@@ -1921,8 +1908,6 @@
         "2550": 1439,
         "2600": 99
       },
-      "max": 2638,
-      "min": -1017,
       "step": 50
     },
     "guardian_totals": {
@@ -2002,8 +1987,6 @@
         "2600": 216,
         "2650": 2
       },
-      "max": 2657,
-      "min": -1011,
       "step": 50
     },
     "scale": {
@@ -2020,9 +2003,7 @@
         "13": 5285838,
         "14": 8129426,
         "15": 8811667
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

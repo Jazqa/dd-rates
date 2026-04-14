@@ -5,9 +5,6 @@
   "map_name": "Scorched Arabia",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_LavaSword",
-  "weapon_template": "Weapon_LavaSword",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1497,9 +1494,7 @@
         "544": 20,
         "545": 6,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1616,8 +1611,6 @@
         "179000": 49,
         "180000": 1
       },
-      "max": 180298,
-      "min": 71517,
       "step": 1000
     },
     "tower_caps": {
@@ -1740,8 +1733,6 @@
         "3550": 100,
         "3600": 3
       },
-      "max": 3607,
-      "min": -1376,
       "step": 50
     },
     "app_totals": {
@@ -1832,8 +1823,6 @@
         "2800": 1028,
         "2850": 54
       },
-      "max": 2894,
-      "min": -1376,
       "step": 50
     },
     "hermit_totals": {
@@ -1922,8 +1911,6 @@
         "2800": 186,
         "2850": 1
       },
-      "max": 2850,
-      "min": -1287,
       "step": 50
     },
     "guardian_totals": {
@@ -2013,8 +2000,6 @@
         "2800": 188,
         "2850": 1
       },
-      "max": 2862,
-      "min": -1302,
       "step": 50
     },
     "scale": {
@@ -2029,9 +2014,7 @@
         "16": 10329511,
         "17": 13475703,
         "18": 1303
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

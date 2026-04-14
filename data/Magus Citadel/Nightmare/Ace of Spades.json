@@ -5,9 +5,6 @@
   "map_name": "Magus Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_NinjaPole",
-  "weapon_template": "Weapon_NinjaPole",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1440,9 +1437,7 @@
         "543": 20,
         "544": 17,
         "545": 5
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1544,8 +1539,6 @@
         "155000": 44,
         "156000": 4
       },
-      "max": 156182,
-      "min": 62253,
       "step": 1000
     },
     "damage_2": {
@@ -1623,8 +1616,6 @@
         "100000": 48,
         "101000": 1
       },
-      "max": 101057,
-      "min": 32822,
       "step": 1000
     },
     "tower_caps": {
@@ -1709,8 +1700,6 @@
         "3000": 13,
         "3050": 1
       },
-      "max": 3052,
-      "min": -361,
       "step": 50
     },
     "app_totals": {
@@ -1769,8 +1758,6 @@
         "2350": 556,
         "2400": 24
       },
-      "max": 2444,
-      "min": -225,
       "step": 50
     },
     "hermit_totals": {
@@ -1829,8 +1816,6 @@
         "2350": 563,
         "2400": 21
       },
-      "max": 2429,
-      "min": -226,
       "step": 50
     },
     "guardian_totals": {
@@ -1889,8 +1874,6 @@
         "2350": 523,
         "2400": 27
       },
-      "max": 2443,
-      "min": -241,
       "step": 50
     },
     "support_caps": {
@@ -1911,9 +1894,7 @@
         "10": 3478933,
         "11": 6954883,
         "12": 8062636
-      },
-      "max": 12,
-      "min": 6
+      }
     }
   }
 }

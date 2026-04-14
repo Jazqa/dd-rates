@@ -5,9 +5,6 @@
   "map_name": "Challenge Ogre Crush",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "SpearStyle5_Ruthless",
-  "weapon_template": "DLC_WeaponMonkSpear_Style5",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.54,
@@ -1686,9 +1683,7 @@
         "543": 38,
         "544": 17,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1803,8 +1798,6 @@
         "144000": 218,
         "145000": 43
       },
-      "max": 145945,
-      "min": 37888,
       "step": 1000
     },
     "damage_2": {
@@ -2027,8 +2020,6 @@
         "341000": 6,
         "342000": 1
       },
-      "max": 342819,
-      "min": 128331,
       "step": 1000
     },
     "tower_caps": {
@@ -2119,8 +2110,6 @@
         "3200": 63,
         "3250": 8
       },
-      "max": 3295,
-      "min": -450,
       "step": 50
     },
     "app_totals": {
@@ -2184,8 +2173,6 @@
         "2550": 283,
         "2600": 7
       },
-      "max": 2616,
-      "min": -292,
       "step": 50
     },
     "hermit_totals": {
@@ -2249,8 +2236,6 @@
         "2550": 263,
         "2600": 9
       },
-      "max": 2628,
-      "min": -294,
       "step": 50
     },
     "guardian_totals": {
@@ -2314,8 +2299,6 @@
         "2550": 243,
         "2600": 13
       },
-      "max": 2641,
-      "min": -294,
       "step": 50
     },
     "scale": {
@@ -2336,9 +2319,7 @@
         "18": 1560462,
         "19": 1912967,
         "20": 535692
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

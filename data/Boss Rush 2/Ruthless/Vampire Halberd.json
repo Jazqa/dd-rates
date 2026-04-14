@@ -5,9 +5,6 @@
   "map_name": "Boss Rush 2",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_TBRHalberd",
-  "weapon_template": "Weapon_TBRHalberd",
-  "seq_act": "coreVictory_event",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1715,9 +1712,7 @@
         "544": 19,
         "545": 3,
         "546": 2
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1881,8 +1876,6 @@
         "261000": 21,
         "262000": 2
       },
-      "max": 262914,
-      "min": 105614,
       "step": 1000
     },
     "damage_2": {
@@ -1962,8 +1955,6 @@
         "103000": 114,
         "104000": 13
       },
-      "max": 104256,
-      "min": 33984,
       "step": 1000
     },
     "tower_caps": {
@@ -2089,8 +2080,6 @@
         "3750": 13,
         "3800": 1
       },
-      "max": 3821,
-      "min": -1100,
       "step": 50
     },
     "app_totals": {
@@ -2178,8 +2167,6 @@
         "2900": 2895,
         "2950": 469
       },
-      "max": 2997,
-      "min": -1100,
       "step": 50
     },
     "hermit_totals": {
@@ -2266,8 +2253,6 @@
         "2900": 997,
         "2950": 78
       },
-      "max": 2997,
-      "min": -1083,
       "step": 50
     },
     "guardian_totals": {
@@ -2354,8 +2339,6 @@
         "2900": 1015,
         "2950": 87
       },
-      "max": 2997,
-      "min": -1052,
       "step": 50
     },
     "scale": {
@@ -2373,9 +2356,7 @@
         "13": 5891643,
         "14": 8581147,
         "15": 3144585
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

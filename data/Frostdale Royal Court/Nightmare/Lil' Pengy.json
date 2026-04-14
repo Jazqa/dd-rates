@@ -5,9 +5,7 @@
   "map_name": "Frostdale Royal Court",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Penguin",
   "projectile_template": "Projectile_PenguinIceCube",
-  "seq_act": "w30SurvivalReward",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1438,9 +1436,7 @@
         "543": 10,
         "544": 3,
         "545": 1
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1495,8 +1491,6 @@
         "75000": 234,
         "76000": 23
       },
-      "max": 76759,
-      "min": 29438,
       "step": 1000
     },
     "tower_caps": {
@@ -1590,8 +1584,6 @@
         "3050": 61,
         "3100": 2
       },
-      "max": 3128,
-      "min": -753,
       "step": 50
     },
     "app_totals": {
@@ -1663,8 +1655,6 @@
         "2450": 70,
         "2500": 2
       },
-      "max": 2500,
-      "min": -753,
       "step": 50
     },
     "hermit_totals": {
@@ -1735,8 +1725,6 @@
         "2450": 60,
         "2500": 1
       },
-      "max": 2507,
-      "min": -729,
       "step": 50
     },
     "guardian_totals": {
@@ -1807,8 +1795,6 @@
         "2400": 859,
         "2450": 59
       },
-      "max": 2498,
-      "min": -760,
       "step": 50
     },
     "scale": {
@@ -1919,9 +1905,7 @@
         "199": 34798,
         "200": 18517,
         "201": 2877
-      },
-      "max": 201,
-      "min": 97
+      }
     }
   }
 }

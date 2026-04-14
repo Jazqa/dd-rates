@@ -5,9 +5,7 @@
   "map_name": "Lover's Revenge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Bunny",
   "projectile_template": "Projectile_bunny",
-  "seq_act": "W30_SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1687,9 +1685,7 @@
         "540": 2,
         "541": 2,
         "542": 1
-      },
-      "max": 542,
-      "min": 233
+      }
     },
     "damage": {
       "label": "Base",
@@ -1748,8 +1744,6 @@
         "90000": 23,
         "91000": 3
       },
-      "max": 91670,
-      "min": 38873,
       "step": 1000
     },
     "tower_caps": {
@@ -1828,8 +1822,6 @@
         "3000": 26,
         "3050": 5
       },
-      "max": 3095,
-      "min": -96,
       "step": 50
     },
     "app_totals": {
@@ -1887,8 +1879,6 @@
         "2400": 53,
         "2450": 4
       },
-      "max": 2456,
-      "min": -139,
       "step": 50
     },
     "hermit_totals": {
@@ -1946,8 +1936,6 @@
         "2400": 35,
         "2450": 4
       },
-      "max": 2496,
-      "min": -143,
       "step": 50
     },
     "guardian_totals": {
@@ -2005,8 +1993,6 @@
         "2400": 48,
         "2450": 3
       },
-      "max": 2479,
-      "min": -145,
       "step": 50
     },
     "scale": {
@@ -2208,9 +2194,7 @@
         "271": 1,
         "290": 1,
         "324": 1
-      },
-      "max": 324,
-      "min": 37
+      }
     }
   }
 }

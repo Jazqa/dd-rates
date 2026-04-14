@@ -5,7 +5,6 @@
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_FairyDjinn",
   "projectile_template": "DlinnletProjectile_NoElement",
   "hardcore_randomizer_multiplier": 1.0,
   "nightmare_randomizer_multiplier": 1.0,
@@ -1513,9 +1512,7 @@
         "544": 27,
         "545": 11,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1571,8 +1568,6 @@
         "80000": 1174,
         "81000": 61
       },
-      "max": 81766,
-      "min": 33472,
       "step": 1000
     },
     "tower_caps": {
@@ -1673,8 +1668,6 @@
         "3100": 61,
         "3150": 3
       },
-      "max": 3170,
-      "min": -1076,
       "step": 50
     },
     "app_totals": {
@@ -1752,8 +1745,6 @@
         "2450": 631,
         "2500": 11
       },
-      "max": 2512,
-      "min": -1059,
       "step": 50
     },
     "hermit_totals": {
@@ -1831,8 +1822,6 @@
         "2450": 637,
         "2500": 6
       },
-      "max": 2519,
-      "min": -1079,
       "step": 50
     },
     "guardian_totals": {
@@ -1910,8 +1899,6 @@
         "2450": 725,
         "2500": 9
       },
-      "max": 2515,
-      "min": -1076,
       "step": 50
     },
     "support_caps": {
@@ -2106,9 +2093,7 @@
         "293": 1,
         "294": 3,
         "295": 1
-      },
-      "max": 295,
-      "min": 115
+      }
     }
   }
 }

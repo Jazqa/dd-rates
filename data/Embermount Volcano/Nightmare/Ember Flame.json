@@ -5,9 +5,6 @@
   "map_name": "Embermount Volcano",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Phoenix_Gun",
-  "weapon_template": "Weapon_Phoenix_Gun",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1494,9 +1491,7 @@
         "543": 8,
         "544": 10,
         "545": 3
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1605,8 +1600,6 @@
         "167000": 67,
         "168000": 16
       },
-      "max": 168865,
-      "min": 66628,
       "step": 1000
     },
     "tower_caps": {
@@ -1701,8 +1694,6 @@
         "3150": 31,
         "3200": 2
       },
-      "max": 3227,
-      "min": -701,
       "step": 50
     },
     "app_totals": {
@@ -1774,8 +1765,6 @@
         "2500": 259,
         "2550": 16
       },
-      "max": 2575,
-      "min": -718,
       "step": 50
     },
     "hermit_totals": {
@@ -1848,8 +1837,6 @@
         "2500": 272,
         "2550": 19
       },
-      "max": 2575,
-      "min": -776,
       "step": 50
     },
     "guardian_totals": {
@@ -1921,8 +1908,6 @@
         "2500": 252,
         "2550": 13
       },
-      "max": 2582,
-      "min": -733,
       "step": 50
     },
     "scale": {
@@ -1933,9 +1918,7 @@
         "11": 1829757,
         "12": 2100304,
         "13": 1290396
-      },
-      "max": 13,
-      "min": 9
+      }
     }
   }
 }

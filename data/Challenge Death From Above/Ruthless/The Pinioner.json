@@ -5,9 +5,6 @@
   "map_name": "Challenge Death From Above",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle3_EMH_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style3",
-  "seq_act": "Prefab_PerLevelStartup_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.496,
@@ -1451,9 +1448,7 @@
         "544": 17,
         "545": 8,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1641,8 +1636,6 @@
         "250000": 12,
         "251000": 2
       },
-      "max": 251476,
-      "min": 70684,
       "step": 1000
     },
     "tower_caps": {
@@ -1732,8 +1725,6 @@
         "3200": 132,
         "3250": 12
       },
-      "max": 3291,
-      "min": -449,
       "step": 50
     },
     "app_totals": {
@@ -1797,8 +1788,6 @@
         "2550": 545,
         "2600": 37
       },
-      "max": 2646,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1862,8 +1851,6 @@
         "2550": 534,
         "2600": 35
       },
-      "max": 2639,
-      "min": -286,
       "step": 50
     },
     "guardian_totals": {
@@ -1927,8 +1914,6 @@
         "2550": 571,
         "2600": 34
       },
-      "max": 2639,
-      "min": -286,
       "step": 50
     },
     "scale": {
@@ -1949,9 +1934,7 @@
         "18": 1418036,
         "19": 1684105,
         "20": 461779
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

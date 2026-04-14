@@ -5,9 +5,6 @@
   "map_name": "Tomb of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_ScarabBow",
-  "weapon_template": "Weapon_ScarabBow",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1403,9 +1400,7 @@
         "543": 24,
         "544": 20,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1542,8 +1537,6 @@
         "203000": 9,
         "204000": 2
       },
-      "max": 204118,
-      "min": 74908,
       "step": 1000
     },
     "tower_caps": {
@@ -1632,8 +1625,6 @@
         "3200": 131,
         "3250": 15
       },
-      "max": 3285,
-      "min": -391,
       "step": 50
     },
     "app_totals": {
@@ -1697,8 +1688,6 @@
         "2550": 421,
         "2600": 14
       },
-      "max": 2634,
-      "min": -266,
       "step": 50
     },
     "hermit_totals": {
@@ -1762,8 +1751,6 @@
         "2550": 421,
         "2600": 17
       },
-      "max": 2622,
-      "min": -270,
       "step": 50
     },
     "guardian_totals": {
@@ -1827,8 +1814,6 @@
         "2550": 437,
         "2600": 19
       },
-      "max": 2618,
-      "min": -265,
       "step": 50
     },
     "scale": {
@@ -1846,9 +1831,7 @@
         "16": 1154158,
         "17": 1453019,
         "18": 245077
-      },
-      "max": 18,
-      "min": 7
+      }
     }
   }
 }

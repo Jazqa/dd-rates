@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle7_DLC_EMHv2",
-  "weapon_template": "Weapon_Cogmaulv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1406,9 +1403,7 @@
         "543": 27,
         "544": 30,
         "545": 6
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1563,8 +1558,6 @@
         "245000": 17,
         "246000": 5
       },
-      "max": 246429,
-      "min": 99271,
       "step": 1000
     },
     "tower_caps": {
@@ -1646,8 +1639,6 @@
         "2950": 239,
         "3000": 28
       },
-      "max": 3041,
-      "min": -291,
       "step": 50
     },
     "app_totals": {
@@ -1705,8 +1696,6 @@
         "2350": 1081,
         "2400": 54
       },
-      "max": 2443,
-      "min": -185,
       "step": 50
     },
     "hermit_totals": {
@@ -1765,8 +1754,6 @@
         "2350": 207,
         "2400": 2
       },
-      "max": 2418,
-      "min": -207,
       "step": 50
     },
     "guardian_totals": {
@@ -1825,8 +1812,6 @@
         "2400": 112,
         "2450": 3
       },
-      "max": 2453,
-      "min": -191,
       "step": 50
     },
     "scale": {
@@ -1836,9 +1821,7 @@
         "15": 7318434,
         "16": 8491000,
         "17": 4660525
-      },
-      "max": 17,
-      "min": 14
+      }
     }
   }
 }

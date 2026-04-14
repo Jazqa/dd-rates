@@ -5,9 +5,6 @@
   "map_name": "Boss Rush",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_MonkPunkGlaive_EMH_Ruthless",
-  "weapon_template": "Weapon_MonkPunkGlaive",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.55,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1471,9 +1468,7 @@
         "543": 37,
         "544": 20,
         "545": 6
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1627,8 +1622,6 @@
         "230000": 63,
         "231000": 10
       },
-      "max": 231837,
-      "min": 85797,
       "step": 1000
     },
     "damage_2": {
@@ -1697,8 +1690,6 @@
         "96000": 561,
         "97000": 38
       },
-      "max": 97590,
-      "min": 37662,
       "step": 1000
     },
     "tower_caps": {
@@ -1772,8 +1763,6 @@
         "2550": 29,
         "2600": 2
       },
-      "max": 2606,
-      "min": -270,
       "step": 50
     },
     "app_totals": {
@@ -1824,8 +1813,6 @@
         "2000": 2154,
         "2050": 175
       },
-      "max": 2098,
-      "min": -160,
       "step": 50
     },
     "hermit_totals": {
@@ -1877,8 +1864,6 @@
         "2050": 159,
         "2100": 1
       },
-      "max": 2108,
-      "min": -156,
       "step": 50
     },
     "guardian_totals": {
@@ -1930,8 +1915,6 @@
         "2050": 156,
         "2100": 2
       },
-      "max": 2118,
-      "min": -166,
       "step": 50
     },
     "scale": {
@@ -1949,9 +1932,7 @@
         "13": 7410287,
         "14": 10795111,
         "15": 3962144
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

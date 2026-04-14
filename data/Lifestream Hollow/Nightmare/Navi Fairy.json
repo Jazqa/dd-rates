@@ -5,8 +5,6 @@
   "map_name": "Lifestream Hollow",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_familiar_NaviFairy",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1374,9 +1372,7 @@
         "544": 12,
         "545": 7,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "tower_caps": {
       "info": "1 = HP, 2 = Rate, 4 = Damage, 8 = Range, 101 = Single Caps, 102 = Double Caps, 103 = Triple Caps, 104 = Quad Caps",
@@ -1434,8 +1430,6 @@
         "3150": 586,
         "3200": 25
       },
-      "max": 3249,
-      "min": 1109,
       "step": 50
     },
     "app_totals": {
@@ -1480,8 +1474,6 @@
         "2500": 1535,
         "2550": 40
       },
-      "max": 2589,
-      "min": 650,
       "step": 50
     },
     "hermit_totals": {
@@ -1528,8 +1520,6 @@
         "2550": 62,
         "2600": 1
       },
-      "max": 2610,
-      "min": 610,
       "step": 50
     },
     "guardian_totals": {
@@ -1576,8 +1566,6 @@
         "2500": 1557,
         "2550": 39
       },
-      "max": 2594,
-      "min": 584,
       "step": 50
     },
     "scale": {
@@ -1714,9 +1702,7 @@
         "206": 3,
         "207": 2,
         "208": 2
-      },
-      "max": 208,
-      "min": 78
+      }
     }
   }
 }

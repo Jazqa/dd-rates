@@ -5,9 +5,6 @@
   "map_name": "The Summit",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle5_EMH_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style5_Ruthless",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.0,
   "base_force_randomization_quality": 1.6,
@@ -1427,9 +1424,7 @@
         "544": 27,
         "545": 12,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1602,8 +1597,6 @@
         "227000": 12,
         "228000": 4
       },
-      "max": 228266,
-      "min": 63113,
       "step": 1000
     },
     "tower_caps": {
@@ -1694,8 +1687,6 @@
         "3200": 166,
         "3250": 23
       },
-      "max": 3296,
-      "min": -462,
       "step": 50
     },
     "app_totals": {
@@ -1760,8 +1751,6 @@
         "2550": 585,
         "2600": 25
       },
-      "max": 2641,
-      "min": -302,
       "step": 50
     },
     "hermit_totals": {
@@ -1826,8 +1815,6 @@
         "2550": 553,
         "2600": 21
       },
-      "max": 2631,
-      "min": -300,
       "step": 50
     },
     "guardian_totals": {
@@ -1892,8 +1879,6 @@
         "2550": 553,
         "2600": 23
       },
-      "max": 2638,
-      "min": -303,
       "step": 50
     },
     "scale": {
@@ -1914,9 +1899,7 @@
         "18": 1765061,
         "19": 2291867,
         "20": 660533
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

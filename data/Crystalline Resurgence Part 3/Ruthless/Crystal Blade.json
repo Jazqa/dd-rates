@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Squire_EMHv2",
-  "weapon_template": "Weapon_SquireSwordWithProjectiles_EMHv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1398,9 +1395,7 @@
         "543": 15,
         "544": 5,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1550,8 +1545,6 @@
         "233000": 38,
         "234000": 3
       },
-      "max": 234931,
-      "min": 89124,
       "step": 1000
     },
     "tower_caps": {
@@ -1634,8 +1627,6 @@
         "2900": 147,
         "2950": 13
       },
-      "max": 2967,
-      "min": -365,
       "step": 50
     },
     "app_totals": {
@@ -1693,8 +1684,6 @@
         "2300": 1072,
         "2350": 63
       },
-      "max": 2397,
-      "min": -228,
       "step": 50
     },
     "hermit_totals": {
@@ -1752,8 +1741,6 @@
         "2300": 1086,
         "2350": 63
       },
-      "max": 2392,
-      "min": -228,
       "step": 50
     },
     "guardian_totals": {
@@ -1811,8 +1798,6 @@
         "2300": 1127,
         "2350": 57
       },
-      "max": 2387,
-      "min": -227,
       "step": 50
     },
     "scale": {
@@ -1830,9 +1815,7 @@
         "14": 1313621,
         "15": 1641456,
         "16": 943938
-      },
-      "max": 16,
-      "min": 5
+      }
     }
   }
 }

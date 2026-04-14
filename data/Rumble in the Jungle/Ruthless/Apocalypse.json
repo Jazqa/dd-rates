@@ -5,9 +5,6 @@
   "map_name": "Rumble in the Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Apocalypse_Ruthless",
-  "weapon_template": "Apocalypse_Weapon_Ruthless",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1308,9 +1305,7 @@
         "543": 26,
         "544": 18,
         "545": 9
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1383,8 +1378,6 @@
         "96000": 36,
         "97000": 6
       },
-      "max": 97307,
-      "min": 32582,
       "step": 1000
     },
     "damage_2": {
@@ -1401,8 +1394,6 @@
         "7000": 10095730,
         "8000": 2319686
       },
-      "max": 8192,
-      "min": 75,
       "step": 1000
     },
     "tower_caps": {
@@ -1493,8 +1484,6 @@
         "3250": 53,
         "3300": 1
       },
-      "max": 3316,
-      "min": -405,
       "step": 50
     },
     "app_totals": {
@@ -1558,8 +1547,6 @@
         "2550": 943,
         "2600": 30
       },
-      "max": 2641,
-      "min": -283,
       "step": 50
     },
     "hermit_totals": {
@@ -1623,8 +1610,6 @@
         "2550": 949,
         "2600": 39
       },
-      "max": 2631,
-      "min": -291,
       "step": 50
     },
     "guardian_totals": {
@@ -1688,8 +1673,6 @@
         "2550": 899,
         "2600": 44
       },
-      "max": 2638,
-      "min": -268,
       "step": 50
     },
     "scale": {
@@ -1701,9 +1684,7 @@
         "5": 2287415,
         "6": 10201905,
         "7": 9254012
-      },
-      "max": 7,
-      "min": 2
+      }
     }
   }
 }

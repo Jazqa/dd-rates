@@ -5,8 +5,6 @@
   "map_name": "Omenak",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Robot",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1745,9 +1743,7 @@
         "544": 7,
         "545": 6,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1806,8 +1802,6 @@
         "83000": 329,
         "84000": 38
       },
-      "max": 84702,
-      "min": 33232,
       "step": 1000
     },
     "tower_caps": {
@@ -1908,8 +1902,6 @@
         "3050": 123,
         "3100": 8
       },
-      "max": 3132,
-      "min": -1161,
       "step": 50
     },
     "app_totals": {
@@ -1986,8 +1978,6 @@
         "2450": 104,
         "2500": 1
       },
-      "max": 2506,
-      "min": -1030,
       "step": 50
     },
     "hermit_totals": {
@@ -2064,8 +2054,6 @@
         "2450": 99,
         "2500": 2
       },
-      "max": 2501,
-      "min": -1021,
       "step": 50
     },
     "guardian_totals": {
@@ -2144,8 +2132,6 @@
         "2450": 106,
         "2500": 1
       },
-      "max": 2502,
-      "min": -1159,
       "step": 50
     },
     "scale": {
@@ -2448,9 +2434,7 @@
         "374": 3,
         "377": 1,
         "381": 2
-      },
-      "max": 381,
-      "min": 39
+      }
     }
   }
 }

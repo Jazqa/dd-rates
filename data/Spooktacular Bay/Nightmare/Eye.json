@@ -5,9 +5,7 @@
   "map_name": "Spooktacular Bay",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_EvilEye",
   "projectile_template": "Projectile_PiercingLaser_EvilEye",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1685,9 +1683,7 @@
         "539": 2,
         "540": 2,
         "541": 1
-      },
-      "max": 541,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base",
@@ -1745,8 +1741,6 @@
         "90000": 18,
         "91000": 2
       },
-      "max": 91510,
-      "min": 41532,
       "step": 1000
     },
     "tower_caps": {
@@ -1825,8 +1819,6 @@
         "3000": 27,
         "3050": 4
       },
-      "max": 3094,
-      "min": -97,
       "step": 50
     },
     "app_totals": {
@@ -1884,8 +1876,6 @@
         "2400": 51,
         "2450": 3
       },
-      "max": 2455,
-      "min": -139,
       "step": 50
     },
     "hermit_totals": {
@@ -1943,8 +1933,6 @@
         "2400": 35,
         "2450": 4
       },
-      "max": 2495,
-      "min": -144,
       "step": 50
     },
     "guardian_totals": {
@@ -2002,8 +1990,6 @@
         "2400": 45,
         "2450": 3
       },
-      "max": 2478,
-      "min": -145,
       "step": 50
     },
     "scale": {
@@ -2205,9 +2191,7 @@
         "271": 1,
         "290": 1,
         "324": 1
-      },
-      "max": 324,
-      "min": 37
+      }
     }
   }
 }

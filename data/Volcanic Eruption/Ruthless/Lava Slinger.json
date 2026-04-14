@@ -5,9 +5,6 @@
   "map_name": "Volcanic Eruption",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_MageStaff",
-  "weapon_template": "Weapon_MageStaff",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1334,9 +1331,7 @@
         "543": 36,
         "544": 12,
         "545": 9
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1405,8 +1400,6 @@
         "89000": 131,
         "90000": 22
       },
-      "max": 90937,
-      "min": 29829,
       "step": 1000
     },
     "tower_caps": {
@@ -1493,8 +1486,6 @@
         "3100": 78,
         "3150": 13
       },
-      "max": 3192,
-      "min": -397,
       "step": 50
     },
     "app_totals": {
@@ -1556,8 +1547,6 @@
         "2450": 906,
         "2500": 49
       },
-      "max": 2547,
-      "min": -276,
       "step": 50
     },
     "hermit_totals": {
@@ -1619,8 +1608,6 @@
         "2450": 913,
         "2500": 48
       },
-      "max": 2533,
-      "min": -261,
       "step": 50
     },
     "guardian_totals": {
@@ -1682,8 +1669,6 @@
         "2450": 875,
         "2500": 52
       },
-      "max": 2542,
-      "min": -259,
       "step": 50
     },
     "scale": {
@@ -1702,9 +1687,7 @@
         "15": 1111374,
         "16": 1551651,
         "17": 956385
-      },
-      "max": 17,
-      "min": 5
+      }
     }
   }
 }

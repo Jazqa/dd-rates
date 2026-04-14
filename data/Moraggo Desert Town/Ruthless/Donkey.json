@@ -5,9 +5,7 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Donkey",
   "projectile_template": "Projectile_Donkey_Turd",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1656,9 +1654,7 @@
         "543": 47,
         "544": 20,
         "545": 9
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1707,8 +1703,6 @@
         "70000": 1015,
         "71000": 28
       },
-      "max": 71652,
-      "min": 30044,
       "step": 1000
     },
     "tower_caps": {
@@ -1800,8 +1794,6 @@
         "3100": 136,
         "3150": 4
       },
-      "max": 3170,
-      "min": -613,
       "step": 50
     },
     "app_totals": {
@@ -1870,8 +1862,6 @@
         "2450": 1112,
         "2500": 14
       },
-      "max": 2512,
-      "min": -627,
       "step": 50
     },
     "hermit_totals": {
@@ -1940,8 +1930,6 @@
         "2450": 1103,
         "2500": 10
       },
-      "max": 2519,
-      "min": -643,
       "step": 50
     },
     "guardian_totals": {
@@ -2011,8 +1999,6 @@
         "2450": 1180,
         "2500": 11
       },
-      "max": 2515,
-      "min": -658,
       "step": 50
     },
     "scale": {
@@ -2350,9 +2336,7 @@
         "379": 1,
         "380": 1,
         "381": 1
-      },
-      "max": 381,
-      "min": 39
+      }
     }
   }
 }

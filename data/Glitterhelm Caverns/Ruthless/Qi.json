@@ -5,9 +5,6 @@
   "map_name": "Glitterhelm Caverns",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "SpearStyle4_Ruthless",
-  "weapon_template": "DLC_WeaponMonkSpear_Style4_Ruthless",
-  "seq_act": "GiveChallengeMissionVictoryItems",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.6,
@@ -1518,9 +1515,7 @@
         "544": 25,
         "545": 7,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1714,8 +1709,6 @@
         "236000": 60,
         "237000": 15
       },
-      "max": 237918,
-      "min": 50522,
       "step": 1000
     },
     "damage_2": {
@@ -1773,8 +1766,6 @@
         "73000": 1302,
         "74000": 87
       },
-      "max": 74688,
-      "min": 25772,
       "step": 1000
     },
     "tower_caps": {
@@ -1866,8 +1857,6 @@
         "3250": 53,
         "3300": 6
       },
-      "max": 3349,
-      "min": -454,
       "step": 50
     },
     "app_totals": {
@@ -1932,8 +1921,6 @@
         "2600": 102,
         "2650": 1
       },
-      "max": 2651,
-      "min": -287,
       "step": 50
     },
     "hermit_totals": {
@@ -1998,8 +1985,6 @@
         "2600": 91,
         "2650": 1
       },
-      "max": 2650,
-      "min": -291,
       "step": 50
     },
     "guardian_totals": {
@@ -2063,8 +2048,6 @@
         "2550": 1279,
         "2600": 86
       },
-      "max": 2649,
-      "min": -289,
       "step": 50
     },
     "scale": {
@@ -2085,9 +2068,7 @@
         "18": 1764568,
         "19": 2291512,
         "20": 659898
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

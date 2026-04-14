@@ -5,8 +5,6 @@
   "map_name": "Moraggo Desert Town",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_MagicCarpetPet",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1648,9 +1646,7 @@
         "543": 25,
         "544": 14,
         "545": 4
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1698,8 +1694,6 @@
         "69000": 750,
         "70000": 21
       },
-      "max": 70370,
-      "min": 30332,
       "step": 1000
     },
     "tower_caps": {
@@ -1789,8 +1783,6 @@
         "3100": 110,
         "3150": 2
       },
-      "max": 3170,
-      "min": -537,
       "step": 50
     },
     "app_totals": {
@@ -1858,8 +1850,6 @@
         "2450": 872,
         "2500": 11
       },
-      "max": 2517,
-      "min": -566,
       "step": 50
     },
     "hermit_totals": {
@@ -1927,8 +1917,6 @@
         "2450": 861,
         "2500": 11
       },
-      "max": 2513,
-      "min": -591,
       "step": 50
     },
     "guardian_totals": {
@@ -1996,8 +1984,6 @@
         "2450": 886,
         "2500": 8
       },
-      "max": 2515,
-      "min": -597,
       "step": 50
     },
     "scale": {
@@ -2316,9 +2302,7 @@
         "372": 1,
         "376": 1,
         "377": 3
-      },
-      "max": 377,
-      "min": 39
+      }
     }
   }
 }

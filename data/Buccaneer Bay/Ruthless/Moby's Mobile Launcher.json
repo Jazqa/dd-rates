@@ -5,9 +5,6 @@
   "map_name": "Buccaneer Bay",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_BucBayHarpoon",
-  "weapon_template": "Weapon_BucBayHarpoon",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1747,9 +1744,7 @@
         "543": 24,
         "544": 17,
         "545": 4
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -2019,8 +2014,6 @@
         "385000": 9,
         "386000": 1
       },
-      "max": 386040,
-      "min": 124593,
       "step": 1000
     },
     "tower_caps": {
@@ -2142,8 +2135,6 @@
         "3450": 27,
         "3500": 2
       },
-      "max": 3509,
-      "min": -1460,
       "step": 50
     },
     "app_totals": {
@@ -2229,8 +2220,6 @@
         "2700": 526,
         "2750": 35
       },
-      "max": 2797,
-      "min": -1236,
       "step": 50
     },
     "hermit_totals": {
@@ -2317,8 +2306,6 @@
         "2700": 560,
         "2750": 38
       },
-      "max": 2775,
-      "min": -1296,
       "step": 50
     },
     "guardian_totals": {
@@ -2406,8 +2393,6 @@
         "2750": 25,
         "2800": 1
       },
-      "max": 2800,
-      "min": -1369,
       "step": 50
     },
     "scale": {
@@ -2424,9 +2409,7 @@
         "13": 1289513,
         "14": 1656576,
         "15": 567692
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

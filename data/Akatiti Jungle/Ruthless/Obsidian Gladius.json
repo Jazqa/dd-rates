@@ -5,9 +5,6 @@
   "map_name": "Akatiti Jungle",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Squire_Sword",
-  "weapon_template": "Weapon_ObsidianSword",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.48,
@@ -1341,9 +1338,7 @@
         "544": 19,
         "545": 8,
         "546": 5
-      },
-      "max": 546,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base",
@@ -1416,8 +1411,6 @@
         "107000": 100,
         "108000": 2
       },
-      "max": 108309,
-      "min": 43306,
       "step": 1000
     },
     "tower_caps": {
@@ -1531,8 +1524,6 @@
         "3850": 97,
         "3900": 6
       },
-      "max": 3931,
-      "min": -365,
       "step": 50
     },
     "app_totals": {
@@ -1602,8 +1593,6 @@
         "2900": 23939,
         "2950": 10786
       },
-      "max": 2997,
-      "min": -227,
       "step": 50
     },
     "hermit_totals": {
@@ -1673,8 +1662,6 @@
         "2900": 23673,
         "2950": 10897
       },
-      "max": 2997,
-      "min": -239,
       "step": 50
     },
     "guardian_totals": {
@@ -1745,8 +1732,6 @@
         "2900": 9466,
         "2950": 3404
       },
-      "max": 2997,
-      "min": -258,
       "step": 50
     },
     "scale": {
@@ -1762,9 +1747,7 @@
         "12": 6760647,
         "13": 9442360,
         "14": 5701185
-      },
-      "max": 14,
-      "min": 5
+      }
     }
   }
 }

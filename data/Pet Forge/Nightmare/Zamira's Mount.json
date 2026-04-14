@@ -5,7 +5,6 @@
   "map_name": "Pet Forge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Hippogryph",
   "projectile_template": "FamiliarProjectile_Hippogryph",
   "hardcore_randomizer_multiplier": 1.0,
   "nightmare_randomizer_multiplier": 1.0,
@@ -1404,9 +1403,7 @@
         "543": 36,
         "544": 14,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1455,8 +1452,6 @@
         "70000": 166,
         "71000": 2
       },
-      "max": 71048,
-      "min": 30684,
       "step": 1000
     },
     "tower_caps": {
@@ -1541,8 +1536,6 @@
         "3100": 96,
         "3150": 1
       },
-      "max": 3150,
-      "min": -275,
       "step": 50
     },
     "app_totals": {
@@ -1605,8 +1598,6 @@
         "2450": 757,
         "2500": 6
       },
-      "max": 2513,
-      "min": -301,
       "step": 50
     },
     "hermit_totals": {
@@ -1668,8 +1659,6 @@
         "2450": 756,
         "2500": 9
       },
-      "max": 2509,
-      "min": -265,
       "step": 50
     },
     "guardian_totals": {
@@ -1731,8 +1720,6 @@
         "2450": 816,
         "2500": 5
       },
-      "max": 2510,
-      "min": -262,
       "step": 50
     },
     "scale": {
@@ -1896,9 +1883,7 @@
         "241": 2,
         "242": 6,
         "243": 1
-      },
-      "max": 243,
-      "min": 82
+      }
     }
   }
 }

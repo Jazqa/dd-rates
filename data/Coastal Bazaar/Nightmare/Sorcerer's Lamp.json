@@ -5,9 +5,6 @@
   "map_name": "Coastal Bazaar",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_LampGunBazaar",
-  "weapon_template": "Weapon_LampGunBazaar",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1357,9 +1354,7 @@
         "544": 16,
         "545": 4,
         "546": 3
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1478,8 +1473,6 @@
         "173000": 59,
         "174000": 21
       },
-      "max": 174826,
-      "min": 63224,
       "step": 1000
     },
     "tower_caps": {
@@ -1568,8 +1561,6 @@
         "3250": 124,
         "3300": 6
       },
-      "max": 3319,
-      "min": -233,
       "step": 50
     },
     "app_totals": {
@@ -1630,8 +1621,6 @@
         "2550": 285,
         "2600": 18
       },
-      "max": 2631,
-      "min": -132,
       "step": 50
     },
     "hermit_totals": {
@@ -1693,8 +1682,6 @@
         "2600": 433,
         "2650": 15
       },
-      "max": 2680,
-      "min": -123,
       "step": 50
     },
     "guardian_totals": {
@@ -1756,8 +1743,6 @@
         "2600": 460,
         "2650": 16
       },
-      "max": 2666,
-      "min": -123,
       "step": 50
     },
     "scale": {
@@ -1766,9 +1751,7 @@
         "9": 3584558,
         "10": 9641297,
         "11": 21984805
-      },
-      "max": 11,
-      "min": 9
+      }
     }
   }
 }

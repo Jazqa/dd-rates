@@ -5,9 +5,6 @@
   "map_name": "Frostdale Royal Court",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_IceSword",
-  "weapon_template": "Weapon_IceSword",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1411,9 +1408,7 @@
         "544": 18,
         "545": 6,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1566,8 +1561,6 @@
         "247000": 4,
         "248000": 2
       },
-      "max": 248357,
-      "min": 103126,
       "step": 1000
     },
     "tower_caps": {
@@ -1650,8 +1643,6 @@
         "2950": 103,
         "3000": 6
       },
-      "max": 3022,
-      "min": -345,
       "step": 50
     },
     "app_totals": {
@@ -1710,8 +1701,6 @@
         "2350": 528,
         "2400": 18
       },
-      "max": 2432,
-      "min": -247,
       "step": 50
     },
     "hermit_totals": {
@@ -1770,8 +1759,6 @@
         "2350": 536,
         "2400": 16
       },
-      "max": 2428,
-      "min": -235,
       "step": 50
     },
     "guardian_totals": {
@@ -1830,8 +1817,6 @@
         "2350": 584,
         "2400": 16
       },
-      "max": 2424,
-      "min": -224,
       "step": 50
     },
     "scale": {
@@ -1847,9 +1832,7 @@
         "14": 1133113,
         "15": 1647698,
         "16": 1492206
-      },
-      "max": 16,
-      "min": 7
+      }
     }
   }
 }

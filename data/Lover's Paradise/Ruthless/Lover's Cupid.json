@@ -5,9 +5,7 @@
   "map_name": "Lover's Paradise",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Familiar_GoblinCupid",
   "projectile_template": "CupidArrowProjectileHarpoon",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1658,9 +1656,7 @@
         "542": 17,
         "543": 17,
         "545": 3
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1707,8 +1703,6 @@
         "68000": 165,
         "69000": 4
       },
-      "max": 69322,
-      "min": 30074,
       "step": 1000
     },
     "tower_caps": {
@@ -1797,8 +1791,6 @@
         "3100": 25,
         "3150": 1
       },
-      "max": 3169,
-      "min": -494,
       "step": 50
     },
     "app_totals": {
@@ -1865,8 +1857,6 @@
         "2450": 231,
         "2500": 3
       },
-      "max": 2509,
-      "min": -502,
       "step": 50
     },
     "hermit_totals": {
@@ -1932,8 +1922,6 @@
         "2450": 223,
         "2500": 3
       },
-      "max": 2510,
-      "min": -481,
       "step": 50
     },
     "guardian_totals": {
@@ -1999,8 +1987,6 @@
         "2450": 259,
         "2500": 2
       },
-      "max": 2506,
-      "min": -494,
       "step": 50
     },
     "scale": {
@@ -2283,9 +2269,7 @@
         "366": 1,
         "368": 2,
         "371": 1
-      },
-      "max": 371,
-      "min": 39
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Crystal Cave",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Gun_Crystal",
-  "weapon_template": "Weapon_Gun_Crystal",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1813,9 +1810,7 @@
         "541": 17,
         "542": 12,
         "543": 2
-      },
-      "max": 543,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -2175,8 +2170,6 @@
         "528000": 3,
         "529000": 1
       },
-      "max": 529244,
-      "min": 175678,
       "step": 1000
     },
     "tower_caps": {
@@ -2272,8 +2265,6 @@
         "2950": 39,
         "3000": 5
       },
-      "max": 3025,
-      "min": -988,
       "step": 50
     },
     "app_totals": {
@@ -2347,8 +2338,6 @@
         "2350": 212,
         "2400": 9
       },
-      "max": 2433,
-      "min": -958,
       "step": 50
     },
     "hermit_totals": {
@@ -2422,8 +2411,6 @@
         "2350": 208,
         "2400": 11
       },
-      "max": 2424,
-      "min": -991,
       "step": 50
     },
     "guardian_totals": {
@@ -2497,8 +2484,6 @@
         "2350": 202,
         "2400": 5
       },
-      "max": 2433,
-      "min": -973,
       "step": 50
     },
     "scale": {
@@ -2516,9 +2501,7 @@
         "13": 3165211,
         "14": 4068282,
         "15": 1397349
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

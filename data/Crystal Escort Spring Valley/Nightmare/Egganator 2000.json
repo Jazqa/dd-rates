@@ -5,9 +5,6 @@
   "map_name": "Crystal Escort Spring Valley",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Egganator",
-  "weapon_template": "Weapon_Egganator",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1531,9 +1528,7 @@
         "544": 13,
         "545": 9,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1768,8 +1763,6 @@
         "334000": 12,
         "335000": 6
       },
-      "max": 335373,
-      "min": 105134,
       "step": 1000
     },
     "tower_caps": {
@@ -1856,8 +1849,6 @@
         "3100": 22,
         "3150": 3
       },
-      "max": 3165,
-      "min": -394,
       "step": 50
     },
     "app_totals": {
@@ -1918,8 +1909,6 @@
         "2450": 285,
         "2500": 12
       },
-      "max": 2531,
-      "min": -248,
       "step": 50
     },
     "hermit_totals": {
@@ -1981,8 +1970,6 @@
         "2450": 268,
         "2500": 9
       },
-      "max": 2513,
-      "min": -253,
       "step": 50
     },
     "guardian_totals": {
@@ -2043,8 +2030,6 @@
         "2450": 275,
         "2500": 15
       },
-      "max": 2529,
-      "min": -249,
       "step": 50
     },
     "scale": {
@@ -2064,9 +2049,7 @@
         "16": 4064183,
         "17": 4972854,
         "18": 2011611
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

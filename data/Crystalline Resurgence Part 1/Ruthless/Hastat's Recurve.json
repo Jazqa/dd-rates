@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_ForestBowv2",
-  "weapon_template": "Weapon_ForestBowv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1536,9 +1533,7 @@
         "543": 19,
         "544": 2,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1783,8 +1778,6 @@
         "357000": 2,
         "371000": 2
       },
-      "max": 371140,
-      "min": 116557,
       "step": 1000
     },
     "tower_caps": {
@@ -1867,8 +1860,6 @@
         "2950": 344,
         "3000": 42
       },
-      "max": 3042,
-      "min": -338,
       "step": 50
     },
     "app_totals": {
@@ -1927,8 +1918,6 @@
         "2350": 744,
         "2400": 37
       },
-      "max": 2437,
-      "min": -209,
       "step": 50
     },
     "hermit_totals": {
@@ -1987,8 +1976,6 @@
         "2350": 767,
         "2400": 30
       },
-      "max": 2442,
-      "min": -214,
       "step": 50
     },
     "guardian_totals": {
@@ -2048,8 +2035,6 @@
         "2400": 323,
         "2450": 5
       },
-      "max": 2456,
-      "min": -231,
       "step": 50
     },
     "scale": {
@@ -2069,9 +2054,7 @@
         "17": 1179227,
         "18": 1351134,
         "19": 829581
-      },
-      "max": 19,
-      "min": 6
+      }
     }
   }
 }

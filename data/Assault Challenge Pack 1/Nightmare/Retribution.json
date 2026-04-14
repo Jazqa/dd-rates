@@ -5,9 +5,6 @@
   "map_name": "Assault Challenge Pack 1",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Crossbow_AssaultPack_Ruthless",
-  "weapon_template": "CrossbowWeapon_AssaultPack_Ruthless",
-  "seq_act": "PrefabSequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1409,9 +1406,7 @@
         "540": 7,
         "541": 4,
         "542": 3
-      },
-      "max": 542,
-      "min": 234
+      }
     },
     "damage": {
       "label": "Base",
@@ -1544,8 +1539,6 @@
         "210000": 2,
         "211000": 1
       },
-      "max": 211276,
-      "min": 85267,
       "step": 1000
     },
     "tower_caps": {
@@ -1617,8 +1610,6 @@
         "2650": 4,
         "2700": 1
       },
-      "max": 2727,
-      "min": -82,
       "step": 50
     },
     "app_totals": {
@@ -1669,8 +1660,6 @@
         "2100": 93,
         "2150": 6
       },
-      "max": 2177,
-      "min": -79,
       "step": 50
     },
     "hermit_totals": {
@@ -1721,8 +1710,6 @@
         "2100": 99,
         "2150": 7
       },
-      "max": 2170,
-      "min": -91,
       "step": 50
     },
     "guardian_totals": {
@@ -1773,8 +1760,6 @@
         "2100": 93,
         "2150": 6
       },
-      "max": 2169,
-      "min": -88,
       "step": 50
     },
     "scale": {
@@ -1793,9 +1778,7 @@
         "16": 119888,
         "17": 161444,
         "18": 69359
-      },
-      "max": 18,
-      "min": 6
+      }
     }
   }
 }

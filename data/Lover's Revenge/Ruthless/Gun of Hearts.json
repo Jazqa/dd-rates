@@ -5,9 +5,6 @@
   "map_name": "Lover's Revenge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_LoveGun",
-  "weapon_template": "Weapon_LoveGun",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1554,9 +1551,7 @@
         "544": 21,
         "545": 5,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1772,8 +1767,6 @@
         "326000": 4,
         "327000": 1
       },
-      "max": 327934,
-      "min": 117419,
       "step": 1000
     },
     "tower_caps": {
@@ -1877,8 +1870,6 @@
         "3650": 55,
         "3700": 2
       },
-      "max": 3714,
-      "min": -319,
       "step": 50
     },
     "app_totals": {
@@ -1946,8 +1937,6 @@
         "2850": 81,
         "2900": 3
       },
-      "max": 2908,
-      "min": -184,
       "step": 50
     },
     "hermit_totals": {
@@ -2016,8 +2005,6 @@
         "2900": 766,
         "2950": 71
       },
-      "max": 2996,
-      "min": -199,
       "step": 50
     },
     "guardian_totals": {
@@ -2085,8 +2072,6 @@
         "2850": 477,
         "2900": 30
       },
-      "max": 2934,
-      "min": -188,
       "step": 50
     },
     "scale": {
@@ -2101,9 +2086,7 @@
         "16": 6229544,
         "17": 7612034,
         "18": 3076229
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

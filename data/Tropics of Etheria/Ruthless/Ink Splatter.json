@@ -5,9 +5,6 @@
   "map_name": "Tropics of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_IslandGun",
-  "weapon_template": "Weapon_IslandGun",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1511,9 +1508,7 @@
         "544": 15,
         "545": 4,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1719,8 +1714,6 @@
         "308000": 6,
         "309000": 3
       },
-      "max": 309799,
-      "min": 110836,
       "step": 1000
     },
     "tower_caps": {
@@ -1813,8 +1806,6 @@
         "3250": 281,
         "3300": 36
       },
-      "max": 3344,
-      "min": -415,
       "step": 50
     },
     "app_totals": {
@@ -1878,8 +1869,6 @@
         "2600": 301,
         "2650": 20
       },
-      "max": 2681,
-      "min": -245,
       "step": 50
     },
     "hermit_totals": {
@@ -1945,8 +1934,6 @@
         "2650": 100,
         "2700": 3
       },
-      "max": 2708,
-      "min": -256,
       "step": 50
     },
     "guardian_totals": {
@@ -2011,8 +1998,6 @@
         "2600": 683,
         "2650": 47
       },
-      "max": 2683,
-      "min": -274,
       "step": 50
     },
     "scale": {
@@ -2023,9 +2008,7 @@
         "8": 124270,
         "9": 20690447,
         "10": 588
-      },
-      "max": 10,
-      "min": 6
+      }
     }
   }
 }

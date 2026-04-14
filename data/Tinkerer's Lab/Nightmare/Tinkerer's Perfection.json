@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Lab",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Saber_Template",
-  "weapon_template": "Saber_WeaponTemplate",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1341,9 +1338,7 @@
         "544": 7,
         "545": 2,
         "546": 4
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1491,8 +1486,6 @@
         "241000": 18,
         "242000": 1
       },
-      "max": 242159,
-      "min": 102968,
       "step": 1000
     },
     "tower_totals": {
@@ -1537,8 +1530,6 @@
         "1800": 516,
         "1850": 12
       },
-      "max": 1872,
-      "min": -81,
       "step": 50
     },
     "app_totals": {
@@ -1575,8 +1566,6 @@
         "1400": 483,
         "1450": 3
       },
-      "max": 1453,
-      "min": -87,
       "step": 50
     },
     "hermit_totals": {
@@ -1613,8 +1602,6 @@
         "1350": 10669,
         "1400": 460
       },
-      "max": 1447,
-      "min": -100,
       "step": 50
     },
     "guardian_totals": {
@@ -1654,8 +1641,6 @@
         "1550": 2420,
         "1600": 36
       },
-      "max": 1613,
-      "min": -81,
       "step": 50
     },
     "scale": {
@@ -1673,9 +1658,7 @@
         "15": 1901585,
         "16": 2445264,
         "17": 1438698
-      },
-      "max": 17,
-      "min": 3
+      }
     }
   }
 }

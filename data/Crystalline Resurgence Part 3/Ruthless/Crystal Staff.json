@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Apprentice_EMHv2",
-  "weapon_template": "Weapon_App_EMHv2",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1361,9 +1358,7 @@
         "543": 13,
         "544": 4,
         "545": 3
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1436,8 +1431,6 @@
         "94000": 61,
         "95000": 4
       },
-      "max": 95197,
-      "min": 30041,
       "step": 1000
     },
     "damage_2": {
@@ -1510,8 +1503,6 @@
         "90000": 98,
         "91000": 15
       },
-      "max": 91531,
-      "min": 27645,
       "step": 1000
     },
     "tower_caps": {
@@ -1590,8 +1581,6 @@
         "2750": 136,
         "2800": 9
       },
-      "max": 2820,
-      "min": -306,
       "step": 50
     },
     "app_totals": {
@@ -1646,8 +1635,6 @@
         "2200": 628,
         "2250": 24
       },
-      "max": 2288,
-      "min": -192,
       "step": 50
     },
     "hermit_totals": {
@@ -1702,8 +1689,6 @@
         "2200": 647,
         "2250": 32
       },
-      "max": 2282,
-      "min": -196,
       "step": 50
     },
     "guardian_totals": {
@@ -1758,8 +1743,6 @@
         "2200": 650,
         "2250": 19
       },
-      "max": 2272,
-      "min": -188,
       "step": 50
     },
     "scale": {
@@ -1778,9 +1761,7 @@
         "14": 1186850,
         "15": 1482925,
         "16": 853022
-      },
-      "max": 16,
-      "min": 4
+      }
     }
   }
 }

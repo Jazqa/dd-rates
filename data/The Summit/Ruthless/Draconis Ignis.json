@@ -5,9 +5,6 @@
   "map_name": "The Summit",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle06_EMH_Ruthless",
-  "weapon_template": "DunDefWeapon_MagicStaff_AltStyle06_Ruthless",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.0,
   "base_force_randomization_quality": 1.6,
@@ -1289,9 +1286,7 @@
         "544": 27,
         "545": 12,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1368,8 +1363,6 @@
         "83000": 286,
         "84000": 11
       },
-      "max": 84556,
-      "min": 15471,
       "step": 1000
     },
     "tower_caps": {
@@ -1460,8 +1453,6 @@
         "3200": 166,
         "3250": 23
       },
-      "max": 3296,
-      "min": -462,
       "step": 50
     },
     "app_totals": {
@@ -1526,8 +1517,6 @@
         "2550": 585,
         "2600": 25
       },
-      "max": 2641,
-      "min": -302,
       "step": 50
     },
     "hermit_totals": {
@@ -1592,8 +1581,6 @@
         "2550": 553,
         "2600": 21
       },
-      "max": 2631,
-      "min": -300,
       "step": 50
     },
     "guardian_totals": {
@@ -1658,8 +1645,6 @@
         "2550": 553,
         "2600": 23
       },
-      "max": 2638,
-      "min": -303,
       "step": 50
     },
     "scale": {
@@ -1680,9 +1665,7 @@
         "18": 1766145,
         "19": 2293154,
         "20": 660970
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

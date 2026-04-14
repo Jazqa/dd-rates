@@ -5,9 +5,7 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_SeaTurtle",
   "projectile_template": "Projectile_SeaTurtle",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1661,9 +1659,7 @@
         "544": 12,
         "545": 5,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1715,8 +1711,6 @@
         "74000": 315,
         "75000": 11
       },
-      "max": 75420,
-      "min": 31397,
       "step": 1000
     },
     "tower_caps": {
@@ -1810,8 +1804,6 @@
         "3050": 349,
         "3100": 31
       },
-      "max": 3140,
-      "min": -807,
       "step": 50
     },
     "app_totals": {
@@ -1882,8 +1874,6 @@
         "2450": 315,
         "2500": 4
       },
-      "max": 2516,
-      "min": -724,
       "step": 50
     },
     "hermit_totals": {
@@ -1954,8 +1944,6 @@
         "2450": 309,
         "2500": 5
       },
-      "max": 2516,
-      "min": -717,
       "step": 50
     },
     "guardian_totals": {
@@ -2026,8 +2014,6 @@
         "2450": 301,
         "2500": 1
       },
-      "max": 2500,
-      "min": -704,
       "step": 50
     },
     "scale": {
@@ -2341,9 +2327,7 @@
         "376": 2,
         "378": 1,
         "381": 1
-      },
-      "max": 381,
-      "min": 39
+      }
     }
   }
 }

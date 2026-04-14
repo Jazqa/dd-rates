@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Workshop",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_TinkererStaff",
-  "weapon_template": "Weapon_TinkererStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1422,9 +1419,7 @@
         "544": 8,
         "545": 4,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1489,8 +1484,6 @@
         "74000": 105,
         "75000": 7
       },
-      "max": 75372,
-      "min": 18216,
       "step": 1000
     },
     "tower_caps": {
@@ -1607,8 +1600,6 @@
         "3700": 84,
         "3750": 7
       },
-      "max": 3761,
-      "min": -848,
       "step": 50
     },
     "app_totals": {
@@ -1692,8 +1683,6 @@
         "2900": 1270,
         "2950": 99
       },
-      "max": 2997,
-      "min": -933,
       "step": 50
     },
     "hermit_totals": {
@@ -1777,8 +1766,6 @@
         "2900": 627,
         "2950": 36
       },
-      "max": 2979,
-      "min": -903,
       "step": 50
     },
     "guardian_totals": {
@@ -1862,8 +1849,6 @@
         "2900": 393,
         "2950": 13
       },
-      "max": 2973,
-      "min": -908,
       "step": 50
     },
     "scale": {
@@ -1874,9 +1859,7 @@
         "10": 6120615,
         "11": 7235656,
         "12": 823
-      },
-      "max": 12,
-      "min": 8
+      }
     }
   }
 }

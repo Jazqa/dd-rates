@@ -5,9 +5,6 @@
   "map_name": "Return to Crystalline Dimension",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_ReturniaPoleArm_Stars",
-  "weapon_template": "Weapon_ReturniaPoleArm_Stars",
-  "seq_act": "RewardsNightmare",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1577,9 +1574,7 @@
         "544": 32,
         "545": 14,
         "546": 1
-      },
-      "max": 546,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1719,8 +1714,6 @@
         "223000": 8,
         "224000": 4
       },
-      "max": 224283,
-      "min": 92184,
       "step": 1000
     },
     "damage_2": {
@@ -1796,8 +1789,6 @@
         "100000": 429,
         "101000": 27
       },
-      "max": 101477,
-      "min": 33940,
       "step": 1000
     },
     "tower_caps": {
@@ -1900,8 +1891,6 @@
         "3150": 379,
         "3200": 9
       },
-      "max": 3228,
-      "min": -1138,
       "step": 50
     },
     "app_totals": {
@@ -1982,8 +1971,6 @@
         "2500": 2114,
         "2550": 33
       },
-      "max": 2573,
-      "min": -1183,
       "step": 50
     },
     "hermit_totals": {
@@ -2063,8 +2050,6 @@
         "2450": 7340,
         "2500": 329
       },
-      "max": 2542,
-      "min": -1151,
       "step": 50
     },
     "guardian_totals": {
@@ -2144,8 +2129,6 @@
         "2500": 1418,
         "2550": 12
       },
-      "max": 2572,
-      "min": -1136,
       "step": 50
     },
     "scale": {
@@ -2163,9 +2146,7 @@
         "13": 8458192,
         "14": 17849193,
         "15": 7935688
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

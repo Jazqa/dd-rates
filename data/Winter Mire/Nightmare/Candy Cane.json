@@ -5,9 +5,6 @@
   "map_name": "Winter Mire",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Monk_ColorableCandyCane",
-  "weapon_template": "Weapon_Monk_ColorableCandyCane",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1505,9 +1502,7 @@
         "543": 19,
         "544": 17,
         "545": 5
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1660,8 +1655,6 @@
         "240000": 34,
         "241000": 8
       },
-      "max": 241778,
-      "min": 95274,
       "step": 1000
     },
     "damage_2": {
@@ -1733,8 +1726,6 @@
         "95000": 295,
         "96000": 27
       },
-      "max": 96653,
-      "min": 33370,
       "step": 1000
     },
     "tower_caps": {
@@ -1819,8 +1810,6 @@
         "3000": 13,
         "3050": 1
       },
-      "max": 3052,
-      "min": -361,
       "step": 50
     },
     "app_totals": {
@@ -1879,8 +1868,6 @@
         "2350": 561,
         "2400": 24
       },
-      "max": 2444,
-      "min": -225,
       "step": 50
     },
     "hermit_totals": {
@@ -1939,8 +1926,6 @@
         "2350": 569,
         "2400": 21
       },
-      "max": 2429,
-      "min": -226,
       "step": 50
     },
     "guardian_totals": {
@@ -1999,8 +1984,6 @@
         "2350": 522,
         "2400": 27
       },
-      "max": 2443,
-      "min": -241,
       "step": 50
     },
     "scale": {
@@ -2008,9 +1991,7 @@
       "buckets": {
         "9": 1958195,
         "10": 25994541
-      },
-      "max": 10,
-      "min": 9
+      }
     }
   }
 }

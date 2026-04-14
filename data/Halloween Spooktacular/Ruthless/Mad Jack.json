@@ -5,9 +5,6 @@
   "map_name": "Halloween Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_Apprentice02_Ruthless",
-  "weapon_template": "Weapon_Apprentice02_Ruthless",
-  "seq_act": "Prefab_PerLevelStartup_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 7.0,
   "base_force_randomization_quality": 1.55,
@@ -1288,9 +1285,7 @@
         "544": 20,
         "545": 8,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1361,8 +1356,6 @@
         "83000": 397,
         "84000": 56
       },
-      "max": 84742,
-      "min": 21011,
       "step": 1000
     },
     "tower_caps": {
@@ -1453,8 +1446,6 @@
         "3200": 107,
         "3250": 8
       },
-      "max": 3283,
-      "min": -466,
       "step": 50
     },
     "app_totals": {
@@ -1518,8 +1509,6 @@
         "2550": 365,
         "2600": 15
       },
-      "max": 2635,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1584,8 +1573,6 @@
         "2550": 350,
         "2600": 15
       },
-      "max": 2632,
-      "min": -301,
       "step": 50
     },
     "guardian_totals": {
@@ -1649,8 +1636,6 @@
         "2550": 381,
         "2600": 16
       },
-      "max": 2632,
-      "min": -298,
       "step": 50
     },
     "scale": {
@@ -1667,9 +1652,7 @@
         "13": 1479134,
         "14": 2102098,
         "15": 2154473
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

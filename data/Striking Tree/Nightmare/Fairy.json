@@ -5,8 +5,6 @@
   "map_name": "Striking Tree",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_Familiar_Fairy",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1664,9 +1662,7 @@
         "542": 2,
         "543": 1,
         "544": 1
-      },
-      "max": 544,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1682,8 +1678,6 @@
         "12000": 14564,
         "13000": 16
       },
-      "max": 13112,
-      "min": 5878,
       "step": 1000
     },
     "tower_caps": {
@@ -1768,8 +1762,6 @@
         "3050": 54,
         "3100": 4
       },
-      "max": 3114,
-      "min": -311,
       "step": 50
     },
     "app_totals": {
@@ -1833,8 +1825,6 @@
         "2400": 412,
         "2450": 43
       },
-      "max": 2486,
-      "min": -483,
       "step": 50
     },
     "hermit_totals": {
@@ -1898,8 +1888,6 @@
         "2400": 372,
         "2450": 32
       },
-      "max": 2489,
-      "min": -479,
       "step": 50
     },
     "guardian_totals": {
@@ -1962,8 +1950,6 @@
         "2400": 422,
         "2450": 32
       },
-      "max": 2488,
-      "min": -389,
       "step": 50
     },
     "scale": {
@@ -2182,9 +2168,7 @@
         "365": 1,
         "366": 2,
         "369": 1
-      },
-      "max": 369,
-      "min": 39
+      }
     }
   }
 }

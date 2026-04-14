@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Workshop",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_NessieLauncher",
-  "weapon_template": "NessieLauncher_Weapon",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1572,9 +1569,7 @@
         "541": 17,
         "542": 13,
         "543": 3
-      },
-      "max": 543,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1718,8 +1713,6 @@
         "230000": 15,
         "231000": 2
       },
-      "max": 231115,
-      "min": 95463,
       "step": 1000
     },
     "tower_caps": {
@@ -1839,8 +1832,6 @@
         "3400": 13,
         "3450": 1
       },
-      "max": 3450,
-      "min": -1377,
       "step": 50
     },
     "app_totals": {
@@ -1926,8 +1917,6 @@
         "2700": 43,
         "2750": 1
       },
-      "max": 2757,
-      "min": -1215,
       "step": 50
     },
     "hermit_totals": {
@@ -2013,8 +2002,6 @@
         "2700": 133,
         "2750": 7
       },
-      "max": 2765,
-      "min": -1222,
       "step": 50
     },
     "guardian_totals": {
@@ -2100,8 +2087,6 @@
         "2700": 27,
         "2750": 1
       },
-      "max": 2752,
-      "min": -1212,
       "step": 50
     },
     "scale": {
@@ -2119,9 +2104,7 @@
         "13": 3863486,
         "14": 4965223,
         "15": 1705911
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

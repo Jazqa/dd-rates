@@ -5,9 +5,6 @@
   "map_name": "Alchemical Laboratory",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "CrossbowStyle8_Boss_Ruthless",
-  "weapon_template": "CrossbowWeapon_Style8",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.25,
   "base_force_randomization_quality": 1.5,
@@ -1538,9 +1535,7 @@
         "543": 49,
         "544": 19,
         "545": 11
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1795,8 +1790,6 @@
         "333000": 3,
         "334000": 2
       },
-      "max": 334416,
-      "min": 87618,
       "step": 1000
     },
     "tower_caps": {
@@ -1887,8 +1880,6 @@
         "3200": 58,
         "3250": 13
       },
-      "max": 3299,
-      "min": -459,
       "step": 50
     },
     "app_totals": {
@@ -1952,8 +1943,6 @@
         "2550": 248,
         "2600": 7
       },
-      "max": 2633,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -2018,8 +2007,6 @@
         "2550": 228,
         "2600": 12
       },
-      "max": 2624,
-      "min": -302,
       "step": 50
     },
     "guardian_totals": {
@@ -2083,8 +2070,6 @@
         "2550": 257,
         "2600": 9
       },
-      "max": 2631,
-      "min": -290,
       "step": 50
     },
     "scale": {
@@ -2108,9 +2093,7 @@
         "22": 1255076,
         "23": 1445443,
         "24": 470579
-      },
-      "max": 24,
-      "min": 7
+      }
     }
   }
 }

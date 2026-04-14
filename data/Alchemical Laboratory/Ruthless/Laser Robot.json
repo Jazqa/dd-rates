@@ -5,9 +5,7 @@
   "map_name": "Alchemical Laboratory",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Destructoid",
   "projectile_template": "Projectile_Familiar_LaserBeams",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1724,9 +1722,7 @@
         "543": 2,
         "544": 3,
         "545": 1
-      },
-      "max": 545,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1774,8 +1770,6 @@
         "69000": 128,
         "70000": 11
       },
-      "max": 70656,
-      "min": 30985,
       "step": 1000
     },
     "tower_caps": {
@@ -1861,8 +1855,6 @@
         "3050": 36,
         "3100": 3
       },
-      "max": 3119,
-      "min": -387,
       "step": 50
     },
     "app_totals": {
@@ -1927,8 +1919,6 @@
         "2400": 384,
         "2450": 30
       },
-      "max": 2483,
-      "min": -479,
       "step": 50
     },
     "hermit_totals": {
@@ -1994,8 +1984,6 @@
         "2400": 393,
         "2450": 36
       },
-      "max": 2498,
-      "min": -520,
       "step": 50
     },
     "guardian_totals": {
@@ -2060,8 +2048,6 @@
         "2400": 374,
         "2450": 29
       },
-      "max": 2479,
-      "min": -487,
       "step": 50
     },
     "scale": {
@@ -2280,9 +2266,7 @@
         "356": 1,
         "360": 1,
         "364": 1
-      },
-      "max": 364,
-      "min": 39
+      }
     }
   }
 }

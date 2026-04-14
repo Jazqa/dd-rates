@@ -5,9 +5,7 @@
   "map_name": "Moonbase",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_BattleDroid",
   "projectile_template": "Projectile_Familiar_LaserBeams",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1707,9 +1705,7 @@
         "545": 7,
         "546": 2,
         "547": 2
-      },
-      "max": 547,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1772,8 +1768,6 @@
         "95000": 227,
         "96000": 25
       },
-      "max": 96489,
-      "min": 41190,
       "step": 1000
     },
     "tower_caps": {
@@ -1857,8 +1851,6 @@
         "2850": 471,
         "2900": 17
       },
-      "max": 2921,
-      "min": -550,
       "step": 50
     },
     "app_totals": {
@@ -1925,8 +1917,6 @@
         "2450": 468,
         "2500": 2
       },
-      "max": 2502,
-      "min": -550,
       "step": 50
     },
     "hermit_totals": {
@@ -1987,8 +1977,6 @@
         "2200": 3173,
         "2250": 113
       },
-      "max": 2290,
-      "min": -497,
       "step": 50
     },
     "guardian_totals": {
@@ -2052,8 +2040,6 @@
         "2200": 3032,
         "2250": 114
       },
-      "max": 2287,
-      "min": -649,
       "step": 50
     },
     "scale": {
@@ -2367,9 +2353,7 @@
         "376": 2,
         "378": 2,
         "379": 1
-      },
-      "max": 379,
-      "min": 39
+      }
     }
   }
 }

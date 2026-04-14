@@ -5,9 +5,6 @@
   "map_name": "Emerald City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_EmeraldSword",
-  "weapon_template": "Weapon_EmeraldSword",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1430,9 +1427,7 @@
         "544": 13,
         "545": 5,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1570,8 +1565,6 @@
         "215000": 31,
         "216000": 2
       },
-      "max": 216744,
-      "min": 86158,
       "step": 1000
     },
     "tower_caps": {
@@ -1673,8 +1666,6 @@
         "3400": 132,
         "3450": 16
       },
-      "max": 3485,
-      "min": -466,
       "step": 50
     },
     "app_totals": {
@@ -1743,8 +1734,6 @@
         "2750": 79,
         "2800": 5
       },
-      "max": 2813,
-      "min": -304,
       "step": 50
     },
     "hermit_totals": {
@@ -1812,8 +1801,6 @@
         "2700": 223,
         "2750": 15
       },
-      "max": 2783,
-      "min": -318,
       "step": 50
     },
     "guardian_totals": {
@@ -1881,8 +1868,6 @@
         "2700": 223,
         "2750": 9
       },
-      "max": 2766,
-      "min": -303,
       "step": 50
     },
     "scale": {
@@ -1897,9 +1882,7 @@
         "16": 6246540,
         "17": 6870063,
         "18": 964
-      },
-      "max": 18,
-      "min": 10
+      }
     }
   }
 }

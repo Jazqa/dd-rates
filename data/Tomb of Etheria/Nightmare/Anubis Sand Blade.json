@@ -5,9 +5,6 @@
   "map_name": "Tomb of Etheria",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_Sword_SandBlade",
-  "weapon_template": "Weapon_SandBlade",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1310,9 +1307,7 @@
         "544": 10,
         "545": 2,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1391,8 +1386,6 @@
         "117000": 118,
         "118000": 3
       },
-      "max": 118498,
-      "min": 47674,
       "step": 1000
     },
     "tower_caps": {
@@ -1482,8 +1475,6 @@
         "3250": 13,
         "3300": 1
       },
-      "max": 3308,
-      "min": -392,
       "step": 50
     },
     "app_totals": {
@@ -1547,8 +1538,6 @@
         "2550": 331,
         "2600": 14
       },
-      "max": 2627,
-      "min": -260,
       "step": 50
     },
     "hermit_totals": {
@@ -1612,8 +1601,6 @@
         "2550": 354,
         "2600": 19
       },
-      "max": 2623,
-      "min": -273,
       "step": 50
     },
     "guardian_totals": {
@@ -1677,8 +1664,6 @@
         "2550": 361,
         "2600": 14
       },
-      "max": 2617,
-      "min": -267,
       "step": 50
     },
     "scale": {
@@ -1688,9 +1673,7 @@
         "14": 5827288,
         "15": 6659298,
         "16": 3627907
-      },
-      "max": 16,
-      "min": 13
+      }
     }
   }
 }

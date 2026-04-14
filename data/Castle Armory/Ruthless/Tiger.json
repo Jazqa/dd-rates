@@ -5,8 +5,6 @@
   "map_name": "Castle Armory",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Tiger2",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1742,9 +1740,7 @@
         "545": 5,
         "546": 2,
         "547": 1
-      },
-      "max": 547,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1803,8 +1799,6 @@
         "83000": 301,
         "84000": 28
       },
-      "max": 84918,
-      "min": 33416,
       "step": 1000
     },
     "tower_caps": {
@@ -1904,8 +1898,6 @@
         "3050": 48,
         "3100": 3
       },
-      "max": 3123,
-      "min": -1112,
       "step": 50
     },
     "app_totals": {
@@ -1981,8 +1973,6 @@
         "2400": 799,
         "2450": 59
       },
-      "max": 2499,
-      "min": -1021,
       "step": 50
     },
     "hermit_totals": {
@@ -2057,8 +2047,6 @@
         "2400": 787,
         "2450": 73
       },
-      "max": 2492,
-      "min": -978,
       "step": 50
     },
     "guardian_totals": {
@@ -2134,8 +2122,6 @@
         "2400": 745,
         "2450": 54
       },
-      "max": 2489,
-      "min": -1012,
       "step": 50
     },
     "scale": {
@@ -2433,9 +2419,7 @@
         "368": 2,
         "372": 3,
         "378": 3
-      },
-      "max": 378,
-      "min": 39
+      }
     }
   }
 }

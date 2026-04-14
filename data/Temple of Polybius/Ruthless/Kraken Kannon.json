@@ -5,9 +5,6 @@
   "map_name": "Temple of Polybius",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_WaterGun",
-  "weapon_template": "Weapon_WaterGun",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1597,9 +1594,7 @@
         "544": 19,
         "545": 6,
         "546": 1
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1824,8 +1819,6 @@
         "336000": 2,
         "337000": 2
       },
-      "max": 337518,
-      "min": 120753,
       "step": 1000
     },
     "tower_caps": {
@@ -1948,8 +1941,6 @@
         "3900": 11480,
         "3950": 18242
       },
-      "max": 3996,
-      "min": -659,
       "step": 50
     },
     "app_totals": {
@@ -2023,8 +2014,6 @@
         "2900": 124083,
         "2950": 321077
       },
-      "max": 2997,
-      "min": -441,
       "step": 50
     },
     "hermit_totals": {
@@ -2099,8 +2088,6 @@
         "2900": 116872,
         "2950": 284772
       },
-      "max": 2997,
-      "min": -459,
       "step": 50
     },
     "guardian_totals": {
@@ -2175,8 +2162,6 @@
         "2900": 131235,
         "2950": 360406
       },
-      "max": 2997,
-      "min": -470,
       "step": 50
     },
     "scale": {
@@ -2187,9 +2172,7 @@
         "8": 132144,
         "9": 22082362,
         "10": 653
-      },
-      "max": 10,
-      "min": 6
+      }
     }
   }
 }

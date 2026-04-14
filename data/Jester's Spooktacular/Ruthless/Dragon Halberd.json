@@ -5,9 +5,6 @@
   "map_name": "Jester's Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SpookSpear",
-  "weapon_template": "Weapon_SpookSpear",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1588,9 +1585,7 @@
         "543": 45,
         "544": 25,
         "545": 5
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1752,8 +1747,6 @@
         "258000": 5,
         "259000": 1
       },
-      "max": 259115,
-      "min": 101920,
       "step": 1000
     },
     "damage_2": {
@@ -1826,8 +1819,6 @@
         "100000": 694,
         "101000": 114
       },
-      "max": 101909,
-      "min": 37336,
       "step": 1000
     },
     "tower_caps": {
@@ -1933,8 +1924,6 @@
         "3700": 34,
         "3750": 1
       },
-      "max": 3760,
-      "min": -361,
       "step": 50
     },
     "app_totals": {
@@ -2003,8 +1992,6 @@
         "2850": 2492,
         "2900": 185
       },
-      "max": 2946,
-      "min": -233,
       "step": 50
     },
     "hermit_totals": {
@@ -2074,8 +2061,6 @@
         "2900": 1182,
         "2950": 47
       },
-      "max": 2984,
-      "min": -222,
       "step": 50
     },
     "guardian_totals": {
@@ -2145,8 +2130,6 @@
         "2900": 1122,
         "2950": 67
       },
-      "max": 2994,
-      "min": -225,
       "step": 50
     },
     "scale": {
@@ -2164,9 +2147,7 @@
         "13": 8739883,
         "14": 12720043,
         "15": 4669754
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

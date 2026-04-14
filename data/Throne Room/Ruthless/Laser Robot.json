@@ -5,9 +5,7 @@
   "map_name": "Throne Room",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_JamBot",
   "projectile_template": "Projectile_Familiar_LaserBeams",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.7,
@@ -1740,9 +1738,7 @@
         "544": 10,
         "545": 2,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1800,8 +1796,6 @@
         "81000": 320,
         "82000": 25
       },
-      "max": 82673,
-      "min": 32913,
       "step": 1000
     },
     "tower_caps": {
@@ -1901,8 +1895,6 @@
         "3050": 41,
         "3100": 4
       },
-      "max": 3119,
-      "min": -1112,
       "step": 50
     },
     "app_totals": {
@@ -1978,8 +1970,6 @@
         "2450": 55,
         "2500": 2
       },
-      "max": 2500,
-      "min": -1019,
       "step": 50
     },
     "hermit_totals": {
@@ -2054,8 +2044,6 @@
         "2400": 704,
         "2450": 58
       },
-      "max": 2498,
-      "min": -995,
       "step": 50
     },
     "guardian_totals": {
@@ -2132,8 +2120,6 @@
         "2450": 45,
         "2500": 1
       },
-      "max": 2500,
-      "min": -1112,
       "step": 50
     },
     "scale": {
@@ -2425,9 +2411,7 @@
         "372": 1,
         "373": 1,
         "375": 2
-      },
-      "max": 375,
-      "min": 39
+      }
     }
   }
 }

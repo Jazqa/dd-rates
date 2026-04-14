@@ -5,9 +5,6 @@
   "map_name": "Tinkerer's Lab",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BlasterRifle_Template",
-  "weapon_template": "BlasterRifle_WeaponTemplate",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.65,
@@ -1565,9 +1562,7 @@
         "544": 27,
         "545": 3,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1790,8 +1785,6 @@
         "314000": 10,
         "315000": 3
       },
-      "max": 315314,
-      "min": 99975,
       "step": 1000
     },
     "tower_caps": {
@@ -1890,8 +1883,6 @@
         "2900": 522,
         "2950": 22
       },
-      "max": 2978,
-      "min": -1242,
       "step": 50
     },
     "app_totals": {
@@ -1966,8 +1957,6 @@
         "2300": 3371,
         "2350": 104
       },
-      "max": 2390,
-      "min": -1065,
       "step": 50
     },
     "hermit_totals": {
@@ -2042,8 +2031,6 @@
         "2300": 3323,
         "2350": 93
       },
-      "max": 2396,
-      "min": -1064,
       "step": 50
     },
     "guardian_totals": {
@@ -2118,8 +2105,6 @@
         "2300": 3446,
         "2350": 107
       },
-      "max": 2387,
-      "min": -1059,
       "step": 50
     },
     "scale": {
@@ -2139,9 +2124,7 @@
         "16": 8915729,
         "17": 12934145,
         "18": 5772946
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

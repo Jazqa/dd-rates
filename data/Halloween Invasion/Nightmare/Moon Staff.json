@@ -5,9 +5,6 @@
   "map_name": "Halloween Invasion",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_MoonStaff",
-  "weapon_template": "Weapon_MoonStaff_V2",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1335,9 +1332,7 @@
         "543": 17,
         "544": 14,
         "545": 1
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1363,8 +1358,6 @@
         "23000": 10734,
         "24000": 159
       },
-      "max": 24637,
-      "min": 6387,
       "step": 1000
     },
     "damage_2": {
@@ -1416,8 +1409,6 @@
         "58000": 308,
         "59000": 17
       },
-      "max": 59475,
-      "min": 16877,
       "step": 1000
     },
     "tower_caps": {
@@ -1509,8 +1500,6 @@
         "2850": 43,
         "2900": 6
       },
-      "max": 2939,
-      "min": -882,
       "step": 50
     },
     "app_totals": {
@@ -1581,8 +1570,6 @@
         "2250": 643,
         "2300": 36
       },
-      "max": 2331,
-      "min": -923,
       "step": 50
     },
     "hermit_totals": {
@@ -1653,8 +1640,6 @@
         "2250": 1212,
         "2300": 68
       },
-      "max": 2345,
-      "min": -938,
       "step": 50
     },
     "guardian_totals": {
@@ -1724,8 +1709,6 @@
         "2250": 674,
         "2300": 31
       },
-      "max": 2331,
-      "min": -896,
       "step": 50
     },
     "scale": {
@@ -1743,9 +1726,7 @@
         "13": 4641842,
         "14": 5967659,
         "15": 2050068
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

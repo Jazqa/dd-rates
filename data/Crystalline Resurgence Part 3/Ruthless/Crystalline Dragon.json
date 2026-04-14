@@ -5,9 +5,7 @@
   "map_name": "Crystalline Resurgence Part 3",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Dragon_Crystalline",
   "projectile_template": "FamiliarProjectile_CrystallineFireball",
-  "seq_act": "SurvivalFamiliars",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1588,9 +1586,7 @@
         "543": 65,
         "544": 29,
         "545": 10
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1642,8 +1638,6 @@
         "74000": 1311,
         "75000": 74
       },
-      "max": 75740,
-      "min": 31048,
       "step": 1000
     },
     "tower_caps": {
@@ -1731,8 +1725,6 @@
         "3100": 151,
         "3150": 3
       },
-      "max": 3170,
-      "min": -428,
       "step": 50
     },
     "app_totals": {
@@ -1795,8 +1787,6 @@
         "2450": 1216,
         "2500": 11
       },
-      "max": 2513,
-      "min": -322,
       "step": 50
     },
     "hermit_totals": {
@@ -1859,8 +1849,6 @@
         "2450": 1201,
         "2500": 14
       },
-      "max": 2509,
-      "min": -317,
       "step": 50
     },
     "guardian_totals": {
@@ -1923,8 +1911,6 @@
         "2450": 1263,
         "2500": 7
       },
-      "max": 2512,
-      "min": -320,
       "step": 50
     },
     "scale": {
@@ -2262,9 +2248,7 @@
         "377": 1,
         "378": 1,
         "379": 1
-      },
-      "max": 379,
-      "min": 39
+      }
     }
   }
 }

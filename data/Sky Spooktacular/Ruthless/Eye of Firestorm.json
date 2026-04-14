@@ -5,9 +5,7 @@
   "map_name": "Sky Spooktacular",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Spazmatism",
   "projectile_template": "Projectile_FlamethrowerShotpet_Poison",
-  "seq_act": "EndSurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.74,
@@ -1527,9 +1525,7 @@
         "544": 31,
         "545": 13,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1588,8 +1584,6 @@
         "79000": 1419,
         "80000": 108
       },
-      "max": 80914,
-      "min": 29375,
       "step": 1000
     },
     "tower_caps": {
@@ -1677,8 +1671,6 @@
         "3100": 35,
         "3150": 2
       },
-      "max": 3170,
-      "min": -404,
       "step": 50
     },
     "app_totals": {
@@ -1740,8 +1732,6 @@
         "2450": 465,
         "2500": 7
       },
-      "max": 2510,
-      "min": -267,
       "step": 50
     },
     "hermit_totals": {
@@ -1803,8 +1793,6 @@
         "2450": 464,
         "2500": 4
       },
-      "max": 2515,
-      "min": -267,
       "step": 50
     },
     "guardian_totals": {
@@ -1866,8 +1854,6 @@
         "2450": 523,
         "2500": 7
       },
-      "max": 2512,
-      "min": -259,
       "step": 50
     },
     "scale": {
@@ -2150,9 +2136,7 @@
         "342": 1,
         "343": 2,
         "344": 1
-      },
-      "max": 344,
-      "min": 67
+      }
     }
   }
 }

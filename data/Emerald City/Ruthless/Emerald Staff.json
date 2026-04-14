@@ -5,9 +5,6 @@
   "map_name": "Emerald City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_EmeraldStaff",
-  "weapon_template": "Weapon_EmeraldStaff",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1530,9 +1527,7 @@
         "544": 7,
         "545": 1,
         "546": 5
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1614,8 +1609,6 @@
         "94000": 60,
         "95000": 3
       },
-      "max": 95139,
-      "min": 20205,
       "step": 1000
     },
     "damage_2": {
@@ -1697,8 +1690,6 @@
         "93000": 115,
         "94000": 34
       },
-      "max": 94816,
-      "min": 20036,
       "step": 1000
     },
     "tower_caps": {
@@ -1815,8 +1806,6 @@
         "3550": 38,
         "3600": 4
       },
-      "max": 3612,
-      "min": -1058,
       "step": 50
     },
     "app_totals": {
@@ -1900,8 +1889,6 @@
         "2850": 191,
         "2900": 12
       },
-      "max": 2916,
-      "min": -1044,
       "step": 50
     },
     "hermit_totals": {
@@ -1985,8 +1972,6 @@
         "2800": 59,
         "2850": 1
       },
-      "max": 2852,
-      "min": -1043,
       "step": 50
     },
     "guardian_totals": {
@@ -2071,8 +2056,6 @@
         "2800": 117,
         "2850": 1
       },
-      "max": 2857,
-      "min": -1058,
       "step": 50
     },
     "scale": {
@@ -2089,9 +2072,7 @@
         "13": 3857295,
         "14": 4679205,
         "15": 4285795
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

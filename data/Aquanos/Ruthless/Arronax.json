@@ -5,9 +5,6 @@
   "map_name": "Aquanos",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "MagicStaffStyle3_DLC_Boss_Ruthless",
-  "weapon_template": "Weapon_Arronax_Ruthless",
-  "seq_act": "Prefab_PerLevelVictory",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1332,9 +1329,7 @@
         "544": 24,
         "545": 12,
         "546": 4
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base + Additional",
@@ -1405,8 +1400,6 @@
         "93000": 35,
         "94000": 2
       },
-      "max": 94398,
-      "min": 31988,
       "step": 1000
     },
     "damage_2": {
@@ -1478,8 +1471,6 @@
         "94000": 91,
         "95000": 2
       },
-      "max": 95907,
-      "min": 32510,
       "step": 1000
     },
     "tower_caps": {
@@ -1550,8 +1541,6 @@
         "2450": 429,
         "2500": 27
       },
-      "max": 2541,
-      "min": -206,
       "step": 50
     },
     "app_totals": {
@@ -1600,8 +1589,6 @@
         "2000": 744,
         "2050": 11
       },
-      "max": 2069,
-      "min": -86,
       "step": 50
     },
     "hermit_totals": {
@@ -1650,8 +1637,6 @@
         "1950": 2085,
         "2000": 52
       },
-      "max": 2030,
-      "min": -113,
       "step": 50
     },
     "guardian_totals": {
@@ -1700,8 +1685,6 @@
         "1950": 2099,
         "2000": 68
       },
-      "max": 2039,
-      "min": -110,
       "step": 50
     },
     "scale": {
@@ -1718,9 +1701,7 @@
         "13": 1263597,
         "14": 1943091,
         "15": 2106925
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

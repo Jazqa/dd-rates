@@ -5,9 +5,6 @@
   "map_name": "Crystalline Resurgence Part 4",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "Equipment_ClockworkSpear_EMHv2",
-  "weapon_template": "Weapon_Clockwork_V2",
-  "seq_act": "Artificials",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.4,
@@ -1505,9 +1502,7 @@
         "542": 24,
         "543": 11,
         "544": 4
-      },
-      "max": 544,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1657,8 +1652,6 @@
         "237000": 31,
         "238000": 15
       },
-      "max": 238867,
-      "min": 96712,
       "step": 1000
     },
     "damage_2": {
@@ -1734,8 +1727,6 @@
         "102000": 197,
         "103000": 41
       },
-      "max": 103977,
-      "min": 35446,
       "step": 1000
     },
     "tower_caps": {
@@ -1812,8 +1803,6 @@
         "2750": 171,
         "2800": 19
       },
-      "max": 2844,
-      "min": -244,
       "step": 50
     },
     "app_totals": {
@@ -1868,8 +1857,6 @@
         "2200": 816,
         "2250": 53
       },
-      "max": 2292,
-      "min": -175,
       "step": 50
     },
     "hermit_totals": {
@@ -1924,8 +1911,6 @@
         "2200": 830,
         "2250": 62
       },
-      "max": 2291,
-      "min": -163,
       "step": 50
     },
     "guardian_totals": {
@@ -1981,8 +1966,6 @@
         "2250": 60,
         "2300": 1
       },
-      "max": 2303,
-      "min": -193,
       "step": 50
     },
     "scale": {
@@ -2000,9 +1983,7 @@
         "13": 3825218,
         "14": 4524308,
         "15": 1486776
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

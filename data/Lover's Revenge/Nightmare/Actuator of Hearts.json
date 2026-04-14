@@ -5,9 +5,6 @@
   "map_name": "Lover's Revenge",
   "multiplayer_mode": "Ranked",
   "difficulty": "Nightmare",
-  "hero_equipment": "HeroEquipment_LoveStaff",
-  "weapon_template": "Weapon_LoveStaff",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1366,9 +1363,7 @@
         "543": 16,
         "544": 8,
         "545": 4
-      },
-      "max": 545,
-      "min": 231
+      }
     },
     "damage": {
       "label": "Base",
@@ -1453,8 +1448,6 @@
         "100000": 10,
         "101000": 1
       },
-      "max": 101611,
-      "min": 24171,
       "step": 1000
     },
     "tower_caps": {
@@ -1548,8 +1541,6 @@
         "3050": 45,
         "3100": 5
       },
-      "max": 3132,
-      "min": -764,
       "step": 50
     },
     "app_totals": {
@@ -1620,8 +1611,6 @@
         "2450": 201,
         "2500": 5
       },
-      "max": 2529,
-      "min": -716,
       "step": 50
     },
     "hermit_totals": {
@@ -1692,8 +1681,6 @@
         "2400": 246,
         "2450": 12
       },
-      "max": 2475,
-      "min": -765,
       "step": 50
     },
     "guardian_totals": {
@@ -1763,8 +1750,6 @@
         "2400": 593,
         "2450": 42
       },
-      "max": 2496,
-      "min": -739,
       "step": 50
     },
     "scale": {
@@ -1781,9 +1766,7 @@
         "13": 2150910,
         "14": 2868324,
         "15": 2809420
-      },
-      "max": 15,
-      "min": 5
+      }
     }
   }
 }

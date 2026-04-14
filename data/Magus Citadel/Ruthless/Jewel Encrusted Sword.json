@@ -5,9 +5,6 @@
   "map_name": "Magus Citadel",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_JeweledSword",
-  "weapon_template": "Weapon_JeweledSword",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.5,
@@ -1525,9 +1522,7 @@
         "544": 12,
         "545": 2,
         "546": 4
-      },
-      "max": 546,
-      "min": 235
+      }
     },
     "damage": {
       "label": "Base",
@@ -1670,8 +1665,6 @@
         "229000": 57,
         "230000": 41
       },
-      "max": 230814,
-      "min": 94852,
       "step": 1000
     },
     "tower_caps": {
@@ -1785,8 +1778,6 @@
         "3400": 311,
         "3450": 38
       },
-      "max": 3494,
-      "min": -1157,
       "step": 50
     },
     "app_totals": {
@@ -1867,8 +1858,6 @@
         "2700": 1002,
         "2750": 43
       },
-      "max": 2793,
-      "min": -982,
       "step": 50
     },
     "hermit_totals": {
@@ -1950,8 +1939,6 @@
         "2700": 1000,
         "2750": 58
       },
-      "max": 2798,
-      "min": -1046,
       "step": 50
     },
     "guardian_totals": {
@@ -2034,8 +2021,6 @@
         "2700": 279,
         "2750": 6
       },
-      "max": 2769,
-      "min": -1098,
       "step": 50
     },
     "scale": {
@@ -2051,9 +2036,7 @@
         "13": 5443004,
         "14": 6997595,
         "15": 2401821
-      },
-      "max": 15,
-      "min": 6
+      }
     }
   }
 }

@@ -5,9 +5,6 @@
   "map_name": "Volcanic Eruption",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_SquireSword",
-  "weapon_template": "Weapon_SquireSwordWithProjectiles_V2",
-  "seq_act": "Prefab_CoreVictoryEvent_Seq",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.28,
   "base_force_randomization_quality": 1.6,
@@ -1622,9 +1619,7 @@
         "543": 28,
         "544": 13,
         "545": 8
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1786,8 +1781,6 @@
         "249000": 7,
         "250000": 2
       },
-      "max": 250422,
-      "min": 96071,
       "step": 1000
     },
     "damage_2": {
@@ -1870,8 +1863,6 @@
         "118000": 90,
         "119000": 2
       },
-      "max": 119445,
-      "min": 45090,
       "step": 1000
     },
     "tower_caps": {
@@ -1960,8 +1951,6 @@
         "3150": 4,
         "3200": 1
       },
-      "max": 3213,
-      "min": -429,
       "step": 50
     },
     "app_totals": {
@@ -2023,8 +2012,6 @@
         "2450": 699,
         "2500": 39
       },
-      "max": 2539,
-      "min": -277,
       "step": 50
     },
     "hermit_totals": {
@@ -2087,8 +2074,6 @@
         "2500": 36,
         "2550": 1
       },
-      "max": 2553,
-      "min": -269,
       "step": 50
     },
     "guardian_totals": {
@@ -2150,8 +2135,6 @@
         "2450": 741,
         "2500": 35
       },
-      "max": 2537,
-      "min": -272,
       "step": 50
     },
     "scale": {
@@ -2169,9 +2152,7 @@
         "13": 6735323,
         "14": 9808409,
         "15": 3595899
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }

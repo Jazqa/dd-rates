@@ -5,9 +5,6 @@
   "map_name": "Alchemical Laboratory",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "BroadswordStyle4_Boss_Ruthless",
-  "weapon_template": "WeaponMeleeSword_Style4",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 8.25,
   "base_force_randomization_quality": 1.5,
@@ -1446,9 +1443,7 @@
         "543": 49,
         "544": 18,
         "545": 11
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1637,8 +1632,6 @@
         "245000": 15,
         "246000": 4
       },
-      "max": 246997,
-      "min": 64173,
       "step": 1000
     },
     "tower_caps": {
@@ -1729,8 +1722,6 @@
         "3200": 46,
         "3250": 12
       },
-      "max": 3299,
-      "min": -459,
       "step": 50
     },
     "app_totals": {
@@ -1794,8 +1785,6 @@
         "2550": 216,
         "2600": 7
       },
-      "max": 2633,
-      "min": -295,
       "step": 50
     },
     "hermit_totals": {
@@ -1860,8 +1849,6 @@
         "2550": 205,
         "2600": 11
       },
-      "max": 2624,
-      "min": -302,
       "step": 50
     },
     "guardian_totals": {
@@ -1925,8 +1912,6 @@
         "2550": 229,
         "2600": 10
       },
-      "max": 2631,
-      "min": -288,
       "step": 50
     },
     "scale": {
@@ -1947,9 +1932,7 @@
         "18": 1438485,
         "19": 1712485,
         "20": 470892
-      },
-      "max": 20,
-      "min": 6
+      }
     }
   }
 }

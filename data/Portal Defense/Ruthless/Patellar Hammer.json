@@ -5,9 +5,6 @@
   "map_name": "Portal Defense",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_SquireChallenge_Ruthless",
-  "weapon_template": "Weapon_SquireChallenge",
-  "seq_act": "PortalDefense",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1382,9 +1379,7 @@
         "544": 20,
         "545": 14,
         "546": 2
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1542,8 +1537,6 @@
         "249000": 17,
         "250000": 3
       },
-      "max": 250500,
-      "min": 100917,
       "step": 1000
     },
     "tower_caps": {
@@ -1613,8 +1606,6 @@
         "2400": 68,
         "2450": 7
       },
-      "max": 2487,
-      "min": -239,
       "step": 50
     },
     "app_totals": {
@@ -1663,8 +1654,6 @@
         "1950": 176,
         "2000": 3
       },
-      "max": 2012,
-      "min": -131,
       "step": 50
     },
     "hermit_totals": {
@@ -1713,8 +1702,6 @@
         "1950": 134,
         "2000": 4
       },
-      "max": 2006,
-      "min": -132,
       "step": 50
     },
     "guardian_totals": {
@@ -1763,8 +1750,6 @@
         "1950": 152,
         "2000": 1
       },
-      "max": 2009,
-      "min": -130,
       "step": 50
     },
     "scale": {
@@ -1786,9 +1771,7 @@
         "16": 4766312,
         "17": 5906675,
         "18": 3402644
-      },
-      "max": 18,
-      "min": 3
+      }
     }
   }
 }

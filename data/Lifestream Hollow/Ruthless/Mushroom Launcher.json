@@ -5,9 +5,6 @@
   "map_name": "Lifestream Hollow",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "HeroEquipment_LifeTreeGun",
-  "weapon_template": "Weapon_LifeTreeGun",
-  "seq_act": "Main_Sequence",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1657,9 +1654,7 @@
         "543": 60,
         "544": 20,
         "545": 12
-      },
-      "max": 545,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1892,8 +1887,6 @@
         "329000": 4,
         "330000": 3
       },
-      "max": 330097,
-      "min": 104405,
       "step": 1000
     },
     "tower_caps": {
@@ -2016,8 +2009,6 @@
         "3500": 167,
         "3550": 7
       },
-      "max": 3575,
-      "min": -1410,
       "step": 50
     },
     "app_totals": {
@@ -2107,8 +2098,6 @@
         "2800": 133,
         "2850": 2
       },
-      "max": 2871,
-      "min": -1396,
       "step": 50
     },
     "hermit_totals": {
@@ -2197,8 +2186,6 @@
         "2750": 1448,
         "2800": 84
       },
-      "max": 2840,
-      "min": -1318,
       "step": 50
     },
     "guardian_totals": {
@@ -2288,8 +2275,6 @@
         "2750": 820,
         "2800": 14
       },
-      "max": 2819,
-      "min": -1373,
       "step": 50
     },
     "scale": {
@@ -2309,9 +2294,7 @@
         "16": 7846673,
         "17": 10595904,
         "18": 4538883
-      },
-      "max": 18,
-      "min": 5
+      }
     }
   }
 }

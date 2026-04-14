@@ -5,9 +5,7 @@
   "map_name": "Servant's Quarters",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_Familiar_Hamster",
   "projectile_template": "Projectile_Familiar_HamsterHearts",
-  "seq_act": "SurvivalFamiliar",
   "hardcore_randomizer_multiplier": 1.45,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.75,
@@ -1727,9 +1725,7 @@
         "544": 1,
         "545": 2,
         "546": 1
-      },
-      "max": 546,
-      "min": 232
+      }
     },
     "damage": {
       "label": "Base",
@@ -1777,8 +1773,6 @@
         "70000": 137,
         "71000": 9
       },
-      "max": 71436,
-      "min": 31238,
       "step": 1000
     },
     "tower_caps": {
@@ -1865,8 +1859,6 @@
         "3050": 96,
         "3100": 16
       },
-      "max": 3127,
-      "min": -427,
       "step": 50
     },
     "app_totals": {
@@ -1933,8 +1925,6 @@
         "2400": 765,
         "2450": 78
       },
-      "max": 2485,
-      "min": -577,
       "step": 50
     },
     "hermit_totals": {
@@ -2000,8 +1990,6 @@
         "2400": 717,
         "2450": 62
       },
-      "max": 2492,
-      "min": -545,
       "step": 50
     },
     "guardian_totals": {
@@ -2068,8 +2056,6 @@
         "2400": 780,
         "2450": 60
       },
-      "max": 2499,
-      "min": -558,
       "step": 50
     },
     "scale": {
@@ -2305,9 +2291,7 @@
         "364": 1,
         "365": 1,
         "366": 1
-      },
-      "max": 366,
-      "min": 39
+      }
     }
   }
 }

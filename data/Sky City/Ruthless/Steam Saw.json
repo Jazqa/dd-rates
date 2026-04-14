@@ -5,9 +5,6 @@
   "map_name": "Sky City",
   "multiplayer_mode": "Ranked",
   "difficulty": "Ruthless",
-  "hero_equipment": "Equipment_SteamSaw_Boss_Ruthless",
-  "weapon_template": "Weapon_SteamSaw",
-  "seq_act": "BossFight",
   "hardcore_randomizer_multiplier": 1.5,
   "nightmare_randomizer_multiplier": 1.0,
   "base_force_randomization_quality": 1.6,
@@ -1447,9 +1444,7 @@
         "544": 27,
         "545": 10,
         "546": 3
-      },
-      "max": 546,
-      "min": 230
+      }
     },
     "damage": {
       "label": "Base",
@@ -1596,8 +1591,6 @@
         "233000": 18,
         "234000": 2
       },
-      "max": 234641,
-      "min": 95816,
       "step": 1000
     },
     "tower_caps": {
@@ -1699,8 +1692,6 @@
         "3400": 165,
         "3450": 12
       },
-      "max": 3482,
-      "min": -480,
       "step": 50
     },
     "app_totals": {
@@ -1768,8 +1759,6 @@
         "2700": 486,
         "2750": 20
       },
-      "max": 2791,
-      "min": -321,
       "step": 50
     },
     "hermit_totals": {
@@ -1837,8 +1826,6 @@
         "2700": 489,
         "2750": 25
       },
-      "max": 2769,
-      "min": -332,
       "step": 50
     },
     "guardian_totals": {
@@ -1906,8 +1893,6 @@
         "2700": 508,
         "2750": 14
       },
-      "max": 2777,
-      "min": -333,
       "step": 50
     },
     "scale": {
@@ -1925,9 +1910,7 @@
         "13": 7797837,
         "14": 11356551,
         "15": 4165112
-      },
-      "max": 15,
-      "min": 4
+      }
     }
   }
 }
