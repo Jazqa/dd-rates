@@ -177,7 +177,11 @@
   },
   "City in the Cliffs": {
     "Ruthless": [
-      "Djinnlet"
+      "Djinnlet",
+      "Magic Lamp",
+      "Rug Beater",
+      "Sandstone Sledge",
+      "Sandstorm"
     ]
   },
   "Coal Forge": {
@@ -1144,6 +1148,14 @@
       "Spare Christmas Lights",
       "Turkey on a Treadmill",
       "Winter's Flame"
+    ]
+  },
+  "Winter Wonderland": {
+    "Ruthless": [
+      "Blade of the North",
+      "North Pole",
+      "Santa's Snowball Launcher",
+      "Spear of Light"
     ]
   },
   "Workshop Assault": {
