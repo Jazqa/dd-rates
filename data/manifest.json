@@ -398,17 +398,17 @@
   },
   "Frostdale Royal Court": {
     "Nightmare": [
-      "Boxing Glove",
       "Candy Cane Launcher",
       "Ice Pick",
       "Lil' Pengy",
+      "Pet Boxing Glove",
       "Reindeer"
     ],
     "Ruthless": [
-      "Boxing Glove",
       "Candy Cane Launcher",
       "Ice Pick",
       "Lil' Pengy",
+      "Pet Boxing Glove",
       "Reindeer"
     ]
   },
@@ -1151,6 +1151,7 @@
   "Winter Wonderland": {
     "Ruthless": [
       "Blade of the North",
+      "Jack-in-the-Box",
       "North Pole",
       "Santa's Snowball Launcher",
       "Spear of Light"
