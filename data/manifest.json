@@ -43,9 +43,13 @@
   },
   "Arcane Library": {
     "Nightmare": [
+      "Fedora",
+      "Librarian's Glasses",
       "Owl"
     ],
     "Ruthless": [
+      "Fedora",
+      "Librarian's Glasses",
       "Owl",
       "Skeleton on a Treadmill"
     ]
@@ -107,6 +111,14 @@
   "Challenge Death From Above": {
     "Ruthless": [
       "The Pinioner"
+    ]
+  },
+  "Challenge Flames of Rebirth": {
+    "Nightmare": [
+      "Shield of Embermount"
+    ],
+    "Ruthless": [
+      "Shield of Embermount"
     ]
   },
   "Challenge Forest Ogre Crush": {
@@ -325,20 +337,26 @@
   "Embermount Volcano": {
     "Nightmare": [
       "Animorphic Ember",
+      "Ember Bracers",
       "Ember Crescent",
       "Ember Flame",
       "Ember Pony",
+      "Ember Quill",
       "Ember Sceptre",
       "Fenix",
+      "Guise of Embers",
       "Sword of Embers"
     ],
     "Ruthless": [
       "Animorphic Ember",
+      "Ember Bracers",
       "Ember Crescent",
       "Ember Flame",
       "Ember Pony",
+      "Ember Quill",
       "Ember Sceptre",
       "Fenix",
+      "Guise of Embers",
       "Sword of Embers"
     ]
   },
