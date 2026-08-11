@@ -128,6 +128,7 @@ const ALIASES = {
   "baby old one": ["boo"],
   dice: ["Fortuna", "Chance", "Roller", "Venture", "Risk", "Luck"],
   corgi: ["Chainsaw Corgi"],
+  "flying saucer": ["ufo"],
 };
 
 const ALIAS_LOOKUP = {};
